@@ -366,14 +366,16 @@
     <h2 id="gate-title">Confirm your details to enter</h2>
     <p class="gate-sub">Enter your chapter to open the playbook. Your access is recorded for the region.</p>
 
-    <!-- Posts to the Apps Script web app. Field names below must match
-         e.parameter.chapter / .timestamp / .page / .userAgent
-         in your code.gs doPost(e). -->
+    <!-- Posts to the Apps Script web app. Field names below must match the
+         e.parameter keys read in Code.gs: chapter / event / sessionId /
+         timestamp / page / userAgent (plus duration / sections sent later). -->
     <form id="gate-form" method="POST" target="logframe" autocomplete="off"
-          action="https://script.google.com/macros/s/AKfycbzLMJktQMwQ8-pHuhPiT7laswbxE4DWIYUGFRzmW0ZZIJtoMqNwJopORtEJWTsPQutx/exec" novalidate>
+          action="https://script.google.com/macros/s/AKfycbz-m2GJjnnF6obud1K25TIBB1vu6-NvTRzqRwDakULvCE-A7ymKMhNS4JJckxWQa9g_/exec" novalidate>
       <label for="g-chapter">Chapter</label>
       <input id="g-chapter" name="chapter" type="text" required placeholder="e.g. YPO MENA" autocomplete="off" autocapitalize="words" spellcheck="false" />
 
+      <input type="hidden" name="event" value="access" />
+      <input type="hidden" name="sessionId" id="g-session" />
       <input type="hidden" name="timestamp" id="g-ts" />
       <input type="hidden" name="page" value="United MENA Playbook" />
       <input type="hidden" name="userAgent" id="g-ua" />
@@ -732,8 +734,12 @@
 </script>
 
 <script>
-  // ===== access gate: log to Apps Script, then reveal the playbook =====
+  // ===== access gate + view tracking =====
+  // Logs one session per visit, then keeps it updated with active time on
+  // page and time spent in each section. All sends go to the same endpoint.
   (function(){
+    const ENDPOINT='https://script.google.com/macros/s/AKfycbz-m2GJjnnF6obud1K25TIBB1vu6-NvTRzqRwDakULvCE-A7ymKMhNS4JJckxWQa9g_/exec';
+
     const gate=document.getElementById('gate');
     const form=document.getElementById('gate-form');
     const err=document.getElementById('g-err');
@@ -741,8 +747,11 @@
     const chapterEl=document.getElementById('g-chapter');
     const frame=document.getElementById('logframe');
     let submitting=false, revealed=false;
+    let SESSION='', CHAPTER='';
 
     setTimeout(()=>{ if(chapterEl) chapterEl.focus(); },250);
+
+    function rid(){ return 'pb-'+Date.now().toString(36)+'-'+Math.random().toString(36).slice(2,8); }
 
     function reveal(){
       if(revealed) return; revealed=true;
@@ -750,28 +759,81 @@
       document.body.classList.remove('locked');
       window.scrollTo(0,0);
       setTimeout(()=>{ gate.setAttribute('hidden',''); },600);
+      startTracking();
     }
 
     form.addEventListener('submit',function(e){
       if(submitting){ e.preventDefault(); return; }
       if(!chapterEl.value.trim()){
-        e.preventDefault();
-        err.hidden=false;
-        chapterEl.focus();
-        return;
+        e.preventDefault(); err.hidden=false; chapterEl.focus(); return;
       }
-      // valid — let the form POST to the hidden iframe (logs to Apps Script)
+      // valid — let the form POST to the hidden iframe (creates the session row)
       err.hidden=true;
       chapterEl.value=chapterEl.value.trim();
+      CHAPTER=chapterEl.value;
+      SESSION=rid();
+      document.getElementById('g-session').value=SESSION;
       document.getElementById('g-ts').value=new Date().toISOString();
       document.getElementById('g-ua').value=navigator.userAgent;
       submitting=true;
       btn.textContent='Verifying…';
       setTimeout(()=>{ btn.disabled=true; },50);
-      // reveal when the logger responds, with a timeout fallback so no one gets stuck
       frame.addEventListener('load', reveal, {once:true});
       setTimeout(reveal, 1400);
     });
+
+    /* ---------- view tracking ---------- */
+    const SECTIONS=[
+      {id:'regional-data',      label:'Regional Data'},
+      {id:'chapter-commitments',label:'Chapter Commitments'},
+      {id:'conduct-committee',  label:'Conduct Committee'},
+      {id:'officer-roadmap',    label:'Officer Roadmap'}
+    ];
+    const dwell={}; SECTIONS.forEach(s=>dwell[s.id]=0);
+    let totalActive=0, tracking=false;
+
+    // which section currently sits under the middle of the viewport
+    function currentSection(){
+      const mid=window.scrollY+window.innerHeight/2; let cur=null;
+      for(const s of SECTIONS){
+        const el=document.getElementById(s.id); if(!el) continue;
+        const top=el.offsetTop, bottom=top+el.offsetHeight;
+        if(mid>=top && mid<bottom) cur=s.id;
+      }
+      return cur;
+    }
+    function sectionsSummary(){
+      return SECTIONS.filter(s=>dwell[s.id]>0).map(s=>s.label+' '+dwell[s.id]+'s').join(' · ');
+    }
+    function send(){
+      if(!SESSION) return;
+      const params=new URLSearchParams({
+        event:'update', sessionId:SESSION, chapter:CHAPTER,
+        duration:String(totalActive), sections:sectionsSummary(),
+        userAgent:navigator.userAgent
+      }).toString();
+      // sendBeacon is reliable even as the page is closing; fall back to fetch
+      try{
+        if(navigator.sendBeacon){
+          const blob=new Blob([params],{type:'application/x-www-form-urlencoded'});
+          if(navigator.sendBeacon(ENDPOINT,blob)) return;
+        }
+      }catch(_){}
+      try{ fetch(ENDPOINT,{method:'POST',mode:'no-cors',headers:{'Content-Type':'application/x-www-form-urlencoded'},body:params,keepalive:true}); }catch(_){}
+    }
+    function startTracking(){
+      if(tracking) return; tracking=true;
+      // count a second of active viewing only while the tab is actually visible
+      setInterval(function(){
+        if(document.visibilityState!=='visible') return;
+        totalActive++;
+        const c=currentSection(); if(c) dwell[c]++;
+      },1000);
+      setInterval(send, 20000);                 // periodic flush while reading
+      setTimeout(send, 5000);                   // early flush so quick visits still register
+      document.addEventListener('visibilitychange',function(){ if(document.visibilityState==='hidden') send(); });
+      window.addEventListener('pagehide', send); // final flush on leave
+    }
   })();
 </script>
 </body>
