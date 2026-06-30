@@ -369,10 +369,10 @@
     <!-- Posts to the Apps Script web app. Field names below must match
          e.parameter.chapter / .timestamp / .page / .userAgent
          in your code.gs doPost(e). -->
-    <form id="gate-form" method="POST" target="logframe"
-          action="https://script.google.com/macros/s/AKfycbwaSLxGutkTaxKPORHSKkLD3jojl1OaNQzKg1fZLWKXreIiBt0bJyFFRNp30pBuSSOW/exec" novalidate>
+    <form id="gate-form" method="POST" target="logframe" autocomplete="off"
+          action="https://script.google.com/macros/s/AKfycbzLMJktQMwQ8-pHuhPiT7laswbxE4DWIYUGFRzmW0ZZIJtoMqNwJopORtEJWTsPQutx/exec" novalidate>
       <label for="g-chapter">Chapter</label>
-      <input id="g-chapter" name="chapter" type="text" required placeholder="e.g. YPO MENA" />
+      <input id="g-chapter" name="chapter" type="text" required placeholder="e.g. YPO MENA" autocomplete="off" autocapitalize="words" spellcheck="false" />
 
       <input type="hidden" name="timestamp" id="g-ts" />
       <input type="hidden" name="page" value="United MENA Playbook" />
@@ -762,6 +762,7 @@
       }
       // valid — let the form POST to the hidden iframe (logs to Apps Script)
       err.hidden=true;
+      chapterEl.value=chapterEl.value.trim();
       document.getElementById('g-ts').value=new Date().toISOString();
       document.getElementById('g-ua').value=navigator.userAgent;
       submitting=true;
