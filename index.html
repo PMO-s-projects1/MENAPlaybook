@@ -271,9 +271,57 @@
   @media (prefers-reduced-motion:reduce){.reveal{opacity:1;transform:none;}}
 
   :focus-visible{outline:3px solid var(--gold);outline-offset:2px;}
+
+  /* ============================================================
+     ACCESS GATE  — viewers confirm name + chapter before entry;
+     details are logged to the Apps Script endpoint.
+     ============================================================ */
+  body.locked{overflow:hidden;height:100vh;}
+  #gate{
+    position:fixed;inset:0;z-index:9999;
+    display:flex;flex-direction:column;justify-content:center;align-items:center;
+    background:var(--blue);color:#fff;overflow:auto;
+    padding:clamp(24px,5vw,56px) var(--pad);
+    transition:opacity .55s ease,visibility .55s ease;
+  }
+  #gate.hidden{opacity:0;visibility:hidden;pointer-events:none;}
+  #gate .tri-field{position:absolute;inset:0;z-index:0;opacity:.10;}
+  #gate .tri-field svg{width:100%;height:100%;}
+  #gate .gate-brand{
+    --logo-gap:var(--blue);color:#fff;
+    position:absolute;top:clamp(20px,4vw,40px);left:var(--pad);z-index:2;
+  }
+  .gate-card{
+    position:relative;z-index:2;width:100%;max-width:430px;
+    background:#fff;color:var(--ink);border-radius:14px;
+    padding:clamp(26px,4vw,38px);border-top:4px solid var(--gold);
+    box-shadow:0 30px 80px -30px rgba(0,0,0,.6);
+  }
+  .gate-card h2{font-size:clamp(1.5rem,4vw,2rem);letter-spacing:-.02em;margin:.1rem 0 .5rem;}
+  .gate-sub{color:var(--muted);font-size:.95rem;margin-bottom:1.4rem;}
+  #gate-form label{display:block;font-size:.8rem;font-weight:600;letter-spacing:.02em;margin:1rem 0 .35rem;color:var(--ink);}
+  #gate-form label.opt{display:flex;justify-content:space-between;align-items:baseline;}
+  #gate-form label.opt span{font-weight:500;color:var(--muted);text-transform:uppercase;font-size:.66rem;letter-spacing:.1em;}
+  #gate-form input{
+    width:100%;padding:.8rem .9rem;font:inherit;font-size:.95rem;
+    border:1.5px solid var(--line);border-radius:8px;background:#fff;color:var(--ink);
+    transition:border-color .15s ease,box-shadow .15s ease;
+  }
+  #gate-form input:focus{outline:none;border-color:var(--azure);box-shadow:0 0 0 3px rgba(0,96,172,.15);}
+  .gate-err{color:var(--orange);font-size:.85rem;font-weight:600;margin:1rem 0 0;}
+  #g-btn{
+    width:100%;margin-top:1.5rem;padding:.95rem 1rem;font:inherit;font-weight:700;font-size:.98rem;
+    letter-spacing:.01em;color:#fff;background:var(--blue);border:0;border-radius:8px;cursor:pointer;
+    transition:background .18s ease,transform .1s ease;
+  }
+  #g-btn:hover{background:#072a5c;}
+  #g-btn:active{transform:translateY(1px);}
+  #g-btn:disabled{opacity:.7;cursor:default;}
+  .gate-fine{margin:1.4rem 0 0;font-size:.74rem;line-height:1.5;color:var(--muted);}
+  @media(max-width:520px){ #gate{justify-content:flex-start;} #gate .gate-brand{position:static;margin:0 0 1.4rem;} }
 </style>
 </head>
-<body>
+<body class="locked">
 
 <!-- ====== reusable YPO pyramid mark ====== -->
 <svg width="0" height="0" style="position:absolute" aria-hidden="true">
@@ -298,6 +346,48 @@
     </g>
   </symbol>
 </svg>
+
+<!-- ====== ACCESS GATE ====== -->
+<div id="gate" role="dialog" aria-modal="true" aria-labelledby="gate-title">
+  <div class="tri-field" aria-hidden="true">
+    <svg viewBox="0 0 600 600" preserveAspectRatio="xMaxYMax slice" style="color:#fff">
+      <use href="#tri-field" x="180" y="60" width="520" height="520"/>
+    </svg>
+  </div>
+
+  <span class="lockup gate-brand">
+    <svg class="mark"><use href="#ypo-mark"/></svg>
+    <span class="word">YPO</span>
+    <span class="region">Middle East /<br>North Africa Region</span>
+  </span>
+
+  <div class="gate-card">
+    <div class="eyebrow" style="color:var(--azure);margin-bottom:.6rem">United MENA Playbook</div>
+    <h2 id="gate-title">Confirm your details to enter</h2>
+    <p class="gate-sub">Enter your chapter to open the playbook. Your access is recorded for the region.</p>
+
+    <!-- Posts to the Apps Script web app. Field names below must match
+         e.parameter.chapter / .timestamp / .page / .userAgent
+         in your code.gs doPost(e). -->
+    <form id="gate-form" method="POST" target="logframe"
+          action="https://script.google.com/macros/s/AKfycbwaSLxGutkTaxKPORHSKkLD3jojl1OaNQzKg1fZLWKXreIiBt0bJyFFRNp30pBuSSOW/exec" novalidate>
+      <label for="g-chapter">Chapter</label>
+      <input id="g-chapter" name="chapter" type="text" required placeholder="e.g. YPO MENA" />
+
+      <input type="hidden" name="timestamp" id="g-ts" />
+      <input type="hidden" name="page" value="United MENA Playbook" />
+      <input type="hidden" name="userAgent" id="g-ua" />
+
+      <p class="gate-err" id="g-err" hidden>Please enter your chapter.</p>
+      <button type="submit" id="g-btn">Open the playbook</button>
+    </form>
+
+    <p class="gate-fine">Confidential — for YPO MENA member and officer use. Access is logged to support regional governance.</p>
+  </div>
+
+  <iframe name="logframe" id="logframe" title="logger" style="position:absolute;width:0;height:0;border:0;visibility:hidden" aria-hidden="true"></iframe>
+  <noscript><p style="position:relative;z-index:2;color:#fff;text-align:center;margin-top:1.4rem">JavaScript is required to open this playbook.</p></noscript>
+</div>
 
 <!-- ====== top nav ====== -->
 <nav class="top">
@@ -639,6 +729,49 @@
     });
   },{rootMargin:'-45% 0px -50% 0px'});
   ids.forEach(id=>{const el=document.getElementById(id);if(el)spy.observe(el);});
+</script>
+
+<script>
+  // ===== access gate: log to Apps Script, then reveal the playbook =====
+  (function(){
+    const gate=document.getElementById('gate');
+    const form=document.getElementById('gate-form');
+    const err=document.getElementById('g-err');
+    const btn=document.getElementById('g-btn');
+    const chapterEl=document.getElementById('g-chapter');
+    const frame=document.getElementById('logframe');
+    let submitting=false, revealed=false;
+
+    setTimeout(()=>{ if(chapterEl) chapterEl.focus(); },250);
+
+    function reveal(){
+      if(revealed) return; revealed=true;
+      gate.classList.add('hidden');
+      document.body.classList.remove('locked');
+      window.scrollTo(0,0);
+      setTimeout(()=>{ gate.setAttribute('hidden',''); },600);
+    }
+
+    form.addEventListener('submit',function(e){
+      if(submitting){ e.preventDefault(); return; }
+      if(!chapterEl.value.trim()){
+        e.preventDefault();
+        err.hidden=false;
+        chapterEl.focus();
+        return;
+      }
+      // valid — let the form POST to the hidden iframe (logs to Apps Script)
+      err.hidden=true;
+      document.getElementById('g-ts').value=new Date().toISOString();
+      document.getElementById('g-ua').value=navigator.userAgent;
+      submitting=true;
+      btn.textContent='Verifying…';
+      setTimeout(()=>{ btn.disabled=true; },50);
+      // reveal when the logger responds, with a timeout fallback so no one gets stuck
+      frame.addEventListener('load', reveal, {once:true});
+      setTimeout(reveal, 1400);
+    });
+  })();
 </script>
 </body>
 </html>
