@@ -1,0 +1,644 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>United MENA Playbook — YPO MENA</title>
+<meta name="description" content="The United MENA Playbook — regional governance, chapter commitments, conduct committee best practices and the officer roadmap for YPO Middle East / North Africa." />
+
+<!-- Working fallback face loaded from Google Fonts. Replace with licensed Neue Montreal (see /fonts note in the <style> block) for the exact brand face. -->
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+
+<style>
+  /* ============================================================
+     BRAND FONT
+     Drop the licensed Neue Montreal .woff2 files into a /fonts
+     folder next to this file and these rules pick them up.
+     Until then, Manrope (loaded above) is the visual stand-in.
+     ============================================================ */
+  @font-face{
+    font-family:'Neue Montreal';
+    src:url('./fonts/PPNeueMontreal-Book.woff2') format('woff2');
+    font-weight:400; font-style:normal; font-display:swap;
+  }
+  @font-face{
+    font-family:'Neue Montreal';
+    src:url('./fonts/PPNeueMontreal-Medium.woff2') format('woff2');
+    font-weight:500; font-style:normal; font-display:swap;
+  }
+  @font-face{
+    font-family:'Neue Montreal';
+    src:url('./fonts/PPNeueMontreal-Bold.woff2') format('woff2');
+    font-weight:700; font-style:normal; font-display:swap;
+  }
+
+  :root{
+    --blue:#041e42;     /* Global Dark Blue */
+    --gold:#d69d23;     /* Gold            */
+    --azure:#0060ac;    /* Vivid Azure     */
+    --orange:#ea7600;   /* Orange          */
+    --white:#ffffff;
+    --ink:#202020;      /* Black           */
+    --paper:#eceef1;    /* cover-page grey */
+    --paper-2:#f6f7f8;
+    --line:#d9dde3;
+    --muted:#5b6675;
+
+    --font:'Neue Montreal','Manrope',system-ui,-apple-system,Segoe UI,Roboto,sans-serif;
+    --maxw:1080px;
+    --pad:clamp(20px,5vw,72px);
+  }
+
+  *{box-sizing:border-box;}
+  html{scroll-behavior:smooth;}
+  @media (prefers-reduced-motion:reduce){ html{scroll-behavior:auto;} *{animation:none!important;transition:none!important;} }
+
+  body{
+    margin:0;
+    font-family:var(--font);
+    color:var(--ink);
+    background:var(--white);
+    line-height:1.55;
+    -webkit-font-smoothing:antialiased;
+    text-rendering:optimizeLegibility;
+  }
+  h1,h2,h3,h4{margin:0;line-height:1.05;font-weight:700;letter-spacing:-.02em;}
+  p{margin:0 0 1em;}
+  a{color:var(--azure);text-decoration:none;}
+  a:hover{text-decoration:underline;}
+
+  /* ---------- YPO pyramid mark ---------- */
+  .mark{width:1em;height:.9em;display:inline-block;color:inherit;}
+  .lockup{display:flex;align-items:center;gap:.55rem;}
+  .lockup .mark{width:38px;height:33px;flex:none;}
+  .lockup .word{font-weight:700;font-size:1.5rem;letter-spacing:.02em;line-height:1;}
+  .lockup .region{
+    border-left:1.5px solid currentColor;padding-left:.55rem;margin-left:.15rem;
+    font-size:.62rem;font-weight:500;line-height:1.15;letter-spacing:.04em;
+    text-transform:uppercase;opacity:.92;
+  }
+
+  /* ---------- top nav ---------- */
+  nav.top{
+    position:sticky;top:0;z-index:50;
+    display:flex;align-items:center;justify-content:space-between;gap:1rem;
+    padding:.7rem var(--pad);
+    background:rgba(4,30,66,.96);
+    backdrop-filter:blur(8px);
+    color:var(--white);
+    border-bottom:1px solid rgba(255,255,255,.12);
+  }
+  nav.top .lockup{--logo-gap:var(--blue);color:var(--white);}
+  nav.top .links{display:flex;gap:1.4rem;flex-wrap:wrap;}
+  nav.top .links a{
+    color:rgba(255,255,255,.82);font-size:.82rem;font-weight:500;
+    letter-spacing:.02em;text-decoration:none;padding:.2rem 0;
+    border-bottom:2px solid transparent;
+  }
+  nav.top .links a:hover,nav.top .links a.active{color:#fff;border-color:var(--gold);}
+  @media(max-width:760px){ nav.top .links{display:none;} }
+
+  /* ---------- shared section frame ---------- */
+  .wrap{max-width:var(--maxw);margin:0 auto;padding:clamp(48px,7vw,104px) var(--pad);}
+  .eyebrow{
+    display:inline-flex;align-items:center;gap:.5rem;
+    font-size:.72rem;font-weight:600;letter-spacing:.16em;text-transform:uppercase;
+    color:var(--azure);margin-bottom:1.2rem;
+  }
+  .eyebrow::before{content:"";width:26px;height:2px;background:var(--gold);display:inline-block;}
+
+  /* ============================================================
+     FRONT COVER
+     ============================================================ */
+  .cover{
+    position:relative;overflow:hidden;
+    min-height:100vh;display:flex;flex-direction:column;
+    justify-content:space-between;
+    background:var(--blue);color:var(--white);
+    padding:clamp(28px,5vw,64px) var(--pad);
+  }
+  .cover .lockup{--logo-gap:var(--blue);color:#fff;position:relative;z-index:2;}
+  .cover .tri-field{position:absolute;inset:0;z-index:0;opacity:.10;}
+  .cover .tri-field svg{width:100%;height:100%;}
+  .cover .center{position:relative;z-index:2;margin:auto 0;}
+  .cover .kicker{
+    font-size:.8rem;letter-spacing:.32em;text-transform:uppercase;
+    color:var(--gold);font-weight:600;margin-bottom:1.4rem;
+  }
+  .cover h1{
+    font-size:clamp(3rem,11vw,7.5rem);font-weight:700;letter-spacing:-.03em;
+    line-height:.92;
+  }
+  .cover h1 .li{color:var(--gold);}
+  .cover .sub{
+    margin-top:1.6rem;max-width:46ch;font-size:clamp(1rem,2.2vw,1.25rem);
+    color:rgba(255,255,255,.82);font-weight:400;
+  }
+  .cover .foot{
+    position:relative;z-index:2;display:flex;justify-content:space-between;
+    align-items:flex-end;gap:1rem;flex-wrap:wrap;
+    font-size:.78rem;letter-spacing:.04em;color:rgba(255,255,255,.7);
+  }
+  .pill{
+    display:inline-block;border:1px solid rgba(255,255,255,.35);
+    border-radius:999px;padding:.3rem .8rem;font-size:.7rem;
+    letter-spacing:.14em;text-transform:uppercase;color:rgba(255,255,255,.85);
+  }
+
+  /* ============================================================
+     TABLE OF CONTENTS
+     ============================================================ */
+  .toc{background:var(--paper-2);border-bottom:1px solid var(--line);}
+  .toc ol{list-style:none;margin:1.6rem 0 0;padding:0;}
+  .toc li a{
+    display:grid;grid-template-columns:auto 1fr auto;align-items:baseline;gap:1.2rem;
+    padding:1.15rem 0;border-top:1px solid var(--line);
+    color:var(--ink);text-decoration:none;transition:padding .2s ease;
+  }
+  .toc li:last-child a{border-bottom:1px solid var(--line);}
+  .toc li a:hover{padding-left:.6rem;}
+  .toc .num{font-size:.9rem;font-weight:600;color:var(--gold);font-variant-numeric:tabular-nums;}
+  .toc .ttl{font-size:clamp(1.2rem,3vw,1.7rem);font-weight:600;letter-spacing:-.02em;}
+  .toc li a:hover .ttl{color:var(--azure);}
+  .toc .meta{font-size:.78rem;color:var(--muted);}
+
+  /* ============================================================
+     SECTION DIVIDER "CHAPTER COVER"
+     The oversized translucent title is the YPO signature device.
+     ============================================================ */
+  .divider{
+    position:relative;overflow:hidden;background:var(--paper);
+    min-height:78vh;display:flex;align-items:center;
+    padding:clamp(48px,8vw,120px) var(--pad);
+    border-top:1px solid var(--line);border-bottom:1px solid var(--line);
+  }
+  .divider .tri-field{position:absolute;inset:0;opacity:.5;z-index:0;color:#dde1e7;}
+  .divider .tri-field svg{position:absolute;right:-4%;bottom:-10%;width:62%;height:auto;}
+  .divider .inner{position:relative;z-index:2;max-width:var(--maxw);margin:0 auto;width:100%;}
+  .divider .secnum{
+    font-size:.9rem;font-weight:600;letter-spacing:.2em;color:var(--azure);
+    text-transform:uppercase;margin-bottom:.6rem;
+  }
+  .divider .big{
+    font-size:clamp(2.6rem,11vw,7rem);font-weight:700;letter-spacing:-.03em;
+    line-height:.95;color:#c7ccd4; /* faded oversize title */
+  }
+  .divider .lead{
+    margin-top:1.4rem;max-width:54ch;color:#3c4654;
+    font-size:clamp(1rem,2.2vw,1.18rem);
+  }
+
+  /* ============================================================
+     CONTENT BLOCKS
+     ============================================================ */
+  .lede{font-size:clamp(1.15rem,2.6vw,1.5rem);font-weight:500;letter-spacing:-.01em;max-width:60ch;color:var(--ink);}
+
+  /* stat row */
+  .stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(170px,1fr));gap:1px;background:var(--line);border:1px solid var(--line);margin:2.4rem 0;}
+  .stat{background:var(--white);padding:1.6rem 1.4rem;}
+  .stat .n{font-size:clamp(2.4rem,6vw,3.4rem);font-weight:700;letter-spacing:-.03em;color:var(--blue);line-height:1;}
+  .stat .n.gold{color:var(--gold);}
+  .stat .l{margin-top:.5rem;font-size:.82rem;color:var(--muted);font-weight:500;}
+
+  /* embed frame */
+  .embed{margin:2rem 0 1rem;border:1px solid var(--line);border-radius:10px;overflow:hidden;box-shadow:0 14px 40px -24px rgba(4,30,66,.5);}
+  .embed .bar{display:flex;align-items:center;justify-content:space-between;gap:1rem;background:var(--blue);color:#fff;padding:.7rem 1rem;font-size:.82rem;}
+  .embed .bar .dot{width:8px;height:8px;border-radius:50%;background:#4ade80;display:inline-block;margin-right:.5rem;box-shadow:0 0 0 4px rgba(74,222,128,.18);}
+  .embed .bar a{color:#fff;font-weight:600;font-size:.78rem;}
+  .embed iframe{display:block;width:100%;height:760px;border:0;background:#fff;}
+
+  /* commitments */
+  .legend{display:flex;gap:1.6rem;flex-wrap:wrap;font-size:.8rem;color:var(--muted);margin:1.2rem 0 2rem;}
+  .legend span{display:inline-flex;align-items:center;gap:.45rem;}
+  .tag{font-size:.62rem;font-weight:700;letter-spacing:.08em;text-transform:uppercase;padding:.15rem .5rem;border-radius:4px;}
+  .tag.new{background:rgba(0,96,172,.12);color:var(--azure);}
+  .tag.rev{background:rgba(214,157,35,.16);color:#9a6e0f;}
+  .commits{counter-reset:c;list-style:none;margin:0;padding:0;display:grid;gap:1px;background:var(--line);border:1px solid var(--line);}
+  .commits li{counter-increment:c;background:#fff;padding:1.25rem 1.4rem;display:grid;grid-template-columns:auto 1fr;gap:1.1rem;}
+  .commits li::before{content:counter(c,decimal-leading-zero);font-weight:700;color:var(--gold);font-variant-numeric:tabular-nums;font-size:1rem;padding-top:.1rem;}
+  .commits h4{font-size:1.02rem;font-weight:700;margin-bottom:.25rem;display:flex;align-items:center;gap:.6rem;flex-wrap:wrap;}
+  .commits p{margin:0;color:#41495a;font-size:.93rem;}
+
+  /* best-practice cards */
+  .cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:1px;background:var(--line);border:1px solid var(--line);margin-top:1rem;}
+  .card{background:#fff;padding:1.5rem 1.4rem;}
+  .card .k{font-size:.72rem;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--azure);margin-bottom:.6rem;}
+  .card h4{font-size:1.1rem;margin-bottom:.55rem;}
+  .card ul{margin:.5rem 0 0;padding-left:1.1rem;color:#41495a;font-size:.9rem;}
+  .card li{margin:.3rem 0;}
+
+  .pullquote{
+    margin:2.4rem 0;padding:1.8rem 2rem;background:var(--blue);color:#fff;border-radius:10px;
+    font-size:clamp(1.4rem,4vw,2.2rem);font-weight:700;letter-spacing:-.02em;line-height:1.05;
+  }
+  .pullquote span{color:var(--gold);}
+
+  /* two-step process */
+  .flow{display:grid;grid-template-columns:repeat(3,1fr);gap:1rem;margin:1.6rem 0;}
+  @media(max-width:680px){.flow{grid-template-columns:1fr;}}
+  .flow .col{border:1px solid var(--line);border-radius:8px;overflow:hidden;}
+  .flow .head{padding:.8rem 1rem;color:#fff;font-weight:700;font-size:.92rem;letter-spacing:.02em;}
+  .flow .col.ch .head{background:var(--azure);}
+  .flow .col.nw .head{background:var(--gold);}
+  .flow .col.gl .head{background:#5b6675;}
+  .flow .step{padding:.9rem 1rem;border-top:1px solid var(--line);font-size:.86rem;}
+  .flow .step b{display:block;font-size:.68rem;letter-spacing:.1em;text-transform:uppercase;color:var(--muted);margin-bottom:.2rem;}
+
+  .channels{display:flex;flex-wrap:wrap;gap:.6rem;margin-top:1rem;}
+  .channels span{border:1px solid var(--line);border-radius:999px;padding:.4rem .9rem;font-size:.82rem;background:#fff;}
+
+  /* roadmap timeline */
+  .timeline{position:relative;margin-top:2rem;padding-left:1.6rem;}
+  .timeline::before{content:"";position:absolute;left:5px;top:.4rem;bottom:.4rem;width:2px;background:var(--line);}
+  .phase{position:relative;padding:0 0 1.8rem 1.4rem;}
+  .phase::before{content:"";position:absolute;left:-1.6rem;top:.35rem;width:12px;height:12px;border-radius:50%;background:var(--gold);box-shadow:0 0 0 4px var(--paper-2);}
+  .phase .when{font-size:.74rem;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--azure);}
+  .phase h4{font-size:1.05rem;margin:.2rem 0 .5rem;}
+  .phase ul{margin:0;padding-left:1.1rem;color:#41495a;font-size:.92rem;}
+  .phase li{margin:.28rem 0;}
+
+  /* footer */
+  footer{background:var(--blue);color:#fff;padding:clamp(40px,6vw,72px) var(--pad);}
+  footer .lockup{--logo-gap:var(--blue);color:#fff;margin-bottom:1.4rem;}
+  footer .grid{max-width:var(--maxw);margin:0 auto;display:flex;justify-content:space-between;gap:2rem;flex-wrap:wrap;align-items:flex-end;}
+  footer .small{font-size:.78rem;color:rgba(255,255,255,.62);max-width:46ch;line-height:1.6;}
+  footer .small strong{color:rgba(255,255,255,.92);}
+
+  .reveal{opacity:0;transform:translateY(16px);transition:opacity .6s ease,transform .6s ease;}
+  .reveal.in{opacity:1;transform:none;}
+  @media (prefers-reduced-motion:reduce){.reveal{opacity:1;transform:none;}}
+
+  :focus-visible{outline:3px solid var(--gold);outline-offset:2px;}
+</style>
+</head>
+<body>
+
+<!-- ====== reusable YPO pyramid mark ====== -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="ypo-mark" viewBox="0 0 120 104">
+    <g fill="currentColor" stroke="var(--logo-gap,#fff)" stroke-width="2.2" stroke-linejoin="round">
+      <polygon points="60,0 45,26 75,26"/>
+      <polygon points="45,26 30,52 60,52"/><polygon points="75,26 60,52 90,52"/><polygon points="45,26 75,26 60,52"/>
+      <polygon points="30,52 15,78 45,78"/><polygon points="60,52 45,78 75,78"/><polygon points="90,52 75,78 105,78"/>
+      <polygon points="30,52 60,52 45,78"/><polygon points="60,52 90,52 75,78"/>
+      <polygon points="15,78 0,104 30,104"/><polygon points="45,78 30,104 60,104"/><polygon points="75,78 60,104 90,104"/><polygon points="105,78 90,104 120,104"/>
+      <polygon points="15,78 45,78 30,104"/><polygon points="45,78 75,78 60,104"/><polygon points="75,78 105,78 90,104"/>
+    </g>
+  </symbol>
+
+  <!-- big triangle field used on covers -->
+  <symbol id="tri-field" viewBox="0 0 600 600">
+    <g fill="currentColor">
+      <polygon points="300,40 180,250 420,250"/>
+      <polygon points="180,250 60,460 300,460"/>
+      <polygon points="420,250 300,460 540,460"/>
+      <polygon points="300,250 240,355 360,355" opacity=".6"/>
+    </g>
+  </symbol>
+</svg>
+
+<!-- ====== top nav ====== -->
+<nav class="top">
+  <span class="lockup" aria-label="YPO Middle East / North Africa">
+    <svg class="mark"><use href="#ypo-mark"/></svg>
+    <span class="word">YPO</span>
+    <span class="region">Middle East /<br>North Africa</span>
+  </span>
+  <span class="links">
+    <a href="#regional-data">Regional Data</a>
+    <a href="#chapter-commitments">Chapter Commitments</a>
+    <a href="#conduct-committee">Conduct Committee</a>
+    <a href="#officer-roadmap">Officer Roadmap</a>
+  </span>
+</nav>
+
+<!-- ====== FRONT COVER ====== -->
+<header class="cover">
+  <div class="tri-field" aria-hidden="true">
+    <svg viewBox="0 0 600 600" preserveAspectRatio="xMaxYMax slice" style="color:#ffffff">
+      <use href="#tri-field" x="180" y="60" width="520" height="520"/>
+    </svg>
+  </div>
+
+  <span class="lockup" style="position:relative;z-index:2">
+    <svg class="mark"><use href="#ypo-mark"/></svg>
+    <span class="word">YPO</span>
+    <span class="region">Middle East /<br>North Africa Region</span>
+  </span>
+
+  <div class="center">
+    <div class="kicker">United MENA</div>
+    <h1>The <span class="li">United&nbsp;MENA</span><br>Playbook</h1>
+    <p class="sub">One regional source of truth — governance, chapter commitments, conduct standards and the officer journey, for every chapter across the Middle East and North Africa.</p>
+  </div>
+
+  <div class="foot">
+    <span>Regional Governance Resource · FY25–26</span>
+    <span class="pill">Sample build</span>
+  </div>
+</header>
+
+<!-- ====== TABLE OF CONTENTS ====== -->
+<section class="toc">
+  <div class="wrap" style="padding-top:clamp(40px,6vw,84px);padding-bottom:clamp(40px,6vw,84px)">
+    <span class="eyebrow">Contents</span>
+    <h2 style="font-size:clamp(1.8rem,5vw,2.8rem)">What's inside</h2>
+    <ol>
+      <li><a href="#regional-data"><span class="num">01</span><span class="ttl">Regional Data</span><span class="meta">Live dashboard</span></a></li>
+      <li><a href="#chapter-commitments"><span class="num">02</span><span class="ttl">Chapter Commitments</span><span class="meta">The 14 metrics</span></a></li>
+      <li><a href="#conduct-committee"><span class="num">03</span><span class="ttl">Conduct Committee Best Practices</span><span class="meta">Protocol &amp; review</span></a></li>
+      <li><a href="#officer-roadmap"><span class="num">04</span><span class="ttl">Officer Roadmap</span><span class="meta">The chair journey</span></a></li>
+    </ol>
+  </div>
+</section>
+
+<!-- ========================================================= -->
+<!-- 01 · REGIONAL DATA                                         -->
+<!-- ========================================================= -->
+<section class="divider" id="regional-data">
+  <div class="tri-field" aria-hidden="true"><svg viewBox="0 0 600 600"><use href="#tri-field"/></svg></div>
+  <div class="inner">
+    <div class="secnum">01 — Section</div>
+    <h2 class="big">Regional<br>Data</h2>
+    <p class="lead">The live picture of MENA chapter health — pulled straight from the regional dashboard, so the numbers in this playbook are never out of date.</p>
+  </div>
+</section>
+
+<div class="wrap reveal">
+  <span class="eyebrow">MENA GLC Registrations</span>
+  <p class="lede">Where the region stands on core-officer training and chapter commitments, refreshed at source.</p>
+
+  <div class="stats">
+    <div class="stat"><div class="n">27</div><div class="l">Chapters in region</div></div>
+    <div class="stat"><div class="n gold">23</div><div class="l">Chapters fully trained</div></div>
+    <div class="stat"><div class="n">4+</div><div class="l">Core officer roles trained / chapter</div></div>
+    <div class="stat"><div class="n" style="font-size:clamp(1.4rem,3.4vw,1.9rem);padding-top:.4rem">05 / 06 / 2026</div><div class="l">Data as of</div></div>
+  </div>
+
+  <div class="embed">
+    <div class="bar">
+      <span><span class="dot"></span>Live — MENA Chapter Commitments</span>
+      <a href="https://ypomenachaptercommitments.vercel.app/" target="_blank" rel="noopener">Open full dashboard ↗</a>
+    </div>
+    <iframe src="https://ypomenachaptercommitments.vercel.app/" title="MENA Chapter Commitments live dashboard" loading="lazy"></iframe>
+  </div>
+  <p style="font-size:.82rem;color:var(--muted)">This panel embeds the live Vercel report. Update the dashboard's data source and this playbook reflects it automatically — no re-publish required.</p>
+</div>
+
+<!-- ========================================================= -->
+<!-- 02 · CHAPTER COMMITMENTS                                   -->
+<!-- ========================================================= -->
+<section class="divider" id="chapter-commitments">
+  <div class="tri-field" aria-hidden="true"><svg viewBox="0 0 600 600"><use href="#tri-field"/></svg></div>
+  <div class="inner">
+    <div class="secnum">02 — Section</div>
+    <h2 class="big">Chapter<br>Commitments</h2>
+    <p class="lead">Fourteen commitments across the strategic areas that shape the member experience — chapter governance, forum, learning and peerdom.</p>
+  </div>
+</section>
+
+<div class="wrap reveal">
+  <span class="eyebrow">The 14 commitments</span>
+  <p class="lede">A shared standard every chapter works toward each fiscal year.</p>
+
+  <div class="legend">
+    <span><span class="tag new">New</span> New metric this year</span>
+    <span><span class="tag rev">Revised</span> Existing metric with revisions</span>
+  </div>
+
+  <ol class="commits">
+    <li><div></div><div><h4>Chapter Charter <span class="tag new">New</span></h4><p>Chapter chair signed or acknowledged the YPO chapter charter (formerly the TLA) during the current fiscal year.</p></div></li>
+    <li><div></div><div><h4>Chapter Bylaws</h4><p>Bylaws (or equivalent legal documentation in the country of incorporation) updated within the current or previous three fiscal years.</p></div></li>
+    <li><div></div><div><h4>Chapter Strategic Plan</h4><p>A chapter strategic plan created or updated within the current or previous three fiscal years.</p></div></li>
+    <li><div></div><div><h4>Core Officer Elect Identification <span class="tag rev">Revised</span></h4><p>All elect core officer roles identified before 1 November (CC, ALO, LO, FO, MO for YPO/Integrated; CC, ALO, LO, FO, MEO for YPO Gold).</p></div></li>
+    <li><div></div><div><h4>Current Core Officers Trained <span class="tag rev">Revised</span></h4><p>Four or more current core officers completed officer training before 1 July.</p></div></li>
+    <li><div></div><div><h4>Chapter RBM Attendance</h4><p>The chapter chair or an officer proxy attended a Regional Board Meeting during the past fiscal year.</p></div></li>
+    <li><div></div><div><h4>Chapter Conduct Committee <span class="tag new">New</span></h4><p>Three or more chapter conduct committee (CCC) members identified for the current fiscal year.</p></div></li>
+    <li><div></div><div><h4>Chapter Manager Workshop</h4><p>Current chapter manager attended a Chapter Manager Workshop within the current or past three fiscal years.</p></div></li>
+    <li><div></div><div><h4>Learning Calendar <span class="tag rev">Revised</span></h4><p>A minimum of four events uploaded by 1 October via Cvent or the Chapter Management Hub.</p></div></li>
+    <li><div></div><div><h4>Trained Forum Moderators</h4><p>Every active member forum has a current, trained forum moderator.</p></div></li>
+    <li><div></div><div><h4>Forum Training <span class="tag rev">Revised</span></h4><p>All primary members who joined on or after 1 July 2024 were forum trained within their first six months.</p></div></li>
+    <li><div></div><div><h4>Forum Data <span class="tag new">New</span></h4><p>Chapter forum data reviewed and updated on the Chapter Management Hub during the current fiscal year.</p></div></li>
+    <li><div></div><div><h4>Chapter Membership <span class="tag new">New</span></h4><p>The chapter roster is verified as accurate and all listed members have paid chapter and YPO global dues for the year.</p></div></li>
+    <li><div></div><div><h4>Minimum Membership Requirements <span class="tag rev">Revised</span></h4><p>Chapter meets minimum membership: approved before 1 July 2024 = 16 primary members; after = 21 primary members.</p></div></li>
+  </ol>
+</div>
+
+<!-- ========================================================= -->
+<!-- 03 · CONDUCT COMMITTEE                                     -->
+<!-- ========================================================= -->
+<section class="divider" id="conduct-committee">
+  <div class="tri-field" aria-hidden="true"><svg viewBox="0 0 600 600"><use href="#tri-field"/></svg></div>
+  <div class="inner">
+    <div class="secnum">03 — Section</div>
+    <h2 class="big">Conduct<br>Committee</h2>
+    <p class="lead">Clear, fair process protects the safe haven of trust. The guiding principle is simple: handle it at the closest level possible.</p>
+  </div>
+</section>
+
+<div class="wrap reveal">
+  <div class="pullquote">If it can be solved at the <span>chapter level</span>, solve it.</div>
+
+  <span class="eyebrow">Best practices</span>
+  <p class="lede">Four moves every chapter should have in place before an issue ever arises.</p>
+
+  <div class="cards">
+    <div class="card">
+      <div class="k">01 · Set up</div>
+      <h4>Establish a CCC annually</h4>
+      <ul>
+        <li>Confirm the committee each year; update chapter health data quarterly.</li>
+        <li>Recommended five members: current chair, past chair, membership / engagement officer, plus two senior board roles.</li>
+        <li>Avoid two members from the same forum.</li>
+      </ul>
+    </div>
+    <div class="card">
+      <div class="k">02 · Process</div>
+      <h4>Follow good process</h4>
+      <ul>
+        <li>Use member-led inquiry to gather the relevant facts.</li>
+        <li>Give the member under review a fair chance to respond.</li>
+        <li>Lean on YPO's review process, sanction guidelines and process diagram.</li>
+      </ul>
+    </div>
+    <div class="card">
+      <div class="k">03 · Escalate</div>
+      <h4>Communicate with the GCC</h4>
+      <ul>
+        <li>Ask questions early — the Global Conduct Committee is a resource.</li>
+        <li>Submit a Fact Finding Form or Decision Notice when action is taken.</li>
+        <li>This lets YPO track outcomes and support chapter decisions.</li>
+      </ul>
+    </div>
+    <div class="card">
+      <div class="k">04 · Protect</div>
+      <h4>Mitigate risk</h4>
+      <ul>
+        <li>Refine chapter bylaws with conduct, insurance and indemnification provisions.</li>
+        <li>Implement chapter-level waivers.</li>
+        <li>Obtain chapter / RALE D&amp;O coverage.</li>
+      </ul>
+    </div>
+  </div>
+
+  <h3 style="margin-top:3rem;font-size:1.4rem">The two-step review process</h3>
+  <p style="color:var(--muted);max-width:60ch">The engagement channel depends on the context of the issue. Step 1 is the fact-intensive initial review; Step 2 is the appeal, focused on due process and fairness.</p>
+  <div class="flow">
+    <div class="col ch">
+      <div class="head">Chapters &amp; Regions</div>
+      <div class="step"><b>Step 1 · Initial</b>Chapter Conduct Committee</div>
+      <div class="step"><b>Step 2 · Appeal</b>Global Conduct Committee</div>
+    </div>
+    <div class="col nw">
+      <div class="head">Networks</div>
+      <div class="step"><b>Step 1 · Initial</b>Network Conduct Committee</div>
+      <div class="step"><b>Step 2 · Appeal</b>Global Conduct Committee</div>
+    </div>
+    <div class="col gl">
+      <div class="head">Global</div>
+      <div class="step"><b>Step 1 · Initial</b>Global Conduct Committee</div>
+      <div class="step"><b>Step 2 · Appeal</b>GCC Review Panel</div>
+    </div>
+  </div>
+
+  <h3 style="margin-top:2.4rem;font-size:1.15rem">Where to report a concern</h3>
+  <div class="channels">
+    <span>EthicsPoint</span>
+    <span>Global Conduct Committee Chair</span>
+    <span>Chief Executive Officer</span>
+    <span>Chief People Officer</span>
+    <span>Chapter Chair / Network Committee Chair</span>
+  </div>
+</div>
+
+<!-- ========================================================= -->
+<!-- 04 · OFFICER ROADMAP                                       -->
+<!-- ========================================================= -->
+<section class="divider" id="officer-roadmap">
+  <div class="tri-field" aria-hidden="true"><svg viewBox="0 0 600 600"><use href="#tri-field"/></svg></div>
+  <div class="inner">
+    <div class="secnum">04 — Section</div>
+    <h2 class="big">Officer<br>Roadmap</h2>
+    <p class="lead">Everything a chapter chair needs to know about the journey — a month-by-month guide from appointment through a confident handover.</p>
+  </div>
+</section>
+
+<div class="wrap reveal">
+  <span class="eyebrow">The chapter chair journey</span>
+  <p class="lede">Chairs are appointed in November for a one-year term beginning in July.</p>
+
+  <div class="timeline">
+    <div class="phase">
+      <div class="when">Pre-term · November</div>
+      <h4>Explore the role</h4>
+      <ul><li>Chapters appoint chairs for the one-year journey beginning in July.</li></ul>
+    </div>
+    <div class="phase">
+      <div class="when">January – March</div>
+      <h4>Prepare &amp; connect</h4>
+      <ul>
+        <li>Review the role description and watch the chapter chair essentials video.</li>
+        <li>Review chapter chair resources and assess data.</li>
+        <li>Connect with outgoing and incoming chairs to begin the transition.</li>
+        <li>Build a chapter conduct committee.</li>
+        <li>Attend the Chapter Chair Workshop at the Global Leadership Conference.</li>
+      </ul>
+    </div>
+    <div class="phase">
+      <div class="when">April – June</div>
+      <h4>Set the vision</h4>
+      <ul>
+        <li>Define your vision, objectives and goals for the year.</li>
+        <li>Conduct the chapter health survey and review available data.</li>
+        <li>If applicable, attend the Q4 regional governance meeting (e.g. RBM) and review pre-reads.</li>
+        <li>Host a strategic planning / game-plan session and secure approval.</li>
+      </ul>
+    </div>
+    <div class="phase">
+      <div class="when">July – September</div>
+      <h4>Term begins</h4>
+      <ul>
+        <li>Schedule 1:1 onboarding with your regional chair.</li>
+        <li>Review chapter commitments and how chapter health is measured.</li>
+        <li>Host chapter ExCo / board meetings; support membership renewals.</li>
+        <li>Allocate financial support to your officers.</li>
+      </ul>
+    </div>
+    <div class="phase">
+      <div class="when">October – December</div>
+      <h4>Build momentum</h4>
+      <ul>
+        <li>Attend the Q2 regional governance meeting and review pre-reads.</li>
+        <li>Get the chapter succession plan in place by 1 November.</li>
+        <li>Promote Officer Essentials and GLC attendance to incoming officers.</li>
+      </ul>
+    </div>
+    <div class="phase">
+      <div class="when">January – March (year two)</div>
+      <h4>Transition knowledge</h4>
+      <ul>
+        <li>Review chapter health metrics and plan improvements.</li>
+        <li>Begin transitioning knowledge to your successor.</li>
+        <li>Encourage your chapter manager to attend the Chapter Manager Workshop.</li>
+      </ul>
+    </div>
+    <div class="phase">
+      <div class="when">April – May</div>
+      <h4>Recognise &amp; prepare</h4>
+      <ul>
+        <li>Prepare for the YPO Global Awards Program.</li>
+        <li>Support your incoming chair with a strategic planning session.</li>
+      </ul>
+    </div>
+    <div class="phase">
+      <div class="when">June</div>
+      <h4>Hand over well</h4>
+      <ul>
+        <li>Ensure a proper handover to the incoming chair.</li>
+        <li>Send farewell notes, host a graduation ceremony and celebrate your peers.</li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+<!-- ====== FOOTER ====== -->
+<footer>
+  <div class="grid">
+    <div>
+      <span class="lockup">
+        <svg class="mark"><use href="#ypo-mark"/></svg>
+        <span class="word">YPO</span>
+        <span class="region">Middle East /<br>North Africa Region</span>
+      </span>
+      <p class="small"><strong>The United MENA Playbook.</strong> A regional governance resource for YPO MENA chapter leaders. Confidential — for member and officer use within the region.</p>
+    </div>
+    <div class="small">
+      Sample build for layout review<br>
+      FY25–26 · v0.1
+    </div>
+  </div>
+</footer>
+
+<script>
+  // scroll reveal
+  const io=new IntersectionObserver((es)=>{es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target);}});},{threshold:.12});
+  document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
+
+  // nav scrollspy
+  const links=[...document.querySelectorAll('nav.top .links a')];
+  const ids=links.map(a=>a.getAttribute('href').slice(1));
+  const spy=new IntersectionObserver((es)=>{
+    es.forEach(e=>{
+      if(e.isIntersecting){
+        links.forEach(l=>l.classList.remove('active'));
+        const m=links.find(l=>l.getAttribute('href')==='#'+e.target.id);
+        if(m)m.classList.add('active');
+      }
+    });
+  },{rootMargin:'-45% 0px -50% 0px'});
+  ids.forEach(id=>{const el=document.getElementById(id);if(el)spy.observe(el);});
+</script>
+</body>
+</html>
