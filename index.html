@@ -80,6 +80,7 @@
     text-transform:uppercase;opacity:.92;
   }
   .brand-logo{height:clamp(64px,9vw,92px);width:auto;display:block;}
+  .brand-logo-nav{height:36px;width:auto;display:block;}
 
   /* ---------- top nav ---------- */
   nav.top{
@@ -223,8 +224,8 @@
   .commits p{margin:0;color:#41495a;font-size:.93rem;}
 
   /* best-practice cards */
-  .cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:1px;background:var(--line);border:1px solid var(--line);margin-top:1rem;}
-  .card{background:#fff;padding:1.5rem 1.4rem;}
+  .cards{display:flex;flex-wrap:wrap;justify-content:center;gap:1px;background:var(--line);border:1px solid var(--line);margin-top:1rem;}
+  .card{background:#fff;padding:1.5rem 1.4rem;flex:1 1 250px;min-width:250px;max-width:320px;}
   .card .k{font-size:.72rem;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--azure);margin-bottom:.6rem;}
   .card h4{font-size:1.1rem;margin-bottom:.55rem;}
   .card ul{margin:.5rem 0 0;padding-left:1.1rem;color:#41495a;font-size:.9rem;}
@@ -299,25 +300,17 @@
   .stub-list ul{list-style:circle;margin:.3rem 0 .3rem 1rem;padding-left:1rem;font-size:.87rem;color:var(--muted);}
   .stub-list ul ul{font-size:.84rem;list-style:"– ";}
 
-  /* nested table of contents */
-  .toc-group{border-top:1px solid var(--line);padding:1.1rem 0;}
-  .toc-group:last-child{border-bottom:1px solid var(--line);}
-  .toc-group>a{
-    display:grid;grid-template-columns:auto 1fr;align-items:baseline;gap:1.2rem;
-    color:var(--ink);text-decoration:none;
-  }
-  .toc-group>a .num{font-size:.9rem;font-weight:600;color:var(--gold);font-variant-numeric:tabular-nums;}
-  .toc-group>a .ttl{font-size:clamp(1.1rem,2.6vw,1.45rem);font-weight:600;letter-spacing:-.02em;}
-  .toc-group>a:hover .ttl{color:var(--azure);}
-  .toc-sub{list-style:none;margin:.7rem 0 0;padding-left:2.5rem;}
-  .toc-sub>li{font-size:.86rem;color:#3c4654;padding:.22rem 0;}
-  .toc-sub ul{list-style:none;margin:.15rem 0 .15rem 1.1rem;padding:0;}
-  .toc-sub ul li{font-size:.82rem;color:var(--muted);padding:.16rem 0;}
-  .toc-sub ul ul li{font-size:.79rem;color:#9aa2ae;}
+  /* table of contents — compact grid, scannable at a glance */
+  .toc-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:1px;background:var(--line);border:1px solid var(--line);margin-top:1.6rem;}
+  .toc-card{background:#fff;padding:1.3rem 1.3rem;text-decoration:none;color:var(--ink);display:block;transition:background .15s ease;}
+  .toc-card:hover{background:var(--paper-2);text-decoration:none;}
+  .toc-card .num{display:block;font-size:.72rem;font-weight:700;color:var(--gold);letter-spacing:.1em;margin-bottom:.5rem;font-variant-numeric:tabular-nums;}
+  .toc-card .ttl{display:block;font-size:1.05rem;font-weight:700;letter-spacing:-.01em;line-height:1.25;}
+  .toc-card:hover .ttl{color:var(--azure);}
 
   /* REX / directory grid */
-  .directory{display:grid;grid-template-columns:repeat(auto-fill,minmax(230px,1fr));gap:1px;background:var(--line);border:1px solid var(--line);margin-top:1.2rem;}
-  .dcard{background:#fff;padding:1.3rem 1.2rem;}
+  .directory{display:flex;flex-wrap:wrap;justify-content:center;gap:1px;background:var(--line);border:1px solid var(--line);margin-top:1.2rem;}
+  .dcard{background:#fff;padding:1.3rem 1.2rem;flex:1 1 230px;min-width:230px;max-width:280px;}
   .dcard .dname{font-weight:700;font-size:1rem;letter-spacing:-.01em;margin-bottom:.15rem;}
   .dcard .drole{font-size:.78rem;font-weight:600;color:var(--azure);margin-bottom:.3rem;}
   .dcard .dchapter{font-size:.8rem;color:var(--muted);margin-bottom:.6rem;}
@@ -479,10 +472,8 @@
 
 <!-- ====== top nav ====== -->
 <nav class="top">
-  <span class="lockup" aria-label="YPO Middle East / North Africa">
-    <svg class="mark"><use href="#ypo-mark"/></svg>
-    <span class="word">YPO</span>
-    <span class="region">Middle East /<br>North Africa</span>
+  <span aria-label="YPO Middle East / North Africa">
+    <img class="brand-logo-nav" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAlkAAAJZCAYAAACa+CBHAAAACXBIWXMAAAsSAAALEgHS3X78AAABFnpUWHRSYXcgcHJvZmlsZSB0eXBlIGlwdGMAAHiclZA7bsQwDER7nmKPINHk0KpTpUuRCwSyDQQIkCD3LzLSwlp7m91IsC1+PHwaeX17f7n8/H5vn1+rXNqa3GSaTa3Ykox7X9mRa9KYU7LqxZNtmmxBgXFXOCO2xBTG04otVMIwM8hAKBsnZE2ucASjDStrld8ApXRhLTCj8C/Xeu0M8KHQBE8f3gOWuxTqtck4sJ841aIxdt72tk5cbsTyCPlZYnmE/CyxXJFzabi7G3smt+m71YFW1S6TTKOdVtjeK6ldZzGnC3kIlP9fWG48R1NHpuOPTJz9GXmKytmNUSLTvS+jhqOjp6vhzps2wdkUc1hQ7DDgJCJ/C5ijOPw/W/4AAABYdEVYdERlc2NyaXB0aW9uAFlQTyBNaWRkbGUgRWFzdCBOb3J0aCBBZnJpY2EgUmVnaW9uIExvZ28gLSBXaGl0ZSwgUmV2ZXJzZQpWZXJ0aWNhbCwgUkdCLCBQTke3RlJUAAAgAElEQVR4nO3dsY8cR74f8JahwDaeweVFzrTHc2hAPFChDVIALzSkC3SBE1KAQb1MvIgMbGgFB5acHBVKMCAyMiAFJwWOROCRsJ2JOBGOxSP/AIsi3oPtwMAaA9QY/fq6uqt6+jfTM/P5AIt7T9yd7umZnf7ur6p+9dr5+XkDAMC8/oHrCQAwPyELACCAkAUAEEDIAgAIIGQBAAQQsgAAAghZAAABhCwAgABCFgBAACELACCAkAUAEEDIAgAIIGQBAAQQsgAAAghZAAABhCwAgABCFgBAACELACCAkAUAEEDIAgAIIGQBAAQQsgAAAghZAAABhCwAgABCFgBAACELACCAkAUAEEDIAgAIIGQBAAQQsgAAAghZAAABhCwAgABCFgBAACELACCAkAUAEEDIAgAIIGQBAAQQsgAAAghZAAABhCwAgABCFgBAACELACCAkAUAEEDIAgAIIGQBAAQQsgAAAghZAAABhCwAgABCFgBAACELACCAkAUAEEDIAgAIIGQBAAQQsgAAAghZAAABhCwAgABCFgBAACELACCAkAUAEEDIAgAIIGQBAAQQsgAAAghZAAABhCwAgABCFgBAACELACCAkAUAEEDIAgAIIGQBAAQQsgAAAghZAAABhCwAgABCFgBAACELACCAkAUAEEDIAgAIIGQBAAQQsgAAAghZAAABhCwAgABCFgBAACELACCAkAUAEEDIAgAIIGQBAAQQsgAAAghZAAABhCwAgABCFgBAACELACCAkAUAEEDIAgAIIGQBAAQQsoB9cuLVAvaFkAXsk3tN09z0igH74LXz83MvFLAPrjVN8zdN07xomuZy0zQ/e9WAJVPJAvbFWTrPN5qmue1VA5ZOJQvYB6shwi875/nLpmmee/WApVLJApbupFXFarvnlQOWTMgClu52GiLseifN0wJYJMOFwJKdNk3z54Hze5omwQMsjkoWsGRjQ4JvaukALJVKFrBU65YNY16lipeWDsCiqGQBS1U6sf1CZmI8wE6pZAFLtJrs/ofK89LSAVgUIQtYmpMUli5Untdjqw2BJTFcCCzN2YSAtXJVyAKWRCULWJKxlg1jXqTHANg5lSxgSe5veC72NQQWQyULWIrSlg1jtHQAFkElC1iKTatYaxfsawgsgZAFLMFZZn/CqW7YbgfYNcOFwK5NbdkwRksHYKdUsoBduxcQsJrU0uFdry6wKypZwC6thvT+FHh8LR2AnVHJAnYpeoL6G/Y1BHZFJQvYldVQ3h+3cOxXqWJmX0Ngq1SygF042WKbhQuqWcAuCFnALtyeuWXDmBtWGgLbZrgQ2LbVRPQfglYUDtHSAdgqlSxg2852ELCa1NLhplcb2BaVLGCb5tqfcCr7GgJbo5IFbNOuJ6BfSPPBAMKpZAHbshqq+3IhV/uXWjoA0YQsYBui9iec6ltb7gDRDBcC23B7QQFr5R0rDYFoKllAtNVE8z8v8Co/TZ3gAUKoZAHRttXZvdabJsEDkVSygEi7btkwRksHIIxKFhDp/sKvrn0NgTBCFhBl2/sTTvVhqmYBzMpwIRBhaS0bxtjXEJidShYQYVf7E051VcgC5qaSBcxtqS0bxrwwbAjMSSULmNvSJ7vnvGESPDAnlSxgTqutav64x1dUSwdgNipZwJyW2ni01IUDeA7AQrzuhQBm8m/TisLngRf0r5qm+T9N0/zfwGP8s6Zp/mXTNP818BjAETBcCMxh3bJhNVz4KPCK/tA0zTfBc6fupyFDqw2BjRguBOZwLw21RU56v9nabzBqFeBqw+gbqaXDu0HHAI6EShawqe7+hL8PmNfUbW76bVAIepQCVqOlA7AplSxgU92hu7MUiubUbW76TsBw3s1WwGq0dAA2pZIFbGIVTL7s+fkH6d/mkGtu+jQN783hJM336u61+CodI3IyP3CgVLKAqU4GKj03ZgxAuXleb84Y5HKbWV9QzQKmUskCplqFj48GfnaOTZe787265mgeepqqWEN7Lb4dvGoSOEAqWcAUpyMBq5lphd7YasULqQq1iZLNrFWzgGpCFjBF6erBextMgj/LDOF1fbTBKsBraWhzzNUZhyaBIyFkAbWupdV9Jd6YWGk6qfy5qf25alpNRKyaBA6YkAXUqu2BNaV56L2CIby2qxPmf62bm5aaGhiBI2XiO1Aj17JhTE1Lh9WqxD9NOEZN89Buc9Mav9TSASihkgWUOtmgk/uNikrT1GPUVJpuTwxYTUA3e+BAqWQBpVbh4sMNrlZJS4fVasQ/bnCMkpYOueamNbR0AEapZAElTjcMWE3BCr1NKmVrJc1D59jEWjULGCVkASXmCCbNSEuHXNf1Wh8OdJu/1tmfcKo5u80DB0rIAsbMFUyageahpzOv3MtVmuYKi82GPcCAIyBkAWPmDCZNpnloSdf1Gn3d5ueqlK3Z1xAYZOI7MGQVTP4QcIW+bYWgsf0Jp2q3dNikZcMYLR2AXipZQM5JYKXmndZKw6hjvNF67LkrZW1zV/qAA6GSBeTcL9zXb6qnaV7TlOampVYtHf510zT/JfhV1tIB+AtCFtBntTrvPzVN83eBV+f1VF36n8GvwD9qmuZ/Bx/jb5um+VfBxwD2jJAF9FlXZWr3A6xx1trXcKh56CbWzU0jK03r5qa/1z8LaBOygK521/X3g+Yctbuufxa48fLzNDerpNv8VN+kOWYl3eaBI2LiO9DVrsacBfWCah/jw4qNnWuctVo2jHWbn+paClhNGvpUyQL+PyELaDvr9JKq2XS5VDuYrM1dLTvpOe+IwNgNVTcGus0DR0bIAtZyXddvz1xp6qv2XJ15OO9eT8uGuQPjzbS9Tt+xAYQs4P/L9ZKacxjsdiaYNIXVrPs9ndy7rg20npgrMA5tZt3XbR44Qia+A01h1/VNV+iVdF3/eKA56focX4wEpUcjey1+O0MIupfmkuWMnSNwBFSygKaw6/qm1aySruu3B+ZNrc/xjYHzvVmwmfU7Gw5Nno4ErGbkHIEjoZIF3Kzouj61pUO7ZcOYBz0rAbvn2NcuYRXOfijcBPrpBhPUxypl7XO8bF9DOF4qWXDchuYW9bk3cYVeTTDrrtBr76H4cep51TdP7HZhwGrSvLApLR2uFQasJp2jahYcMSELjtvtyo2TL0xYofduRTBZaweodXh6kULLOrjcaA375VZGjh2jNjDWVvFuBHfNBxbMcCEcr5ohvK5fVgyDPa+oMLW9n4bm1uf429RdvWltXr3u5P5NT++tEjXd5lff94cJx4jsNg8smJAFx2tqMGkqgsOq6vTRxGO8SHOs3uk5Xnul4oOBlg0lSgJjycrIIVHbEwELJmTBcSpp2TBmrKXDpsGkrS8IbRLg2koC4/0Ng9yLNM/MvoZwRMzJguM0R3PRscpMX9f1KT7LVJrOUnjZ1Fi3+csbBqwmaHsiYOFUsuD4TJ1b1Of3mcC2CiZ/muHx+1o1tK0m1f9xhuMMNQ8tbdlQomYuG7DnVLLguJzM3FYgt+nyXNvwnI0MsX2Thvs2las0TVkZOcS+hnBEVLLguIxtBzNFd4VeTXPTIaVb00RWzaaujByy6fZEwJ5QyYLjUbIdzBQftpqHzlkpK20W+kMKepvqNjg9CwhYjWoWHA8hC45HZAuBdXCo6bo+5NvKas9ZqkRtat1tfkpz01JvmgQPx8FwIRyHOVo2jPmgaZr/GNiyYcxcE/ofp2NvuqJwyNiEfuAACFlwHL5Jw2qR/kXTNP9tg8df97z6eIMhx+etLXimVu5W4eefNE3zPyb+fIl/mIZW/zrwGMCOCVlw+NZNOyMnXK8rZVMD0vocN63wtCt2U9slPErnENk8dL0AQUsHOGBCFhy2dtf1p60J6nNb95KaEpLa5zjH9jPrc5myZ2B7ZeQmFbUh7T0j7WsIB8zEdzhs7a7rUROub7Z6SXVX6JW41wqBc0zOX69KHOvk3tVdGXm7sIVErfZzrD1HYI+oZMHh6usfNfeE69z+hKVDk+1znHM4cz38WNprq8nshfigopVEib4O9TXnCOwRlSw4XH0VpQszD4HdzqwmLD3G+hwfzDxf7F4KlKV7Bp5mNpu+MXOlqe81eSNoWBLYMZUsOExjXdfnmHDdnlvUZ2x+Vbuq8yBgAvi1inliq9WX72T+ba55U32VsjUtHeAACVlweE5Su4ahpqBzBIehYNKkYbDcCr2Sc5zT0LBfSQ+xTSfk54ZV2+YemgR2TMiCwzNUMWnbZA5UaXPT3Aq9y6mSNeSkcBugV4WT7XNDcj+kRQFjx9ik0nS/sLnpr7fQzwzYEiELDstpukmXdF3fZMJ1zcbJU4cmS4PJym9TZa1WzWbWU1s61GxgraUDHBAT3+GwnFVsazN1wnXt/oRTNkS+VrmtzZRjnFT+3EcTQ2nNMa4WVPiAPSFkweGoDSZNCkwnFd/f7SVV4p0J1ZnaY0wJjDWBdK02zLV7iNUco+Y1ARZKyILDMaWaU9s8dEowaSqPMSWYNJWB8bRwvldXTWCcEkibirYTwMIJWXAYbhZM3s65UbjdztRg0qRzK1k5NzWYNJWBcZOVgqXHqB1W7f6sBqWw54Qs2H+1c4v6lPz8plvelAyDbRJMmsLmodcmVsrWSrYnOt2wGjV301hgB4Qs2H+5rus1ro5Umt7dMJg0BcFh02CyNhZO5tgf8WwkME4dVm2bu9s8sGVaOMB+G+u6XmOoeWhNy4YxuZYOY81Na+Sah5b2ECvxWSYUlvYQK6GlA+wxlSzYb5sOE7blJlyfzdyZvS/8XJsxYDWZStPJzBPKP8zMm5rzNRmrMAILJmTB/po7mDQ9E67nDiZNCg7d6sycwaTJBMZ7MwzhdXUD4yYLEHK0dIA9JWTB/ppjblFXd95URDBpOuceEUyaTmC8PKGHWIl289A5FiD0uaClA+wnc7JgP61uun8IPPO30//ONbeoz+9T2BrbOHkT36YQ9GiGifs56+2J5pzv1Wfq9kTAjghZsH9OgoPJytM0AT4qmDRp0+X/3DTNXwceY+XfNU3z74OP8dkGPcRKfWvLHdgvr3u9YO/M0R5gzGr47tPgXk3/tGmaf9OqmkX5D1s4RmQFa23dbf7RFo4FzEAlC/bLnC0bxrxKx+tr6TCH9RDer5um+SHoGOshvFxLhznM2bJhzNPC7vzAApj4DvslKij0iZxw3e66HjFZvOk0N41cobfN16Sk2zywEEIW7I85uq7X+ihoD712MLkaNNeoPawaFRg33QZoirFu88BCGC6E/TFn1/Uac0+47lsZ+WLmMJcbwptzhd42FiDk5LrNAwuikgX7Ye6u6zXemXFrl5PMZPo3Zp5kn3usOYf2trEAISfXbR5YEJUsWL5dVkzW5qo03RtodfAqTeretNK0am765cC/vz3DCr1tLkDIsa8hLJxKFixfVNf1Grl9DWtcHukl1e02P0VJ1/U5qlnbnOye07c9EbAgQhYs27Wg7WCm2HTCdckqwhsbBofbBYF008C4iwUIOUsIe0CG4UJYtsjtYKaYOuF6FUz+WPi9U4fBaobwNukBtqsFCDkfBzeNBSZSyYLlurmwgNWk4b4pzTBremFdTc898hhThyZ3uQAh57aWDrBMKlmwTCepC/rSbujNhErTlI2TX6QwV1ppmtp1vabb/BIWIOQ8mBhMgUAqWbBMu2hyWaqmeejpxOHF2nlTU7vG1/zcEhYg5Nyw3Q4sj0oWLM9pqq4s9YbeVLR0uL/hxP2S5qF9zU1r/LZpmm9Gvn8VYP60wTG2QUsHWBiVLFieJVdM1kqah86xMnKs0pRrbjrnMUq/Z9eiticCJhKyYFmupQ7r+2BswvUcK97Gus3P0XV9LDAucQFCTuRG2EAlw4WwLKthwjf36DXJTbge67pe42lmvtGcXddzLR2WvAAhR0sHWAiVLFiOm3sWsJpM89A5hvDa3sxMgp+zEeeFzJDgkhcg5Ny2ryEsg0oWLMOS2wOM6U64ntKyYUy30jS1ZcOY9r6G+7AAIUdLB1gAlSxYhpLtYJaq3Tz0NCBgNT3NQ6O2k2kfYx8WIORsuj0RMAOVLNi9OecW7cq6eej94In7v0yBLiLIrb2fqooRlbJtys1lA7ZEyILdW9r+hFM92MJm1v+9aZp/HlxhWgXGv03H2Xfv20QadkfIgt07lGGdf9w0zf8KPsZfNU3zd8HH2OZxoj0vaOYKBBGyAAACmPgOABBAyAIACCBkAQAEELIAAAIIWQAAAYQsAIAAQhYAQAAhCwAggJAFABBAyAIACCBkAQAEELIAAAIIWQAAAYQsAIAAQhYAQAAhCwAggJAFABBAyAIACCBkAQAEELIAAAIIWQAAAYQsAIAAQhYAQAAhCwAggJAFABBAyAIACCBkAQAEELIAAAIIWQAAAYQsAIAAQhYAQAAhCwAggJAFABBAyAIACCBkAQAEELIAAAIIWQAAAV53UQEW4aRpmmtN01xOXyfpfy9kTu5x+t9HTdM8b/0vsBCvnZ+fey2g3Oom9kbhd79omuZ0gdf2m6Zp3qn4/l8O3LxXN/arM51XqVW4+Llpmh/S16P0/++jVYi6mcLVmzOc/4t0Pb5JX8AOCVlQZ3VD/LLiJ37fNM29BV3j1c38byq+/+Omac4G/n0XIavPtylU3F/AuYw5Se+j2xWBfYpX6XrcU+GC3RCyoF5NsHiVqllLqbT8UFExKTn3pYSstRcpVCwp2K6dpPN6d2AIMMqDFJaFLdgiE9+h3lBlp+tC5fdHulk5JHV7D4fhVpWhP6Qw8e4CzqdJ4WodcG7sIGA16bh/TpWtkx0cH46SShZMcz/duEr9OlWRduUk3eRLb/BP03yhMUurZHU92HFYvJbeK5HDgrVepdC3xGofHBSVLJjmLN2sSu36hna7soJyO/BctulGCoK7WIBwL81/W1LAatL74A9pDpuqFgQSsmCa55XB6eoOh69WAeOjiu//NgWTQ/FmqiKWVObmcJKO9+HCr987W74ucHSELJjuLE20LrWralbNirtXB1TFaruQgmN0oLhcubhg195I1+Xmnpwv7BXNSGEzq0Dyx8JHeCMFs21OhL9WOWfqkJf7X0hDZJeD5mhdToFlrontL9Jr8UPP+V5LFbM5wtyFVluSfWiBAXvDxHfY3JJbOtQ2T60NIKXP/fEMQ5DrDuinG85zepxCypzmCFgvUgh8VNlg9Voaip6joen7ghbMR8iCza1usH+qeJQHWxqeuZ0mOJeacoMtDVljTU1rnaZgMbWh55xNYk9TtWlqwHqczmWODu2X0zWpWfna9faBzcmDnTEnCza3usF+VvEoNwIqKV0nlaHm8Z5VMNYLD05TOKyZG9ekazPHisOTFI6mBKzHKdBcm3ELnB9SgP9lCvNTfGMyPMxDyIJ51LZ0iJ6Xda/yxr+UhqlT3E+h4NuKn52rSez9CUN0q/fJb1O4iqoYPU9h6+3U86zGBU1LYR5CFszj58qb9tXAIcPLlcNFDw5geOjnNHxYU725sWE163blRttNql6dbnHz5kcpzNVWtd7UrBQ2J2TBfO5VDludBVULam6Oh9ay4WZloJhazTqd8LMPUuDZdvf5n9N1eb/y524saGsi2EtCFsyrpjr1RkDAeXdCy4Z9259wzM2KIbKpIeJ+5XDsthY7DLk/IWjdM2wI0wlZMK9HaUio1O2Zt3ypqWK92PO5WENKA82FCUGrtvfYEgLWWm3QivhDAI6GkAXzq7mhXphx7stZZTuDQ755/lAxbFgbsmperyUFrLX7qYVFqduqWTCNkAXze576QpV6Z4aWDqeVoenxFidf70ppla7m2r9bsZrw6YKD7L2K1ZgXVLNgGiELYtyrbOmwaTXrrHKO0DHsVfe8cG5WVPXv5sLnu92sWKihmgUTCFkQ4+fKG/KbGwSfa5UtGz474P0Ju0qrdSXVrNOKuVgfpyHLJat5j06ZuwZHT8iCOPcrG0FOXclVM3n91QFPdu8zZ9ApDSSv9qjH1DcVCzWOofoJsxKyIFZNNWvK3JeblSvdzg6wZcOQ0udassKztJKzb20xSkP31ZlXwsLBE7Ig1qPK7V4+qriR1e5P+EIX76yxa365cO7WPlWx1mrajkTvuQkHRciCeLcrJ8GXbtR8u3LStuGevLHKU2m4+GZPK4Wl7znzsqCCkAXxnldWN64W3NRPU9Wr1LcHsD9hpLG5W6Uha18rhXMuEAASIQu2o3Zfw7HKQu3N/Fj7HF2e6XFKwsWrPVhRmPNz4bD2BfOyoJyQBdvxc+X8qaHtTK6lBqalPj6ilg1dpZWXoXB0UtiDbN8rhaXnL2RBISELtud+5b6GZ5mWDjVVrH2ciD2Xk8Iw+mpkHlVpNWxfq1hrpedvyBAKCVmwXTXVrL59DW9WbOvSpGrYMbVsaCsdIh2r4JT2Ltv3Sta+h0RYHCELtutRxcbFTerkvq6knFRWpZ5WrBo7NCczhqzSSta+h9nS81fJgkJCFmxfbUuHdbCq3Z/wmDf1rblWc22UfQiVoJrhbGCEkAXb9/OElg6rwPRhxc88OOKWDTcrrtW3R7woAAgmZMFunFW2dPhDxfce2/6EbZcrA6wO+EAYIQt2J2o4796RVmdWFaw/VQwTPtWgFYgkZMHufBMwB+YY9yc8Sdfyy8qfmzvkHkL/qJrNxoERQhbs1tz7CZ4dUcuG0/R8n1c2Z20qtxkqrQoeS5NOrR6g0OsuFOzU6gb+WeWk9pzHC27ZcDrT0v/TNO/qWmW/sLZXleG2NGRd3vPhx9LX51j7rkE1IQt27yzd9GvaM/RZcsuGG+lrCa5VBoWakLXPjqWzPWyN4ULYvdp9Dfs8cPMr8v6E61Qasva9SWdpyNLyAgq9dn5+7lrBMjxPG0PXepWG0XYxjPNojyZLv7/BcGrp8/z1Hofdnwurqa9t4VzgIKhkwXJMnQR/zzyZUZsErKZirtXcCxm25d3CgKUjPFQQsmA5HqVVbzVeHHHj0RIvUnVp0wUBpSHr3c1PeSdKw+FcWxDBURCyYFlqJ6/va+VkGz5L84zmGL57VLjf5Bt7+JqcVrTA0LwVKghZsCzrlg4lHrvp9Vpdl7dTYJ1zGLW0irNvlcXS831hcQXUEbJgeUqDgYD19z1I4epa0LUpHXJ8Y+HtNNouV7TWsM8jVNInC9hXT1Nl5ZsUqqIn/z9K1ZySFaBnKZQtfUFCzVy1pTa6hcUSsoBteDDjTfr5Dns1nRXukXghhb8l9846q+ia/8AKVqgnZAHb8PxAhjfvp3BSUs26mr53iXO0VqsgP6r4fitYYQJzsgDq1ASOjxa42vByZVXxgS7vMI2QBVDnfpoPVurLBQWt9SbWpftkvtqjSfywOEIWQL3a4LGEoFUbsJpUtTMXCyYSsgDqParoZ7b25Q7bIKwC3p8qA9ZjbRtgM0IWwDS3K4cNVz5MbScub+man6RVjiUrItte2U0ANidkAUz3buF2O21vpqrSWQpBUW6mCeulW+a03TTZHTYnZAFM93yDXlgfpZ8/S/sHzuGkFZC+rBweXHvfRtAwDyELYDM/pGAyxYUUtv6cgs3NCdWtk1RRu98KVyV9vPrM2TQWjp5mpACbWweT2rlPbe+kry/TXK/nKcD93NmY+bT1dbmia/uYB+ZhwbyELIB5rIPWvYnDdG1vpq8p86mm+FhXd5if4UKA+dxPc7RqJ8Pv0vsCFsQQsgDm9UMaznu88Ov6ommaX5uDBXGELID5/ZwqWr9faFXrszSf64eC7wUmErIA4txLYWYpVa3VhPq3UyNV2+VAMCELINa6l9bbOwxbL9Lcq/X+hcAWCFkA2/GoFba+3dIxH6dwdWruFWyfFg4A2/Uofa27s68aiV6d8Qyepse/Z2sc2K3Xzs/PvQSwLKeF26w8X8BN9HJhh/IlnOuSnaQq1+X0v6eFXdtfpcnr669HrjMsh5AFsFy5wC20wh4QsgAAApj4DgAQQMgCAAggZAEABBCyAAACCFkAAAGELACAAEIWAEAAIQsAIICQBQAQQMgCAAggZAEABBCyAAACCFkAAAGELACAAEIWAEAAIQsAIICQBQAQQMgCAAggZAEABBCyAAACCFkAAAGELACAAEIWAEAAIQsAIICQBQAQQMgCAAggZAEABBCyAAACCFkAAAGELACAAEIWAEAAIQsAIICQBQAQQMgCAAggZAEABBCyAAACCFkAAAGELACAAEIWAECA111UoNBp0zQ3XazmedM09xdwHsDCvXZ+fu41Akpca5rmb1yp5nG6FgCDDBcCAARQyQIACKCSBQAQQMgCAAggZAEABBCyAAACCFkAAAGELACAAEIWAEAAIQsAIICQBQAQQMgCAAggZAEABBCyAAACCFkAAAGELACAAEIWAEAAIQsAIICQBQAQQMgCAAggZAEABBCyAAACCFkAAAGELACAAEIWAEAAIQsAIICQBQAQQMgCAAggZAEABBCyAAACCFkAAAGELACAAEIWAEAAIQsAIICQBQAQQMgCAAggZAEABBCyAAACCFkAAAGELACAAEIWAEAAIQsAIICQBQAQQMgCIMr1pmnOW18/NU1z0dXmWAhZHLM7nRtA9+vHymvz3sjjnWd+7see77s1w+vyec/jfj7D45Y+dtTzmtPYe6D26/rCnt+uvdc5/hdN07w8vsvAsRKyIO9S5U2ze0OBfRERyC/2/E587R3BMRGyYFhpyLqoigF/z3udocFnTdM8cYk4JkIWDCsd3rpurgn8PX1DhXBUXvdyw6B1herhyPdtMlT4Ky8BB6ZvqN1QIUdHJQvGlQQoQ4WH5YOmaV6b8DUWxo9F93fmYRouhKMiZMG4sZDVnXuyDatVcd91Jip/n/77piIfu1TfOay+PtnzBQbryeB3Ws/xq9b/X/teujWwQnL9ml0JfD45Jrxz9BrDhdDrZedGt74x5m4UfVWsZ2nIpMSPPd/7QWYOy5W06qvvxnklfTmR6DkAABF2SURBVK1uvL+b8NJGPnapWyOr2tZB72G6RvtSHbmUzj03x69v/tLdgXYH11M4GwpkV1qv5dfperUf77uRCuytzvmuzufTge/vO26TjilkcZRUsuAv9Q35DFVP+v4t4qZyJd0YxyoTl9L3lYa86Mcu9VVF24DrqVKziypNrVvpXGt6hN1K17kvRL038G85U35mqr4qlt5YHCUhC/5SX0DKrR7sG955ElBhuVhQueh+f037iajHLvX5hGHA2vPehXV1MHeOQy0NrvSEzosb9K+6koZbo3XDpCoWR0vIgr/U95d3Llj0/beIm8qtTPVodZP+TWuC9lsTJl9HPnaJ9zJVntWQ2S9ax7/b8z2XgoJDX3POsa++a9h3bi9b1/Wt9L+/ygSubvDMhf27nUn6b2WGm6PnD/b1xrIYgKMlZEG/vqDUV2nZ1lBh36TzJz3BZx2Mam5skY9doi+I3O2ZQ/RpZj5YLiTuWi6Y3+25hs8yIbLpPEbf83zYM1fqSbp+3eB2sfUY7QDdF8i+6AS3kvlYJrxDi5AF/XIhq/1Xel9VIWKpeq76kLspN+kGu+vHLj1+Nzg8G7ihf11Y8VmCS+n90P3KBY+p4fXKQHXqrZ42FFFd122jAx1CFvTLhaX2TWRbQ4V9k7ufjNyUS7cwiXzsEn3HH7uGpVXGXVtX/rpfuUngJS0y+t6Tq3Dz0w7bNax1h3yf2EaHYydkQV5uAvxa3zyiiJCVGyIaU/I9kY9dItf+ovbYSxwuHHIlPfd1n6vvC+eWDVVKP0mPc57agtzZcm8zHd6hQ8iCvKEhw76hwqil6n0BouQ4Jd8T+dgl+oa5xiadf9/zMxdnDlpTOr4PhcPrnRD0fWqp8Hn676UVqJdpXtrY9V8vCPgkHW+sJ9am+rbRsVchR0/IgrzccMetLQ4VNpkgEhlyttnT6NA31b6YAs53BcN5pXP5nqRVl0Pz5rqut84hgt5Y0EPIgmG5IcPuUOHLwKXquXk4S3/sEod+Ix6qIK1XBd5Nc7ZqNwr/tNWu4W5h5eiToIqW3ljQw7Y6MOzrnrkyuSpWVGDoe9ySobGSsBT52CX6jp/bUmjf5CpX60A01/ulXXH9oDXf607mdbo18x8E1zvvGdvoQKKSBcNKmylGNlzsG7IsqUaUfE/kY5foO/6hDCH2XaMvUgWqL2CVzMv6qWeOWjcUP0nH+MWWrm/fvotw9BohC4qMBajov9z7bpR9E427/15y04587BJ91zZygvauDc27mvp6Df3cJu/LkjCmNxYMELJg3Nhf5tF/uT/MVD6G9sT7agGPXaLv+NdH+l5d6anmTN3PL2fKtjol55Ebir1YuIF0XygdmszeF1hLe1ddLwh+3Wa2emNBi5AF48YqVdvYm62vA/ql1AqgHUiupMnWNZWmyMce8zJz/K/SXLh2KLnYaoNQ8hx2ra9qdatnrtR7Fdf1i57HvdIzwf5Suoa5IcuuvqB9sdVy4jwT5vTGggFCFpTJBaltbYD7aeamvb6ZtntI1Q63RT526fH7qh93UlPN9fF/ytzoc+e/a7nA8UlnbtVXE/pkda1bNKwf88dMNfCDzLWaUn0yVAgjhCwok1s9uM2bSkkTyraac4t87BK/mXijf1jZL2qb+jZuHpLbl7E7bLvevLvmeq3DWW5o++sJr2l3eDNi307Ya0IWlMkNGW4zZD2pCCMfVFbYIh+7xMsUHGrmt637Sy3Z3fQ1FGCfpWv6u4rVnuug9Zv0+Llwsz7+Lwreq79L51H6nlbFghGvnZ+fu0awf271TBBfz2/6Ot10r/TcoJ8V3AwjH7vEpXTs93qG0dbVnjn7TG1LdyL5eqPtfaz+rIcn116mZqq6vEOLkAUAEMBwIQBAACELACCAkAUAEEDIAgAIIGQBAAQQsgAAAghZAAABhCwAgABCFgBAACELACCAkAWwW3eapjnf4Oun9BiXvI6wLEIWzcCH/OcVV+fznp//8cCvbt81626avCu51/SnDc7nYnrcH3se99YMzzPqcQ/d6nX5JF2/Owf0XL0f2HtCFkNuLSg0bENfUKwJmkvyXuZcLg7825Dr6ab3iYrJon2yx+9ZODhCFmM+Tzdm9seV9JVTG7JWr/9X3gd745aKDyyDkMWYSwc2BHEMxkLUe5WB6ZaAtXf8zsICCFmUuDNSGWFZSqoYNZWOviHjJ03T/KJpmtfS1xczXIFftR5vzsfdVx/0XI/212+apnmYeW6XDuB31vuBvSdkUco8j/1QWnWqGTLsm4P1ddM0Lw/pwu2hhyloPcuc+jHNp4RFet3LQqErqaL1acAFu5UZlnyW/nJ9mConY/qGSNrneyeFi/Vf+EOVgE1dTM/rTif0fJ2OGfUXeV94etJT1VjP2yq5rn2GAta2X4d1+4Juda72/dN2MYWUdcC8np7z+nGepcddQtD8Ik14n+JOem7dQPZpeq5fz/SY69di/T54rye8T3md+mzj8+RKen7d6x79+82+OT8/9+XrznmZn87Pzy9lrtfnPY/w48i1fS89ZomvBo69/urTpJ/7vuffrp+fn39XePy1OyPHu56e15jV+Vyc+b13aeCcfuz5759UXsshm74OTeYcb830/vmu4P2zPse+93LO5zO8jrnfv6Hn3v66nvn5OwM/c2vm67b6upJ5Ddt+TN/Xd427zzfy/bDJ50nJ52XE77evPfwyXMiQ7l/pFzf4i7nrTuWKtdVfvt9PmGeyevzvtjg/5Up6XnN9X42+KtbL9Jd1X0VimyvQ5n4dat8/1wveP7fS99Rcl1vpee1yYUDu2Lkq21cVw/8l161J//59QXuPS0ErVbf1eXKn8DMw4vebPSRkMeRuz7+9N7HPUlvpB1XX+kZd06dp232dap5X3zDNJvrCwXrYoi9kTe2ZNcWcr8Om75++G/GVkXYlQ8NLV3Y8ZzF3XfvO+fOAFh4XKwPFpZnfd9v+PCk19+83e0jIYsgXmbkyn2zwl+ilzAfVs85qql9k5jXUVtN20S9o9Vx+13ouvxqY2zLXh/D1gQnqTbrh9t10txWy5nodci1FXla8f/p+vu899TLNF1s93lut13KX17FP37Xte73fGwji7ZWifX9c5X5vm9YcqK6Hres2thpyqm1/njQ7+v1mXxnj9TUwx6AZmOfTnc9TOier7/uG5nrlzu16z/cO+S7N2Rh6vfvO7fPKORtDz6Vvjsl3M70H+879+8JrOTY3pXZuzNTXoeQ4n1Re89z3t7/nYuZcc88xNweq7z1Z8jV1TtbQnMK+a9x3fXPztnLzCvuuc988qO57r/3VNy+v7/mWvB928Xmyi99vX3v6pZLFmGeZv2zvTPgrLTc8dXdgGfqnmcpBzbG/SH9FT1kpVevrgefSd/w5htAuZioU3ePlqgjbqsLM8Tr0Pc9PR94/XRc71/1Sujbdr9x5Rq1I7erb5qn99V3m9+Buz7n3reZ7NrBa+OvCit2VTFW77zNj7YOBf6uxi8+TXfx+s8eELErkbmK181CuZz6Qx266ff9eGgxejnzgz21o7k7uw3lTuaG47nXLDRluY0h1jtchd0MfWi7/MtPIs/1aPEnhr/uVmzi+1G7q6+fRF5z6JnjP8XvXF06ejQTR3Puw1i4+T3bx+80eE7Io9bue76vdcqfvr7onBb2G+j6wLxXOC/tiy72MdvFB23eDeJg5l9xf29FzR+Z4HXKd5yNf33U/pHXPs+9nXGE7tysDr2MuDA3J/d619f0OlvwOzPF7sovPkznCIUdEyKLUk8xfyDWrxqZ+IOc+NEs+FJf012XEueQ2g879NZ/779FDhlGvw9yPu24w+X0alvs+Dct9nv770requZPOt6vvd2VsOPL7zONc6vz/XZv8TtfYxefJEJUs/oKQRY1Nhw37PsQ2+bAtCXeH/sGXC0e5G+iPA48T2espqnIxVxVrvZz/u4K9Orf1nhrbu/Bu5vlf7xkCjnpt+45f8ns5x/ns4vMEqghZ1MjNq7leWAnp+wDc5MPWX47zzafaZs+sqeZ+/7TlJpE3aXjp0/Te/01asr8En6bz6dN9X0QNqfY9bkm1b45A4/OExROyqPX1QGPLMXP/1XvsGxTPXX3ax5A1x806V7m6m/or/Sb9359ucWVhqSeZc+o+n75rN1Ypy321w0hfMLk4MscvN8Rdy+cJiydkMUVumGJM3wdybsVYW98H9ksfirOvCsw1NF2Kqe+fH3uGTds3+b7313oz46mVmm3KBb/2a9k3YXuOgJ479tDigLm64/s8YfGELKYY6q8zZGqfpr4PxW30vGp2vCfdkNyKwE8LqxG5YaYlV7OmvH8uZYLj2NDQ0L8vLWTlzrX9vPuu3RwrSl9mWmhc6dmrsnQfxFL7+HnCkRGymCrX1G9I7gP5zkAFJdf0dFsfitcXuqIsdyMpvS4PM3+572IbolK598/QCte+isrXBVWL3OPlGr/uUslcor7Xe2wu5ZWeCmBfFSr3B9f11irN84CN2vfx84QjI2SxiSmdm/s+kC+lD+D2B/7F1rL5rodBc2NyE2nbN4qlNKIs3a9uSN8Nahs9szaR6+Deff9cSZsW94WI7vPuCynrvljtSuZ7AUFhDrnA2A4aLzPX7quekHqx1caiq+8xnlV+FrycMdQs+fMEhCw2kuudNSS3Tc+l9IG/DjM/ZYLEyxm35ejal0aDY5tBl8rdWJZczSp9/3yfCVhf9zzv3HX7JL0P14/51UKrmqV9n3LV5zudeWs/Zf6YGNq+6ItMw+KuZ81wN/1aS/48ASGLjQ198OZ8OnFO18v0AR211Dq3cnJpNh0qXMsNGUb3zNrU1PfPk8wN9WHl4+X29dvVNctN2u4LhL+Z+MfEw4Jtkb5OqzHv9hzjSfrvvwr4Y2apnycgZLGxqXvS3U1/+Zb+Rbv6kH9rC9Wm36Ub8VLD1qVMyHoy8WaR2/dvydWsZsL754v0/sl9/92CVbPrYbHfzbBp+dxyE9u7Fc+X6ToM7ffYdXdgoUTXeljyrc5Ci7c6QWjuQLrUzxOO3Gvn5+fHfg3YvfVE1e6N/Vm6GTz0YciA3PvnSas6WRNAu4sdnm0QYpdsHdjf66l6rat1UXt//tQTtOYKPT5PWAwhC4BN9AWmuwNDeHd6JqC/TEONcFAMFwKwib6hyk8GVi3m2mrAwVHJAmAT11PLhKnW88RMQOfgqGQBsImSlYc5L9OEdQGLgyRkAbCpTytX9zVpiPAtjUA5ZIYLAZjTrdb8q64nrYawVvhx8IQsAIAAhgsBAAIIWQAAAYQsAIAAQhYAQAAhCwAggJAFABBAyAIACCBkAQAEELIAAAIIWQAAAYQsAIAAQhYAQAAhCwAggJAFABBAyAIACCBkAQAEELIAAAIIWQAAAYQsAIAAQhYAQAAhCwAggJAFABBAyAIACCBkAQAEELIAAAIIWQAAAYQsAIAAQhYAQAAhCwAggJAFABBAyAIACCBkAQAEELIAAAIIWQAAAYQsAIAAQhYAQAAhCwAggJAFABBAyAIACCBkAQAEELIAAAIIWQAAAYQsAIAAQhYAQAAhCwAggJAFABBAyAIACCBkAQAEELIAAAIIWQAAAYQsAIAAQhYAQAAhCwAggJAFABBAyAIACCBkAQAEELIAAAIIWQAAAYQsAIAAQhYAQAAhCwAggJAFABBAyAIACCBkAQAEELIAAAIIWQAAAYQsAIAAQhYAQAAhCwAggJAFABBAyAIACCBkAQAEELIAAAIIWQAAAYQsAIAAQhYAQAAhCwAggJAFABBAyAIACCBkAQAEELIAAAIIWQAAAYQsAIAAQhYAQAAhCwAggJAFABBAyAIACCBkAQAEELIAAAIIWQAAAYQsAIAAQhYAQAAhCwAggJAFABBAyAIACCBkAQAEELIAAAIIWQAAAYQsAIAAQhYAQAAhCwAggJAFABBAyAIACCBkAQAEELIAAAIIWQAAAYQsAIAAQhYAwNyapvl/OJ5tkasyG8MAAAAASUVORK5CYII=" alt="YPO Middle East / North Africa Region" />
   </span>
   <span class="links">
     <a href="#intro">Introduction</a>
@@ -529,60 +520,21 @@
   <div class="wrap" style="padding-top:clamp(40px,6vw,84px);padding-bottom:clamp(40px,6vw,84px)">
     <span class="eyebrow">Contents</span>
     <h2 style="font-size:clamp(1.8rem,5vw,2.8rem)">What's inside</h2>
-    <ul style="list-style:none;margin:1.6rem 0 0;padding:0;">
-    <li class="toc-group">
-      <a href="#intro"><span class="num">00</span><span class="ttl">Introduction</span></a>
-      <ul class="toc-sub"><li>Welcome from the Regional Chairs</li><li>Regional Overview<ul><li>List of Chapters and Chapter Chairs</li></ul></li><li>REX Directory<ul><li>REX Roles and Responsibilities</li></ul></li><li>Management Directory<ul><li>Management Roles and Responsibilities</li></ul></li></ul>
-    </li>
-    <li class="toc-group">
-      <a href="#regional-data"><span class="num">01</span><span class="ttl">Regional Data</span></a>
-      <ul class="toc-sub"><li>Data<ul><li>Chapter Commitments</li><li>Chapter Health</li><li>Regional KPIs</li></ul></li></ul>
-    </li>
-    <li class="toc-group">
-      <a href="#regional-calendar"><span class="num">02</span><span class="ttl">Regional Calendar</span></a>
-      <ul class="toc-sub"><li>YPO Regional Calendar<ul><li>Upcoming Global Events in MENA</li><li>Upcoming Regional Events<ul><li>YPO MENA Mastery</li><li>RBM</li></ul></li><li>GLC Dates</li></ul></li></ul>
-    </li>
-    <li class="toc-group">
-      <a href="#chapter-governance"><span class="num">03</span><span class="ttl">Chapter Governance</span></a>
-      <ul class="toc-sub"><li>Chapter Chair Role<ul><li>Chapter Chair Roadmap</li><li>Link Between the Chapter and the Region</li></ul></li><li>Chapter Operations<ul><li>Holding an Effective Board Meeting</li><li>Strategic Planning<ul><li>Game Plan Overview</li></ul></li></ul></li><li>Budget and Finance<ul><li>Recommended Chapter Budget Allocations</li><li>Best Practices for Strategic Partnerships</li><li>Budget Templates</li></ul></li><li>Working with your Chapter Manager<ul><li>Working with your CM</li><li>CM Performance Review Templates</li><li>CM Recruitment<ul><li>CM Role Description</li><li>CM Job Posting</li><li>CM Contract</li><li>CM Support Program</li></ul></li></ul></li><li>Chapter Governance Documents<ul><li>YPO P&amp;P</li><li>Chapter By-Laws Templates</li></ul></li><li>Conduct Committee Toolkit<ul><li>Offboarding</li></ul></li><li>Officer Training<ul><li>GLC Dates</li></ul></li><li>Succession Planning<ul><li>Champion Catalog</li><li>Succession Planning Worksheet</li></ul></li></ul>
-    </li>
-    <li class="toc-group">
-      <a href="#chapter-commitments"><span class="num">04</span><span class="ttl">Chapter Commitments</span></a>
-      <ul class="toc-sub"><li>Chapter Commitments<ul><li>Chapter Commitments Defined</li></ul></li><li>Chapter Health<ul><li>Chapter Health Defined</li></ul></li></ul>
-    </li>
-    <li class="toc-group">
-      <a href="#membership"><span class="num">05</span><span class="ttl">Membership</span></a>
-      <ul class="toc-sub"><li>YPO Membership Requirements</li><li>SMP</li><li>Accepting New Members</li></ul>
-    </li>
-    <li class="toc-group">
-      <a href="#member-engagement"><span class="num">06</span><span class="ttl">Member Engagement</span></a>
-      <ul class="toc-sub"><li>New Member Onboarding Checklist</li><li>Apeiron</li><li>Member Engagement Toolkit</li><li>Sample Pledge</li><li>Sample Points System for Member Engagement</li></ul>
-    </li>
-    <li class="toc-group">
-      <a href="#forum"><span class="num">07</span><span class="ttl">Forum</span></a>
-      <ul class="toc-sub"><li>Find a CFF</li><li>Regional Training</li><li>Regional Funding</li><li>Chapter, Global, Regional, Network</li><li>Forum By-Laws</li></ul>
-    </li>
-    <li class="toc-group">
-      <a href="#learning"><span class="num">08</span><span class="ttl">Learning</span></a>
-      <ul class="toc-sub"><li>E-CODE</li><li>Regional Initiatives</li><li>Global Events Calendar<ul><li>All Global Events</li></ul></li></ul>
-    </li>
-    <li class="toc-group">
-      <a href="#spouse-family"><span class="num">09</span><span class="ttl">Spouse / Partners &amp; Family</span></a>
-      
-    </li>
-    <li class="toc-group">
-      <a href="#yng"><span class="num">10</span><span class="ttl">YNG</span></a>
-      
-    </li>
-    <li class="toc-group">
-      <a href="#networks"><span class="num">11</span><span class="ttl">Networks</span></a>
-      <ul class="toc-sub"><li>List of Networks</li></ul>
-    </li>
-    <li class="toc-group">
-      <a href="#emergency-support"><span class="num">12</span><span class="ttl">YPO Emergency Support</span></a>
-      
-    </li>
-    </ul>
+    <div class="toc-grid">
+      <a class="toc-card" href="#intro"><span class="num">00</span><span class="ttl">Introduction</span></a>
+      <a class="toc-card" href="#regional-data"><span class="num">01</span><span class="ttl">Regional Data</span></a>
+      <a class="toc-card" href="#regional-calendar"><span class="num">02</span><span class="ttl">Regional Calendar</span></a>
+      <a class="toc-card" href="#chapter-governance"><span class="num">03</span><span class="ttl">Chapter Governance</span></a>
+      <a class="toc-card" href="#chapter-commitments"><span class="num">04</span><span class="ttl">Chapter Commitments</span></a>
+      <a class="toc-card" href="#membership"><span class="num">05</span><span class="ttl">Membership</span></a>
+      <a class="toc-card" href="#member-engagement"><span class="num">06</span><span class="ttl">Member Engagement</span></a>
+      <a class="toc-card" href="#forum"><span class="num">07</span><span class="ttl">Forum</span></a>
+      <a class="toc-card" href="#learning"><span class="num">08</span><span class="ttl">Learning</span></a>
+      <a class="toc-card" href="#spouse-family"><span class="num">09</span><span class="ttl">Spouse / Partners &amp; Family</span></a>
+      <a class="toc-card" href="#yng"><span class="num">10</span><span class="ttl">YNG</span></a>
+      <a class="toc-card" href="#networks"><span class="num">11</span><span class="ttl">Networks</span></a>
+      <a class="toc-card" href="#emergency-support"><span class="num">12</span><span class="ttl">YPO Emergency Support</span></a>
+    </div>
   </div>
 </section>
 <!-- ========================================================= -->
@@ -623,7 +575,7 @@
 <h4 style="font-size:.85rem;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--gold);margin-bottom:.2rem">FY26–27</h4>
     <p class="sub-note">The Regional Executive Committee leading YPO MENA this fiscal year.</p>
 
-    <div class="dgroup-label">Regional Leadership</div>
+    <div class="dgroup-label">Regional Chairs</div>
     <div class="directory">
       <div class="dcard">
         <div class="dname">Moodi Bukhari</div>
@@ -643,7 +595,7 @@
       </div>
     </div>
 
-    <div class="dgroup-label">Regional Officers</div>
+    <div class="dgroup-label">REX</div>
     <div class="directory">
       <div class="dcard">
         <div class="dname">Amit Gandhi</div>
@@ -670,12 +622,7 @@
         <div class="drole">Regional Member Engagement Officer (Gold)</div>
         <div class="dchapter">YPO Emirates Integrated</div>
         <div class="dcontact"><a href="mailto:hachem.ghandour@readymixbeton.com">hachem.ghandour@readymixbeton.com</a><br>+971 50 622 1617</div>
-      </div>
-    </div>
-
-    <div class="dgroup-label">Regional Area &amp; Support Officers</div>
-    <div class="directory">
-      <div class="dcard">
+      </div><div class="dcard">
         <div class="dname">Preyen Dewani</div>
         <div class="drole">Regional Strategic Partnerships Officer</div>
         <div class="dchapter">YPO Dubai Downtown</div>
