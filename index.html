@@ -283,6 +283,37 @@
   .stable td.role{font-weight:600;color:var(--ink);}
   .stable-note{margin-top:.6rem;font-size:.76rem;color:var(--muted);}
 
+  /* subsections within a mega-section */
+  .subsection{margin-top:3rem;padding-top:2.6rem;border-top:1px solid var(--line);}
+  .subsection:first-of-type{margin-top:0;padding-top:0;border-top:none;}
+  .subsection h3{font-size:clamp(1.3rem,3vw,1.75rem);margin-bottom:.4rem;letter-spacing:-.02em;}
+  .subsection .sub-note{color:#41495a;font-size:.92rem;max-width:62ch;margin-bottom:1.2rem;}
+
+  /* stub / coming-soon placeholder */
+  .stub{border:1px dashed var(--line);border-radius:10px;padding:1.5rem 1.7rem;background:var(--paper-2);margin-top:.6rem;}
+  .stub-tag{display:inline-block;font-size:.64rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--muted);background:#fff;border:1px solid var(--line);border-radius:999px;padding:.25rem .7rem;margin-bottom:.9rem;}
+  .stub p{color:#41495a;font-size:.9rem;margin-bottom:.7rem;}
+  .stub-list{margin:0;padding-left:1.2rem;color:#3c4654;font-size:.9rem;}
+  .stub-list li{margin:.38rem 0;}
+  .stub-list ul{list-style:circle;margin:.3rem 0 .3rem 1rem;padding-left:1rem;font-size:.87rem;color:var(--muted);}
+  .stub-list ul ul{font-size:.84rem;list-style:"– ";}
+
+  /* nested table of contents */
+  .toc-group{border-top:1px solid var(--line);padding:1.1rem 0;}
+  .toc-group:last-child{border-bottom:1px solid var(--line);}
+  .toc-group>a{
+    display:grid;grid-template-columns:auto 1fr;align-items:baseline;gap:1.2rem;
+    color:var(--ink);text-decoration:none;
+  }
+  .toc-group>a .num{font-size:.9rem;font-weight:600;color:var(--gold);font-variant-numeric:tabular-nums;}
+  .toc-group>a .ttl{font-size:clamp(1.1rem,2.6vw,1.45rem);font-weight:600;letter-spacing:-.02em;}
+  .toc-group>a:hover .ttl{color:var(--azure);}
+  .toc-sub{list-style:none;margin:.7rem 0 0;padding-left:2.5rem;}
+  .toc-sub>li{font-size:.86rem;color:#3c4654;padding:.22rem 0;}
+  .toc-sub ul{list-style:none;margin:.15rem 0 .15rem 1.1rem;padding:0;}
+  .toc-sub ul li{font-size:.82rem;color:var(--muted);padding:.16rem 0;}
+  .toc-sub ul ul li{font-size:.79rem;color:#9aa2ae;}
+
   /* footer */
   footer{background:var(--blue);color:#fff;padding:clamp(40px,6vw,72px) var(--pad);}
   footer .lockup{--logo-gap:var(--blue);color:#fff;margin-bottom:1.4rem;}
@@ -423,11 +454,19 @@
     <span class="region">Middle East /<br>North Africa</span>
   </span>
   <span class="links">
+    <a href="#intro">Introduction</a>
     <a href="#regional-data">Regional Data</a>
+    <a href="#regional-calendar">Regional Calendar</a>
+    <a href="#chapter-governance">Chapter Governance</a>
     <a href="#chapter-commitments">Chapter Commitments</a>
-    <a href="#governance">Governance</a>
-    <a href="#conduct-committee">Conduct Committee</a>
-    <a href="#officer-roadmap">Officer Roadmap</a>
+    <a href="#membership">Membership</a>
+    <a href="#member-engagement">Member Engagement</a>
+    <a href="#forum">Forum</a>
+    <a href="#learning">Learning</a>
+    <a href="#spouse-family">Spouse / Partners &amp; Family</a>
+    <a href="#yng">YNG</a>
+    <a href="#networks">Networks</a>
+    <a href="#emergency-support">Emergency Support</a>
   </span>
 </nav>
 
@@ -456,22 +495,116 @@
     <span class="pill">Sample build</span>
   </div>
 </header>
-
 <!-- ====== TABLE OF CONTENTS ====== -->
 <section class="toc">
   <div class="wrap" style="padding-top:clamp(40px,6vw,84px);padding-bottom:clamp(40px,6vw,84px)">
     <span class="eyebrow">Contents</span>
     <h2 style="font-size:clamp(1.8rem,5vw,2.8rem)">What's inside</h2>
-    <ol>
-      <li><a href="#regional-data"><span class="num">01</span><span class="ttl">Regional Data</span><span class="meta">Live dashboard</span></a></li>
-      <li><a href="#chapter-commitments"><span class="num">02</span><span class="ttl">Chapter Commitments</span><span class="meta">The 14 metrics</span></a></li>
-      <li><a href="#governance"><span class="num">03</span><span class="ttl">Governance</span><span class="meta">Commitments overview &amp; succession</span></a></li>
-      <li><a href="#conduct-committee"><span class="num">04</span><span class="ttl">Conduct Committee Best Practices</span><span class="meta">Protocol &amp; review</span></a></li>
-      <li><a href="#officer-roadmap"><span class="num">05</span><span class="ttl">Officer Roadmap</span><span class="meta">The chair journey</span></a></li>
-    </ol>
+    <ul style="list-style:none;margin:1.6rem 0 0;padding:0;">
+    <li class="toc-group">
+      <a href="#intro"><span class="num">00</span><span class="ttl">Introduction</span></a>
+      <ul class="toc-sub"><li>Welcome from the Regional Chairs</li><li>Regional Overview<ul><li>List of Chapters and Chapter Chairs</li></ul></li><li>REX Directory<ul><li>REX Roles and Responsibilities</li></ul></li><li>Management Directory<ul><li>Management Roles and Responsibilities</li></ul></li></ul>
+    </li>
+    <li class="toc-group">
+      <a href="#regional-data"><span class="num">01</span><span class="ttl">Regional Data</span></a>
+      <ul class="toc-sub"><li>Data<ul><li>Chapter Commitments</li><li>Chapter Health</li><li>Regional KPIs</li></ul></li><li>REX Directory<ul><li>REX Roles and Responsibilities</li></ul></li><li>Management Directory<ul><li>Management Roles and Responsibilities</li></ul></li></ul>
+    </li>
+    <li class="toc-group">
+      <a href="#regional-calendar"><span class="num">02</span><span class="ttl">Regional Calendar</span></a>
+      <ul class="toc-sub"><li>YPO Regional Calendar<ul><li>Upcoming Global Events in MENA</li><li>Upcoming Regional Events<ul><li>YPO MENA Mastery</li><li>RBM</li></ul></li><li>GLC Dates</li></ul></li></ul>
+    </li>
+    <li class="toc-group">
+      <a href="#chapter-governance"><span class="num">03</span><span class="ttl">Chapter Governance</span></a>
+      <ul class="toc-sub"><li>Chapter Chair Role<ul><li>Chapter Chair Roadmap</li><li>Link Between the Chapter and the Region</li></ul></li><li>Chapter Operations<ul><li>Holding an Effective Board Meeting</li><li>Strategic Planning<ul><li>Game Plan Overview</li></ul></li></ul></li><li>Budget and Finance<ul><li>Recommended Chapter Budget Allocations</li><li>Best Practices for Strategic Partnerships</li><li>Budget Templates</li></ul></li><li>Working with your Chapter Manager<ul><li>Working with your CM</li><li>CM Performance Review Templates</li><li>CM Recruitment<ul><li>CM Role Description</li><li>CM Job Posting</li><li>CM Contract</li><li>CM Support Program</li></ul></li></ul></li><li>Chapter Governance Documents<ul><li>YPO P&amp;P</li><li>Chapter By-Laws Templates</li></ul></li><li>Conduct Committee Toolkit<ul><li>Offboarding</li></ul></li><li>Officer Training<ul><li>GLC Dates</li></ul></li><li>Succession Planning<ul><li>Champion Catalog</li><li>Succession Planning Worksheet</li></ul></li></ul>
+    </li>
+    <li class="toc-group">
+      <a href="#chapter-commitments"><span class="num">04</span><span class="ttl">Chapter Commitments</span></a>
+      <ul class="toc-sub"><li>Chapter Commitments<ul><li>Chapter Commitments Defined</li></ul></li><li>Chapter Health<ul><li>Chapter Health Defined</li></ul></li></ul>
+    </li>
+    <li class="toc-group">
+      <a href="#membership"><span class="num">05</span><span class="ttl">Membership</span></a>
+      <ul class="toc-sub"><li>YPO Membership Requirements</li><li>SMP</li><li>Accepting New Members</li></ul>
+    </li>
+    <li class="toc-group">
+      <a href="#member-engagement"><span class="num">06</span><span class="ttl">Member Engagement</span></a>
+      <ul class="toc-sub"><li>New Member Onboarding Checklist</li><li>Apeiron</li><li>Member Engagement Toolkit</li><li>Sample Pledge</li><li>Sample Points System for Member Engagement</li></ul>
+    </li>
+    <li class="toc-group">
+      <a href="#forum"><span class="num">07</span><span class="ttl">Forum</span></a>
+      <ul class="toc-sub"><li>Find a CFF</li><li>Regional Training</li><li>Regional Funding</li><li>Chapter, Global, Regional, Network</li><li>Forum By-Laws</li></ul>
+    </li>
+    <li class="toc-group">
+      <a href="#learning"><span class="num">08</span><span class="ttl">Learning</span></a>
+      <ul class="toc-sub"><li>E-CODE</li><li>Regional Initiatives</li><li>Global Events Calendar<ul><li>All Global Events</li></ul></li></ul>
+    </li>
+    <li class="toc-group">
+      <a href="#spouse-family"><span class="num">09</span><span class="ttl">Spouse / Partners &amp; Family</span></a>
+      
+    </li>
+    <li class="toc-group">
+      <a href="#yng"><span class="num">10</span><span class="ttl">YNG</span></a>
+      
+    </li>
+    <li class="toc-group">
+      <a href="#networks"><span class="num">11</span><span class="ttl">Networks</span></a>
+      <ul class="toc-sub"><li>List of Networks</li></ul>
+    </li>
+    <li class="toc-group">
+      <a href="#emergency-support"><span class="num">12</span><span class="ttl">YPO Emergency Support</span></a>
+      
+    </li>
+    </ul>
+  </div>
+</section>
+<!-- ========================================================= -->
+<!-- 00 · INTRODUCTION                                          -->
+<!-- ========================================================= -->
+<section class="divider" id="intro">
+  <div class="tri-field" aria-hidden="true"><svg viewBox="0 0 600 600"><use href="#tri-field"/></svg></div>
+  <div class="inner">
+    <div class="secnum">00 — Section</div>
+    <h2 class="big">Introduction</h2>
+    <p class="lead">A welcome to the region, a snapshot of who's who, and where to find every chapter across MENA.</p>
   </div>
 </section>
 
+<div class="wrap reveal">
+  <span class="eyebrow">Start here</span>
+  <p class="lede">The people and structures behind the United MENA Playbook.</p>
+
+  <div class="subsection">
+    <h3>Welcome from the Regional Chairs</h3>
+    <div class="stub">
+      <span class="stub-tag">Coming soon</span>
+      <p>A welcome message from Moodi Bukhari, Elias Chabtini and Helen Bannayan introducing the region and this playbook.</p>
+    </div>
+  </div>
+
+  <div class="subsection">
+    <h3>Regional Overview</h3>
+    <p class="sub-note">A snapshot of the region and every chapter within it.</p>
+    <div class="stub">
+      <span class="stub-tag">Coming soon</span>
+      <p>List of Chapters and Chapter Chairs</p><ul class="stub-list"><li>List of Chapters and Chapter Chairs — all 27 MENA chapters with their current chapter chair.</li></ul>
+    </div>
+  </div>
+
+  <div class="subsection">
+    <h3>REX Directory</h3>
+    <div class="stub">
+      <span class="stub-tag">Coming soon</span>
+      <p>The Regional Executive Committee, with contact details.</p><ul class="stub-list"><li>REX Roles and Responsibilities</li></ul>
+    </div>
+  </div>
+
+  <div class="subsection">
+    <h3>Management Directory</h3>
+    <div class="stub">
+      <span class="stub-tag">Coming soon</span>
+      <p>The regional management team, with contact details.</p><ul class="stub-list"><li>Management Roles and Responsibilities</li></ul>
+    </div>
+  </div>
+</div>
 <!-- ========================================================= -->
 <!-- 01 · REGIONAL DATA                                         -->
 <!-- ========================================================= -->
@@ -485,145 +618,319 @@
 </section>
 
 <div class="wrap reveal">
-  <span class="eyebrow">MENA GLC Registrations</span>
-  <p class="lede">Where the region stands on core-officer training and chapter commitments, refreshed at source.</p>
+  <div class="subsection">
+    <h3>Data</h3>
+    <span class="eyebrow">MENA GLC Registrations</span>
+    <p class="lede">Where the region stands on core-officer training and chapter commitments, refreshed at source.</p>
 
-  <div class="stats">
-    <div class="stat"><div class="n">27</div><div class="l">Chapters in region</div></div>
-    <div class="stat"><div class="n gold">23</div><div class="l">Chapters fully trained</div></div>
-    <div class="stat"><div class="n">4+</div><div class="l">Core officer roles trained / chapter</div></div>
-    <div class="stat"><div class="n" style="font-size:clamp(1.4rem,3.4vw,1.9rem);padding-top:.4rem">05 / 06 / 2026</div><div class="l">Data as of</div></div>
-  </div>
-
-  <div class="embed">
-    <div class="bar">
-      <span><span class="dot"></span>Live — MENA Chapter Commitments</span>
-      <a href="https://ypomenachaptercommitments.vercel.app/" target="_blank" rel="noopener">Open full dashboard ↗</a>
+    <div class="stats">
+      <div class="stat"><div class="n">27</div><div class="l">Chapters in region</div></div>
+      <div class="stat"><div class="n gold">23</div><div class="l">Chapters fully trained</div></div>
+      <div class="stat"><div class="n">4+</div><div class="l">Core officer roles trained / chapter</div></div>
+      <div class="stat"><div class="n" style="font-size:clamp(1.4rem,3.4vw,1.9rem);padding-top:.4rem">05 / 06 / 2026</div><div class="l">Data as of</div></div>
     </div>
-    <iframe src="https://ypomenachaptercommitments.vercel.app/" title="MENA Chapter Commitments live dashboard" loading="lazy"></iframe>
-  </div>
-  <p style="font-size:.82rem;color:var(--muted)">This panel embeds the live Vercel report. Update the dashboard's data source and this playbook reflects it automatically — no re-publish required.</p>
-</div>
 
+    <div class="embed">
+      <div class="bar">
+        <span><span class="dot"></span>Live — MENA Chapter Commitments</span>
+        <a href="https://ypomenachaptercommitments.vercel.app/" target="_blank" rel="noopener">Open full dashboard ↗</a>
+      </div>
+      <iframe src="https://ypomenachaptercommitments.vercel.app/" title="MENA Chapter Commitments live dashboard" loading="lazy"></iframe>
+    </div>
+    <p style="font-size:.82rem;color:var(--muted)">This panel embeds the live Vercel report. Update the dashboard's data source and this playbook reflects it automatically — no re-publish required.</p>
+
+    <div class="links-row" style="margin-top:1.6rem">
+      <a href="#chapter-commitments" style="border-radius:999px">Chapter Commitments</a>
+      <a href="#chapter-commitments" style="border-radius:999px">Chapter Health</a>
+    </div>
+    <p class="stable-note">Regional KPIs — coming soon.</p>
+  </div>
+
+  <div class="subsection">
+    <h3>REX Directory</h3>
+    <div class="stub">
+      <span class="stub-tag">Coming soon</span>
+      <p>The Regional Executive Committee, with contact details.</p><ul class="stub-list"><li>REX Roles and Responsibilities</li></ul>
+    </div>
+  </div>
+
+  <div class="subsection">
+    <h3>Management Directory</h3>
+    <div class="stub">
+      <span class="stub-tag">Coming soon</span>
+      <p>The regional management team, with contact details.</p><ul class="stub-list"><li>Management Roles and Responsibilities</li></ul>
+    </div>
+  </div>
+</div>
 <!-- ========================================================= -->
-<!-- 02 · CHAPTER COMMITMENTS                                   -->
+<!-- 02 · REGIONAL CALENDAR                                     -->
 <!-- ========================================================= -->
-<section class="divider" id="chapter-commitments">
+<section class="divider" id="regional-calendar">
   <div class="tri-field" aria-hidden="true"><svg viewBox="0 0 600 600"><use href="#tri-field"/></svg></div>
   <div class="inner">
     <div class="secnum">02 — Section</div>
-    <h2 class="big">Chapter<br>Commitments</h2>
-    <p class="lead">Fourteen commitments across the strategic areas that shape the member experience — chapter governance, forum, learning and peerdom.</p>
+    <h2 class="big">Regional<br>Calendar</h2>
+    <p class="lead">Every key date across the region and the globe, in one place.</p>
   </div>
 </section>
 
 <div class="wrap reveal">
-  <span class="eyebrow">The 14 commitments</span>
-  <p class="lede">A shared standard every chapter works toward each fiscal year.</p>
-
-  <div class="legend">
-    <span><span class="tag new">New</span> New metric this year</span>
-    <span><span class="tag rev">Revised</span> Existing metric with revisions</span>
+  <div class="subsection">
+    <h3>YPO Regional Calendar</h3>
+    <div class="stub">
+      <span class="stub-tag">Coming soon</span>
+      <p>A single calendar tying together global, regional and chapter-level dates.</p><ul class="stub-list"><li>Upcoming Global Events in MENA</li><li>Upcoming Regional Events<ul><li>YPO MENA Mastery</li><li>RBM</li></ul></li><li>GLC Dates</li></ul>
+    </div>
+    <p class="stable-note">Save the date: YPO MENA Mastery — 20–21 November 2026, Dubai.</p>
   </div>
-
-  <ol class="commits">
-    <li><div></div><div><h4>Chapter Charter <span class="tag new">New</span></h4><p>Chapter chair signed or acknowledged the YPO chapter charter (formerly the TLA) during the current fiscal year.</p></div></li>
-    <li><div></div><div><h4>Chapter Bylaws</h4><p>Bylaws (or equivalent legal documentation in the country of incorporation) updated within the current or previous three fiscal years.</p></div></li>
-    <li><div></div><div><h4>Chapter Strategic Plan</h4><p>A chapter strategic plan created or updated within the current or previous three fiscal years.</p></div></li>
-    <li><div></div><div><h4>Core Officer Elect Identification <span class="tag rev">Revised</span></h4><p>All elect core officer roles identified before 1 November (CC, ALO, LO, FO, MO for YPO/Integrated; CC, ALO, LO, FO, MEO for YPO Gold).</p></div></li>
-    <li><div></div><div><h4>Current Core Officers Trained <span class="tag rev">Revised</span></h4><p>Four or more current core officers completed officer training before 1 July.</p></div></li>
-    <li><div></div><div><h4>Chapter RBM Attendance</h4><p>The chapter chair or an officer proxy attended a Regional Board Meeting during the past fiscal year.</p></div></li>
-    <li><div></div><div><h4>Chapter Conduct Committee <span class="tag new">New</span></h4><p>Three or more chapter conduct committee (CCC) members identified for the current fiscal year.</p></div></li>
-    <li><div></div><div><h4>Chapter Manager Workshop</h4><p>Current chapter manager attended a Chapter Manager Workshop within the current or past three fiscal years.</p></div></li>
-    <li><div></div><div><h4>Learning Calendar <span class="tag rev">Revised</span></h4><p>A minimum of four events uploaded by 1 October via Cvent or the Chapter Management Hub.</p></div></li>
-    <li><div></div><div><h4>Trained Forum Moderators</h4><p>Every active member forum has a current, trained forum moderator.</p></div></li>
-    <li><div></div><div><h4>Forum Training <span class="tag rev">Revised</span></h4><p>All primary members who joined on or after 1 July 2024 were forum trained within their first six months.</p></div></li>
-    <li><div></div><div><h4>Forum Data <span class="tag new">New</span></h4><p>Chapter forum data reviewed and updated on the Chapter Management Hub during the current fiscal year.</p></div></li>
-    <li><div></div><div><h4>Chapter Membership <span class="tag new">New</span></h4><p>The chapter roster is verified as accurate and all listed members have paid chapter and YPO global dues for the year.</p></div></li>
-    <li><div></div><div><h4>Minimum Membership Requirements <span class="tag rev">Revised</span></h4><p>Chapter meets minimum membership: approved before 1 July 2024 = 16 primary members; after = 21 primary members.</p></div></li>
-  </ol>
 </div>
-
 <!-- ========================================================= -->
-<!-- 03 · GOVERNANCE                                            -->
+<!-- 03 · CHAPTER GOVERNANCE                                    -->
 <!-- ========================================================= -->
-<section class="divider" id="governance">
+<section class="divider" id="chapter-governance">
   <div class="tri-field" aria-hidden="true"><svg viewBox="0 0 600 600"><use href="#tri-field"/></svg></div>
   <div class="inner">
     <div class="secnum">03 — Section</div>
-    <h2 class="big">Governance</h2>
-    <p class="lead">The frameworks and tools that keep chapter leadership strong — the standard every chapter works toward, and the pipeline that sustains it.</p>
+    <h2 class="big">Chapter<br>Governance</h2>
+    <p class="lead">Everything a chapter chair, board and manager need to run a healthy chapter — from the officer journey to conduct, budget and succession.</p>
   </div>
 </section>
 
 <div class="wrap reveal">
-  <span class="eyebrow">Chapter governance resources</span>
-  <p class="lede">Two resources every chapter exco should have close at hand this year.</p>
 
-  <!-- ---------- Resource: Chapter Commitments Overview ---------- -->
-  <div class="resource">
-    <div class="resource-kicker">Resource · Chapter Commitments</div>
-    <h3>Chapter Commitments Overview</h3>
-    <p class="desc">The next evolution of the chapter health metrics — an enhanced iteration designed to better reflect the high level at which our chapters operate, aligning regional standards with the great work already being done across the MENA community.</p>
+  <!-- Chapter Chair Role -->
+  <div class="subsection">
+    <h3>Chapter Chair Role</h3>
+    <p class="sub-note">Chairs are appointed in November for a one-year term beginning in July.</p>
 
-    <div class="cards">
-      <div class="card">
-        <div class="k">Goal</div>
-        <h4>Enhance the member experience</h4>
-        <ul><li>Ensure consistent, high-quality experiences for all members across every YPO chapter.</li></ul>
-      </div>
-      <div class="card">
-        <div class="k">Goal</div>
-        <h4>Protect the YPO brand</h4>
-        <ul><li>Safeguard the integrity and reputation of YPO as the world's premier leadership organization.</li></ul>
-      </div>
-      <div class="card">
-        <div class="k">Support</div>
-        <h4>Clear guidance</h4>
-        <ul><li>Phased implementation timelines — chapters will have time to adapt.</li></ul>
-      </div>
-      <div class="card">
-        <div class="k">Support</div>
-        <h4>Resources</h4>
-        <ul><li>New processes, systems, training and communication are being created to support chapters.</li></ul>
-      </div>
-      <div class="card">
-        <div class="k">Support</div>
-        <h4>Flexibility</h4>
-        <ul><li>A waiver process is available for chapters needing additional time or support.</li></ul>
-      </div>
-    </div>
-
-    <p style="margin-top:1.6rem;font-size:.9rem;color:var(--muted)">The commitments span leadership, forum, learning, membership and operational processes — see the full list of 14 metrics in <a href="#chapter-commitments">Chapter Commitments</a>.</p>
-
-    <h4 style="margin-top:2.4rem;font-size:1.05rem">Rollout timeline</h4>
+    <h4 style="font-size:1.05rem;margin-bottom:.4rem">Chapter Chair Roadmap</h4>
     <div class="timeline">
-      <div class="phase"><div class="when">FY24–25</div><h4>Chapters learn about the change</h4></div>
-      <div class="phase"><div class="when">FY25–26</div><h4>Launch chapter commitments dataset and detailed chapter support</h4></div>
-      <div class="phase"><div class="when">FY26–27</div><h4>Chapters prepare and adapt processes to meet the commitments</h4></div>
-      <div class="phase"><div class="when">FY27–28</div><h4>Chapters are expected to achieve full compliance, with continued support</h4></div>
+      <div class="phase">
+        <div class="when">Pre-term · November</div>
+        <h4>Explore the role</h4>
+        <ul><li>Chapters appoint chairs for the one-year journey beginning in July.</li></ul>
+      </div>
+      <div class="phase">
+        <div class="when">January – March</div>
+        <h4>Prepare &amp; connect</h4>
+        <ul>
+          <li>Review the role description and watch the chapter chair essentials video.</li>
+          <li>Review chapter chair resources and assess data.</li>
+          <li>Connect with outgoing and incoming chairs to begin the transition.</li>
+          <li>Build a chapter conduct committee.</li>
+          <li>Attend the Chapter Chair Workshop at the Global Leadership Conference.</li>
+        </ul>
+      </div>
+      <div class="phase">
+        <div class="when">April – June</div>
+        <h4>Set the vision</h4>
+        <ul>
+          <li>Define your vision, objectives and goals for the year.</li>
+          <li>Conduct the chapter health survey and review available data.</li>
+          <li>If applicable, attend the Q4 regional governance meeting (e.g. RBM) and review pre-reads.</li>
+          <li>Host a strategic planning / game-plan session and secure approval.</li>
+        </ul>
+      </div>
+      <div class="phase">
+        <div class="when">July – September</div>
+        <h4>Term begins</h4>
+        <ul>
+          <li>Schedule 1:1 onboarding with your regional chair.</li>
+          <li>Review chapter commitments and how chapter health is measured.</li>
+          <li>Host chapter ExCo / board meetings; support membership renewals.</li>
+          <li>Allocate financial support to your officers.</li>
+        </ul>
+      </div>
+      <div class="phase">
+        <div class="when">October – December</div>
+        <h4>Build momentum</h4>
+        <ul>
+          <li>Attend the Q2 regional governance meeting and review pre-reads.</li>
+          <li>Get the chapter succession plan in place by 1 November.</li>
+          <li>Promote Officer Essentials and GLC attendance to incoming officers.</li>
+        </ul>
+      </div>
+      <div class="phase">
+        <div class="when">January – March (year two)</div>
+        <h4>Transition knowledge</h4>
+        <ul>
+          <li>Review chapter health metrics and plan improvements.</li>
+          <li>Begin transitioning knowledge to your successor.</li>
+          <li>Encourage your chapter manager to attend the Chapter Manager Workshop.</li>
+        </ul>
+      </div>
+      <div class="phase">
+        <div class="when">April – May</div>
+        <h4>Recognise &amp; prepare</h4>
+        <ul>
+          <li>Prepare for the YPO Global Awards Program.</li>
+          <li>Support your incoming chair with a strategic planning session.</li>
+        </ul>
+      </div>
+      <div class="phase">
+        <div class="when">June</div>
+        <h4>Hand over well</h4>
+        <ul>
+          <li>Ensure a proper handover to the incoming chair.</li>
+          <li>Send farewell notes, host a graduation ceremony and celebrate your peers.</li>
+        </ul>
+      </div>
     </div>
 
-    <div class="links-row">
-      <a href="https://vimeo.com/1040064747/ff8e18fd2c" target="_blank" rel="noopener">Overview video</a>
-      <a href="https://image.ypo-mail.org/lib/fe2f1171716404787c1478/m/1/3c4f22b0-f291-4627-ac75-cf5b2415cedd.pdf" target="_blank" rel="noopener">Review the FAQs</a>
-      <a href="https://image.ypo-mail.org/lib/fe2f1171716404787c1478/m/1/45f66ef7-5670-43f5-8f43-634130bb4016.pdf" target="_blank" rel="noopener">Full Definitions</a>
+    <h4 style="font-size:1.05rem;margin:2.2rem 0 .4rem">Link Between the Chapter and the Region</h4>
+    <div class="stub">
+      <span class="stub-tag">Coming soon</span>
+      <p>How chapter leadership connects into the regional governance structure.</p>
     </div>
   </div>
 
-  <!-- ---------- Resource: Succession Planning ---------- -->
-  <div class="resource">
-    <div class="resource-kicker">Resource · Succession Planning Worksheet</div>
+  <!-- Chapter Operations -->
+  <div class="subsection">
+    <h3>Chapter Operations</h3>
+    <div class="stub">
+      <span class="stub-tag">Coming soon</span>
+      <p>Practical guidance for running the chapter day to day.</p><ul class="stub-list"><li>Holding an Effective Board Meeting</li><li>Strategic Planning<ul><li>Game Plan Overview</li></ul></li></ul>
+    </div>
+  </div>
+
+  <!-- Budget and Finance -->
+  <div class="subsection">
+    <h3>Budget and Finance</h3>
+    <div class="stub">
+      <span class="stub-tag">Coming soon</span>
+      <p>Financial planning guidance and templates for chapter treasurers.</p><ul class="stub-list"><li>Recommended Chapter Budget Allocations</li><li>Best Practices for Strategic Partnerships</li><li>Budget Templates</li></ul>
+    </div>
+  </div>
+
+  <!-- Working with your Chapter Manager -->
+  <div class="subsection">
+    <h3>Working with your Chapter Manager</h3>
+    <div class="stub">
+      <span class="stub-tag">Coming soon</span>
+      <p>Guidance for chapter chairs on managing and developing their Chapter Manager.</p><ul class="stub-list"><li>Working with your CM</li><li>CM Performance Review Templates</li><li>CM Recruitment<ul><li>CM Role Description</li><li>CM Job Posting</li><li>CM Contract</li><li>CM Support Program</li></ul></li></ul>
+    </div>
+  </div>
+
+  <!-- Chapter Governance Documents -->
+  <div class="subsection">
+    <h3>Chapter Governance Documents</h3>
+    <div class="stub">
+      <span class="stub-tag">Coming soon</span>
+      <p>The formal documents every chapter should keep on file.</p><ul class="stub-list"><li>YPO P&amp;P</li><li>Chapter By-Laws Templates</li></ul>
+    </div>
+  </div>
+
+  <!-- Conduct Committee Toolkit (existing content) -->
+  <div class="subsection">
+    <h3>Conduct Committee Toolkit</h3>
+    <div class="pullquote">If it can be solved at the <span>chapter level</span>, solve it.</div>
+
+    <span class="eyebrow">Best practices</span>
+    <p class="lede">Four moves every chapter should have in place before an issue ever arises.</p>
+
+    <div class="cards">
+      <div class="card">
+        <div class="k">01 · Set up</div>
+        <h4>Establish a CCC annually</h4>
+        <ul>
+          <li>Confirm the committee each year; update chapter health data quarterly.</li>
+          <li>Recommended five members: current chair, past chair, membership / engagement officer, plus two senior board roles.</li>
+          <li>Avoid two members from the same forum.</li>
+        </ul>
+      </div>
+      <div class="card">
+        <div class="k">02 · Process</div>
+        <h4>Follow good process</h4>
+        <ul>
+          <li>Use member-led inquiry to gather the relevant facts.</li>
+          <li>Give the member under review a fair chance to respond.</li>
+          <li>Lean on YPO's review process, sanction guidelines and process diagram.</li>
+        </ul>
+      </div>
+      <div class="card">
+        <div class="k">03 · Escalate</div>
+        <h4>Communicate with the GCC</h4>
+        <ul>
+          <li>Ask questions early — the Global Conduct Committee is a resource.</li>
+          <li>Submit a Fact Finding Form or Decision Notice when action is taken.</li>
+          <li>This lets YPO track outcomes and support chapter decisions.</li>
+        </ul>
+      </div>
+      <div class="card">
+        <div class="k">04 · Protect</div>
+        <h4>Mitigate risk</h4>
+        <ul>
+          <li>Refine chapter bylaws with conduct, insurance and indemnification provisions.</li>
+          <li>Implement chapter-level waivers.</li>
+          <li>Obtain chapter / RALE D&amp;O coverage.</li>
+        </ul>
+      </div>
+    </div>
+
+    <h4 style="margin-top:2.2rem;font-size:1.1rem">The two-step review process</h4>
+    <p style="color:var(--muted);max-width:60ch">The engagement channel depends on the context of the issue. Step 1 is the fact-intensive initial review; Step 2 is the appeal, focused on due process and fairness.</p>
+    <div class="flow">
+      <div class="col ch">
+        <div class="head">Chapters &amp; Regions</div>
+        <div class="step"><b>Step 1 · Initial</b>Chapter Conduct Committee</div>
+        <div class="step"><b>Step 2 · Appeal</b>Global Conduct Committee</div>
+      </div>
+      <div class="col nw">
+        <div class="head">Networks</div>
+        <div class="step"><b>Step 1 · Initial</b>Network Conduct Committee</div>
+        <div class="step"><b>Step 2 · Appeal</b>Global Conduct Committee</div>
+      </div>
+      <div class="col gl">
+        <div class="head">Global</div>
+        <div class="step"><b>Step 1 · Initial</b>Global Conduct Committee</div>
+        <div class="step"><b>Step 2 · Appeal</b>GCC Review Panel</div>
+      </div>
+    </div>
+
+    <h4 style="margin-top:2rem;font-size:1.05rem">Where to report a concern</h4>
+    <div class="channels">
+      <span>EthicsPoint</span>
+      <span>Global Conduct Committee Chair</span>
+      <span>Chief Executive Officer</span>
+      <span>Chief People Officer</span>
+      <span>Chapter Chair / Network Committee Chair</span>
+    </div>
+
+    <h4 style="margin-top:2.2rem;font-size:1.05rem">Offboarding</h4>
+    <div class="stub">
+      <span class="stub-tag">Coming soon</span>
+      <p>Process for offboarding a member following a conduct outcome.</p>
+    </div>
+  </div>
+
+  <!-- Officer Training -->
+  <div class="subsection">
+    <h3>Officer Training</h3>
+    <div class="stub">
+      <span class="stub-tag">Coming soon</span>
+      <p>Training resources and dates for incoming and current officers.</p><ul class="stub-list"><li>GLC Dates</li></ul>
+    </div>
+  </div>
+
+  <!-- Succession Planning (existing content) -->
+  <div class="subsection">
     <h3>Succession Planning</h3>
-    <p class="desc">Chapter exco succession planning is vital for a healthy chapter:</p>
-    <ul style="margin:0 0 2rem;padding-left:1.2rem;color:#41495a;font-size:.94rem;line-height:1.75;max-width:66ch">
+    <p class="desc" style="color:#41495a;max-width:62ch;margin-bottom:1.2rem">Chapter exco succession planning is vital for a healthy chapter:</p>
+    <ul style="margin:0 0 1rem;padding-left:1.2rem;color:#41495a;font-size:.94rem;line-height:1.75;max-width:66ch">
       <li>Finding motivated members for each officer role strengthens chapter leadership.</li>
       <li>Early officer identification allows for effective onboarding and hand-over processes that ensure the continuity of chapter initiatives and programming.</li>
       <li>Timely officer identification allows officers to complete relevant role training.</li>
       <li>Member engagement increases for members involved in chapter officer roles — so it's important to keep bringing new people into the succession ladder.</li>
     </ul>
 
-    <h4 style="font-size:1.05rem;margin-bottom:.4rem">Discussion for a chapter executive meeting</h4>
+    <h4 style="font-size:1.05rem;margin:1.6rem 0 .4rem">Champion Catalog</h4>
+    <div class="stub">
+      <span class="stub-tag">Coming soon</span>
+      <p>A regional catalog of succession-ready members by chapter and role.</p>
+    </div>
+
+    <h4 style="font-size:1.05rem;margin:2.2rem 0 .4rem">Succession Planning Worksheet</h4>
+    <p class="sub-note">Discussion for a chapter executive meeting:</p>
     <div class="cards">
       <div class="card">
         <div class="k">01 · Analyze</div>
@@ -669,7 +976,7 @@
       </div>
     </div>
 
-    <h4 style="margin-top:2.6rem;font-size:1.05rem">Succession planning 3-year grid</h4>
+    <h4 style="margin-top:2.4rem;font-size:1.05rem">Succession planning 3-year grid</h4>
     <div style="overflow-x:auto">
       <table class="stable">
         <thead>
@@ -693,185 +1000,252 @@
     </div>
     <p class="stable-note">* These roles are not considered core chapter roles, and YPO training opportunities will vary for officers in these positions.</p>
   </div>
-</div>
 
+</div>
 <!-- ========================================================= -->
-<!-- 04 · CONDUCT COMMITTEE                                     -->
+<!-- 04 · CHAPTER COMMITMENTS                                   -->
 <!-- ========================================================= -->
-<section class="divider" id="conduct-committee">
+<section class="divider" id="chapter-commitments">
   <div class="tri-field" aria-hidden="true"><svg viewBox="0 0 600 600"><use href="#tri-field"/></svg></div>
   <div class="inner">
     <div class="secnum">04 — Section</div>
-    <h2 class="big">Conduct<br>Committee</h2>
-    <p class="lead">Clear, fair process protects the safe haven of trust. The guiding principle is simple: handle it at the closest level possible.</p>
+    <h2 class="big">Chapter<br>Commitments</h2>
+    <p class="lead">The next evolution of the chapter health metrics — the shared standard every chapter works toward each fiscal year.</p>
   </div>
 </section>
 
 <div class="wrap reveal">
-  <div class="pullquote">If it can be solved at the <span>chapter level</span>, solve it.</div>
 
-  <span class="eyebrow">Best practices</span>
-  <p class="lede">Four moves every chapter should have in place before an issue ever arises.</p>
+  <div class="subsection">
+    <h3>Chapter Commitments</h3>
 
-  <div class="cards">
-    <div class="card">
-      <div class="k">01 · Set up</div>
-      <h4>Establish a CCC annually</h4>
-      <ul>
-        <li>Confirm the committee each year; update chapter health data quarterly.</li>
-        <li>Recommended five members: current chair, past chair, membership / engagement officer, plus two senior board roles.</li>
-        <li>Avoid two members from the same forum.</li>
-      </ul>
+    <div class="cards">
+      <div class="card">
+        <div class="k">Goal</div>
+        <h4>Enhance the member experience</h4>
+        <ul><li>Ensure consistent, high-quality experiences for all members across every YPO chapter.</li></ul>
+      </div>
+      <div class="card">
+        <div class="k">Goal</div>
+        <h4>Protect the YPO brand</h4>
+        <ul><li>Safeguard the integrity and reputation of YPO as the world's premier leadership organization.</li></ul>
+      </div>
+      <div class="card">
+        <div class="k">Support</div>
+        <h4>Clear guidance</h4>
+        <ul><li>Phased implementation timelines — chapters will have time to adapt.</li></ul>
+      </div>
+      <div class="card">
+        <div class="k">Support</div>
+        <h4>Resources</h4>
+        <ul><li>New processes, systems, training and communication are being created to support chapters.</li></ul>
+      </div>
+      <div class="card">
+        <div class="k">Support</div>
+        <h4>Flexibility</h4>
+        <ul><li>A waiver process is available for chapters needing additional time or support.</li></ul>
+      </div>
     </div>
-    <div class="card">
-      <div class="k">02 · Process</div>
-      <h4>Follow good process</h4>
-      <ul>
-        <li>Use member-led inquiry to gather the relevant facts.</li>
-        <li>Give the member under review a fair chance to respond.</li>
-        <li>Lean on YPO's review process, sanction guidelines and process diagram.</li>
-      </ul>
+
+    <h4 style="margin-top:2.4rem;font-size:1.05rem">Chapter Commitments Defined</h4>
+    <div class="legend">
+      <span><span class="tag new">New</span> New metric this year</span>
+      <span><span class="tag rev">Revised</span> Existing metric with revisions</span>
     </div>
-    <div class="card">
-      <div class="k">03 · Escalate</div>
-      <h4>Communicate with the GCC</h4>
-      <ul>
-        <li>Ask questions early — the Global Conduct Committee is a resource.</li>
-        <li>Submit a Fact Finding Form or Decision Notice when action is taken.</li>
-        <li>This lets YPO track outcomes and support chapter decisions.</li>
-      </ul>
+    <ol class="commits">
+      <li><div></div><div><h4>Chapter Charter <span class="tag new">New</span></h4><p>Chapter chair signed or acknowledged the YPO chapter charter (formerly the TLA) during the current fiscal year.</p></div></li>
+      <li><div></div><div><h4>Chapter Bylaws</h4><p>Bylaws (or equivalent legal documentation in the country of incorporation) updated within the current or previous three fiscal years.</p></div></li>
+      <li><div></div><div><h4>Chapter Strategic Plan</h4><p>A chapter strategic plan created or updated within the current or previous three fiscal years.</p></div></li>
+      <li><div></div><div><h4>Core Officer Elect Identification <span class="tag rev">Revised</span></h4><p>All elect core officer roles identified before 1 November (CC, ALO, LO, FO, MO for YPO/Integrated; CC, ALO, LO, FO, MEO for YPO Gold).</p></div></li>
+      <li><div></div><div><h4>Current Core Officers Trained <span class="tag rev">Revised</span></h4><p>Four or more current core officers completed officer training before 1 July.</p></div></li>
+      <li><div></div><div><h4>Chapter RBM Attendance</h4><p>The chapter chair or an officer proxy attended a Regional Board Meeting during the past fiscal year.</p></div></li>
+      <li><div></div><div><h4>Chapter Conduct Committee <span class="tag new">New</span></h4><p>Three or more chapter conduct committee (CCC) members identified for the current fiscal year.</p></div></li>
+      <li><div></div><div><h4>Chapter Manager Workshop</h4><p>Current chapter manager attended a Chapter Manager Workshop within the current or past three fiscal years.</p></div></li>
+      <li><div></div><div><h4>Learning Calendar <span class="tag rev">Revised</span></h4><p>A minimum of four events uploaded by 1 October via Cvent or the Chapter Management Hub.</p></div></li>
+      <li><div></div><div><h4>Trained Forum Moderators</h4><p>Every active member forum has a current, trained forum moderator.</p></div></li>
+      <li><div></div><div><h4>Forum Training <span class="tag rev">Revised</span></h4><p>All primary members who joined on or after 1 July 2024 were forum trained within their first six months.</p></div></li>
+      <li><div></div><div><h4>Forum Data <span class="tag new">New</span></h4><p>Chapter forum data reviewed and updated on the Chapter Management Hub during the current fiscal year.</p></div></li>
+      <li><div></div><div><h4>Chapter Membership <span class="tag new">New</span></h4><p>The chapter roster is verified as accurate and all listed members have paid chapter and YPO global dues for the year.</p></div></li>
+      <li><div></div><div><h4>Minimum Membership Requirements <span class="tag rev">Revised</span></h4><p>Chapter meets minimum membership: approved before 1 July 2024 = 16 primary members; after = 21 primary members.</p></div></li>
+    </ol>
+
+    <h4 style="margin-top:2.4rem;font-size:1.05rem">Rollout timeline</h4>
+    <div class="timeline">
+      <div class="phase"><div class="when">FY24–25</div><h4>Chapters learn about the change</h4></div>
+      <div class="phase"><div class="when">FY25–26</div><h4>Launch chapter commitments dataset and detailed chapter support</h4></div>
+      <div class="phase"><div class="when">FY26–27</div><h4>Chapters prepare and adapt processes to meet the commitments</h4></div>
+      <div class="phase"><div class="when">FY27–28</div><h4>Chapters are expected to achieve full compliance, with continued support</h4></div>
     </div>
-    <div class="card">
-      <div class="k">04 · Protect</div>
-      <h4>Mitigate risk</h4>
-      <ul>
-        <li>Refine chapter bylaws with conduct, insurance and indemnification provisions.</li>
-        <li>Implement chapter-level waivers.</li>
-        <li>Obtain chapter / RALE D&amp;O coverage.</li>
-      </ul>
+
+    <div class="links-row">
+      <a href="https://vimeo.com/1040064747/ff8e18fd2c" target="_blank" rel="noopener">Overview video</a>
+      <a href="https://image.ypo-mail.org/lib/fe2f1171716404787c1478/m/1/3c4f22b0-f291-4627-ac75-cf5b2415cedd.pdf" target="_blank" rel="noopener">Review the FAQs</a>
+      <a href="https://image.ypo-mail.org/lib/fe2f1171716404787c1478/m/1/45f66ef7-5670-43f5-8f43-634130bb4016.pdf" target="_blank" rel="noopener">Full Definitions</a>
     </div>
   </div>
 
-  <h3 style="margin-top:3rem;font-size:1.4rem">The two-step review process</h3>
-  <p style="color:var(--muted);max-width:60ch">The engagement channel depends on the context of the issue. Step 1 is the fact-intensive initial review; Step 2 is the appeal, focused on due process and fairness.</p>
-  <div class="flow">
-    <div class="col ch">
-      <div class="head">Chapters &amp; Regions</div>
-      <div class="step"><b>Step 1 · Initial</b>Chapter Conduct Committee</div>
-      <div class="step"><b>Step 2 · Appeal</b>Global Conduct Committee</div>
-    </div>
-    <div class="col nw">
-      <div class="head">Networks</div>
-      <div class="step"><b>Step 1 · Initial</b>Network Conduct Committee</div>
-      <div class="step"><b>Step 2 · Appeal</b>Global Conduct Committee</div>
-    </div>
-    <div class="col gl">
-      <div class="head">Global</div>
-      <div class="step"><b>Step 1 · Initial</b>Global Conduct Committee</div>
-      <div class="step"><b>Step 2 · Appeal</b>GCC Review Panel</div>
+  <div class="subsection">
+    <h3>Chapter Health</h3>
+    <h4 style="font-size:1.05rem;margin-bottom:.4rem">Chapter Health Defined</h4>
+    <div class="stub">
+      <span class="stub-tag">Coming soon</span>
+      <p>How chapter health is scored and reported alongside the chapter commitments.</p>
     </div>
   </div>
 
-  <h3 style="margin-top:2.4rem;font-size:1.15rem">Where to report a concern</h3>
-  <div class="channels">
-    <span>EthicsPoint</span>
-    <span>Global Conduct Committee Chair</span>
-    <span>Chief Executive Officer</span>
-    <span>Chief People Officer</span>
-    <span>Chapter Chair / Network Committee Chair</span>
-  </div>
 </div>
-
 <!-- ========================================================= -->
-<!-- 04 · OFFICER ROADMAP                                       -->
+<!-- 05 · MEMBERSHIP -->
 <!-- ========================================================= -->
-<section class="divider" id="officer-roadmap">
+<section class="divider" id="membership">
   <div class="tri-field" aria-hidden="true"><svg viewBox="0 0 600 600"><use href="#tri-field"/></svg></div>
   <div class="inner">
     <div class="secnum">05 — Section</div>
-    <h2 class="big">Officer<br>Roadmap</h2>
-    <p class="lead">Everything a chapter chair needs to know about the journey — a month-by-month guide from appointment through a confident handover.</p>
+    <h2 class="big">Membership</h2>
+    <p class="lead">Who qualifies, how strategic membership works, and how new members are welcomed in.</p>
   </div>
 </section>
 
 <div class="wrap reveal">
-  <span class="eyebrow">The chapter chair journey</span>
-  <p class="lede">Chairs are appointed in November for a one-year term beginning in July.</p>
-
-  <div class="timeline">
-    <div class="phase">
-      <div class="when">Pre-term · November</div>
-      <h4>Explore the role</h4>
-      <ul><li>Chapters appoint chairs for the one-year journey beginning in July.</li></ul>
+  <div class="stub">
+      <span class="stub-tag">Coming soon</span>
+      <p>Content for this section is being developed — the structure below reflects the final table of contents.</p><ul class="stub-list"><li>YPO Membership Requirements</li><li>SMP</li><li>Accepting New Members</li></ul>
     </div>
-    <div class="phase">
-      <div class="when">January – March</div>
-      <h4>Prepare &amp; connect</h4>
-      <ul>
-        <li>Review the role description and watch the chapter chair essentials video.</li>
-        <li>Review chapter chair resources and assess data.</li>
-        <li>Connect with outgoing and incoming chairs to begin the transition.</li>
-        <li>Build a chapter conduct committee.</li>
-        <li>Attend the Chapter Chair Workshop at the Global Leadership Conference.</li>
-      </ul>
-    </div>
-    <div class="phase">
-      <div class="when">April – June</div>
-      <h4>Set the vision</h4>
-      <ul>
-        <li>Define your vision, objectives and goals for the year.</li>
-        <li>Conduct the chapter health survey and review available data.</li>
-        <li>If applicable, attend the Q4 regional governance meeting (e.g. RBM) and review pre-reads.</li>
-        <li>Host a strategic planning / game-plan session and secure approval.</li>
-      </ul>
-    </div>
-    <div class="phase">
-      <div class="when">July – September</div>
-      <h4>Term begins</h4>
-      <ul>
-        <li>Schedule 1:1 onboarding with your regional chair.</li>
-        <li>Review chapter commitments and how chapter health is measured.</li>
-        <li>Host chapter ExCo / board meetings; support membership renewals.</li>
-        <li>Allocate financial support to your officers.</li>
-      </ul>
-    </div>
-    <div class="phase">
-      <div class="when">October – December</div>
-      <h4>Build momentum</h4>
-      <ul>
-        <li>Attend the Q2 regional governance meeting and review pre-reads.</li>
-        <li>Get the chapter succession plan in place by 1 November.</li>
-        <li>Promote Officer Essentials and GLC attendance to incoming officers.</li>
-      </ul>
-    </div>
-    <div class="phase">
-      <div class="when">January – March (year two)</div>
-      <h4>Transition knowledge</h4>
-      <ul>
-        <li>Review chapter health metrics and plan improvements.</li>
-        <li>Begin transitioning knowledge to your successor.</li>
-        <li>Encourage your chapter manager to attend the Chapter Manager Workshop.</li>
-      </ul>
-    </div>
-    <div class="phase">
-      <div class="when">April – May</div>
-      <h4>Recognise &amp; prepare</h4>
-      <ul>
-        <li>Prepare for the YPO Global Awards Program.</li>
-        <li>Support your incoming chair with a strategic planning session.</li>
-      </ul>
-    </div>
-    <div class="phase">
-      <div class="when">June</div>
-      <h4>Hand over well</h4>
-      <ul>
-        <li>Ensure a proper handover to the incoming chair.</li>
-        <li>Send farewell notes, host a graduation ceremony and celebrate your peers.</li>
-      </ul>
-    </div>
-  </div>
+  
 </div>
+<!-- ========================================================= -->
+<!-- 06 · MEMBER<BR>ENGAGEMENT -->
+<!-- ========================================================= -->
+<section class="divider" id="member-engagement">
+  <div class="tri-field" aria-hidden="true"><svg viewBox="0 0 600 600"><use href="#tri-field"/></svg></div>
+  <div class="inner">
+    <div class="secnum">06 — Section</div>
+    <h2 class="big">Member<br>Engagement</h2>
+    <p class="lead">Tools to keep members active, connected and getting value from their chapter.</p>
+  </div>
+</section>
 
+<div class="wrap reveal">
+  <div class="stub">
+      <span class="stub-tag">Coming soon</span>
+      <p>Content for this section is being developed — the structure below reflects the final table of contents.</p><ul class="stub-list"><li>New Member Onboarding Checklist</li><li>Apeiron</li><li>Member Engagement Toolkit</li><li>Sample Pledge</li><li>Sample Points System for Member Engagement</li></ul>
+    </div>
+  
+</div>
+<!-- ========================================================= -->
+<!-- 07 · FORUM -->
+<!-- ========================================================= -->
+<section class="divider" id="forum">
+  <div class="tri-field" aria-hidden="true"><svg viewBox="0 0 600 600"><use href="#tri-field"/></svg></div>
+  <div class="inner">
+    <div class="secnum">07 — Section</div>
+    <h2 class="big">Forum</h2>
+    <p class="lead">Forum training, funding and the structures that support it across every level.</p>
+  </div>
+</section>
+
+<div class="wrap reveal">
+  <div class="stub">
+      <span class="stub-tag">Coming soon</span>
+      <p>Content for this section is being developed — the structure below reflects the final table of contents.</p><ul class="stub-list"><li>Find a CFF</li><li>Regional Training</li><li>Regional Funding</li><li>Chapter, Global, Regional, Network</li><li>Forum By-Laws</li></ul>
+    </div>
+  
+</div>
+<!-- ========================================================= -->
+<!-- 08 · LEARNING -->
+<!-- ========================================================= -->
+<section class="divider" id="learning">
+  <div class="tri-field" aria-hidden="true"><svg viewBox="0 0 600 600"><use href="#tri-field"/></svg></div>
+  <div class="inner">
+    <div class="secnum">08 — Section</div>
+    <h2 class="big">Learning</h2>
+    <p class="lead">Learning frameworks, regional initiatives and the global events calendar.</p>
+  </div>
+</section>
+
+<div class="wrap reveal">
+  <div class="stub">
+      <span class="stub-tag">Coming soon</span>
+      <p>Content for this section is being developed — the structure below reflects the final table of contents.</p><ul class="stub-list"><li>E-CODE</li><li>Regional Initiatives</li><li>Global Events Calendar<ul><li>All Global Events</li></ul></li></ul>
+    </div>
+  
+</div>
+<!-- ========================================================= -->
+<!-- 09 · SPOUSE / PARTNERS<BR>&AMP; FAMILY -->
+<!-- ========================================================= -->
+<section class="divider" id="spouse-family">
+  <div class="tri-field" aria-hidden="true"><svg viewBox="0 0 600 600"><use href="#tri-field"/></svg></div>
+  <div class="inner">
+    <div class="secnum">09 — Section</div>
+    <h2 class="big">Spouse / Partners<br>&amp; Family</h2>
+    <p class="lead">Resources for spouse, partner and family engagement across MENA chapters.</p>
+  </div>
+</section>
+
+<div class="wrap reveal">
+  <div class="stub">
+      <span class="stub-tag">Coming soon</span>
+      <p>Content for this section is being developed — the structure below reflects the final table of contents.</p>
+    </div>
+  
+</div>
+<!-- ========================================================= -->
+<!-- 10 · YNG -->
+<!-- ========================================================= -->
+<section class="divider" id="yng">
+  <div class="tri-field" aria-hidden="true"><svg viewBox="0 0 600 600"><use href="#tri-field"/></svg></div>
+  <div class="inner">
+    <div class="secnum">10 — Section</div>
+    <h2 class="big">YNG</h2>
+    <p class="lead">Resources for the Young Presidents' Network (YNG) across the region.</p>
+  </div>
+</section>
+
+<div class="wrap reveal">
+  <div class="stub">
+      <span class="stub-tag">Coming soon</span>
+      <p>Content for this section is being developed — the structure below reflects the final table of contents.</p>
+    </div>
+  
+</div>
+<!-- ========================================================= -->
+<!-- 11 · NETWORKS -->
+<!-- ========================================================= -->
+<section class="divider" id="networks">
+  <div class="tri-field" aria-hidden="true"><svg viewBox="0 0 600 600"><use href="#tri-field"/></svg></div>
+  <div class="inner">
+    <div class="secnum">11 — Section</div>
+    <h2 class="big">Networks</h2>
+    <p class="lead">The global networks available to MENA members.</p>
+  </div>
+</section>
+
+<div class="wrap reveal">
+  <div class="stub">
+      <span class="stub-tag">Coming soon</span>
+      <p>Content for this section is being developed — the structure below reflects the final table of contents.</p><ul class="stub-list"><li>List of Networks</li></ul>
+    </div>
+  
+</div>
+<!-- ========================================================= -->
+<!-- 12 · YPO EMERGENCY<BR>SUPPORT -->
+<!-- ========================================================= -->
+<section class="divider" id="emergency-support">
+  <div class="tri-field" aria-hidden="true"><svg viewBox="0 0 600 600"><use href="#tri-field"/></svg></div>
+  <div class="inner">
+    <div class="secnum">12 — Section</div>
+    <h2 class="big">YPO Emergency<br>Support</h2>
+    <p class="lead">How to access YPO's emergency support resources.</p>
+  </div>
+</section>
+
+<div class="wrap reveal">
+  <div class="stub">
+      <span class="stub-tag">Coming soon</span>
+      <p>Content for this section is being developed — the structure below reflects the final table of contents.</p>
+    </div>
+  
+</div>
 <!-- ====== FOOTER ====== -->
 <footer>
   <div class="grid">
@@ -889,6 +1263,7 @@
     </div>
   </div>
 </footer>
+
 
 <script>
   // scroll reveal
@@ -961,11 +1336,19 @@
 
     /* ---------- view tracking ---------- */
     const SECTIONS=[
+      {id:'intro',              label:'Introduction'},
       {id:'regional-data',      label:'Regional Data'},
+      {id:'regional-calendar',  label:'Regional Calendar'},
+      {id:'chapter-governance', label:'Chapter Governance'},
       {id:'chapter-commitments',label:'Chapter Commitments'},
-      {id:'governance',         label:'Governance'},
-      {id:'conduct-committee',  label:'Conduct Committee'},
-      {id:'officer-roadmap',    label:'Officer Roadmap'}
+      {id:'membership',         label:'Membership'},
+      {id:'member-engagement',  label:'Member Engagement'},
+      {id:'forum',              label:'Forum'},
+      {id:'learning',           label:'Learning'},
+      {id:'spouse-family',      label:'Spouse / Partners & Family'},
+      {id:'yng',                label:'YNG'},
+      {id:'networks',           label:'Networks'},
+      {id:'emergency-support',  label:'YPO Emergency Support'}
     ];
     const dwell={}; SECTIONS.forEach(s=>dwell[s.id]=0);
     let totalActive=0, tracking=false;
