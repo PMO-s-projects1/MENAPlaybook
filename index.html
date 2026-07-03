@@ -285,6 +285,17 @@
   .stable td.role{font-weight:600;color:var(--ink);}
   .stable-note{margin-top:.6rem;font-size:.76rem;color:var(--muted);}
 
+  /* commitment → support-section quick links */
+  .commit-map{display:flex;flex-wrap:wrap;justify-content:center;gap:1px;background:var(--line);border:1px solid var(--line);margin-top:1rem;}
+  .cm-row{
+    background:#fff;padding:.85rem 1.1rem;flex:1 1 300px;min-width:260px;max-width:380px;
+    display:flex;justify-content:space-between;align-items:baseline;gap:.7rem;flex-wrap:wrap;
+  }
+  .cm-name{font-size:.86rem;font-weight:600;color:var(--ink);}
+  .cm-link{font-size:.76rem;font-weight:700;color:var(--azure);white-space:nowrap;text-decoration:none;}
+  .cm-link:hover{text-decoration:underline;}
+  .cm-link::after{content:" →";}
+
   /* subsections within a mega-section */
   .subsection{margin-top:3rem;padding-top:2.6rem;border-top:1px solid var(--line);}
   .subsection:first-of-type{margin-top:0;padding-top:0;border-top:none;}
@@ -802,6 +813,25 @@
     </div>
     <p style="font-size:.82rem;color:var(--muted)">This panel embeds the live Vercel report. Update the dashboard's data source and this playbook reflects it automatically — no re-publish required.</p>
 
+    <h4 style="font-size:1.05rem;margin:2rem 0 .3rem">See an X on the report? Click through for help</h4>
+    <p class="sub-note">The live dashboard itself can't be made clickable here — it's a separate site embedded in a frame, and browsers block scripts from reaching into another site's page. But every commitment below links straight to the part of this playbook that helps you close it.</p>
+    <div class="commit-map">
+      <div class="cm-row"><span class="cm-name">Chapter Charter</span><a class="cm-link" href="#cg-docs">Governance Documents</a></div>
+      <div class="cm-row"><span class="cm-name">Chapter Bylaws</span><a class="cm-link" href="#cg-docs">Governance Documents</a></div>
+      <div class="cm-row"><span class="cm-name">Chapter Strategic Plan</span><a class="cm-link" href="#cg-operations">Strategic Planning</a></div>
+      <div class="cm-row"><span class="cm-name">Core Officer Elect ID</span><a class="cm-link" href="#cg-succession">Succession Planning</a></div>
+      <div class="cm-row"><span class="cm-name">Current Core Officers Trained</span><a class="cm-link" href="#cg-officer-training">Officer Training</a></div>
+      <div class="cm-row"><span class="cm-name">Chapter RBM Attendance</span><a class="cm-link" href="#regional-calendar">Regional Calendar</a></div>
+      <div class="cm-row"><span class="cm-name">Chapter Conduct Committee</span><a class="cm-link" href="#cg-conduct">Conduct Committee Toolkit</a></div>
+      <div class="cm-row"><span class="cm-name">Chapter Manager Workshop</span><a class="cm-link" href="#cg-cm">Working with your CM</a></div>
+      <div class="cm-row"><span class="cm-name">Learning Calendar</span><a class="cm-link" href="#learning">Learning</a></div>
+      <div class="cm-row"><span class="cm-name">Trained Forum Moderators</span><a class="cm-link" href="#forum">Forum</a></div>
+      <div class="cm-row"><span class="cm-name">Forum Training</span><a class="cm-link" href="#forum">Forum</a></div>
+      <div class="cm-row"><span class="cm-name">Forum Data</span><a class="cm-link" href="#forum">Forum</a></div>
+      <div class="cm-row"><span class="cm-name">Chapter Membership</span><a class="cm-link" href="#membership">Membership</a></div>
+      <div class="cm-row"><span class="cm-name">Minimum Membership Requirements</span><a class="cm-link" href="#membership">Membership</a></div>
+    </div>
+
     <div class="links-row" style="margin-top:1.6rem">
       <a href="#chapter-commitments" style="border-radius:999px">Chapter Commitments</a>
       <a href="#chapter-commitments" style="border-radius:999px">Chapter Health</a>
@@ -846,7 +876,7 @@
 <div class="wrap reveal">
 
   <!-- Chapter Chair Role -->
-  <div class="subsection">
+  <div class="subsection" id="cg-chair-role">
     <h3>Chapter Chair Role</h3>
     <p class="sub-note">Chairs are appointed in November for a one-year term beginning in July.</p>
 
@@ -932,7 +962,7 @@
   </div>
 
   <!-- Chapter Operations -->
-  <div class="subsection">
+  <div class="subsection" id="cg-operations">
     <h3>Chapter Operations</h3>
     <div class="stub">
       <span class="stub-tag">Coming soon</span>
@@ -941,7 +971,7 @@
   </div>
 
   <!-- Budget and Finance -->
-  <div class="subsection">
+  <div class="subsection" id="cg-budget">
     <h3>Budget and Finance</h3>
     <div class="stub">
       <span class="stub-tag">Coming soon</span>
@@ -950,7 +980,7 @@
   </div>
 
   <!-- Working with your Chapter Manager -->
-  <div class="subsection">
+  <div class="subsection" id="cg-cm">
     <h3>Working with your Chapter Manager</h3>
     <div class="stub">
       <span class="stub-tag">Coming soon</span>
@@ -959,7 +989,7 @@
   </div>
 
   <!-- Chapter Governance Documents -->
-  <div class="subsection">
+  <div class="subsection" id="cg-docs">
     <h3>Chapter Governance Documents</h3>
     <div class="stub">
       <span class="stub-tag">Coming soon</span>
@@ -968,7 +998,7 @@
   </div>
 
   <!-- Conduct Committee Toolkit (existing content) -->
-  <div class="subsection">
+  <div class="subsection" id="cg-conduct">
     <h3>Conduct Committee Toolkit</h3>
     <div class="pullquote">If it can be solved at the <span>chapter level</span>, solve it.</div>
 
@@ -1051,7 +1081,7 @@
   </div>
 
   <!-- Officer Training -->
-  <div class="subsection">
+  <div class="subsection" id="cg-officer-training">
     <h3>Officer Training</h3>
     <div class="stub">
       <span class="stub-tag">Coming soon</span>
@@ -1060,7 +1090,7 @@
   </div>
 
   <!-- Succession Planning (existing content) -->
-  <div class="subsection">
+  <div class="subsection" id="cg-succession">
     <h3>Succession Planning</h3>
     <p class="desc" style="color:#41495a;max-width:62ch;margin-bottom:1.2rem">Chapter exco succession planning is vital for a healthy chapter:</p>
     <ul style="margin:0 0 1rem;padding-left:1.2rem;color:#41495a;font-size:.94rem;line-height:1.75;max-width:66ch">
