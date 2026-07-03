@@ -259,6 +259,30 @@
   .phase ul{margin:0;padding-left:1.1rem;color:#41495a;font-size:.92rem;}
   .phase li{margin:.28rem 0;}
 
+  /* governance resources */
+  .resource{margin-top:3.6rem;padding-top:3rem;border-top:1px solid var(--line);}
+  .resource:first-of-type{margin-top:0;padding-top:0;border-top:none;}
+  .resource-kicker{font-size:.72rem;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--gold);margin-bottom:.5rem;}
+  .resource h3{font-size:clamp(1.5rem,3.6vw,2.1rem);margin-bottom:.6rem;letter-spacing:-.02em;}
+  .resource .desc{color:#41495a;max-width:62ch;margin-bottom:1.6rem;}
+
+  .links-row{display:flex;flex-wrap:wrap;gap:.7rem;margin:1.6rem 0 .4rem;}
+  .links-row a{
+    display:inline-flex;align-items:center;gap:.4rem;
+    border:1px solid var(--line);border-radius:999px;padding:.5rem 1.05rem;
+    font-size:.84rem;font-weight:600;color:var(--blue);background:#fff;text-decoration:none;
+    transition:border-color .15s ease,color .15s ease;
+  }
+  .links-row a:hover{border-color:var(--azure);color:var(--azure);text-decoration:none;}
+  .links-row a::after{content:"↗";font-size:.78rem;opacity:.6;}
+
+  .stable{width:100%;border-collapse:collapse;margin-top:1.4rem;font-size:.86rem;}
+  .stable th,.stable td{border:1px solid var(--line);padding:.65rem .8rem;text-align:left;vertical-align:top;}
+  .stable thead th{background:var(--blue);color:#fff;font-weight:600;font-size:.78rem;letter-spacing:.03em;}
+  .stable tbody tr:nth-child(even){background:var(--paper-2);}
+  .stable td.role{font-weight:600;color:var(--ink);}
+  .stable-note{margin-top:.6rem;font-size:.76rem;color:var(--muted);}
+
   /* footer */
   footer{background:var(--blue);color:#fff;padding:clamp(40px,6vw,72px) var(--pad);}
   footer .lockup{--logo-gap:var(--blue);color:#fff;margin-bottom:1.4rem;}
@@ -401,6 +425,7 @@
   <span class="links">
     <a href="#regional-data">Regional Data</a>
     <a href="#chapter-commitments">Chapter Commitments</a>
+    <a href="#governance">Governance</a>
     <a href="#conduct-committee">Conduct Committee</a>
     <a href="#officer-roadmap">Officer Roadmap</a>
   </span>
@@ -440,8 +465,9 @@
     <ol>
       <li><a href="#regional-data"><span class="num">01</span><span class="ttl">Regional Data</span><span class="meta">Live dashboard</span></a></li>
       <li><a href="#chapter-commitments"><span class="num">02</span><span class="ttl">Chapter Commitments</span><span class="meta">The 14 metrics</span></a></li>
-      <li><a href="#conduct-committee"><span class="num">03</span><span class="ttl">Conduct Committee Best Practices</span><span class="meta">Protocol &amp; review</span></a></li>
-      <li><a href="#officer-roadmap"><span class="num">04</span><span class="ttl">Officer Roadmap</span><span class="meta">The chair journey</span></a></li>
+      <li><a href="#governance"><span class="num">03</span><span class="ttl">Governance</span><span class="meta">Commitments overview &amp; succession</span></a></li>
+      <li><a href="#conduct-committee"><span class="num">04</span><span class="ttl">Conduct Committee Best Practices</span><span class="meta">Protocol &amp; review</span></a></li>
+      <li><a href="#officer-roadmap"><span class="num">05</span><span class="ttl">Officer Roadmap</span><span class="meta">The chair journey</span></a></li>
     </ol>
   </div>
 </section>
@@ -519,12 +545,163 @@
 </div>
 
 <!-- ========================================================= -->
-<!-- 03 · CONDUCT COMMITTEE                                     -->
+<!-- 03 · GOVERNANCE                                            -->
+<!-- ========================================================= -->
+<section class="divider" id="governance">
+  <div class="tri-field" aria-hidden="true"><svg viewBox="0 0 600 600"><use href="#tri-field"/></svg></div>
+  <div class="inner">
+    <div class="secnum">03 — Section</div>
+    <h2 class="big">Governance</h2>
+    <p class="lead">The frameworks and tools that keep chapter leadership strong — the standard every chapter works toward, and the pipeline that sustains it.</p>
+  </div>
+</section>
+
+<div class="wrap reveal">
+  <span class="eyebrow">Chapter governance resources</span>
+  <p class="lede">Two resources every chapter exco should have close at hand this year.</p>
+
+  <!-- ---------- Resource: Chapter Commitments Overview ---------- -->
+  <div class="resource">
+    <div class="resource-kicker">Resource · Chapter Commitments</div>
+    <h3>Chapter Commitments Overview</h3>
+    <p class="desc">The next evolution of the chapter health metrics — an enhanced iteration designed to better reflect the high level at which our chapters operate, aligning regional standards with the great work already being done across the MENA community.</p>
+
+    <div class="cards">
+      <div class="card">
+        <div class="k">Goal</div>
+        <h4>Enhance the member experience</h4>
+        <ul><li>Ensure consistent, high-quality experiences for all members across every YPO chapter.</li></ul>
+      </div>
+      <div class="card">
+        <div class="k">Goal</div>
+        <h4>Protect the YPO brand</h4>
+        <ul><li>Safeguard the integrity and reputation of YPO as the world's premier leadership organization.</li></ul>
+      </div>
+      <div class="card">
+        <div class="k">Support</div>
+        <h4>Clear guidance</h4>
+        <ul><li>Phased implementation timelines — chapters will have time to adapt.</li></ul>
+      </div>
+      <div class="card">
+        <div class="k">Support</div>
+        <h4>Resources</h4>
+        <ul><li>New processes, systems, training and communication are being created to support chapters.</li></ul>
+      </div>
+      <div class="card">
+        <div class="k">Support</div>
+        <h4>Flexibility</h4>
+        <ul><li>A waiver process is available for chapters needing additional time or support.</li></ul>
+      </div>
+    </div>
+
+    <p style="margin-top:1.6rem;font-size:.9rem;color:var(--muted)">The commitments span leadership, forum, learning, membership and operational processes — see the full list of 14 metrics in <a href="#chapter-commitments">Chapter Commitments</a>.</p>
+
+    <h4 style="margin-top:2.4rem;font-size:1.05rem">Rollout timeline</h4>
+    <div class="timeline">
+      <div class="phase"><div class="when">FY24–25</div><h4>Chapters learn about the change</h4></div>
+      <div class="phase"><div class="when">FY25–26</div><h4>Launch chapter commitments dataset and detailed chapter support</h4></div>
+      <div class="phase"><div class="when">FY26–27</div><h4>Chapters prepare and adapt processes to meet the commitments</h4></div>
+      <div class="phase"><div class="when">FY27–28</div><h4>Chapters are expected to achieve full compliance, with continued support</h4></div>
+    </div>
+
+    <div class="links-row">
+      <a href="https://vimeo.com/1040064747/ff8e18fd2c" target="_blank" rel="noopener">Overview video</a>
+      <a href="https://image.ypo-mail.org/lib/fe2f1171716404787c1478/m/1/3c4f22b0-f291-4627-ac75-cf5b2415cedd.pdf" target="_blank" rel="noopener">Review the FAQs</a>
+      <a href="https://image.ypo-mail.org/lib/fe2f1171716404787c1478/m/1/45f66ef7-5670-43f5-8f43-634130bb4016.pdf" target="_blank" rel="noopener">Full Definitions</a>
+    </div>
+  </div>
+
+  <!-- ---------- Resource: Succession Planning ---------- -->
+  <div class="resource">
+    <div class="resource-kicker">Resource · Succession Planning Worksheet</div>
+    <h3>Succession Planning</h3>
+    <p class="desc">Chapter exco succession planning is vital for a healthy chapter:</p>
+    <ul style="margin:0 0 2rem;padding-left:1.2rem;color:#41495a;font-size:.94rem;line-height:1.75;max-width:66ch">
+      <li>Finding motivated members for each officer role strengthens chapter leadership.</li>
+      <li>Early officer identification allows for effective onboarding and hand-over processes that ensure the continuity of chapter initiatives and programming.</li>
+      <li>Timely officer identification allows officers to complete relevant role training.</li>
+      <li>Member engagement increases for members involved in chapter officer roles — so it's important to keep bringing new people into the succession ladder.</li>
+    </ul>
+
+    <h4 style="font-size:1.05rem;margin-bottom:.4rem">Discussion for a chapter executive meeting</h4>
+    <div class="cards">
+      <div class="card">
+        <div class="k">01 · Analyze</div>
+        <h4>Current chapter process</h4>
+        <ul>
+          <li>What kind of succession plan does your chapter have in place now?</li>
+          <li>What is the status of your chapter's current succession champion pipeline?</li>
+          <li>How many years out have you identified champion talent to rise up the ladder?</li>
+        </ul>
+      </div>
+      <div class="card">
+        <div class="k">02 · Plan</div>
+        <h4>Strategize</h4>
+        <ul>
+          <li>How will you identify and recruit champions?</li>
+          <li>How many champions do you need to fill your pipeline for the next 1–3 years?</li>
+          <li>What strategies will you use?</li>
+          <li>What are ways you can recruit to increase diversity as needed?</li>
+        </ul>
+      </div>
+      <div class="card">
+        <div class="k">03 · Develop</div>
+        <h4>Officer training &amp; support</h4>
+        <ul>
+          <li>How will you develop champions to help them successfully climb the succession ladder?</li>
+          <li>What programs or support will you provide?</li>
+        </ul>
+      </div>
+      <div class="card">
+        <div class="k">04 · Recognise</div>
+        <h4>Gratitude &amp; recognition</h4>
+        <ul>
+          <li>How will you recognise champions?</li>
+          <li>For each position they complete, how will you acknowledge champions and ensure they continue on their champion journey?</li>
+        </ul>
+      </div>
+      <div class="card">
+        <div class="k">05 · Act</div>
+        <h4>Implementation</h4>
+        <ul>
+          <li>How will you implement your plan, and what support do you need?</li>
+        </ul>
+      </div>
+    </div>
+
+    <h4 style="margin-top:2.6rem;font-size:1.05rem">Succession planning 3-year grid</h4>
+    <div style="overflow-x:auto">
+      <table class="stable">
+        <thead>
+          <tr><th>Chapter officer role</th><th>Year 1</th><th>Year 2</th><th>Year 3</th></tr>
+        </thead>
+        <tbody>
+          <tr><td class="role">Chapter Chair</td><td></td><td></td><td></td></tr>
+          <tr><td class="role">Learning Officer</td><td></td><td></td><td></td></tr>
+          <tr><td class="role">Assistant Learning Officer</td><td></td><td></td><td></td></tr>
+          <tr><td class="role">Membership Officer</td><td></td><td></td><td></td></tr>
+          <tr><td class="role">Forum Officer</td><td></td><td></td><td></td></tr>
+          <tr><td class="role">Member Engagement Officer *</td><td></td><td></td><td></td></tr>
+          <tr><td class="role">Family Officer *</td><td></td><td></td><td></td></tr>
+          <tr><td class="role">Mentoring Officer *</td><td></td><td></td><td></td></tr>
+          <tr><td class="role">Finance Officer *</td><td></td><td></td><td></td></tr>
+          <tr><td class="role">Spouse/Partner Officer *</td><td></td><td></td><td></td></tr>
+          <tr><td class="role">Spouse Forum Officer *</td><td></td><td></td><td></td></tr>
+          <tr><td class="role">Other *</td><td></td><td></td><td></td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p class="stable-note">* These roles are not considered core chapter roles, and YPO training opportunities will vary for officers in these positions.</p>
+  </div>
+</div>
+
+<!-- ========================================================= -->
+<!-- 04 · CONDUCT COMMITTEE                                     -->
 <!-- ========================================================= -->
 <section class="divider" id="conduct-committee">
   <div class="tri-field" aria-hidden="true"><svg viewBox="0 0 600 600"><use href="#tri-field"/></svg></div>
   <div class="inner">
-    <div class="secnum">03 — Section</div>
+    <div class="secnum">04 — Section</div>
     <h2 class="big">Conduct<br>Committee</h2>
     <p class="lead">Clear, fair process protects the safe haven of trust. The guiding principle is simple: handle it at the closest level possible.</p>
   </div>
@@ -611,7 +788,7 @@
 <section class="divider" id="officer-roadmap">
   <div class="tri-field" aria-hidden="true"><svg viewBox="0 0 600 600"><use href="#tri-field"/></svg></div>
   <div class="inner">
-    <div class="secnum">04 — Section</div>
+    <div class="secnum">05 — Section</div>
     <h2 class="big">Officer<br>Roadmap</h2>
     <p class="lead">Everything a chapter chair needs to know about the journey — a month-by-month guide from appointment through a confident handover.</p>
   </div>
@@ -786,6 +963,7 @@
     const SECTIONS=[
       {id:'regional-data',      label:'Regional Data'},
       {id:'chapter-commitments',label:'Chapter Commitments'},
+      {id:'governance',         label:'Governance'},
       {id:'conduct-committee',  label:'Conduct Committee'},
       {id:'officer-roadmap',    label:'Officer Roadmap'}
     ];
