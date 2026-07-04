@@ -351,6 +351,10 @@
   .msg.bot{background:#fff;border:1px solid var(--line);color:var(--ink);align-self:flex-start;border-bottom-left-radius:4px;}
   .msg.user{background:var(--blue);color:#fff;align-self:flex-end;border-bottom-right-radius:4px;}
   .msg.typing{color:var(--muted);font-style:italic;}
+  .msg p{margin:0 0 .5em;} .msg p:last-child{margin-bottom:0;}
+  .msg .h{font-weight:700;margin:.5em 0 .2em;} .msg .h:first-child{margin-top:0;}
+  .msg ul{margin:.2em 0 .5em;padding-left:1.15em;} .msg li{margin:.18em 0;}
+  .msg strong{font-weight:700;} .msg em{font-style:italic;}
   #chat-form{display:flex;gap:.5rem;padding:.7rem;border-top:1px solid var(--line);background:#fff;}
   #chat-input{flex:1;padding:.7rem .8rem;border:1.5px solid var(--line);border-radius:10px;font:inherit;font-size:.9rem;}
   #chat-input:focus{outline:none;border-color:var(--azure);box-shadow:0 0 0 3px rgba(0,96,172,.14);}
@@ -916,10 +920,37 @@
     fab.addEventListener('click', open);
     closeBtn.addEventListener('click', close);
 
+    function esc(s){ return s.replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;'); }
+    function inline(s){
+      return s
+        .replace(/\*\*(.+?)\*\*/g,'<strong>$1</strong>')
+        .replace(/\*(?!\s)([^*]+?)\*/g,'<em>$1</em>');
+    }
+    function renderMD(text){
+      const lines=esc(text).split('\n');
+      let html='', inList=false;
+      const closeList=()=>{ if(inList){ html+='</ul>'; inList=false; } };
+      for(const raw of lines){
+        const line=raw.trim();
+        let m;
+        if((m=line.match(/^#{1,6}\s+(.*)$/))){ closeList(); html+='<div class="h">'+inline(m[1])+'</div>'; continue; }
+        if((m=line.match(/^[-*]\s+(.*)$/))){ if(!inList){ html+='<ul>'; inList=true; } html+='<li>'+inline(m[1])+'</li>'; continue; }
+        closeList();
+        if(line==='') continue;
+        html+='<p>'+inline(line)+'</p>';
+      }
+      closeList();
+      return html;
+    }
+
     function bubble(text, who){
       const d=document.createElement('div');
       d.className='msg '+who;
-      d.textContent=text;
+      if(who.indexOf('bot')>-1 && who.indexOf('typing')===-1){
+        d.innerHTML=renderMD(text);   // safe: text is HTML-escaped before formatting
+      }else{
+        d.textContent=text;
+      }
       log.appendChild(d);
       log.scrollTop=log.scrollHeight;
       return d;
