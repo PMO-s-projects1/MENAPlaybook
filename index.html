@@ -178,7 +178,7 @@
   @media(max-width:520px){ #chat-panel{right:8px;bottom:8px;} #chat-fab{right:12px;bottom:12px;} }
 
   /* welcome note + regional chairs */
-  .welcome{max-width:66ch;}
+  .welcome{max-width:none;}
   .welcome-title{font-size:clamp(1.5rem,3.5vw,2.2rem);letter-spacing:-.02em;margin:0 0 1.1rem;color:var(--blue);}
   .welcome-greeting{font-weight:600;}
   .welcome p{color:#2f3846;font-size:1.02rem;line-height:1.7;}
@@ -198,6 +198,16 @@
   .rex-card img{width:108px;height:108px;border-radius:50%;object-fit:cover;border:3px solid var(--gold);box-shadow:0 10px 24px -12px rgba(4,30,66,.5);background:var(--paper);}
   .rex-card .rn{font-weight:700;margin-top:.7rem;font-size:.93rem;line-height:1.2;}
   .rex-card .rr{font-size:.8rem;color:var(--muted);margin-top:.2rem;line-height:1.3;}
+
+  /* management directory */
+  .mgmt-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(230px,1fr));gap:1.6rem;margin-top:1.2rem;}
+  .mgmt-card{border:1px solid var(--line);border-radius:12px;padding:1.4rem;background:#fff;}
+  .mgmt-card img{width:96px;height:96px;border-radius:50%;object-fit:cover;border:3px solid var(--gold);display:block;margin:0 auto .8rem;box-shadow:0 10px 24px -12px rgba(4,30,66,.5);background:var(--paper);}
+  .mgmt-card .mn{font-weight:700;text-align:center;font-size:1rem;}
+  .mgmt-card .mr{text-align:center;font-size:.82rem;color:var(--muted);margin-top:.15rem;line-height:1.3;}
+  .mgmt-card .ask{font-size:.72rem;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:var(--azure);margin:1rem 0 .4rem;}
+  .mgmt-card ul{margin:0;padding-left:1.1rem;font-size:.86rem;color:#41495a;}
+  .mgmt-card li{margin:.3rem 0;}
 
   /* appendix — acronyms glossary */
   .acr-cat{font-size:1.15rem;margin:1.9rem 0 .3rem;color:var(--blue);}
@@ -347,7 +357,80 @@
           <figure class="rex-card"><img src="./images/sabina.webp" alt="Sabina Hadi"/><div class="rn">Sabina Hadi</div><div class="rr">Regional Spouse Forum Officer</div></figure>
         </div>
       </div>
-      <div class="ph"><h4>Management Directory</h4><p class="ph-note">Content to be added.</p><ul><li>Management roles, responsibilities and structure</li></ul></div>
+      <div class="mgmt-block">
+        <h4 class="rex-h">Management Directory</h4>
+        <p class="rex-sub">Your YPO MENA regional management team — and what to ask each of them.</p>
+        <div class="mgmt-grid">
+          <div class="mgmt-card">
+            <img src="./images/paige.webp" alt="Paige Morgan" />
+            <div class="mn">Paige Morgan</div>
+            <div class="mr">YPO MENA Regional Director</div>
+            <div class="ask">Ask Paige about</div>
+            <ul>
+              <li>Strategic planning (Game Plan).</li>
+              <li>Bylaws, policy &amp; procedures, code of conduct.</li>
+              <li>Board leadership and succession planning.</li>
+              <li>Wider regional &amp; international opportunities.</li>
+              <li>Chapter metrics (Chapter Commitments, Satisfaction Index).</li>
+              <li>General chapter board enquiries.</li>
+            </ul>
+          </div>
+          <div class="mgmt-card">
+            <img src="./images/tamara.webp" alt="Tamara Crowhurst" />
+            <div class="mn">Tamara Crowhurst</div>
+            <div class="mr">YPO MENA Regional Manager</div>
+            <div class="ask">Ask Tamara about</div>
+            <ul>
+              <li>Chapter manager support.</li>
+              <li>YPO systems training (e.g. YPO Connect).</li>
+              <li>Funding reimbursements.</li>
+              <li>Governance meeting logistics.</li>
+              <li>Chapter data and insights.</li>
+              <li>Regional communication channels.</li>
+              <li>Member engagement.</li>
+            </ul>
+          </div>
+          <div class="mgmt-card">
+            <img src="./images/maria.webp" alt="Maria Luz Domingo" />
+            <div class="mn">Maria Luz Domingo</div>
+            <div class="mr">YPO MENA Regional Forum and Learning Manager</div>
+            <div class="ask">Ask Maria about</div>
+            <ul>
+              <li>Forum health and trainings across MENA.</li>
+              <li>Regional and chapter forum officer support tools.</li>
+              <li>Forum education and development.</li>
+              <li>Forum best practices, help and resources.</li>
+              <li>Speaker resources.</li>
+              <li>Day chair workshops.</li>
+              <li>Regional and chapter learning and assistant learning officer collaboration and support tools.</li>
+            </ul>
+          </div>
+          <div class="mgmt-card">
+            <img src="./images/neeta.webp" alt="Neeta Gandhi" />
+            <div class="mn">Neeta Gandhi</div>
+            <div class="mr">YPO MENA Regional Membership Development Manager</div>
+            <div class="ask">Ask Neeta about</div>
+            <ul>
+              <li>Best practices for membership development in your chapter.</li>
+              <li>MENA's membership program.</li>
+              <li>Global membership development strategy.</li>
+              <li>Creating new chapters.</li>
+              <li>Chapter membership portals.</li>
+            </ul>
+          </div>
+          <div class="mgmt-card">
+            <img src="./images/lauren.webp" alt="Lauren Aird" />
+            <div class="mn">Lauren Aird</div>
+            <div class="mr">YPO Global Family Manager, EMEA</div>
+            <div class="ask">Ask Lauren about</div>
+            <ul>
+              <li>Family and spouse/partner requests and data.</li>
+              <li>YNG queries.</li>
+              <li>Parenting and YSP collaboration and connection.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
 </section>
