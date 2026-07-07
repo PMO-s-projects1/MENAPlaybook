@@ -8,18 +8,15 @@
 
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet" />
 
 <style>
-  /* Drop licensed Neue Montreal .woff2 files into /fonts to use the exact brand face. */
-  @font-face{ font-family:'Neue Montreal'; src:url('./fonts/PPNeueMontreal-Book.woff2') format('woff2'); font-weight:400; font-display:swap; }
-  @font-face{ font-family:'Neue Montreal'; src:url('./fonts/PPNeueMontreal-Medium.woff2') format('woff2'); font-weight:500; font-display:swap; }
-  @font-face{ font-family:'Neue Montreal'; src:url('./fonts/PPNeueMontreal-Bold.woff2') format('woff2'); font-weight:700; font-display:swap; }
-
+  /* Type: Helvetica Neue (system) for titles/body; Instrument Serif for callouts. */
   :root{
-    --blue:#041e42; --gold:#d69d23; --azure:#0060ac; --orange:#ea7600;
-    --white:#fff; --ink:#202020; --paper:#eceef1; --paper-2:#f6f7f8; --line:#d9dde3; --muted:#5b6675;
-    --font:'Neue Montreal','Manrope',system-ui,-apple-system,Segoe UI,Roboto,sans-serif;
+    --blue:#041e42; --gold:#d69d23; --azure:#1f43ea; --orange:#f94868;
+    --white:#fff; --ink:#1a1c1f; --paper:#f2f3f6; --paper-2:#f9f9f9; --line:#e4e6ea; --muted:#5b6675;
+    --font:'Helvetica Neue',Helvetica,Arial,system-ui,-apple-system,'Segoe UI',Roboto,sans-serif;
+    --serif:'Instrument Serif',Georgia,'Times New Roman',serif;
     --maxw:1080px; --pad:clamp(20px,5vw,72px);
   }
   *{box-sizing:border-box;}
@@ -220,6 +217,32 @@
   .acr > div{display:grid;grid-template-columns:92px 1fr;gap:.6rem;padding:.45rem 0;border-top:1px solid var(--line);align-items:baseline;}
   .acr dt{font-weight:700;color:var(--blue);font-size:.88rem;}
   .acr dd{margin:0;color:#41495a;font-size:.9rem;}
+
+  /* ============================================================
+     2026 BRAND OVERRIDES — type hierarchy & callouts
+     (design only; remove this block to revert to the previous look)
+     ============================================================ */
+  body{font-size:17px;}
+  /* Large display headings: Helvetica Neue, light/thin and airy */
+  .cover h1, .divider .big, .welcome-title,
+  .toc h2, section.toc h2 { font-weight:300; letter-spacing:-.01em; }
+  .cover h1{font-weight:200;}
+  .divider .big{font-weight:200;}
+  /* Small labels stay bold/condensed-feel in caps */
+  .eyebrow, .acr-cat{letter-spacing:.14em;}
+  .acr-cat{text-transform:uppercase;font-size:.9rem;font-weight:700;letter-spacing:.1em;}
+  /* Instrument Serif for lead-ins and callouts (warmth & contrast) */
+  .cover .sub, .divider .lead, .lede, .welcome-greeting, .rex-sub{
+    font-family:var(--serif); font-weight:400; letter-spacing:.005em;
+  }
+  .cover .sub, .divider .lead, .lede{font-size:clamp(1.25rem,2.8vw,1.7rem);line-height:1.35;}
+  .welcome-greeting{font-size:1.3rem;font-style:italic;color:var(--blue);}
+  .welcome-title{color:var(--blue);}
+  /* Section big titles pick up an off-white ground and softer fade */
+  .divider .big{color:#cdd2da;}
+  .secnum, .divider .secnum{color:var(--azure);}
+  /* Electric-blue accents where the brand calls for them */
+  .toc li a:hover .ttl{color:var(--azure);}
 </style>
 </head>
 <body class="locked">
