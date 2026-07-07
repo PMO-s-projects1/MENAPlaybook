@@ -176,6 +176,19 @@
   #chat-form button:disabled{opacity:.5;cursor:default;}
   .chat-fine{font-size:.68rem;color:var(--muted);text-align:center;padding:.5rem;background:#fff;border-top:1px solid var(--line);}
   @media(max-width:520px){ #chat-panel{right:8px;bottom:8px;} #chat-fab{right:12px;bottom:12px;} }
+
+  /* welcome note + regional chairs */
+  .welcome{max-width:66ch;}
+  .welcome-title{font-size:clamp(1.5rem,3.5vw,2.2rem);letter-spacing:-.02em;margin:0 0 1.1rem;color:var(--blue);}
+  .welcome-greeting{font-weight:600;}
+  .welcome p{color:#2f3846;font-size:1.02rem;line-height:1.7;}
+  .welcome-sign{margin-top:1.6rem;font-weight:500;color:var(--ink);}
+  .chairs{display:flex;flex-wrap:wrap;gap:2.2rem 2.6rem;margin-top:1.2rem;}
+  .chair{display:flex;align-items:center;gap:1rem;margin:0;}
+  .chair img{width:84px;height:84px;border-radius:50%;object-fit:cover;border:3px solid var(--gold);box-shadow:0 10px 24px -12px rgba(4,30,66,.55);background:var(--paper);}
+  .chair figcaption{display:flex;flex-direction:column;}
+  .chair .cn{font-weight:700;color:var(--ink);}
+  .chair .cr{font-size:.85rem;color:var(--muted);}
 </style>
 </head>
 <body class="locked">
@@ -273,9 +286,29 @@
     <div class="inner"><div class="secnum">Section 0</div><h2 class="big">Introduction</h2><p class="lead">Who we are as a region — leadership, structure and the shared language of YPO MENA.</p></div>
   </div>
   <div class="wrap reveal">
-    <span class="eyebrow">Getting oriented</span>
-    <div class="ph-group">
-      <div class="ph"><h4>Welcome from the Regional Chairs</h4><p class="ph-note">Content to be added.</p></div>
+    <span class="eyebrow">Welcome from the Regional Chairs</span>
+    <article class="welcome">
+      <h3 class="welcome-title">Welcome to the United MENA Playbook</h3>
+      <p class="welcome-greeting">Dear YPO MENA Leaders,</p>
+      <p>Welcome to the United MENA Playbook.</p>
+      <p>This playbook has been created as a practical resource to support every YPO MENA Chapter throughout the year. Whether you're a Chapter Chair, Chapter Manager, Officer, or Regional Executive, you'll find guidance, tools, best practices, and resources to help you lead with confidence and deliver an exceptional member experience.</p>
+      <p>Inside, you'll find support across every stage of the Chapter journey—from Chapter Commitments and New Member Onboarding to Governance, Portfolio Leadership, operational guidance, and much more. Our goal is to bring everything you need into one place, making it easier to navigate your role, share knowledge, and build on the successes of Chapters across our region.</p>
+      <p>The United MENA Playbook reflects our belief that we are stronger when we learn from one another. By sharing proven approaches, practical resources, and regional best practices, we hope to strengthen every Chapter while continuing to foster the spirit of collaboration that defines our region.</p>
+      <p>This is a living resource that will continue to evolve alongside our Chapters. We encourage you to return to it often, make use of the tools it contains, and share your feedback so that together we can keep making it even better.</p>
+      <p>Thank you for your leadership, your commitment to your Chapter, and your dedication to creating extraordinary experiences for our members. Together, we will continue building a stronger, more connected, and more impactful United MENA.</p>
+      <p class="welcome-sign">With appreciation,</p>
+      <div class="chairs">
+        <figure class="chair">
+          <img src="./images/moodi.webp" alt="Moodi Bukhari, YPO MENA Regional Chair" />
+          <figcaption><span class="cn">Moodi Bukhari</span><span class="cr">YPO MENA Regional Chair</span></figcaption>
+        </figure>
+        <figure class="chair">
+          <img src="./images/elias.webp" alt="Elias Chabtini, YPO MENA Regional Gold Chair" />
+          <figcaption><span class="cn">Elias Chabtini</span><span class="cr">YPO MENA Regional Gold Chair</span></figcaption>
+        </figure>
+      </div>
+    </article>
+    <div class="ph-group" style="margin-top:1.8rem">
       <div class="ph"><h4>Regional Overview</h4><p class="ph-note">Content to be added.</p><ul><li>List of Chapters and Chapter Chairs</li></ul></div>
       <div class="ph"><h4>REX Directory</h4><p class="ph-note">Content to be added.</p><ul><li>REX roles, responsibilities and structure</li></ul></div>
       <div class="ph"><h4>Management Directory</h4><p class="ph-note">Content to be added.</p><ul><li>Management roles, responsibilities and structure</li></ul></div>
