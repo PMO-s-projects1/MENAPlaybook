@@ -19,25 +19,37 @@ HOW THE PLAYBOOK IS STRUCTURED (some sections are still being populated):
 - Section 1 — Regional Data: chapter commitments dashboard and regional KPIs.
 - Section 2 — Regional Calendar: upcoming global events in MENA, regional events (YPO MENA Mastery, RBM),
   and GLC dates.
-- Section 3 — Chapter Governance: Chapter Chair role and roadmap; governance documents (YPO P&P, Operations
+- Section 3 — Chapter Chair Resources: Chapter Chair role and roadmap; governance documents (YPO P&P, Operations
   Manual, chapter by-laws templates); chapter operations (effective board meetings, AGM, strategic planning /
   Game Plan); succession planning (champion catalog, succession worksheet); budget and finance; conduct
   committee toolkit and offboarding; officer training; and working with your Chapter Manager (CM recruitment,
   contracts, performance reviews, support program).
 - Section 4 — Chapter Commitments: the 14 commitments defined.
-- Section 5 — Membership: YPO membership requirements, SMP (Strategic Membership Pathways), accepting new members.
-- Section 6 — Member Engagement: onboarding checklist, Taste of YPO, Apeiron, engagement toolkit, sample pledge,
+- Section 5 — Membership Resources: YPO membership requirements, SMP (Strategic Membership Pathways), accepting new members.
+- Section 6 — Member Engagement Resources: onboarding checklist, Taste of YPO, Apeiron, engagement toolkit, sample pledge,
   sample points system.
-- Section 7 — Forum: find a CFF, regional training, regional funding, forum structures, forum by-laws.
-- Section 8 — Learning: E-CODE, regional initiatives, day chair training, global events calendar.
-- Section 9 — Spouse / Partners & Family.
-- Section 10 — YNG (YPO Next Generation).
-- Section 11 — Networks: list of networks.
+- Section 7 — Forum Resources: find a CFF, regional training, regional funding, forum structures, forum by-laws.
+- Section 8 — Learning Resources: E-CODE, regional initiatives, day chair training, global events calendar.
+- Section 9 — Spouse / Partner & Family Resources.
+- Section 10 — YNG Resources (YPO Next Generation).
+- Section 11 — Network Resources: list of networks.
 - Section 12 — YPO Emergency Support.
 - Appendix — YPO Acronyms glossary.
 
 REGIONAL DATA: 27 chapters in the region; 23 fully trained on core officer roles (data as of 05/06/2026),
 from the live MENA Chapter Commitments dashboard.
+
+REGIONAL OVERVIEW — CHAPTERS AND DEMOGRAPHICS:
+Demographics: 27 total chapters in the region (21 Integrated + 3 YPO + 3 YPO Gold); 1,600+ MENA members;
+15 MENA countries. Globally: 490+ chapters, 37,000+ members, 150+ countries.
+YPO Integrated Chapters (21): YPO Bahrain Integrated; YPO Capital Pakistan Integrated; YPO Cairo Integrated;
+YPO Dubai Downtown Integrated; YPO Dubai Integrated; YPO Emirates Integrated; YPO Indus Integrated; YPO Iraq
+Integrated; YPO Jordan Integrated; YPO Khaleej Integrated; YPO Kuwait Integrated; YPO Levant Integrated;
+YPO MENA Gulf Regional Integrated; YPO MENA One Regional Integrated; YPO Morocco Integrated; YPO Oman Integrated;
+YPO Olive MENA Regional Integrated; YPO Palestine Integrated; YPO Qatar Integrated; YPO Tunisia Integrated;
+YPO UAE Integrated.
+YPO Chapters (3): YPO Lebanon; YPO Pakistan; YPO Saudi.
+YPO Gold Chapters (3): YPO Gold Lebanon; YPO Gold Pakistan; YPO Gold Saudi.
 
 REGIONAL EXECUTIVE COMMITTEE (REX), FY26-27 — names and roles:
 - Moodi Bukhari — Regional Chair
@@ -77,8 +89,133 @@ CHAPTER COMMITMENTS (14, across governance, forum, learning and peerdom):
 13. Chapter Membership — roster verified accurate and all members paid chapter and YPO global dues.
 14. Minimum Membership Requirements — approved before 1 July 2024 = 16 primary members; after = 21.
 
-CONDUCT COMMITTEE (Section 3): guiding principle "if it can be solved at the chapter level, solve it."
-Establish a Chapter Conduct Committee (CCC) annually (recommended five members: current chair, past chair,
+CHAPTER CHAIR ROADMAP (Section 3, Chapter Chair Resources — the chapter chair journey). Chairs are appointed in November for a
+one-year term beginning in July. A downloadable PDF of the roadmap is available in the playbook.
+- Pre-term (November): chapters appoint chapter chairs for the one-year journey beginning in July.
+- January–March: review your role description and watch the chapter chair essentials video; review dedicated
+  chapter chair resources and assess data; connect with peers (outgoing and incoming chairs) to begin transition;
+  learn about the focus areas in your future chapter ExCo/board; build a chapter conduct committee; attend the
+  Chapter Chair Workshop at the Global Leadership Conference.
+- April–June: define your vision, objectives and goals for the year; conduct the chapter health survey and review
+  other data; if applicable attend the Q4 regional governance meeting (e.g. RBM) and review pre-reads; host a
+  strategic planning and/or game plan session for your ExCo/board to finalize smart goals and secure approval.
+- July–September: the chapter chair year begins; engage in the chapter chair community; schedule 1:1 onboarding
+  with your regional chair; review chapter commitments and how chapter health is measured; explore future
+  leadership roles in YPO; host chapter ExCo/board meetings (many chapters do this bi-monthly); support membership
+  renewal efforts; allocate financial support to your ExCo/board officers.
+- October–December: attend the Q2 regional governance meeting and review pre-reads; continue hosting ExCo/board
+  meetings; collaborate with your ExCo/board to get the chapter succession plan in place by 1 November; promote
+  Officer Essentials and GLC attendance to the incoming ExCo/board; review your goals and identify actions.
+- January–March (second calendar year): host ExCo/board meetings; start planning for the graduation of
+  transitioning members; review chapter health metrics and identify improvements; start transitioning knowledge to
+  your successor; encourage your chapter manager to attend the Chapter Manager Workshop.
+- April–May: if applicable attend the Q4 regional governance meeting; continue hosting ExCo/board meetings;
+  prepare for the YPO Global Awards Program; support your incoming chair with a strategic planning / game plan session.
+- June: ensure a proper handover to the incoming chapter chair; send farewell emails to your ExCo/board and chapter
+  members; host a graduation ceremony; celebrate achievements and recognize your peers.
+The roadmap includes: monthly emails of support; timely, actionable information; a step-by-step planning guide;
+access to tools and global best practices; opportunities for cross-chapter collaboration; benefits from regional
+and global initiatives. YPO management support comes from the Regional Director; for more information email champion@ypo.org.
+
+CHAPTER CHAIR ON THE REGIONAL BOARD (Section 3, Chapter Chair Resources — regional board overview for chapter chairs):
+- Regional board function: Chapter Link — communicate chapter needs to the YPO Global Board of Directors and inform
+  chapters of global updates and initiatives; Support — apply regional and global support to chapters; Activities —
+  organize activities and initiatives to engage members and chapters; Best Practices — give space for chapters to
+  share best practices; Identify Champions — recruit passionate member champions to serve at the chapter, regional
+  and global level.
+- Regional board structure: the regional board is comprised of elected regional officers serving on the regional
+  executive committee (REX) plus chapter chairs from the region. The regional chair leads the regional board.
+- The chapter chair's role on the board: Meetings — attend Regional Board Meetings (RBM) to conduct the business of
+  the region and share best practices, and attend regional board calls as needed. Vote — vote as a chapter
+  representative on regional board matters, and identify a proxy if unavailable for a vote.
+Roadmaps for all chapter officer roles are available to download from YPO Connect, and the Chapter Chair Roadmap
+PDF can be downloaded from the playbook.
+
+GOVERNANCE DOCUMENTS (Section 3): The YPO Policies and Procedures Manual (P&P) and the YPO Operations Manual set
+the standards that apply to every chapter; chapter by-laws sit alongside them, tailored to the country of legal
+incorporation and reviewed with a locally licensed attorney. The playbook links to the P&P and governance documents
+on YPO Connect, and to a downloadable sample chapter by-laws PDF.
+
+SUCCESSION PLANNING (Section 3): Succession planning identifies the next chair, and the chair after that, early —
+so leaders arrive prepared, officers have time to train, relationships carry across transitions and chapter strategy
+survives a change at the top. It also widens the leadership pool by surfacing quieter champions and giving members a
+visible path into service. Chapters are expected to have a succession plan in place by 1 November. The playbook links
+to a downloadable Succession Planning Worksheet (maps the leadership ladder three years ahead) and to the Champion
+Catalog, an overview of champion positions available across YPO at chapter, regional, global and network level.
+
+STRATEGIC PLANNING / GAME PLAN (Section 3, its own sub-section). Game Plan is simple, memorable, strategic,
+engaging and measurable. The methodology was developed in and by the EMEA super-region so every incoming board could
+prepare for their year in leadership and governance. Since inception, 140+ sessions have run for chapters, networks and
+REX; 38 chapters have repeated sessions and their Chapter Health score rose 13.5% between first and last session; the
+average session rating is 4.61 out of 5.
+Vision: to elevate the YPO experience for every member, spouse/partner and family in the world. Mission: to empower
+boards through strategic planning sessions, helping them prepare and deliver only-in-YPO value.
+Session facilitation: sessions are facilitated by certified Game Plan Coaches, who are YPO members with chapter and
+regional board experience. Coaches provide facilitation at no charge as their way of giving back; the only cost is the
+coach's travel to the meeting location.
+Modules: deep dives into specific topics or issues a chapter needs to address, recommended by the coach based on the
+chapter's major challenges. Examples: Vision, Values, Learning, Forum, Membership, Member Engagement, Spouse
+Engagement, Governance.
+Outcomes: alignment on deliverables using data as the foundation; clear comprehension and application of best practices
+in how officer roles interconnect; development of SMART goals creating accountability for officers and membership.
+Formats: sessions run in 50-minute sprints with 10-minute breaks. 4 hours — one session (a four-hour virtual session is
+only for repeat sessions); outcome: Chapter Playbook including SMART goals. 6 hours — two 3-hour sessions on different,
+ideally consecutive days for virtual, or one day physical; outcome: Chapter Playbook, SMART goals, and a deep dive into
+one module. 8 hours — two 4-hour sessions on different, ideally consecutive days for virtual, or one day physical;
+outcome: Chapter Playbook, SMART goals, a deep dive into one module, and completion of the chapter's vision and values.
+The playbook links to a "Request your Game Plan" form and a Game Plan video.
+
+CHAPTER SUPPORT PROGRAM (CSP) (Section 3, within Working with your Chapter Manager). The CSP connects chapters with
+trained virtual chapter managers (VCMs) who provide short- or long-term operational support to select chapters facing
+time-sensitive needs. It ensures continuity, stability and a consistent member experience for chapters in transition
+(until a permanent chapter manager is recruited and trained) or assists new chapters during development.
+New chapter development support: a VCM provides hands-on operational support during the start-up phase — opening bank
+accounts and setting up financial processes and documentation; establishing basic governance, reporting and admin
+processes; onboarding and training chapter officers; managing early events and meetings during launch; supporting
+recruitment, training and a smooth handover to a permanent chapter manager.
+Existing chapter support: VCMs can step in quickly with customized support — covering maternity leave or other planned
+absences; bridging gaps after a chapter manager's departure; providing extra capacity during transitions or busy
+periods; supporting recruitment, training and handover to a new chapter manager.
+How to request support: (1) the chapter submits a support application online or by email to chaptersupportprogram@ypo.org;
+(2) chapters are matched with a VCM based on availability, or given a shortlist of VCM profiles; (3) an interview call is
+arranged with the VCM candidate(s); (4) after selection, the chapter contracts directly with the VCM, referring to the
+sample CM contract. Questions go to chaptersupportprogram@ypo.org.
+
+CHAPTER CONDUCT COMMITTEE / OFF-BOARDING (Section 3): YPO policies provide clear guidelines for addressing inappropriate
+member conduct so the safe haven of trust is protected for every member. A standing Chapter Conduct Committee gives a
+chapter a fair, consistent process to review conduct issues, vet champions, and mitigate risk and liability, rather
+than improvising under pressure. Having the committee in place before an issue arises protects the members involved,
+the chapter's leadership and the culture. Chapter chairs are strongly encouraged to lead their members through
+implementing the recommended steps. The toolkit PDF is downloadable from the playbook.
+
+Off-boarding: the Conduct Committee Toolkit provides guidelines on off-boarding members from a chapter.
+The process: (1) Identification — concern identified and documented by the Chapter Manager in consultation with the
+Chapter Chair (CC) and/or Chapter Membership Officer (CMO). (2) Chapter Conduct Committee (CCC) review — concern
+reviewed against YPO standards, chapter expectations and relevant facts; documentation and context assessed.
+(3) Decision point, resolved at CCC level — recommendation agreed upon and documented. (4) Not resolved / complex case
+— escalated to the Global Conduct Committee (GCC) for further review and guidance. (5) Closure and documentation —
+outcome documented, appropriate records maintained for transparency and consistency.
+
+OFFICER TRAINING (Section 3): Global Leadership Conference (GLC) dates for FY26-27 are GLC Bangkok, Thailand,
+15-17 March 2027, and GLC San Diego, USA, 3-5 May 2027. Registration opens in Q2. Virtual sessions will be announced
+closer to the time.
+
+WORKING WITH YOUR CHAPTER MANAGER (Section 3): The Chapter Manager (CM) partnership with the chapter executive
+committee is crucial to the chapter's success. CMs serve as the chapter operations manager, wearing many hats,
+executing daily operations and providing direct support for chapter officers, members and spouse/partners.
+Best practices: Give direction — before the chair year begins, discuss chapter priorities and the strategic plan with
+your CM, give clear direction on time allocation, and reprioritize together as new projects arise. Set member
+expectations — tell officers and members what to expect from the CM, and ensure the CM is not used for non-YPO
+requests better handled by a personal assistant. Be connected — meet weekly or bi-weekly, include the CM in ExCo
+calls and discussions, and resolve issues before they escalate. Tap their knowledge — CMs hold institutional
+knowledge and help identify strategic priorities. Safe haven — in line with the YPO Code of Conduct, provide trust,
+respect and confidentiality for your CM. Provide feedback — critical to their development; conduct an annual review
+in May or June as the chair year closes. Encourage training — workshops, webinars and ad hoc training keep the CM
+current. Contract review — review the CM contract or employment agreement annually in June.
+Additional CM resources available in the playbook: Insights on the CM role, CM timeline, CM contract template, and two
+CM assessment options.
+
+CONDUCT COMMITTEE (Section 3, Chapter Chair Resources): guiding principle "if it can be solved at the chapter level, solve it."Establish a Chapter Conduct Committee (CCC) annually (recommended five members: current chair, past chair,
 membership/engagement officer, two senior board roles). Follow fair process, communicate with the Global
 Conduct Committee (GCC), and mitigate risk via bylaws, waivers and D&O insurance. Two-step review: Step 1
 initial (Chapter/Network/Global), Step 2 appeal (Global Conduct Committee / GCC Review Panel).
