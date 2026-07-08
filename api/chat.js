@@ -89,6 +89,30 @@ CHAPTER COMMITMENTS (14, across governance, forum, learning and peerdom):
 13. Chapter Membership — roster verified accurate and all members paid chapter and YPO global dues.
 14. Minimum Membership Requirements — approved before 1 July 2024 = 16 primary members; after = 21.
 
+CHAPTER CHAIR ROLE AND RESPONSIBILITIES (Section 3, above the roadmap). One-year term.
+Mission: lead the executive committee in creating a high-value chapter experience for members, using best practices and
+YPO resources and tools to drive member engagement and create a healthy chapter.
+Key goals: lead the executive committee's strategic planning, budget development and succession planning processes;
+ensure the chapter follows the YPO Policies and Procedures Manual and that officers receive training; promote a culture
+of recognition and gratitude; ensure a trained, competent and passionate leader succeeds you.
+Qualifying criteria: member in good standing; served as a chapter officer in several roles, preferably also as chapter
+learning officer.
+Time commitment (varies by chapter): lead the annual strategic planning session (one day); lead all chapter executive
+committee meetings (monthly/quarterly); attend 10 to 20 chapter events; meet the chapter manager regularly
+(weekly/monthly); attend regional board meetings, usually in Q2 and Q4; complete the forum officer essentials training.
+Responsibilities: oversee strategic planning (assess needs, use chapter health tools, develop the annual strategic plan
+at retreat); lead the chapter (lead the executive committee, select incoming officers, mentor your successor); oversee
+operations (monitor goals and governance, integrate and transition members, improve programs); represent the chapter
+(serve on the regional board, promote officer education, drive membership and diversity); recognize members,
+spouses/partners and others making a positive impact; elevate champions so talented members are known beyond the chapter;
+oversee finances (finalize the chapter budget, practice fiscal responsibility, monitor dues).
+Experience gained: chapter strategic planning tools and experience; leader engagement and onboarding; collaboration
+skills; peer leadership; understanding of YPO's strategy, policies and procedures; building relationships with YPO
+management associates; influence without authority; conflict resolution; presentation and communication skills.
+Resources: chapter manager; peers and predecessor; regional director; regional chair; chapter executive committee/board;
+Chapter Chairs group on Connect; Chapter Chair Toolkit; Strategic Planning Toolkit; YPO Policies and Procedures Manual.
+Source: YPO Champion Catalog.
+
 CHAPTER CHAIR ROADMAP (Section 3, Chapter Chair Resources — the chapter chair journey). Chairs are appointed in November for a
 one-year term beginning in July. A downloadable PDF of the roadmap is available in the playbook.
 - Pre-term (November): chapters appoint chapter chairs for the one-year journey beginning in July.
