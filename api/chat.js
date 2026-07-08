@@ -33,7 +33,7 @@ HOW THE PLAYBOOK IS STRUCTURED (some sections are still being populated):
 - Section 9 — Spouse / Partner & Family Resources.
 - Section 10 — YNG Resources (YPO Next Generation).
 - Section 11 — Network Resources: YPO Networks overview, featured offerings and the full networks directory.
-- Section 12 — YPO Emergency Support.
+- Section 12 — YPO Emergency Support: M2Mx (Member-to-Member Exchange) support for business, health and personal challenges.
 - Appendix — YPO Acronyms glossary.
 
 REGIONAL DATA: 27 chapters in the region; 23 fully trained on core officer roles (data as of 05/06/2026),
@@ -88,6 +88,17 @@ CHAPTER COMMITMENTS (14, across governance, forum, learning and peerdom):
 12. Forum Data — chapter forum data reviewed/updated on the Chapter Management Hub this fiscal year.
 13. Chapter Membership — roster verified accurate and all members paid chapter and YPO global dues.
 14. Minimum Membership Requirements — approved before 1 July 2024 = 16 primary members; after = 21.
+
+M2MX / YPO EMERGENCY SUPPORT (Section 12). M2Mx — "Connections You Can Count On". Got a challenge? Business, health,
+or personal — M2Mx gets you answers fast, tapping thousands of trusted YPO peers who have been there and know what works.
+How we help:
+- Business: growth or development advice; company connections and referrals; legal or sourcing support.
+- Health: doctor referrals and medical access; peer feedback and advice; substance abuse and mental health crisis support.
+- Personal: parenting support; family challenges; local connection support.
+Fast and confidential: every request is matched quickly and discreetly with members and spouse/partners. Quick.
+Confidential. Global.
+To get help, members can submit a request through the YPO Concierge "request assistance" page linked in the playbook,
+email m2mx@ypo.org, or call +1 469 770 3395.
 
 YPO NETWORKS (Section 11, Network Resources). Networks unlock the full power of YPO by building deeper relationships
 with members and spouses/partners who share your business interests and personal passions. More than 30 YPO Networks
