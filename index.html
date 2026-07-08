@@ -365,6 +365,10 @@
   .sub > .sub-head:hover{color:var(--azure);}
   .sub.closed > .sub-body{display:none;}
   .sub.closed > .sub-head{margin-bottom:0;}
+  /* a section's only sub-block: always open, no toggle affordance */
+  .sub.solo > .sub-head{cursor:default;padding-right:0;}
+  .sub.solo > .sub-head::after{display:none;}
+  .sub.solo > .sub-head:hover{color:inherit;}
 </style>
 </head>
 <body class="locked">
@@ -1593,7 +1597,15 @@
   // ===== collapsible sub-sections (accordion within each section) =====
   (function(){
     const SUBS='.ph, .rex-block, .mgmt-block, .overview-block, .roadmap-block, .rb-block, .docs-block, .succession-block, .conduct-block, .offboard-block, .training-block, .cm-block, .strategy-block, .role-block, .budget-block, .partners-block, .networks-block, .m2mx-block';
-    const subs=[...document.querySelectorAll(SUBS)];
+    const subs=[...document.querySelectorAll(SUBS)].filter(el=>el.querySelector('h4'));
+
+    // count sub-blocks per section: if a section has only one, it shouldn't
+    // hide behind a second click — opening the section reveals it directly.
+    const counts=new Map();
+    subs.forEach(sub=>{
+      const sec=sub.closest('section.sec');
+      if(sec) counts.set(sec,(counts.get(sec)||0)+1);
+    });
 
     subs.forEach(sub=>{
       const head=sub.querySelector('h4');
@@ -1606,8 +1618,17 @@
       while(n){ const next=n.nextSibling; body.appendChild(n); n=next; }
       sub.appendChild(body);
 
-      sub.classList.add('sub','closed');
+      sub.classList.add('sub');
       head.classList.add('sub-head');
+
+      const sec=sub.closest('section.sec');
+      if(sec && counts.get(sec)===1){
+        sub.classList.add('solo');   // always open, no toggle affordance
+        sub.toggleSub=function(){};  // no-op so Expand/Collapse all leave it alone
+        return;
+      }
+
+      sub.classList.add('closed');
       head.setAttribute('role','button');
       head.setAttribute('tabindex','0');
       head.setAttribute('aria-expanded','false');
