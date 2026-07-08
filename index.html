@@ -261,6 +261,45 @@
   .roadmap-foot{border-top:1px solid var(--line);margin-top:.6rem;padding-top:1.2rem;}
   .roadmap-foot .k{font-size:.72rem;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--azure);margin-bottom:.5rem;}
   .roadmap-foot ul{margin:0;padding-left:1.1rem;color:#41495a;font-size:.9rem;}
+
+  /* ---- section ribbon nav ---- */
+  .ribbon{display:flex;gap:.3rem;overflow-x:auto;flex:1;min-width:0;padding:.2rem 0;scrollbar-width:none;-ms-overflow-style:none;}
+  .ribbon::-webkit-scrollbar{display:none;}
+  .ribbon a{flex:none;color:rgba(255,255,255,.78);font-size:.72rem;font-weight:700;letter-spacing:.05em;text-transform:uppercase;padding:.4rem .65rem;border-radius:999px;white-space:nowrap;transition:background .15s ease,color .15s ease;}
+  .ribbon a:hover{color:#fff;background:rgba(255,255,255,.12);text-decoration:none;}
+  .ribbon a.active{color:var(--blue);background:var(--gold);}
+  @media(max-width:760px){ nav.top .lockup .region{display:none;} nav.top .lockup .word{font-size:1.2rem;} }
+  section.sec, section.toc{scroll-margin-top:72px;}
+
+  /* ---- collapsible sections ---- */
+  section.sec .divider{cursor:pointer;transition:min-height .25s ease,padding .25s ease;}
+  section.sec .divider:hover .chev{border-color:var(--azure);color:var(--azure);}
+  .chev{position:absolute;right:0;top:50%;transform:translateY(-50%);width:40px;height:40px;border:1.5px solid var(--line);border-radius:50%;display:grid;place-items:center;background:#fff;color:var(--blue);font-size:1.35rem;font-weight:300;line-height:1;}
+  .chev::before{content:"+";}
+  section.sec:not(.collapsed) .chev::before{content:"–";}
+  section.sec.collapsed .wrap{display:none;}
+  section.sec.collapsed .divider{min-height:0;padding-top:1.5rem;padding-bottom:1.5rem;}
+  section.sec.collapsed .divider .big{font-size:clamp(1.4rem,3.6vw,2.2rem);}
+  section.sec.collapsed .divider .big br{display:none;}
+  section.sec.collapsed .divider .lead{display:none;}
+  section.sec.collapsed .divider .tri-field{opacity:.22;}
+  .toc-actions{display:flex;gap:.6rem;margin-top:1.6rem;}
+  .toc-actions button{font:inherit;font-size:.78rem;font-weight:700;letter-spacing:.06em;text-transform:uppercase;padding:.55rem 1rem;border-radius:999px;border:1.5px solid var(--line);background:#fff;color:var(--blue);cursor:pointer;transition:border-color .15s ease,color .15s ease;}
+  .toc-actions button:hover{border-color:var(--azure);color:var(--azure);}
+
+  /* ---- regional board overview ---- */
+  .dl-btn.alt{background:#fff;color:var(--blue);border:1.5px solid var(--line);}
+  .dl-btn.alt:hover{border-color:var(--azure);color:var(--azure);background:#fff;}
+  .dl-row{display:flex;flex-wrap:wrap;gap:.7rem;align-items:center;}
+  .rb-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:1px;background:var(--line);border:1px solid var(--line);margin:1rem 0 2rem;}
+  .rb-card{background:#fff;padding:1.3rem 1.2rem;}
+  .rb-card .t{font-size:1rem;font-weight:700;color:var(--azure);margin-bottom:.45rem;}
+  .rb-card p{margin:0;font-size:.89rem;color:#41495a;}
+  .rb-split{display:grid;grid-template-columns:1fr 1fr;gap:2rem;}
+  @media(max-width:720px){ .rb-split{grid-template-columns:1fr;} }
+  .rb-split h5{font-size:1.15rem;font-weight:400;color:var(--blue);margin:0 0 .6rem;letter-spacing:-.01em;}
+  .rb-split p{font-size:.92rem;color:#41495a;}
+  .rb-tag{display:inline-block;font-size:.72rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--azure);margin-bottom:.3rem;}
 </style>
 </head>
 <body class="locked">
@@ -313,7 +352,23 @@
 <!-- top nav -->
 <nav class="top">
   <span class="lockup"><svg class="mark"><use href="#ypo-mark"/></svg><span class="word">YPO</span><span class="region">Middle East /<br>North Africa</span></span>
-  <span class="links"><a href="#contents">Contents</a></span>
+  <div class="ribbon" id="ribbon" aria-label="Playbook sections">
+    <a href="#contents">Contents</a>
+    <a href="#sec-0">0 · Introduction</a>
+    <a href="#sec-1">1 · Regional Data</a>
+    <a href="#sec-2">2 · Calendar</a>
+    <a href="#sec-3">3 · Governance</a>
+    <a href="#sec-4">4 · Commitments</a>
+    <a href="#sec-5">5 · Membership</a>
+    <a href="#sec-6">6 · Engagement</a>
+    <a href="#sec-7">7 · Forum</a>
+    <a href="#sec-8">8 · Learning</a>
+    <a href="#sec-9">9 · Family</a>
+    <a href="#sec-10">10 · YNG</a>
+    <a href="#sec-11">11 · Networks</a>
+    <a href="#sec-12">12 · Emergency</a>
+    <a href="#appendix">A · Acronyms</a>
+  </div>
 </nav>
 
 <!-- FRONT COVER -->
@@ -349,11 +404,15 @@
       <li><a href="#sec-12"><span class="num">12</span><span class="ttl">YPO Emergency Support</span></a></li>
       <li><a href="#appendix"><span class="num">A</span><span class="ttl">Appendix — YPO Acronyms<span class="meta">Full glossary of YPO terms</span></span></a></li>
     </ol>
+    <div class="toc-actions">
+      <button type="button" id="expand-all">Expand all</button>
+      <button type="button" id="collapse-all">Collapse all</button>
+    </div>
   </div>
 </section>
 
 <!-- SECTION 0 · INTRODUCTION -->
-<section class="sec" id="sec-0">
+<section class="sec collapsed" id="sec-0">
   <div class="divider">
     <div class="tri-field" aria-hidden="true"><svg viewBox="0 0 600 600"><use href="#tri-field"/></svg></div>
     <div class="inner"><div class="secnum">Section 0</div><h2 class="big">Introduction</h2><p class="lead">Who we are as a region — leadership, structure and the shared language of YPO MENA.</p></div>
@@ -485,7 +544,7 @@
 </section>
 
 <!-- SECTION 1 · REGIONAL DATA -->
-<section class="sec" id="sec-1">
+<section class="sec collapsed" id="sec-1">
   <div class="divider">
     <div class="tri-field" aria-hidden="true"><svg viewBox="0 0 600 600"><use href="#tri-field"/></svg></div>
     <div class="inner"><div class="secnum">Section 1</div><h2 class="big">Regional<br>Data</h2><p class="lead">The live picture of chapter health and regional performance, kept current at source.</p></div>
@@ -509,7 +568,7 @@
 </section>
 
 <!-- SECTION 2 · REGIONAL CALENDAR -->
-<section class="sec" id="sec-2">
+<section class="sec collapsed" id="sec-2">
   <div class="divider">
     <div class="tri-field" aria-hidden="true"><svg viewBox="0 0 600 600"><use href="#tri-field"/></svg></div>
     <div class="inner"><div class="secnum">Section 2</div><h2 class="big">Regional<br>Calendar</h2><p class="lead">Every upcoming date that matters — global events in the region, regional programs and GLC dates — in one live view.</p></div>
@@ -528,7 +587,7 @@
 </section>
 
 <!-- SECTION 3 · CHAPTER GOVERNANCE -->
-<section class="sec" id="sec-3">
+<section class="sec collapsed" id="sec-3">
   <div class="divider">
     <div class="tri-field" aria-hidden="true"><svg viewBox="0 0 600 600"><use href="#tri-field"/></svg></div>
     <div class="inner"><div class="secnum">Section 3</div><h2 class="big">Chapter<br>Governance</h2><p class="lead">How a chapter is led and run — the chair's role, governing documents, operations, succession, finance and the chapter manager relationship.</p></div>
@@ -540,7 +599,10 @@
         <h4 class="rex-h">Chapter Chair Role</h4>
         <p class="rex-sub">Chapter Chair Roadmap — all you need to know about your chapter chair journey.</p>
         <p class="roadmap-intro">Chapters appoint chapter chairs in November for a one-year journey beginning in July. The roadmap below maps the full arc, from exploring the role through to a confident handover.</p>
-        <a class="dl-btn" href="https://image.ypo-mail.org/lib/fe2f1171716404787c1478/m/7/817a62ab-aa63-4e8e-93d3-dc8b26ad0616.pdf" target="_blank" rel="noopener">Download the Chapter Chair Roadmap <span class="arw">↓</span></a>
+        <div class="dl-row">
+          <a class="dl-btn" href="https://image.ypo-mail.org/lib/fe2f1171716404787c1478/m/7/817a62ab-aa63-4e8e-93d3-dc8b26ad0616.pdf" target="_blank" rel="noopener">Download the Chapter Chair Roadmap <span class="arw">↓</span></a>
+          <a class="dl-btn alt" href="https://www2.ypoconnect.org/topics/29067/media_center/folder/0f88fc7c-26d4-444e-8e3c-dfb36d4b60f1" target="_blank" rel="noopener">Roadmaps for all chapter officer roles <span class="arw">↗</span></a>
+        </div>
 
         <div class="timeline">
           <div class="phase pre">
@@ -640,7 +702,34 @@
           <p class="rex-sub" style="margin-top:1rem">YPO management support: Regional Director. For more information, email <a href="mailto:champion@ypo.org">champion@ypo.org</a>.</p>
         </div>
       </div>
-      <div class="ph"><h4>Link Between the Chapter and the Region</h4><p class="ph-note">Content to be added.</p></div>
+      <div class="rb-block">
+        <h4 class="rex-h">Chapter Chair on the Regional Board</h4>
+        <p class="rex-sub">Regional Board Overview for Chapter Chairs.</p>
+
+        <span class="rb-tag">Regional board function</span>
+        <div class="rb-grid">
+          <div class="rb-card"><div class="t">Chapter Link</div><p>Communicate chapter needs to the YPO Global Board of Directors and inform chapters of global updates and initiatives.</p></div>
+          <div class="rb-card"><div class="t">Support</div><p>Apply regional and global support to chapters.</p></div>
+          <div class="rb-card"><div class="t">Activities</div><p>Organize activities and initiatives to engage members and chapters.</p></div>
+          <div class="rb-card"><div class="t">Best Practices</div><p>Give space for chapters to share best practices.</p></div>
+          <div class="rb-card"><div class="t">Identify Champions</div><p>Recruit passionate member champions to serve at the chapter, regional, and global level.</p></div>
+        </div>
+
+        <div class="rb-split">
+          <div>
+            <span class="rb-tag">Regional board structure</span>
+            <h5>REX + Chapter Chairs</h5>
+            <p>The regional board is comprised of elected regional officers that serve on the regional executive committee (REX) and chapter chairs from the region.</p>
+            <p>The regional chair leads the regional board.</p>
+          </div>
+          <div>
+            <span class="rb-tag">Chapter chair role</span>
+            <h5>Meetings and vote</h5>
+            <p><strong>Meetings.</strong> Attend Regional Board Meetings (RBM) to conduct the business of the region and share best practices. Attend regional board calls as needed.</p>
+            <p><strong>Vote.</strong> Vote as a chapter representative on regional board matters. Identify a proxy if you are unavailable for a vote.</p>
+          </div>
+        </div>
+      </div>
       <div class="ph"><h4>Chapter Governance Documents</h4><p class="ph-note">Content to be added.</p><ul><li>YPO P&amp;P</li><li>YPO Operations Manual</li><li>Chapter By-Laws templates</li></ul></div>
       <div class="ph"><h4>Chapter Operations</h4><p class="ph-note">Content to be added.</p><ul>
         <li>Holding an effective board meeting<ul><li>NDA pledge (Elias)</li><li>Elias' template</li></ul></li>
@@ -669,7 +758,7 @@
 </section>
 
 <!-- SECTION 4 · CHAPTER COMMITMENTS -->
-<section class="sec" id="sec-4">
+<section class="sec collapsed" id="sec-4">
   <div class="divider">
     <div class="tri-field" aria-hidden="true"><svg viewBox="0 0 600 600"><use href="#tri-field"/></svg></div>
     <div class="inner"><div class="secnum">Section 4</div><h2 class="big">Chapter<br>Commitments</h2><p class="lead">The fourteen commitments every chapter works toward each fiscal year, across governance, forum, learning and peerdom.</p></div>
@@ -700,7 +789,7 @@
 </section>
 
 <!-- SECTION 5 · MEMBERSHIP -->
-<section class="sec" id="sec-5">
+<section class="sec collapsed" id="sec-5">
   <div class="divider">
     <div class="tri-field" aria-hidden="true"><svg viewBox="0 0 600 600"><use href="#tri-field"/></svg></div>
     <div class="inner"><div class="secnum">Section 5</div><h2 class="big">Membership</h2><p class="lead">Who joins, how they qualify, and how chapters bring new members in.</p></div>
@@ -716,7 +805,7 @@
 </section>
 
 <!-- SECTION 6 · MEMBER ENGAGEMENT -->
-<section class="sec" id="sec-6">
+<section class="sec collapsed" id="sec-6">
   <div class="divider">
     <div class="tri-field" aria-hidden="true"><svg viewBox="0 0 600 600"><use href="#tri-field"/></svg></div>
     <div class="inner"><div class="secnum">Section 6</div><h2 class="big">Member<br>Engagement</h2><p class="lead">Keeping members active, connected and getting value from their YPO experience.</p></div>
@@ -735,7 +824,7 @@
 </section>
 
 <!-- SECTION 7 · FORUM -->
-<section class="sec" id="sec-7">
+<section class="sec collapsed" id="sec-7">
   <div class="divider">
     <div class="tri-field" aria-hidden="true"><svg viewBox="0 0 600 600"><use href="#tri-field"/></svg></div>
     <div class="inner"><div class="secnum">Section 7</div><h2 class="big">Forum</h2><p class="lead">The heart of the YPO experience — training, funding and the structures that keep forums strong.</p></div>
@@ -753,7 +842,7 @@
 </section>
 
 <!-- SECTION 8 · LEARNING -->
-<section class="sec" id="sec-8">
+<section class="sec collapsed" id="sec-8">
   <div class="divider">
     <div class="tri-field" aria-hidden="true"><svg viewBox="0 0 600 600"><use href="#tri-field"/></svg></div>
     <div class="inner"><div class="secnum">Section 8</div><h2 class="big">Learning</h2><p class="lead">Lifelong learning across the region — initiatives, training and the global events calendar.</p></div>
@@ -770,7 +859,7 @@
 </section>
 
 <!-- SECTION 9 · SPOUSE / PARTNERS & FAMILY -->
-<section class="sec" id="sec-9">
+<section class="sec collapsed" id="sec-9">
   <div class="divider">
     <div class="tri-field" aria-hidden="true"><svg viewBox="0 0 600 600"><use href="#tri-field"/></svg></div>
     <div class="inner"><div class="secnum">Section 9</div><h2 class="big">Spouse /<br>Partners &amp; Family</h2><p class="lead">Bringing spouses, partners and families into the YPO journey.</p></div>
@@ -782,7 +871,7 @@
 </section>
 
 <!-- SECTION 10 · YNG -->
-<section class="sec" id="sec-10">
+<section class="sec collapsed" id="sec-10">
   <div class="divider">
     <div class="tri-field" aria-hidden="true"><svg viewBox="0 0 600 600"><use href="#tri-field"/></svg></div>
     <div class="inner"><div class="secnum">Section 10</div><h2 class="big">YNG</h2><p class="lead">The Young Next Generation community across YPO MENA.</p></div>
@@ -794,7 +883,7 @@
 </section>
 
 <!-- SECTION 11 · NETWORKS -->
-<section class="sec" id="sec-11">
+<section class="sec collapsed" id="sec-11">
   <div class="divider">
     <div class="tri-field" aria-hidden="true"><svg viewBox="0 0 600 600"><use href="#tri-field"/></svg></div>
     <div class="inner"><div class="secnum">Section 11</div><h2 class="big">Networks</h2><p class="lead">The peer networks connecting members by interest, industry and passion.</p></div>
@@ -806,7 +895,7 @@
 </section>
 
 <!-- SECTION 12 · YPO EMERGENCY SUPPORT -->
-<section class="sec" id="sec-12">
+<section class="sec collapsed" id="sec-12">
   <div class="divider">
     <div class="tri-field" aria-hidden="true"><svg viewBox="0 0 600 600"><use href="#tri-field"/></svg></div>
     <div class="inner"><div class="secnum">Section 12</div><h2 class="big">YPO Emergency<br>Support</h2><p class="lead">How to get help, fast, when a member or chapter needs it.</p></div>
@@ -818,7 +907,7 @@
 </section>
 
 <!-- APPENDIX · YPO ACRONYMS -->
-<section class="sec" id="appendix">
+<section class="sec collapsed" id="appendix">
   <div class="divider">
     <div class="tri-field" aria-hidden="true"><svg viewBox="0 0 600 600"><use href="#tri-field"/></svg></div>
     <div class="inner"><div class="secnum">Appendix</div><h2 class="big">YPO<br>Acronyms</h2><p class="lead">A quick-reference glossary of the terms used across YPO and throughout this playbook.</p></div>
@@ -969,10 +1058,86 @@
   <div class="chat-fine">Answers are drawn only from the playbook content.</div>
 </section>
 
+<noscript><style>section.sec.collapsed .wrap{display:block!important;} .chev{display:none!important;}</style></noscript>
+
 <script>
   // reveal on scroll
   const io=new IntersectionObserver((es)=>{es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target);}});},{threshold:.12});
   document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
+</script>
+
+<script>
+  // ===== collapsible sections + ribbon nav =====
+  (function(){
+    const secs=[...document.querySelectorAll('section.sec')];
+
+    secs.forEach(sec=>{
+      const div=sec.querySelector('.divider');
+      const wrap=sec.querySelector('.wrap');
+      const inner=div && div.querySelector('.inner');
+      if(!div||!wrap||!inner) return;
+
+      const chev=document.createElement('span');
+      chev.className='chev'; chev.setAttribute('aria-hidden','true');
+      inner.appendChild(chev);
+
+      div.setAttribute('role','button');
+      div.setAttribute('tabindex','0');
+      div.setAttribute('aria-expanded','false');
+      div.setAttribute('aria-controls', sec.id+'-panel');
+      wrap.id=sec.id+'-panel';
+
+      sec.toggleSection=function(open){
+        const willOpen = (open===undefined) ? sec.classList.contains('collapsed') : open;
+        sec.classList.toggle('collapsed', !willOpen);
+        div.setAttribute('aria-expanded', String(willOpen));
+        if(willOpen) wrap.classList.add('in');   // content was hidden, so reveal observer never fired
+      };
+
+      div.addEventListener('click', ()=>sec.toggleSection());
+      div.addEventListener('keydown', e=>{
+        if(e.key==='Enter'||e.key===' '){ e.preventDefault(); sec.toggleSection(); }
+      });
+    });
+
+    // any in-page link to a section opens it first
+    document.addEventListener('click', function(e){
+      const a=e.target.closest('a[href^="#"]');
+      if(!a) return;
+      const target=document.getElementById(a.getAttribute('href').slice(1));
+      if(target && target.toggleSection) target.toggleSection(true);
+    });
+
+    function openFromHash(){
+      const id=location.hash.slice(1);
+      if(!id) return;
+      const t=document.getElementById(id);
+      if(t && t.toggleSection){ t.toggleSection(true); setTimeout(()=>t.scrollIntoView({block:'start'}),30); }
+    }
+    window.addEventListener('hashchange', openFromHash);
+    openFromHash();
+
+    const expand=document.getElementById('expand-all');
+    const collapse=document.getElementById('collapse-all');
+    if(expand) expand.addEventListener('click',()=>secs.forEach(s=>s.toggleSection&&s.toggleSection(true)));
+    if(collapse) collapse.addEventListener('click',()=>secs.forEach(s=>s.toggleSection&&s.toggleSection(false)));
+
+    // highlight the ribbon link for the section in view, and keep it scrolled into sight
+    const ribbon=document.getElementById('ribbon');
+    const links=ribbon ? [...ribbon.querySelectorAll('a')] : [];
+    const spy=new IntersectionObserver(function(entries){
+      entries.forEach(en=>{
+        if(!en.isIntersecting) return;
+        const link=links.find(l=>l.getAttribute('href')==='#'+en.target.id);
+        if(!link) return;
+        links.forEach(l=>l.classList.remove('active'));
+        link.classList.add('active');
+        const lb=link.getBoundingClientRect(), rb=ribbon.getBoundingClientRect();
+        if(lb.left<rb.left || lb.right>rb.right) link.scrollIntoView({inline:'center',block:'nearest'});
+      });
+    },{rootMargin:'-70px 0px -70% 0px'});
+    secs.forEach(s=>spy.observe(s));
+  })();
 </script>
 
 <script>
