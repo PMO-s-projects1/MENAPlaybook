@@ -302,10 +302,20 @@
 
   /* ---- collapsible sub-sections ---- */
   .rex-block,.mgmt-block,.overview-block,.roadmap-block,.rb-block,.docs-block,.succession-block,
-  .conduct-block,.offboard-block,.training-block,.cm-block,.strategy-block,.role-block{
+  .conduct-block,.offboard-block,.training-block,.cm-block,.strategy-block,.role-block,
+  .budget-block,.partners-block{
     border:1px solid var(--line);border-left:3px solid var(--gold);border-radius:8px;
     padding:1rem 1.2rem;background:#fff;
   }
+
+  /* budget guidelines */
+  .budget-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(255px,1fr));gap:1px;background:var(--line);border:1px solid var(--line);margin:1rem 0 .6rem;}
+  .budget-card{background:#fff;padding:1.3rem 1.2rem;}
+  .bc-cat{font-size:.7rem;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--muted);}
+  .bc-pct{font-size:clamp(1.7rem,3.6vw,2.3rem);font-weight:700;letter-spacing:-.02em;line-height:1;margin:.35rem 0 .6rem;}
+  .bc-pct.gold{color:var(--gold);}
+  .bc-pct.blue{color:var(--blue);}
+  .budget-card p{margin:0;font-size:.87rem;color:#41495a;}
   .sub{scroll-margin-top:84px;}
   .mission{font-family:var(--serif);font-size:1.15rem;line-height:1.45;color:var(--blue);border-left:3px solid var(--azure);padding-left:1rem;margin:.8rem 0 1.4rem;}
   .mission strong{font-family:var(--font);font-size:.72rem;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--azure);display:block;margin-bottom:.3rem;}
@@ -649,7 +659,7 @@
 
         <span class="rb-tag">Key goals</span>
         <ul class="gp-list">
-          <li>Lead your executive committee's <a href="#strategic-planning">strategic planning</a>, budget development and <a href="#succession-planning">succession planning</a> processes.</li>
+          <li>Lead your executive committee's <a href="#strategic-planning">strategic planning</a>, <a href="#budget-finance">budget development</a> and <a href="#succession-planning">succession planning</a> processes.</li>
           <li>Ensure the chapter follows the <a href="#governance-documents">YPO Policies and Procedures Manual</a> and that officers receive training.</li>
           <li>Promote a culture of recognition and gratitude.</li>
           <li>Ensure a trained, competent and passionate leader succeeds you.</li>
@@ -921,12 +931,53 @@
         </div>
         <p style="font-size:.85rem;color:var(--muted);margin-top:.2rem">The Champion Catalog gives an overview of the champion positions available across YPO — at chapter, regional, global and network level — a useful starting point when identifying where members might serve next.</p>
       </div>
-      <div class="ph"><h4>Budget and Finance</h4><p class="ph-note">Content to be added.</p><ul>
-        <li>Recommended chapter budget allocations</li>
-        <li>Best practices for strategic partnerships</li>
-        <li>Budget templates</li>
-        <li>Audited numbers / board clearance (Elias)</li>
-      </ul></div>
+      <div class="budget-block" id="budget-finance">
+        <h4 class="rex-h">Budget and Finance</h4>
+        <p class="rex-sub">Recommended chapter budget allocations.</p>
+        <p class="roadmap-intro">One of the most difficult things to do when setting up a chapter budget for a new fiscal year is figuring out how much to spend in each category. Some chapters also want to bring their budgets more in line with modern-day YPO best practices. The whole purpose of a budget is to set you straight on your spending for the fiscal year, and make sure you're focusing on all areas of your portfolio buckets to maintain a healthy chapter.</p>
+        <p class="roadmap-intro">The amount of money available depends a lot on how much you have received in renewals and any revenue from the previous year. We know that:</p>
+        <ul class="gp-list">
+          <li>Expenses vary by chapter.</li>
+          <li>Costs depend on membership size.</li>
+          <li>Costs also depend on the location of events and resources.</li>
+        </ul>
+        <p class="roadmap-intro">Every chapter is different and there is no perfect combination. For general guidance, the region recommends the following percentage ranges when developing your chapter budget.</p>
+
+        <div class="budget-grid">
+          <div class="budget-card"><div class="bc-cat">Education / Learning</div><div class="bc-pct gold">35%–60%</div><p>Every chapter is different; the importance is to have a world-class learning program, and the value is to give members a chapter experience that will help them learn, connect and grow.</p></div>
+          <div class="budget-card"><div class="bc-cat">Family</div><div class="bc-pct blue">10%–15%</div><p>Family funding can contribute to overall chapter engagement. Family involvement increases the stickiness for YPO members to want to stay in YPO. With increased engagement comes a healthier chapter.</p></div>
+          <div class="budget-card"><div class="bc-cat">Spouse / Partners</div><div class="bc-pct blue">10%–15%</div><p>Ensuring inclusiveness makes YPO real for spouses/partners and kids. They get to experience why YPO is important to the member, and receive value themselves.</p></div>
+          <div class="budget-card"><div class="bc-cat">Forum</div><div class="bc-pct gold">5%–10%</div><p>Forum participation can vary from chapter to chapter. We recommend that a budget be calculated based on the chapter's forum goals.</p></div>
+          <div class="budget-card"><div class="bc-cat">Membership</div><div class="bc-pct gold">4%–6%</div><p>Membership initiative funds support prospective member recruitment events, candidate meetings (breakfast, lunch, coffee, and/or cost of transportation to site visits) and potential member referral bonus campaigns, to ensure the chapter remains at a healthy membership level.</p></div>
+          <div class="budget-card"><div class="bc-cat">Administrative / Employee</div><div class="bc-pct blue">15%–20%</div><p>Chapter administrator funding is key to your chapter's success. CAs can range from part-time to full-time with a variety of responsibilities in the chapter. Investing in your CA will benefit your chapter.</p></div>
+          <div class="budget-card"><div class="bc-cat">Operative</div><div class="bc-pct blue">3%–5%</div><p>As with any budget, you have to make sure other buckets are covered, such as marketing, postage, bank fees, office, internet and phone.</p></div>
+          <div class="budget-card"><div class="bc-cat">Legal / Professional Fees</div><div class="bc-pct gold">3%–5%</div><p>All officers and chapter administrators need their yearly training. We recommend sending at least one officer to the GLC and CLW for training. It is also required to send your CA to the Chapter Administrator Workshop (CAW) every two years. Because the chapter is its own legal entity, you will need to budget for tax preparation.</p></div>
+        </div>
+        <p class="src-note">These are guidance ranges rather than a fixed split — they overlap, and are not intended to total 100%.</p>
+
+        <div class="dl-row">
+          <a class="dl-btn" href="https://image.ypo-mail.org/lib/fe2f1171716404787c1478/m/1/5bfe33a1-875c-4de2-8342-86e61e3fc958.pdf" target="_blank" rel="noopener">Download the Chapter Budget Template <span class="arw">↓</span></a>
+        </div>
+        <p class="src-note">Audited numbers / board clearance — content to be added.</p>
+      </div>
+      <div class="partners-block" id="strategic-partnerships">
+        <h4 class="rex-h">Strategic Partnerships for Chapters</h4>
+        <p class="rex-sub">Chapter strategic alliances — best practices.</p>
+        <p class="roadmap-intro">Chapter strategic alliance partners add value to the chapter by enhancing the chapter budget, providing learning content and other resources. As your chapter develops a strategic alliance program, keep the following best practices in mind.</p>
+
+        <div class="rb-grid">
+          <div class="rb-card"><div class="t">Value</div><p>Think beyond cash. How can the partner provide member value to the chapter through learning content, resources, venues and experiences?</p></div>
+          <div class="rb-card"><div class="t">Connect</div><p>Touch base regularly with the partner to see if expectations are being met by both sides, and address emerging issues.</p></div>
+          <div class="rb-card"><div class="t">Opportunities</div><p>Create meaningful opportunities for the partner to meet chapter members. You cannot guarantee new customers, but you can position them with opportunities.</p></div>
+          <div class="rb-card"><div class="t">Agreement</div><p>Work with legal counsel to create a written agreement defining what is expected by both sides.</p></div>
+          <div class="rb-card"><div class="t">Privacy</div><p>Never share member contact information with a strategic partner, for any reason.</p></div>
+          <div class="rb-card"><div class="t">Code of Conduct</div><p>Ensure the strategic partner adheres to YPO's Code of Conduct for non-solicitation and confidentiality.</p></div>
+        </div>
+
+        <div class="dl-row">
+          <a class="dl-btn" href="https://image.ypo-mail.org/lib/fe2f1171716404787c1478/m/1/1734c343-8758-4e45-bd4a-5a310f5857e1.pdf" target="_blank" rel="noopener">Sample Chapter Strategic Partnerships Agreement <span class="arw">↓</span></a>
+        </div>
+      </div>
       <div class="conduct-block" id="conduct-committee">
         <h4 class="rex-h">Chapter Conduct Committee / Off-Boarding</h4>
         <p class="rex-sub">Protecting the safe haven of trust.</p>
@@ -1446,7 +1497,7 @@
 <script>
   // ===== collapsible sub-sections (accordion within each section) =====
   (function(){
-    const SUBS='.ph, .rex-block, .mgmt-block, .overview-block, .roadmap-block, .rb-block, .docs-block, .succession-block, .conduct-block, .offboard-block, .training-block, .cm-block, .strategy-block, .role-block';
+    const SUBS='.ph, .rex-block, .mgmt-block, .overview-block, .roadmap-block, .rb-block, .docs-block, .succession-block, .conduct-block, .offboard-block, .training-block, .cm-block, .strategy-block, .role-block, .budget-block, .partners-block';
     const subs=[...document.querySelectorAll(SUBS)];
 
     subs.forEach(sub=>{
