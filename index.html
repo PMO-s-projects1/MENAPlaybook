@@ -302,10 +302,27 @@
 
   /* ---- collapsible sub-sections ---- */
   .rex-block,.mgmt-block,.overview-block,.roadmap-block,.rb-block,.docs-block,.succession-block,
-  .conduct-block,.offboard-block,.training-block,.cm-block{
+  .conduct-block,.offboard-block,.training-block,.cm-block,.strategy-block{
     border:1px solid var(--line);border-left:3px solid var(--gold);border-radius:8px;
     padding:1rem 1.2rem;background:#fff;
   }
+
+  /* game plan */
+  .gp-vm{display:grid;grid-template-columns:1fr 1fr;gap:1rem;margin:1rem 0 1.4rem;}
+  @media(max-width:680px){ .gp-vm{grid-template-columns:1fr;} }
+  .vm-card{background:var(--blue);color:#fff;border-radius:12px;padding:1.3rem 1.4rem;}
+  .vm-card .vm-t{font-size:.72rem;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--gold);margin-bottom:.5rem;}
+  .vm-card p{margin:0;font-size:.95rem;color:rgba(255,255,255,.9);}
+  .chips{display:flex;flex-wrap:wrap;gap:.5rem;margin:.6rem 0 1.4rem;}
+  .chips span{border:1px solid var(--line);border-radius:999px;padding:.35rem .85rem;font-size:.83rem;color:var(--blue);background:var(--paper-2);}
+  .gp-list{margin:.4rem 0 1.4rem;padding-left:1.15rem;color:#41495a;font-size:.92rem;}
+  .gp-list li{margin:.32rem 0;}
+  .gp-table{border:1px solid var(--line);border-radius:8px;overflow:hidden;margin:1rem 0 1.4rem;}
+  .gp-row{display:grid;grid-template-columns:120px 1.4fr 1.2fr;gap:1px;background:var(--line);}
+  .gp-row > div{background:#fff;padding:.95rem 1.1rem;font-size:.89rem;color:#41495a;}
+  .gp-head > div{background:var(--blue);color:#fff;font-weight:700;font-size:.74rem;letter-spacing:.1em;text-transform:uppercase;}
+  .gp-s{font-weight:700;color:var(--blue) !important;background:var(--paper-2) !important;}
+  @media(max-width:680px){ .gp-row{grid-template-columns:1fr;} .gp-head{display:none;} }
   /* off-boarding steps */
   .steps{display:grid;gap:1px;background:var(--line);border:1px solid var(--line);margin-top:1rem;}
   .step{background:#fff;padding:1.1rem 1.2rem;display:grid;grid-template-columns:auto 1fr;gap:1.1rem;align-items:start;}
@@ -417,7 +434,7 @@
       <li><a href="#sec-0"><span class="num">00</span><span class="ttl">Introduction<span class="meta">Welcome, regional overview, REX &amp; management directories</span></span></a></li>
       <li><a href="#sec-1"><span class="num">01</span><span class="ttl">Regional Data<span class="meta">Chapter commitments &amp; regional KPIs</span></span></a></li>
       <li><a href="#sec-2"><span class="num">02</span><span class="ttl">Regional Calendar<span class="meta">Global, regional &amp; GLC dates</span></span></a></li>
-      <li><a href="#sec-3"><span class="num">03</span><span class="ttl">Chapter Chair Resources<span class="meta">Chair role, documents, operations, succession, finance, chapter manager</span></span></a></li>
+      <li><a href="#sec-3"><span class="num">03</span><span class="ttl">Chapter Chair Resources<span class="meta">Chair role, documents, operations, strategic planning, succession, finance, conduct, chapter manager</span></span></a></li>
       <li><a href="#sec-4"><span class="num">04</span><span class="ttl">Chapter Commitments<span class="meta">The 14 commitments defined</span></span></a></li>
       <li><a href="#sec-5"><span class="num">05</span><span class="ttl">Membership Resources<span class="meta">Requirements, SMP, accepting new members</span></span></a></li>
       <li><a href="#sec-6"><span class="num">06</span><span class="ttl">Member Engagement Resources<span class="meta">Onboarding, toolkit, pledges &amp; points</span></span></a></li>
@@ -767,8 +784,51 @@
       <div class="ph"><h4>Chapter Operations</h4><p class="ph-note">Content to be added.</p><ul>
         <li>Holding an effective board meeting<ul><li>NDA pledge (Elias)</li><li>Elias' template</li></ul></li>
         <li>Hosting an AGM</li>
-        <li>Strategic Planning<ul><li>Game Plan overview</li></ul></li>
       </ul></div>
+      <div class="strategy-block">
+        <h4 class="rex-h">Strategic Planning / Game Plan</h4>
+        <p class="rex-sub">Simple · Memorable · Strategic · Engaging · Measurable</p>
+
+        <span class="rb-tag">What is Game Plan?</span>
+        <p class="roadmap-intro">The Game Plan strategic planning methodology was developed in and by the EMEA super-region to ensure every incoming board had the opportunity to prepare for their year in leadership and governance.</p>
+        <p class="roadmap-intro">Since its inception, Game Plan's geography has spread and <strong>140+</strong> sessions have been executed for chapters, networks and REX. 38 chapters have repeated Game Plan sessions, and the Chapter Health score for those chapters has increased by <strong>13.5%</strong> between the first and last session. The average session rating is <strong>4.61</strong> out of 5.</p>
+
+        <div class="gp-vm">
+          <div class="vm-card"><div class="vm-t">Our vision</div><p>To elevate the YPO experience for every member, spouse/partner and family in the world.</p></div>
+          <div class="vm-card"><div class="vm-t">Our mission</div><p>To empower boards through strategic planning sessions, helping them prepare and deliver only-in-YPO value.</p></div>
+        </div>
+
+        <span class="rb-tag">Session facilitation</span>
+        <p class="roadmap-intro">Sessions are facilitated by certified <strong>Game Plan Coaches</strong>, who are <strong>YPO members</strong> bringing both chapter and regional board experience. Our coach champions provide this facilitation service at <strong>no charge</strong> — it is their way of giving back to the organization. The only cost is any associated travel to the meeting location for the coach.</p>
+
+        <span class="rb-tag">The role of modules</span>
+        <p class="roadmap-intro">Modules are deep dives into specific topics or issues a chapter needs to address. Normally based on the major challenge(s) a chapter is facing, the coach will recommend the most appropriate module. Examples include:</p>
+        <div class="chips">
+          <span>Vision</span><span>Values</span><span>Learning</span><span>Forum</span><span>Membership</span>
+          <span>Member Engagement</span><span>Spouse Engagement</span><span>Governance</span>
+        </div>
+
+        <span class="rb-tag">Outcomes</span>
+        <ul class="gp-list">
+          <li>Alignment on deliverables to address needs and expectations, using data as its foundation.</li>
+          <li>Clear comprehension and effective application of best practices in how officer roles interconnect and enhance each other's contributions within collaborative initiatives.</li>
+          <li>Development of SMART goals to focus on throughout the year, creating accountability for both officers and the membership, resulting in value for members.</li>
+        </ul>
+
+        <span class="rb-tag">Formats</span>
+        <p class="roadmap-intro">Game Plan sessions are broken into 50-minute sprints with 10-minute breaks. This has proved highly effective in achieving the strategic meeting outcomes.</p>
+        <div class="gp-table">
+          <div class="gp-row gp-head"><div>Session</div><div>Delivery</div><div>Outcomes</div></div>
+          <div class="gp-row"><div class="gp-s">4 hours</div><div>A 4-hour strategic Game Plan session delivered as one session. A four-hour virtual session is only for repeat sessions.</div><div>Chapter Playbook, including SMART goals.</div></div>
+          <div class="gp-row"><div class="gp-s">6 hours</div><div>A 6-hour strategic Game Plan session delivered as two 3-hour sessions on different, ideally consecutive days for virtual, or one day physical.</div><div>Chapter Playbook, including SMART goals and the ability to deep dive into one module.</div></div>
+          <div class="gp-row"><div class="gp-s">8 hours</div><div>An 8-hour strategic Game Plan session delivered as two 4-hour sessions on different, ideally consecutive days for virtual, or one day physical.</div><div>Chapter Playbook, including SMART goals, the ability to deep dive into one module, and completion of the chapter's vision and values.</div></div>
+        </div>
+
+        <div class="dl-row">
+          <a class="dl-btn" href="https://app.smartsheet.com/b/form/cbd99d5463e54469985db4057129c575" target="_blank" rel="noopener">Request your Game Plan <span class="arw">↗</span></a>
+          <a class="dl-btn alt" href="https://vimeo.com/851276589/773b95a09d?share=copy" target="_blank" rel="noopener">Watch the Game Plan video <span class="arw">↗</span></a>
+        </div>
+      </div>
       <div class="succession-block">
         <h4 class="rex-h">Succession Planning</h4>
         <p class="rex-sub">Building the leadership ladder, three years ahead.</p>
@@ -786,16 +846,14 @@
         <li>Audited numbers / board clearance (Elias)</li>
       </ul></div>
       <div class="conduct-block">
-        <h4 class="rex-h">Chapter Conduct Committee Toolkit</h4>
+        <h4 class="rex-h">Chapter Conduct Committee / Off-Boarding</h4>
         <p class="rex-sub">Protecting the safe haven of trust.</p>
         <p class="roadmap-intro">YPO policies provide clear guidelines for addressing inappropriate member conduct, so that the safe haven of trust is protected for every member. A standing Chapter Conduct Committee is what makes those guidelines usable — it gives a chapter a fair, consistent process to review conduct issues, vet champions, and mitigate risk and liability, rather than improvising under pressure. Having the committee in place <em>before</em> an issue arises is the point: it protects the members involved, the chapter's leadership, and the culture that makes YPO worth belonging to. To keep YPO a place for learning, growth and fun among peers and their families, chapter chairs are strongly encouraged to lead their members through implementing the recommended steps in the toolkit.</p>
         <div class="dl-row">
           <a class="dl-btn" href="https://image.ypo-mail.org/lib/fe2f1171716404787c1478/m/3/41d8799e-9491-4673-a12b-540abdbee02f.pdf" target="_blank" rel="noopener">Download the Conduct Committee Toolkit <span class="arw">↓</span></a>
         </div>
-      </div>
-      <div class="offboard-block">
-        <h4 class="rex-h">Off-Boarding</h4>
-        <p class="rex-sub">A clear, documented path when a member's journey ends.</p>
+
+        <span class="rb-tag">Off-boarding</span>
         <p class="roadmap-intro">The Conduct Committee Toolkit provides guidelines on how to off-board members from your chapter. The process below keeps decisions consistent, well-documented and fair to everyone involved.</p>
         <div class="steps">
           <div class="step">
@@ -863,6 +921,58 @@
           <a class="dl-btn alt" href="https://image.ypo-mail.org/lib/fe2f1171716404787c1478/m/1/97a8768a-9a68-410c-baaf-586bd8862218.pdf" target="_blank" rel="noopener">CM assessment — option 1 <span class="arw">↓</span></a>
           <a class="dl-btn alt" href="https://image.ypo-mail.org/lib/fe2f1171716404787c1478/m/1/e1657e3d-3d07-417d-96a5-348eb9371971.pdf" target="_blank" rel="noopener">CM assessment — option 2 <span class="arw">↓</span></a>
         </div>
+
+        <span class="rb-tag">Chapter Support Program (CSP)</span>
+        <p class="roadmap-intro">The Chapter Support Program (CSP) connects chapters with trained <strong>virtual chapter managers (VCMs)</strong> who provide short- or long-term operational support to select chapters facing time-sensitive needs. The program ensures continuity, stability and a consistent member experience for chapters in transition — until a permanent chapter manager is recruited and trained — or to assist new chapters during their development phase.</p>
+
+        <div class="rb-split">
+          <div>
+            <h5>New chapter development support</h5>
+            <p>For newly forming chapters, a VCM provides hands-on operational support during the critical start-up phase, helping establish the foundations for effective chapter operations, including:</p>
+            <ul class="gp-list">
+              <li>Opening bank accounts and setting up financial processes and documentation.</li>
+              <li>Establishing basic governance, reporting and admin processes.</li>
+              <li>Onboarding and training chapter officers.</li>
+              <li>Managing early events and meetings during the launch phase.</li>
+              <li>Supporting recruitment, training and a smooth handover to a permanent chapter manager.</li>
+            </ul>
+          </div>
+          <div>
+            <h5>Existing chapter support</h5>
+            <p>For established chapters, VCMs can step in quickly, with support customized to each chapter's needs. Common scenarios include:</p>
+            <ul class="gp-list">
+              <li>Covering maternity leave or other planned absences.</li>
+              <li>Bridging gaps after a chapter manager's departure.</li>
+              <li>Providing extra capacity during transitions or busy periods.</li>
+              <li>Supporting recruitment, training and handover to a new chapter manager.</li>
+            </ul>
+          </div>
+        </div>
+
+        <span class="rb-tag">How chapters can request support</span>
+        <div class="steps">
+          <div class="step">
+            <div class="sn">01</div>
+            <div><h5>Apply</h5><p>The chapter submits a support application <a href="https://app.smartsheet.com/b/form/d3a69b1ca0e543219f600e48fa080c48" target="_blank" rel="noopener">online</a> or by email to <a href="mailto:chaptersupportprogram@ypo.org">chaptersupportprogram@ypo.org</a>.</p></div>
+          </div>
+          <div class="step">
+            <div class="sn">02</div>
+            <div><h5>Match</h5><p>Once all required details are received, chapters will be matched with a VCM based on availability, or provided with a shortlist of VCM profiles to review.</p></div>
+          </div>
+          <div class="step">
+            <div class="sn">03</div>
+            <div><h5>Interview</h5><p>An interview call will be arranged with the VCM candidate(s).</p></div>
+          </div>
+          <div class="step">
+            <div class="sn">04</div>
+            <div><h5>Contract</h5><p>After a VCM is selected, the chapter contracts directly with the VCM. Refer to the <a href="https://image.ypo-mail.org/lib/fe2f1171716404787c1478/m/1/68558c92-c941-40fa-a522-0dc9bcc52d8e.pdf" target="_blank" rel="noopener">sample CM contract</a> for reference.</p></div>
+          </div>
+        </div>
+
+        <div class="dl-row">
+          <a class="dl-btn" href="https://app.smartsheet.com/b/form/d3a69b1ca0e543219f600e48fa080c48" target="_blank" rel="noopener">Request VCM support <span class="arw">↗</span></a>
+        </div>
+        <p style="font-size:.85rem;color:var(--muted);margin-top:.2rem">Questions? Contact <a href="mailto:chaptersupportprogram@ypo.org">chaptersupportprogram@ypo.org</a>.</p>
       </div>
     </div>
   </div>
@@ -1254,7 +1364,7 @@
 <script>
   // ===== collapsible sub-sections (accordion within each section) =====
   (function(){
-    const SUBS='.ph, .rex-block, .mgmt-block, .overview-block, .roadmap-block, .rb-block, .docs-block, .succession-block, .conduct-block, .offboard-block, .training-block, .cm-block';
+    const SUBS='.ph, .rex-block, .mgmt-block, .overview-block, .roadmap-block, .rb-block, .docs-block, .succession-block, .conduct-block, .offboard-block, .training-block, .cm-block, .strategy-block';
     const subs=[...document.querySelectorAll(SUBS)];
 
     subs.forEach(sub=>{
