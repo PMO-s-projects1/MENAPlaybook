@@ -32,7 +32,7 @@ HOW THE PLAYBOOK IS STRUCTURED (some sections are still being populated):
 - Section 8 — Learning Resources: E-CODE, regional initiatives, day chair training, global events calendar.
 - Section 9 — Spouse / Partner & Family Resources.
 - Section 10 — YNG Resources (YPO Next Generation).
-- Section 11 — Network Resources: list of networks.
+- Section 11 — Network Resources: YPO Networks overview, featured offerings and the full networks directory.
 - Section 12 — YPO Emergency Support.
 - Appendix — YPO Acronyms glossary.
 
@@ -88,6 +88,19 @@ CHAPTER COMMITMENTS (14, across governance, forum, learning and peerdom):
 12. Forum Data — chapter forum data reviewed/updated on the Chapter Management Hub this fiscal year.
 13. Chapter Membership — roster verified accurate and all members paid chapter and YPO global dues.
 14. Minimum Membership Requirements — approved before 1 July 2024 = 16 primary members; after = 21.
+
+YPO NETWORKS (Section 11, Network Resources). Networks unlock the full power of YPO by building deeper relationships
+with members and spouses/partners who share your business interests and personal passions. More than 30 YPO Networks
+strengthen these global connections through virtual and in-person opportunities, with customized learning programs, idea
+exchange and events tailored to what matters most to you.
+Featured network offerings: Forum (network forums, with a networks forum toolkit), MicroForum, Events, and Business
+Marketplace.
+Find your network(s): Business Networks foster powerful connections around shared business interests and industries,
+giving insights, support and learning from global peers. Personal Networks create meaningful connections through shared
+passions outside of work — lifestyle, impact, or family-focused communities that offer enriching experiences for members
+and spouses/partners.
+The playbook links to the full Networks Directory on YPO Connect, a "see all networks" PDF, and the YPO Networks
+community page, plus "learn more" PDFs for Business Networks and Personal Networks.
 
 CHAPTER CHAIR ROLE AND RESPONSIBILITIES (Section 3, above the roadmap). One-year term.
 Mission: lead the executive committee in creating a high-value chapter experience for members, using best practices and
