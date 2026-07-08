@@ -304,7 +304,7 @@
   /* ---- collapsible sub-sections ---- */
   .rex-block,.mgmt-block,.overview-block,.roadmap-block,.rb-block,.docs-block,.succession-block,
   .conduct-block,.offboard-block,.training-block,.cm-block,.strategy-block,.role-block,
-  .budget-block,.partners-block,.networks-block{
+  .budget-block,.partners-block,.networks-block,.m2mx-block{
     border:1px solid var(--line);border-left:3px solid var(--gold);border-radius:8px;
     padding:1rem 1.2rem;background:#fff;
   }
@@ -317,6 +317,14 @@
   .bc-pct.gold{color:var(--gold);}
   .bc-pct.blue{color:var(--blue);}
   .budget-card p{margin:0;font-size:.87rem;color:#41495a;}
+
+  /* testimonial quote */
+  .quote{margin:1.6rem 0 1.4rem;padding:1.3rem 1.5rem;background:var(--paper-2);border-left:3px solid var(--azure);border-radius:0 8px 8px 0;}
+  .quote p{font-family:var(--serif);font-size:clamp(1.05rem,2.2vw,1.3rem);line-height:1.45;color:var(--blue);margin:0 0 .7rem;}
+  .quote p::before{content:"\201C";}
+  .quote p::after{content:"\201D";}
+  .quote cite{font-style:normal;font-size:.82rem;font-weight:600;color:var(--muted);}
+  .quote cite::before{content:"— ";}
   .sub{scroll-margin-top:84px;}
   .mission{font-family:var(--serif);font-size:1.15rem;line-height:1.45;color:var(--blue);border-left:3px solid var(--azure);padding-left:1rem;margin:.8rem 0 1.4rem;}
   .mission strong{font-family:var(--font);font-size:.72rem;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--azure);display:block;margin-bottom:.3rem;}
@@ -458,7 +466,7 @@
       <li><a href="#sec-9"><span class="num">09</span><span class="ttl">Spouse / Partner &amp; Family Resources</span></a></li>
       <li><a href="#sec-10"><span class="num">10</span><span class="ttl">YNG Resources</span></a></li>
       <li><a href="#sec-11"><span class="num">11</span><span class="ttl">Network Resources<span class="meta">YPO Networks, offerings &amp; full directory</span></span></a></li>
-      <li><a href="#sec-12"><span class="num">12</span><span class="ttl">YPO Emergency Support</span></a></li>
+      <li><a href="#sec-12"><span class="num">12</span><span class="ttl">YPO Emergency Support<span class="meta">M2Mx — business, health &amp; personal support</span></span></a></li>
       <li><a href="#appendix"><span class="num">A</span><span class="ttl">Appendix — YPO Acronyms<span class="meta">Full glossary of YPO terms</span></span></a></li>
     </ol>
     <div class="toc-actions">
@@ -1292,7 +1300,58 @@
   </div>
   <div class="wrap reveal">
     <span class="eyebrow">YPO Emergency Support</span>
-    <div class="ph-group"><div class="ph"><h4>YPO Emergency Support</h4><p class="ph-note">Content to be added.</p></div></div>
+    <div class="ph-group">
+      <div class="m2mx-block" id="m2mx">
+        <h4 class="rex-h">M2Mx — Connections You Can Count On</h4>
+        <p class="rex-sub">Quick. Confidential. Global.</p>
+        <p class="mission">Got a challenge? Business, health, or personal — M2Mx gets you answers. Fast. Tap into thousands of trusted YPO peers who've been there and know what works.</p>
+
+        <span class="rb-tag">How we help</span>
+        <div class="rb-grid">
+          <div class="rb-card">
+            <div class="t">Business</div>
+            <ul class="gp-list" style="margin-bottom:0">
+              <li>Growth or development advice.</li>
+              <li>Company connections and referrals.</li>
+              <li>Legal or sourcing support.</li>
+            </ul>
+          </div>
+          <div class="rb-card">
+            <div class="t">Health</div>
+            <ul class="gp-list" style="margin-bottom:0">
+              <li>Doctor referrals and medical access.</li>
+              <li>Peer feedback and advice.</li>
+              <li>Substance abuse and mental health crisis.</li>
+            </ul>
+          </div>
+          <div class="rb-card">
+            <div class="t">Personal</div>
+            <ul class="gp-list" style="margin-bottom:0">
+              <li>Parenting support.</li>
+              <li>Family challenges.</li>
+              <li>Local connection support.</li>
+            </ul>
+          </div>
+        </div>
+
+        <span class="rb-tag">Fast and confidential</span>
+        <p class="roadmap-intro">Every request is matched quickly and discreetly with members and spouse/partners.</p>
+        <div class="chips">
+          <span>Quick</span><span>Confidential</span><span>Global</span>
+        </div>
+
+        <blockquote class="quote">
+          <p>I was deeply moved by the willingness of YPO members to serve others. I received extraordinary advice that helped me solve the problem I was facing.</p>
+          <cite>Bagoré Bathily, YPO West Africa Integrated</cite>
+        </blockquote>
+
+        <div class="dl-row">
+          <a class="dl-btn" href="https://ypo.my.site.com/ypoconcierge/s/request-assistance" target="_blank" rel="noopener">Request assistance <span class="arw">↗</span></a>
+          <a class="dl-btn alt" href="mailto:m2mx@ypo.org">m2mx@ypo.org</a>
+          <a class="dl-btn alt" href="tel:+14697703395">+1 469 770 3395</a>
+        </div>
+      </div>
+    </div>
   </div>
 </section>
 
@@ -1533,7 +1592,7 @@
 <script>
   // ===== collapsible sub-sections (accordion within each section) =====
   (function(){
-    const SUBS='.ph, .rex-block, .mgmt-block, .overview-block, .roadmap-block, .rb-block, .docs-block, .succession-block, .conduct-block, .offboard-block, .training-block, .cm-block, .strategy-block, .role-block, .budget-block, .partners-block, .networks-block';
+    const SUBS='.ph, .rex-block, .mgmt-block, .overview-block, .roadmap-block, .rb-block, .docs-block, .succession-block, .conduct-block, .offboard-block, .training-block, .cm-block, .strategy-block, .role-block, .budget-block, .partners-block, .networks-block, .m2mx-block';
     const subs=[...document.querySelectorAll(SUBS)];
 
     subs.forEach(sub=>{
