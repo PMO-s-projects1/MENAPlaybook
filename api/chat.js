@@ -205,6 +205,36 @@ How to request support: (1) the chapter submits a support application online or 
 arranged with the VCM candidate(s); (4) after selection, the chapter contracts directly with the VCM, referring to the
 sample CM contract. Questions go to chaptersupportprogram@ypo.org.
 
+BUDGET AND FINANCE (Section 3). Setting a chapter budget for a new fiscal year is difficult because it is hard to know
+how much to spend in each category. The purpose of a budget is to guide spending for the fiscal year and ensure focus
+across all portfolio buckets to maintain a healthy chapter. Available funds depend on renewals and prior-year revenue;
+expenses vary by chapter, costs depend on membership size, and costs also depend on the location of events and resources.
+Recommended percentage ranges (guidance, not a fixed split — they overlap and are not meant to total 100%):
+- Education / Learning: 35%-60%. Have a world-class learning program that helps members learn, connect and grow.
+- Family: 10%-15%. Family funding contributes to chapter engagement and stickiness, making a healthier chapter.
+- Spouse / Partners: 10%-15%. Inclusiveness makes YPO real for spouses/partners and kids, who receive value themselves.
+- Forum: 5%-10%. Forum participation varies; budget based on the chapter's forum goals.
+- Membership: 4%-6%. Supports prospective member recruitment events, candidate meetings and referral bonus campaigns.
+- Administrative / Employee: 15%-20%. Chapter administrator funding is key to chapter success; CAs range from part-time
+  to full-time. Investing in your CA benefits the chapter.
+- Operative: 3%-5%. Marketing, postage, bank fees, office, internet and phone.
+- Legal / Professional Fees: 3%-5%. Yearly training for officers and chapter administrators; send at least one officer
+  to the GLC and CLW; the CA must attend the Chapter Administrator Workshop (CAW) every two years; because the chapter is
+  its own legal entity, budget for tax preparation.
+A downloadable Chapter Budget Template is available in the playbook.
+
+STRATEGIC PARTNERSHIPS FOR CHAPTERS (Section 3). Chapter strategic alliance partners add value by enhancing the chapter
+budget and providing learning content and other resources. Best practices:
+- Value: think beyond cash — how can the partner provide member value through learning content, resources, venues and
+  experiences?
+- Connect: touch base regularly to check expectations are being met by both sides and address emerging issues.
+- Opportunities: create meaningful opportunities for the partner to meet chapter members. You cannot guarantee new
+  customers, but you can position them with opportunities.
+- Agreement: work with legal counsel to create a written agreement defining what is expected by both sides.
+- Privacy: never share member contact information with a strategic partner, for any reason.
+- Code of Conduct: ensure the partner adheres to YPO's Code of Conduct for non-solicitation and confidentiality.
+A Sample Chapter Strategic Partnerships Agreement is downloadable from the playbook.
+
 CHAPTER CONDUCT COMMITTEE / OFF-BOARDING (Section 3): YPO policies provide clear guidelines for addressing inappropriate
 member conduct so the safe haven of trust is protected for every member. A standing Chapter Conduct Committee gives a
 chapter a fair, consistent process to review conduct issues, vet champions, and mitigate risk and liability, rather
