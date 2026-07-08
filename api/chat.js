@@ -25,7 +25,8 @@ HOW THE PLAYBOOK IS STRUCTURED (some sections are still being populated):
   committee toolkit and offboarding; officer training; and working with your Chapter Manager (CM recruitment,
   contracts, performance reviews, support program).
 - Section 4 — Chapter Commitments: the 14 commitments defined.
-- Section 5 — Membership Resources: YPO membership requirements, SMP (Strategic Membership Pathways), accepting new members.
+- Section 5 — Membership Resources: YPO membership requirements (age, qualifying criteria, employee count and
+  revenue thresholds — detailed below), SMP (Strategic Membership Pathways), accepting new members.
 - Section 6 — Member Engagement Resources: onboarding checklist, Taste of YPO, Apeiron, engagement toolkit, sample pledge,
   sample points system.
 - Section 7 — Forum Resources: find a CFF, regional training, regional funding, forum structures, forum by-laws.
@@ -88,6 +89,18 @@ CHAPTER COMMITMENTS (14, across governance, forum, learning and peerdom):
 12. Forum Data — chapter forum data reviewed/updated on the Chapter Management Hub this fiscal year.
 13. Chapter Membership — roster verified accurate and all members paid chapter and YPO global dues.
 14. Minimum Membership Requirements — approved before 1 July 2024 = 16 primary members; after = 21.
+
+YPO MEMBERSHIP REQUIREMENTS (Section 5, Membership Resources). Potential membership is evaluated on the strength
+and impact of a candidate's achievements and leadership success, across four criteria:
+- Criteria 1, Age: under 45 years old.
+- Criteria 2, Who qualifies: top operational leader of the company or division; final decision-making authority;
+  full P&L accountability; authority to hire and fire across the company or division; leadership across core
+  business functions.
+- Criteria 3, Number of employees: 50 full-time employees, or 15+ full-time employees and minimum $2,750,000 USD
+  annual employee compensation.
+- Criteria 4, Revenue by company type: Sales, Service or Manufacturing companies — $16,000,000+ USD; Financial
+  Institutions — $330,000,000+ USD AUM; Agencies — $13,000,000+ USD, or Enterprise Value $27,000,000+ USD.
+Full detail is available on the YPO membership requirements page linked from the playbook.
 
 M2MX / YPO EMERGENCY SUPPORT (Section 12). M2Mx — "Connections You Can Count On". Got a challenge? Business, health,
 or personal — M2Mx gets you answers fast, tapping thousands of trusted YPO peers who have been there and know what works.
