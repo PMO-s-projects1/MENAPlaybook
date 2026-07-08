@@ -60,14 +60,13 @@
 
   /* contents */
   .toc{background:var(--paper-2);border-bottom:1px solid var(--line);}
-  .toc ol{list-style:none;margin:1.6rem 0 0;padding:0;}
-  .toc li a{display:grid;grid-template-columns:auto 1fr;align-items:baseline;gap:1.2rem;padding:1.05rem 0;border-top:1px solid var(--line);color:var(--ink);transition:padding .2s ease;}
-  .toc li:last-child a{border-bottom:1px solid var(--line);}
+  .toc ol{list-style:none;margin:1.6rem 0 0;padding:0;display:grid;grid-template-columns:repeat(auto-fit,minmax(290px,1fr));gap:0 2.6rem;border-bottom:1px solid var(--line);}
+  .toc li a{display:grid;grid-template-columns:auto 1fr;align-items:baseline;gap:1rem;padding:.8rem 0;border-top:1px solid var(--line);color:var(--ink);transition:padding .2s ease;}
   .toc li a:hover{padding-left:.6rem;}
-  .toc .num{font-size:.9rem;font-weight:700;color:var(--gold);font-variant-numeric:tabular-nums;}
-  .toc .ttl{font-size:clamp(1.05rem,2.4vw,1.45rem);font-weight:600;letter-spacing:-.02em;}
+  .toc .num{font-size:.82rem;font-weight:700;color:var(--gold);font-variant-numeric:tabular-nums;}
+  .toc .ttl{font-size:clamp(.98rem,1.7vw,1.16rem);font-weight:600;letter-spacing:-.01em;}
   .toc li a:hover .ttl{color:var(--azure);}
-  .toc .meta{display:block;font-size:.8rem;color:var(--muted);font-weight:400;margin-top:.15rem;}
+  .toc .meta{display:block;font-size:.75rem;color:var(--muted);font-weight:400;margin-top:.1rem;line-height:1.35;}
 
   /* section divider cover */
   .divider{position:relative;overflow:hidden;background:var(--paper);min-height:62vh;display:flex;align-items:center;padding:clamp(44px,7vw,104px) var(--pad);border-top:1px solid var(--line);border-bottom:1px solid var(--line);}
@@ -300,6 +299,18 @@
   .rb-split h5{font-size:1.15rem;font-weight:400;color:var(--blue);margin:0 0 .6rem;letter-spacing:-.01em;}
   .rb-split p{font-size:.92rem;color:#41495a;}
   .rb-tag{display:inline-block;font-size:.72rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--azure);margin-bottom:.3rem;}
+
+  /* ---- collapsible sub-sections ---- */
+  .rex-block,.mgmt-block,.overview-block,.roadmap-block,.rb-block,.docs-block,.succession-block{
+    border:1px solid var(--line);border-left:3px solid var(--gold);border-radius:8px;
+    padding:1rem 1.2rem;background:#fff;
+  }
+  .sub > .sub-head{position:relative;cursor:pointer;padding-right:2.2rem;-webkit-user-select:none;user-select:none;}
+  .sub > .sub-head::after{content:"+";position:absolute;right:.1rem;top:50%;transform:translateY(-50%);color:var(--azure);font-weight:300;font-size:1.3rem;line-height:1;}
+  .sub:not(.closed) > .sub-head::after{content:"–";}
+  .sub > .sub-head:hover{color:var(--azure);}
+  .sub.closed > .sub-body{display:none;}
+  .sub.closed > .sub-head{margin-bottom:0;}
 </style>
 </head>
 <body class="locked">
@@ -357,7 +368,7 @@
     <a href="#sec-0">0 · Introduction</a>
     <a href="#sec-1">1 · Regional Data</a>
     <a href="#sec-2">2 · Calendar</a>
-    <a href="#sec-3">3 · Governance</a>
+    <a href="#sec-3">3 · Chair Resources</a>
     <a href="#sec-4">4 · Commitments</a>
     <a href="#sec-5">5 · Membership</a>
     <a href="#sec-6">6 · Engagement</a>
@@ -392,7 +403,7 @@
       <li><a href="#sec-0"><span class="num">00</span><span class="ttl">Introduction<span class="meta">Welcome, regional overview, REX &amp; management directories</span></span></a></li>
       <li><a href="#sec-1"><span class="num">01</span><span class="ttl">Regional Data<span class="meta">Chapter commitments &amp; regional KPIs</span></span></a></li>
       <li><a href="#sec-2"><span class="num">02</span><span class="ttl">Regional Calendar<span class="meta">Global, regional &amp; GLC dates</span></span></a></li>
-      <li><a href="#sec-3"><span class="num">03</span><span class="ttl">Chapter Governance<span class="meta">Chair role, documents, operations, succession, finance, chapter manager</span></span></a></li>
+      <li><a href="#sec-3"><span class="num">03</span><span class="ttl">Chapter Chair Resources<span class="meta">Chair role, documents, operations, succession, finance, chapter manager</span></span></a></li>
       <li><a href="#sec-4"><span class="num">04</span><span class="ttl">Chapter Commitments<span class="meta">The 14 commitments defined</span></span></a></li>
       <li><a href="#sec-5"><span class="num">05</span><span class="ttl">Membership<span class="meta">Requirements, SMP, accepting new members</span></span></a></li>
       <li><a href="#sec-6"><span class="num">06</span><span class="ttl">Member Engagement<span class="meta">Onboarding, toolkit, pledges &amp; points</span></span></a></li>
@@ -590,7 +601,7 @@
 <section class="sec collapsed" id="sec-3">
   <div class="divider">
     <div class="tri-field" aria-hidden="true"><svg viewBox="0 0 600 600"><use href="#tri-field"/></svg></div>
-    <div class="inner"><div class="secnum">Section 3</div><h2 class="big">Chapter<br>Governance</h2><p class="lead">How a chapter is led and run — the chair's role, governing documents, operations, succession, finance and the chapter manager relationship.</p></div>
+    <div class="inner"><div class="secnum">Section 3</div><h2 class="big">Chapter Chair<br>Resources</h2><p class="lead">How a chapter is led and run — the chair's role, governing documents, operations, succession, finance and the chapter manager relationship.</p></div>
   </div>
   <div class="wrap reveal">
     <span class="eyebrow">Running a chapter well</span>
@@ -730,16 +741,30 @@
           </div>
         </div>
       </div>
-      <div class="ph"><h4>Chapter Governance Documents</h4><p class="ph-note">Content to be added.</p><ul><li>YPO P&amp;P</li><li>YPO Operations Manual</li><li>Chapter By-Laws templates</li></ul></div>
+      <div class="docs-block">
+        <h4 class="rex-h">Chapter Governance Documents</h4>
+        <p class="rex-sub">The governing documents every chapter chair should know — and where to find them.</p>
+        <p class="roadmap-intro">The YPO Policies and Procedures Manual (P&amp;P) and the YPO Operations Manual set the standards that apply to every chapter. Chapter by-laws sit alongside them, tailored to the country in which the chapter is legally incorporated, and should be reviewed with a locally licensed attorney.</p>
+        <div class="dl-row">
+          <a class="dl-btn" href="https://www2.ypoconnect.org/topics/24644/media_center/folder/f3ef569f-e46c-45be-b900-30eb78b9f781?_gl=1*zmd64k*_ga*ODg3MTM3NDU5LjE3NzM4NTEyMjY.*_ga_JYHVQ6LXLX*czE3NzM5NDQzODUkbzEwJGcxJHQxNzczOTQ4NTY3JGo2MCRsMSRoNzgzNzcxMjUx" target="_blank" rel="noopener">YPO P&amp;P and governance documents <span class="arw">↗</span></a>
+          <a class="dl-btn alt" href="https://image.ypo-mail.org/lib/fe2f1171716404787c1478/m/1/77a37f32-cef7-450b-83ed-f53b6d449ad9.pdf" target="_blank" rel="noopener">Download sample chapter by-laws <span class="arw">↓</span></a>
+        </div>
+      </div>
       <div class="ph"><h4>Chapter Operations</h4><p class="ph-note">Content to be added.</p><ul>
         <li>Holding an effective board meeting<ul><li>NDA pledge (Elias)</li><li>Elias' template</li></ul></li>
         <li>Hosting an AGM</li>
         <li>Strategic Planning<ul><li>Game Plan overview</li></ul></li>
       </ul></div>
-      <div class="ph"><h4>Succession Planning</h4><p class="ph-note">Content to be added.</p><ul>
-        <li>Champion Catalog</li>
-        <li>Succession Planning Worksheet<ul><li>Elias template</li></ul></li>
-      </ul></div>
+      <div class="succession-block">
+        <h4 class="rex-h">Succession Planning</h4>
+        <p class="rex-sub">Building the leadership ladder, three years ahead.</p>
+        <p class="roadmap-intro">Succession planning is what turns a good year into a strong chapter. When the next chair, and the chair after that, are identified early, leaders arrive prepared rather than surprised — officers have time to train, relationships carry across transitions, and the chapter's strategy survives a change at the top. It also widens the leadership pool: planning ahead surfaces quieter champions who would never put themselves forward at short notice, and gives members a visible path into service. Chapters are expected to have a succession plan in place by <strong>1 November</strong>, and the worksheet below helps map the ladder three years into the future.</p>
+        <div class="dl-row">
+          <a class="dl-btn" href="https://image.ypo-mail.org/lib/fe2f1171716404787c1478/m/1/1e87632d-0248-4745-b3ea-c1835923a2bb.pdf" target="_blank" rel="noopener">Download the Succession Planning Worksheet <span class="arw">↓</span></a>
+          <a class="dl-btn alt" href="https://image.ypo-mail.org/lib/fe2f1171716404787c1478/m/1/e7b948bd-7d69-4131-ba5e-c1825cf22f19.pdf" target="_blank" rel="noopener">Champion Catalog — all YPO champion positions <span class="arw">↓</span></a>
+        </div>
+        <p style="font-size:.85rem;color:var(--muted);margin-top:.2rem">The Champion Catalog gives an overview of the champion positions available across YPO — at chapter, regional, global and network level — a useful starting point when identifying where members might serve next.</p>
+      </div>
       <div class="ph"><h4>Budget and Finance</h4><p class="ph-note">Content to be added.</p><ul>
         <li>Recommended chapter budget allocations</li>
         <li>Best practices for strategic partnerships</li>
@@ -1058,7 +1083,7 @@
   <div class="chat-fine">Answers are drawn only from the playbook content.</div>
 </section>
 
-<noscript><style>section.sec.collapsed .wrap{display:block!important;} .chev{display:none!important;}</style></noscript>
+<noscript><style>section.sec.collapsed .wrap{display:block!important;} .chev{display:none!important;} .sub.closed > .sub-body{display:block!important;} .sub > .sub-head::after{display:none!important;}</style></noscript>
 
 <script>
   // reveal on scroll
@@ -1141,6 +1166,48 @@
 </script>
 
 <script>
+  // ===== collapsible sub-sections (accordion within each section) =====
+  (function(){
+    const SUBS='.ph, .rex-block, .mgmt-block, .overview-block, .roadmap-block, .rb-block, .docs-block, .succession-block';
+    const subs=[...document.querySelectorAll(SUBS)];
+
+    subs.forEach(sub=>{
+      const head=sub.querySelector('h4');
+      if(!head) return;
+
+      // move everything after the heading into a collapsible body
+      const body=document.createElement('div');
+      body.className='sub-body';
+      let n=head.nextSibling;
+      while(n){ const next=n.nextSibling; body.appendChild(n); n=next; }
+      sub.appendChild(body);
+
+      sub.classList.add('sub','closed');
+      head.classList.add('sub-head');
+      head.setAttribute('role','button');
+      head.setAttribute('tabindex','0');
+      head.setAttribute('aria-expanded','false');
+
+      sub.toggleSub=function(open){
+        const willOpen=(open===undefined) ? sub.classList.contains('closed') : open;
+        sub.classList.toggle('closed', !willOpen);
+        head.setAttribute('aria-expanded', String(willOpen));
+      };
+      head.addEventListener('click', ()=>sub.toggleSub());
+      head.addEventListener('keydown', e=>{
+        if(e.key==='Enter'||e.key===' '){ e.preventDefault(); sub.toggleSub(); }
+      });
+    });
+
+    // let Expand all / Collapse all drive the sub-sections too
+    const expand=document.getElementById('expand-all');
+    const collapse=document.getElementById('collapse-all');
+    if(expand) expand.addEventListener('click',()=>subs.forEach(s=>s.toggleSub&&s.toggleSub(true)));
+    if(collapse) collapse.addEventListener('click',()=>subs.forEach(s=>s.toggleSub&&s.toggleSub(false)));
+  })();
+</script>
+
+<script>
   // ===== access gate + view tracking =====
   (function(){
     const ENDPOINT='https://script.google.com/macros/s/AKfycbyMDZe6qAmYoWz1K306frp7EGHtDOglzn29iwaUiLf6xPzSZorYSOsXF9ZcBKOX30owmA/exec';
@@ -1182,7 +1249,7 @@
       {id:'sec-0',label:'0 Introduction'},
       {id:'sec-1',label:'1 Regional Data'},
       {id:'sec-2',label:'2 Regional Calendar'},
-      {id:'sec-3',label:'3 Chapter Governance'},
+      {id:'sec-3',label:'3 Chapter Chair Resources'},
       {id:'sec-4',label:'4 Chapter Commitments'},
       {id:'sec-5',label:'5 Membership'},
       {id:'sec-6',label:'6 Member Engagement'},
