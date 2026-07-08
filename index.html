@@ -301,10 +301,24 @@
   .rb-tag{display:inline-block;font-size:.72rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--azure);margin-bottom:.3rem;}
 
   /* ---- collapsible sub-sections ---- */
-  .rex-block,.mgmt-block,.overview-block,.roadmap-block,.rb-block,.docs-block,.succession-block{
+  .rex-block,.mgmt-block,.overview-block,.roadmap-block,.rb-block,.docs-block,.succession-block,
+  .conduct-block,.offboard-block,.training-block,.cm-block{
     border:1px solid var(--line);border-left:3px solid var(--gold);border-radius:8px;
     padding:1rem 1.2rem;background:#fff;
   }
+  /* off-boarding steps */
+  .steps{display:grid;gap:1px;background:var(--line);border:1px solid var(--line);margin-top:1rem;}
+  .step{background:#fff;padding:1.1rem 1.2rem;display:grid;grid-template-columns:auto 1fr;gap:1.1rem;align-items:start;}
+  .step .sn{font-weight:700;color:var(--gold);font-variant-numeric:tabular-nums;font-size:1rem;padding-top:.15rem;}
+  .step h5{font-size:1rem;font-weight:700;color:var(--blue);margin:0 0 .25rem;}
+  .step p{margin:0;font-size:.9rem;color:#41495a;}
+  /* GLC dates */
+  .glc-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:1px;background:var(--line);border:1px solid var(--line);margin:1rem 0 1.2rem;}
+  .glc-card{background:#fff;padding:1.3rem 1.2rem;}
+  .glc-loc{font-weight:700;color:var(--blue);font-size:1rem;}
+  .glc-date{margin-top:.3rem;font-family:var(--serif);font-size:1.2rem;color:var(--azure);}
+  .dl-btn.soon{background:var(--paper);color:var(--muted);border:1.5px dashed var(--line);cursor:not-allowed;font:inherit;font-weight:700;font-size:.85rem;letter-spacing:.02em;}
+  .dl-btn.soon:hover{background:var(--paper);color:var(--muted);transform:none;}
   .sub > .sub-head{position:relative;cursor:pointer;padding-right:2.2rem;-webkit-user-select:none;user-select:none;}
   .sub > .sub-head::after{content:"+";position:absolute;right:.1rem;top:50%;transform:translateY(-50%);color:var(--azure);font-weight:300;font-size:1.3rem;line-height:1;}
   .sub:not(.closed) > .sub-head::after{content:"–";}
@@ -370,13 +384,13 @@
     <a href="#sec-2">2 · Calendar</a>
     <a href="#sec-3">3 · Chair Resources</a>
     <a href="#sec-4">4 · Commitments</a>
-    <a href="#sec-5">5 · Membership</a>
-    <a href="#sec-6">6 · Engagement</a>
-    <a href="#sec-7">7 · Forum</a>
-    <a href="#sec-8">8 · Learning</a>
-    <a href="#sec-9">9 · Family</a>
-    <a href="#sec-10">10 · YNG</a>
-    <a href="#sec-11">11 · Networks</a>
+    <a href="#sec-5">5 · Membership Resources</a>
+    <a href="#sec-6">6 · Engagement Resources</a>
+    <a href="#sec-7">7 · Forum Resources</a>
+    <a href="#sec-8">8 · Learning Resources</a>
+    <a href="#sec-9">9 · Family Resources</a>
+    <a href="#sec-10">10 · YNG Resources</a>
+    <a href="#sec-11">11 · Network Resources</a>
     <a href="#sec-12">12 · Emergency</a>
     <a href="#appendix">A · Acronyms</a>
   </div>
@@ -405,13 +419,13 @@
       <li><a href="#sec-2"><span class="num">02</span><span class="ttl">Regional Calendar<span class="meta">Global, regional &amp; GLC dates</span></span></a></li>
       <li><a href="#sec-3"><span class="num">03</span><span class="ttl">Chapter Chair Resources<span class="meta">Chair role, documents, operations, succession, finance, chapter manager</span></span></a></li>
       <li><a href="#sec-4"><span class="num">04</span><span class="ttl">Chapter Commitments<span class="meta">The 14 commitments defined</span></span></a></li>
-      <li><a href="#sec-5"><span class="num">05</span><span class="ttl">Membership<span class="meta">Requirements, SMP, accepting new members</span></span></a></li>
-      <li><a href="#sec-6"><span class="num">06</span><span class="ttl">Member Engagement<span class="meta">Onboarding, toolkit, pledges &amp; points</span></span></a></li>
-      <li><a href="#sec-7"><span class="num">07</span><span class="ttl">Forum<span class="meta">CFF, training, funding, by-laws</span></span></a></li>
-      <li><a href="#sec-8"><span class="num">08</span><span class="ttl">Learning<span class="meta">E-CODE, initiatives, day chair training, events</span></span></a></li>
-      <li><a href="#sec-9"><span class="num">09</span><span class="ttl">Spouse / Partners &amp; Family</span></a></li>
-      <li><a href="#sec-10"><span class="num">10</span><span class="ttl">YNG</span></a></li>
-      <li><a href="#sec-11"><span class="num">11</span><span class="ttl">Networks<span class="meta">List of networks</span></span></a></li>
+      <li><a href="#sec-5"><span class="num">05</span><span class="ttl">Membership Resources<span class="meta">Requirements, SMP, accepting new members</span></span></a></li>
+      <li><a href="#sec-6"><span class="num">06</span><span class="ttl">Member Engagement Resources<span class="meta">Onboarding, toolkit, pledges &amp; points</span></span></a></li>
+      <li><a href="#sec-7"><span class="num">07</span><span class="ttl">Forum Resources<span class="meta">CFF, training, funding, by-laws</span></span></a></li>
+      <li><a href="#sec-8"><span class="num">08</span><span class="ttl">Learning Resources<span class="meta">E-CODE, initiatives, day chair training, events</span></span></a></li>
+      <li><a href="#sec-9"><span class="num">09</span><span class="ttl">Spouse / Partner &amp; Family Resources</span></a></li>
+      <li><a href="#sec-10"><span class="num">10</span><span class="ttl">YNG Resources</span></a></li>
+      <li><a href="#sec-11"><span class="num">11</span><span class="ttl">Network Resources<span class="meta">List of networks</span></span></a></li>
       <li><a href="#sec-12"><span class="num">12</span><span class="ttl">YPO Emergency Support</span></a></li>
       <li><a href="#appendix"><span class="num">A</span><span class="ttl">Appendix — YPO Acronyms<span class="meta">Full glossary of YPO terms</span></span></a></li>
     </ol>
@@ -744,7 +758,7 @@
       <div class="docs-block">
         <h4 class="rex-h">Chapter Governance Documents</h4>
         <p class="rex-sub">The governing documents every chapter chair should know — and where to find them.</p>
-        <p class="roadmap-intro">The YPO Policies and Procedures Manual (P&amp;P) and the YPO Operations Manual set the standards that apply to every chapter. Chapter by-laws sit alongside them, tailored to the country in which the chapter is legally incorporated, and should be reviewed with a locally licensed attorney.</p>
+        <p class="roadmap-intro">The YPO Policies and Procedures Manual (P&amp;P) and the YPO Operations Manual set the standards that apply to every chapter. Chapter by-laws sit alongside them, tailored to the country in which the chapter is legally incorporated.</p>
         <div class="dl-row">
           <a class="dl-btn" href="https://www2.ypoconnect.org/topics/24644/media_center/folder/f3ef569f-e46c-45be-b900-30eb78b9f781?_gl=1*zmd64k*_ga*ODg3MTM3NDU5LjE3NzM4NTEyMjY.*_ga_JYHVQ6LXLX*czE3NzM5NDQzODUkbzEwJGcxJHQxNzczOTQ4NTY3JGo2MCRsMSRoNzgzNzcxMjUx" target="_blank" rel="noopener">YPO P&amp;P and governance documents <span class="arw">↗</span></a>
           <a class="dl-btn alt" href="https://image.ypo-mail.org/lib/fe2f1171716404787c1478/m/1/77a37f32-cef7-450b-83ed-f53b6d449ad9.pdf" target="_blank" rel="noopener">Download sample chapter by-laws <span class="arw">↓</span></a>
@@ -771,13 +785,85 @@
         <li>Budget templates</li>
         <li>Audited numbers / board clearance (Elias)</li>
       </ul></div>
-      <div class="ph"><h4>Conduct Committee Toolkit</h4><p class="ph-note">Content to be added.</p><ul><li>Offboarding</li></ul></div>
-      <div class="ph"><h4>Officer Training</h4><p class="ph-note">Content to be added.</p><ul><li>GLC dates</li></ul></div>
-      <div class="ph"><h4>Working with your Chapter Manager</h4><p class="ph-note">Content to be added.</p><ul>
-        <li>Working with your CM</li>
-        <li>CM performance review templates</li>
-        <li>CM recruitment<ul><li>CM role description</li><li>CM job posting</li><li>CM contract</li><li>CM support program</li></ul></li>
-      </ul></div>
+      <div class="conduct-block">
+        <h4 class="rex-h">Chapter Conduct Committee Toolkit</h4>
+        <p class="rex-sub">Protecting the safe haven of trust.</p>
+        <p class="roadmap-intro">YPO policies provide clear guidelines for addressing inappropriate member conduct, so that the safe haven of trust is protected for every member. A standing Chapter Conduct Committee is what makes those guidelines usable — it gives a chapter a fair, consistent process to review conduct issues, vet champions, and mitigate risk and liability, rather than improvising under pressure. Having the committee in place <em>before</em> an issue arises is the point: it protects the members involved, the chapter's leadership, and the culture that makes YPO worth belonging to. To keep YPO a place for learning, growth and fun among peers and their families, chapter chairs are strongly encouraged to lead their members through implementing the recommended steps in the toolkit.</p>
+        <div class="dl-row">
+          <a class="dl-btn" href="https://image.ypo-mail.org/lib/fe2f1171716404787c1478/m/3/41d8799e-9491-4673-a12b-540abdbee02f.pdf" target="_blank" rel="noopener">Download the Conduct Committee Toolkit <span class="arw">↓</span></a>
+        </div>
+      </div>
+      <div class="offboard-block">
+        <h4 class="rex-h">Off-Boarding</h4>
+        <p class="rex-sub">A clear, documented path when a member's journey ends.</p>
+        <p class="roadmap-intro">The Conduct Committee Toolkit provides guidelines on how to off-board members from your chapter. The process below keeps decisions consistent, well-documented and fair to everyone involved.</p>
+        <div class="steps">
+          <div class="step">
+            <div class="sn">01</div>
+            <div><h5>Identification</h5><p>Concern identified and documented by the Chapter Manager in consultation with the Chapter Chair (CC) and/or Chapter Membership Officer (CMO).</p></div>
+          </div>
+          <div class="step">
+            <div class="sn">02</div>
+            <div><h5>Chapter Conduct Committee (CCC) review</h5><p>Concern reviewed against YPO standards, chapter expectations, and relevant facts. Documentation and context assessed.</p></div>
+          </div>
+          <div class="step">
+            <div class="sn">03</div>
+            <div><h5>Decision point: resolved at CCC level</h5><p>Recommendation agreed upon and documented.</p></div>
+          </div>
+          <div class="step">
+            <div class="sn">04</div>
+            <div><h5>Not resolved / complex case</h5><p>Escalated to the Global Conduct Committee (GCC) for further review and guidance.</p></div>
+          </div>
+          <div class="step">
+            <div class="sn">05</div>
+            <div><h5>Closure and documentation</h5><p>Outcome documented, appropriate records maintained for transparency and consistency.</p></div>
+          </div>
+        </div>
+      </div>
+      <div class="training-block">
+        <h4 class="rex-h">Officer Training</h4>
+        <p class="rex-sub">Global Leadership Conference (GLC) dates, FY26–27.</p>
+        <p class="roadmap-intro">Registration will open in Q2. Virtual sessions will be announced closer to the time.</p>
+        <div class="glc-grid">
+          <div class="glc-card">
+            <div class="glc-loc">GLC — Bangkok, Thailand</div>
+            <div class="glc-date">15–17 March 2027</div>
+          </div>
+          <div class="glc-card">
+            <div class="glc-loc">GLC — San Diego, USA</div>
+            <div class="glc-date">3–5 May 2027</div>
+          </div>
+        </div>
+        <div class="dl-row">
+          <button type="button" class="dl-btn soon" disabled aria-disabled="true">Registration opening soon</button>
+        </div>
+      </div>
+      <div class="cm-block">
+        <h4 class="rex-h">Working with your Chapter Manager</h4>
+        <p class="rex-sub">The CM partnership is crucial to the success of the chapter.</p>
+        <p class="roadmap-intro">The Chapter Manager (CM) partnership with the chapter executive committee is crucial to the success of the chapter. CMs serve as the chapter operations manager — wearing many hats, executing daily operations, and providing direct support for chapter officers, members and spouse/partners.</p>
+
+        <span class="rb-tag">Best practices for working with your Chapter Manager</span>
+        <div class="rb-grid">
+          <div class="rb-card"><div class="t">Give direction</div><p>Before the start of your chapter chair year, discuss the chapter priorities and strategic plan with your CM. Give clear direction on where the CM will allocate time, and work with them through the year to reprioritize work when new projects or events emerge.</p></div>
+          <div class="rb-card"><div class="t">Set member expectations</div><p>Inform chapter officers and members what they can expect from the CM. Ensure the CM is not utilized by members for non-YPO requests that are best managed by a personal assistant.</p></div>
+          <div class="rb-card"><div class="t">Be connected</div><p>Meet with your CM on a regular basis (weekly or bi-weekly). Include your CM in executive committee calls, meetings and discussions so they can best serve the chapter. Be in the know on their work, and work to resolve issues before they escalate.</p></div>
+          <div class="rb-card"><div class="t">Tap their knowledge</div><p>Chapter Managers have institutional knowledge of the chapter. They are a valued resource in identifying strategic priorities to enhance the chapter experience and member value.</p></div>
+          <div class="rb-card"><div class="t">Safe haven</div><p>In line with the YPO Code of Conduct, provide a safe haven of trust, respect and confidentiality for your CM while working with the members and chapter officers.</p></div>
+          <div class="rb-card"><div class="t">Provide feedback</div><p>Feedback is critical to the CM's professional development and their ability to continually meet the expectations of the chapter board and members. Conduct an annual review in May or June as your Chapter Chair year closes.</p></div>
+          <div class="rb-card"><div class="t">Encourage training</div><p>YPO continually evolves. Encourage your CM to attend workshops, webinars and other ad hoc training so they can stay up to date on YPO and learn best practices from their peers.</p></div>
+          <div class="rb-card"><div class="t">Contract review</div><p>Chapters are self-governing and the CM role varies year by year based on chapter needs. Review your CM contract or employment agreement annually in June to ensure it reflects the chapter's needs and the CM's current role.</p></div>
+        </div>
+
+        <span class="rb-tag">Additional resources</span>
+        <div class="dl-row">
+          <a class="dl-btn" href="https://image.ypo-mail.org/lib/fe2f1171716404787c1478/m/1/2e5a6595-e690-4427-8485-98aacf90d604.pdf" target="_blank" rel="noopener">Insights on the CM role <span class="arw">↓</span></a>
+          <a class="dl-btn alt" href="https://image.ypo-mail.org/lib/fe2f1171716404787c1478/m/6/b1ccc2fc-9510-4996-9ede-92b7f9f6c8be.pdf" target="_blank" rel="noopener">CM timeline <span class="arw">↓</span></a>
+          <a class="dl-btn alt" href="https://image.ypo-mail.org/lib/fe2f1171716404787c1478/m/1/68558c92-c941-40fa-a522-0dc9bcc52d8e.pdf" target="_blank" rel="noopener">CM contract template <span class="arw">↓</span></a>
+          <a class="dl-btn alt" href="https://image.ypo-mail.org/lib/fe2f1171716404787c1478/m/1/97a8768a-9a68-410c-baaf-586bd8862218.pdf" target="_blank" rel="noopener">CM assessment — option 1 <span class="arw">↓</span></a>
+          <a class="dl-btn alt" href="https://image.ypo-mail.org/lib/fe2f1171716404787c1478/m/1/e1657e3d-3d07-417d-96a5-348eb9371971.pdf" target="_blank" rel="noopener">CM assessment — option 2 <span class="arw">↓</span></a>
+        </div>
+      </div>
     </div>
   </div>
 </section>
@@ -817,10 +903,10 @@
 <section class="sec collapsed" id="sec-5">
   <div class="divider">
     <div class="tri-field" aria-hidden="true"><svg viewBox="0 0 600 600"><use href="#tri-field"/></svg></div>
-    <div class="inner"><div class="secnum">Section 5</div><h2 class="big">Membership</h2><p class="lead">Who joins, how they qualify, and how chapters bring new members in.</p></div>
+    <div class="inner"><div class="secnum">Section 5</div><h2 class="big">Membership<br>Resources</h2><p class="lead">Who joins, how they qualify, and how chapters bring new members in.</p></div>
   </div>
   <div class="wrap reveal">
-    <span class="eyebrow">Membership</span>
+    <span class="eyebrow">Membership Resources</span>
     <div class="ph-group">
       <div class="ph"><h4>YPO Membership Requirements</h4><p class="ph-note">Content to be added.</p></div>
       <div class="ph"><h4>SMP — Strategic Membership Pathways</h4><p class="ph-note">Content to be added.</p></div>
@@ -833,10 +919,10 @@
 <section class="sec collapsed" id="sec-6">
   <div class="divider">
     <div class="tri-field" aria-hidden="true"><svg viewBox="0 0 600 600"><use href="#tri-field"/></svg></div>
-    <div class="inner"><div class="secnum">Section 6</div><h2 class="big">Member<br>Engagement</h2><p class="lead">Keeping members active, connected and getting value from their YPO experience.</p></div>
+    <div class="inner"><div class="secnum">Section 6</div><h2 class="big">Member Engagement<br>Resources</h2><p class="lead">Keeping members active, connected and getting value from their YPO experience.</p></div>
   </div>
   <div class="wrap reveal">
-    <span class="eyebrow">Member Engagement</span>
+    <span class="eyebrow">Member Engagement Resources</span>
     <div class="ph-group">
       <div class="ph"><h4>New Member Onboarding Checklist</h4><p class="ph-note">Content to be added.</p></div>
       <div class="ph"><h4>Taste of YPO Information</h4><p class="ph-note">Content to be added.</p></div>
@@ -852,10 +938,10 @@
 <section class="sec collapsed" id="sec-7">
   <div class="divider">
     <div class="tri-field" aria-hidden="true"><svg viewBox="0 0 600 600"><use href="#tri-field"/></svg></div>
-    <div class="inner"><div class="secnum">Section 7</div><h2 class="big">Forum</h2><p class="lead">The heart of the YPO experience — training, funding and the structures that keep forums strong.</p></div>
+    <div class="inner"><div class="secnum">Section 7</div><h2 class="big">Forum<br>Resources</h2><p class="lead">The heart of the YPO experience — training, funding and the structures that keep forums strong.</p></div>
   </div>
   <div class="wrap reveal">
-    <span class="eyebrow">Forum</span>
+    <span class="eyebrow">Forum Resources</span>
     <div class="ph-group">
       <div class="ph"><h4>Find a CFF</h4><p class="ph-note">Content to be added.</p></div>
       <div class="ph"><h4>Regional Training</h4><p class="ph-note">Content to be added.</p></div>
@@ -870,10 +956,10 @@
 <section class="sec collapsed" id="sec-8">
   <div class="divider">
     <div class="tri-field" aria-hidden="true"><svg viewBox="0 0 600 600"><use href="#tri-field"/></svg></div>
-    <div class="inner"><div class="secnum">Section 8</div><h2 class="big">Learning</h2><p class="lead">Lifelong learning across the region — initiatives, training and the global events calendar.</p></div>
+    <div class="inner"><div class="secnum">Section 8</div><h2 class="big">Learning<br>Resources</h2><p class="lead">Lifelong learning across the region — initiatives, training and the global events calendar.</p></div>
   </div>
   <div class="wrap reveal">
-    <span class="eyebrow">Learning</span>
+    <span class="eyebrow">Learning Resources</span>
     <div class="ph-group">
       <div class="ph"><h4>E-CODE</h4><p class="ph-note">Content to be added.</p></div>
       <div class="ph"><h4>Regional Initiatives</h4><p class="ph-note">Content to be added.</p></div>
@@ -887,11 +973,11 @@
 <section class="sec collapsed" id="sec-9">
   <div class="divider">
     <div class="tri-field" aria-hidden="true"><svg viewBox="0 0 600 600"><use href="#tri-field"/></svg></div>
-    <div class="inner"><div class="secnum">Section 9</div><h2 class="big">Spouse /<br>Partners &amp; Family</h2><p class="lead">Bringing spouses, partners and families into the YPO journey.</p></div>
+    <div class="inner"><div class="secnum">Section 9</div><h2 class="big">Spouse / Partner &amp;<br>Family Resources</h2><p class="lead">Bringing spouses, partners and families into the YPO journey.</p></div>
   </div>
   <div class="wrap reveal">
-    <span class="eyebrow">Spouse / Partners &amp; Family</span>
-    <div class="ph-group"><div class="ph"><h4>Spouse / Partners &amp; Family</h4><p class="ph-note">Content to be added.</p></div></div>
+    <span class="eyebrow">Spouse / Partner &amp; Family Resources</span>
+    <div class="ph-group"><div class="ph"><h4>Spouse / Partner &amp; Family</h4><p class="ph-note">Content to be added.</p></div></div>
   </div>
 </section>
 
@@ -899,10 +985,10 @@
 <section class="sec collapsed" id="sec-10">
   <div class="divider">
     <div class="tri-field" aria-hidden="true"><svg viewBox="0 0 600 600"><use href="#tri-field"/></svg></div>
-    <div class="inner"><div class="secnum">Section 10</div><h2 class="big">YNG</h2><p class="lead">The Young Next Generation community across YPO MENA.</p></div>
+    <div class="inner"><div class="secnum">Section 10</div><h2 class="big">YNG<br>Resources</h2><p class="lead">The Young Next Generation community across YPO MENA.</p></div>
   </div>
   <div class="wrap reveal">
-    <span class="eyebrow">YNG</span>
+    <span class="eyebrow">YNG Resources</span>
     <div class="ph-group"><div class="ph"><h4>YNG</h4><p class="ph-note">Content to be added.</p></div></div>
   </div>
 </section>
@@ -911,10 +997,10 @@
 <section class="sec collapsed" id="sec-11">
   <div class="divider">
     <div class="tri-field" aria-hidden="true"><svg viewBox="0 0 600 600"><use href="#tri-field"/></svg></div>
-    <div class="inner"><div class="secnum">Section 11</div><h2 class="big">Networks</h2><p class="lead">The peer networks connecting members by interest, industry and passion.</p></div>
+    <div class="inner"><div class="secnum">Section 11</div><h2 class="big">Network<br>Resources</h2><p class="lead">The peer networks connecting members by interest, industry and passion.</p></div>
   </div>
   <div class="wrap reveal">
-    <span class="eyebrow">Networks</span>
+    <span class="eyebrow">Network Resources</span>
     <div class="ph-group"><div class="ph"><h4>List of Networks</h4><p class="ph-note">Content to be added.</p></div></div>
   </div>
 </section>
@@ -1168,7 +1254,7 @@
 <script>
   // ===== collapsible sub-sections (accordion within each section) =====
   (function(){
-    const SUBS='.ph, .rex-block, .mgmt-block, .overview-block, .roadmap-block, .rb-block, .docs-block, .succession-block';
+    const SUBS='.ph, .rex-block, .mgmt-block, .overview-block, .roadmap-block, .rb-block, .docs-block, .succession-block, .conduct-block, .offboard-block, .training-block, .cm-block';
     const subs=[...document.querySelectorAll(SUBS)];
 
     subs.forEach(sub=>{
@@ -1251,13 +1337,13 @@
       {id:'sec-2',label:'2 Regional Calendar'},
       {id:'sec-3',label:'3 Chapter Chair Resources'},
       {id:'sec-4',label:'4 Chapter Commitments'},
-      {id:'sec-5',label:'5 Membership'},
-      {id:'sec-6',label:'6 Member Engagement'},
-      {id:'sec-7',label:'7 Forum'},
-      {id:'sec-8',label:'8 Learning'},
-      {id:'sec-9',label:'9 Spouse/Partners & Family'},
-      {id:'sec-10',label:'10 YNG'},
-      {id:'sec-11',label:'11 Networks'},
+      {id:'sec-5',label:'5 Membership Resources'},
+      {id:'sec-6',label:'6 Member Engagement Resources'},
+      {id:'sec-7',label:'7 Forum Resources'},
+      {id:'sec-8',label:'8 Learning Resources'},
+      {id:'sec-9',label:'9 Spouse/Partner & Family Resources'},
+      {id:'sec-10',label:'10 YNG Resources'},
+      {id:'sec-11',label:'11 Network Resources'},
       {id:'sec-12',label:'12 Emergency Support'},
       {id:'appendix',label:'Appendix · Acronyms'}
     ];
