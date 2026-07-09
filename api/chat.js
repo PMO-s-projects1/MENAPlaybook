@@ -28,8 +28,9 @@ HOW THE PLAYBOOK IS STRUCTURED (some sections are still being populated):
 - Membership Resources: YPO membership requirements, SMP (Strategic Membership Pathways), accepting new members.
 - Member Engagement Resources: onboarding checklist, Taste of YPO, Apeiron, engagement toolkit, sample pledge,
   sample points system.
-- Forum Resources: find a CFF, regional training, regional funding, forum structures, forum by-laws.
-- Learning Resources: E-CODE, regional initiatives, day chair training, global events calendar.
+- Forum Resources: find a CFF, regional training, regional funding, types of YPO forums, forum by-laws.
+- Learning Resources: E-CODE, Chapter Learning Officer role & roadmap, regional initiatives, day chair training,
+  global events calendar, strategic learning partnerships.
 - Spouse / Partner & Family Resources.
 - YNG Resources (YPO Next Generation).
 - Network Resources: YPO Networks overview, featured offerings and the full networks directory.
@@ -351,6 +352,68 @@ CONDUCT COMMITTEE (Chapter Chair Resources): guiding principle "if it can be sol
 membership/engagement officer, two senior board roles). Follow fair process, communicate with the Global
 Conduct Committee (GCC), and mitigate risk via bylaws, waivers and D&O insurance. Two-step review: Step 1
 initial (Chapter/Network/Global), Step 2 appeal (Global Conduct Committee / GCC Review Panel).
+
+TYPES OF YPO FORUMS (Forum Resources): the different forum formats available across YPO.
+- Chapter-Based Member Forums: most YPO and YPO Gold forums are small groups of 8-12 members from the same
+  chapter, also available to spouses/partners and young adult children of members ages 18-32. The chapter forum
+  officer is a new member's primary resource for forum orientation, education and placement, working with chapter
+  forum moderators to assign new members, typically first-come, first-served.
+- Spouse/Partner Forums: an antidote to the isolation that can come with being a spouse/partner of a chief
+  executive, open to the spouses/partners of current YPO members, including those who work outside the home.
+- Couples Forums: chapter-based forums that help members and their spouse/partner build closer relationships
+  together; especially popular in YPO Gold, where couples often meet multi-day, two to three times a year.
+- Network Forums: structured like regional forums, but participants share a common professional or personal
+  interest through membership in a network.
+- Regional Forums: for members, spouses and partners wanting a forum experience that's culturally diverse and
+  outside their local chapter, or when conflicts of interest prevent joining a chapter-based forum. Same protocol
+  as chapter forums, but usually a bigger time commitment due to travel and multi-day meetings.
+- YPO NextGen Forums: connect members' adult children (18-32); about 700 participants across 80+ YNG forums.
+  Requires one 4-hour meeting monthly and completion of Forum Fundamentals training before joining. Contact
+  yng@ypo.org for details.
+- Virtual Forums: the most feasible option when a network or regional forum's members live far apart — conference
+  calls, web conferencing or video conferencing, with a peer-elected moderator leading each meeting. Eight forum
+  success principles apply: Confidentiality, Commitment, Forum protocol and Meeting structure (the "Four Core
+  Forum Success Principles"), plus Membership, Leadership, Renewal, and Shared vision/purpose/values.
+The playbook also links to a downloadable Sample Forum By-Laws document (under the Forum By-Laws sub-section) that
+forums can amend to suit their own needs.
+
+CHAPTER LEARNING OFFICER — ROLE, RESPONSIBILITIES AND ROADMAP (Learning Resources): one-year term.
+Mission: deliver a program that encourages lifelong learning and helps members, their spouse/partners and families
+grow and transform, giving them a tangible advantage as leaders and people.
+Responsibilities: execute a value-driven learning program (logistics, marketing, budgets, day chair selection and
+training); utilize E-CODE and YPO global tools/best practices; collaborate with your region and networks on
+Only-in-YPO experiences; share lessons learned and support your successor; evaluate events to improve future
+programs.
+Key goals: finalize and refine your program/events with feedback from management associates and other learning
+officers, using E-CODE for every event; market your program; manage day chairs (training, execution, evaluation,
+tracking expenditures); conclude your program by supporting your successor and hosting a thank-you program.
+Qualifying criteria: passion and time; interest in creating a memorable impact for members focused on lifelong
+learning and connection; preferably served as a day chair, family officer or assistant learning officer.
+Time commitment (the most time-consuming chapter role): plan/execute the full learning calendar (10 months); work
+with a learning sub-committee; attend the annual strategic planning session; attend all chapter events and ExCo
+meetings (could be up to 30 events); regular calls with the regional learning manager (quarterly) and regional
+learning officer (quarterly/biannually); complete forum officer essentials training.
+Experience gained: program development, management and execution; exposure to remarkable resources and thought
+leaders; crisis management; presentation, influencing and communication skills.
+Resources: Role Infographic, Officer Community, Officer Roadmaps Infosite; regional learning manager, chapter
+manager, assistant learning officer and day chairs, sponsors, peers and regional learning officer; Speaker
+Resource Directory; E-CODE; Learning Boundaries and Trust Protocols; Guide for Speakers; Learning gateway on
+Connect; Learning in a Box Toolkit.
+Roadmap by quarter: July-September — year begins; attend ExCo meetings; attend the Q1 collaboration call; 1:1
+onboarding with your regional learning officer; connect with the assistant learning officer; open one event to
+other chapters in the region (COR); engage in the learning officer community; promote events and send evaluations;
+explore future leadership roles. October-December — attend ExCo meetings; reflect on your learning plan with your
+chapter chair; re-engage disengaged members; review goals; secure a successor by 1 November; attend the Q2
+collaboration call; promote Officer Essentials and GLC to incoming officers. January-March — attend ExCo meetings;
+keep promoting events; assist the assistant learning officer with their calendar (E-CODE, marketing, lifelong
+learning categories); continue executing goals; start transitioning knowledge to your successor; plan day chair
+recognition; attend the Q3 collaboration call; flag engaged members as potential day chairs. April-June — attend
+ExCo meetings; update goals; final check-in with the assistant learning officer; ensure a proper handover; attend
+the Q4 collaboration call; prepare for the YPO Global Awards Program; celebrate achievements and recognize day
+chairs.
+The playbook links to the full list of YPO MENA Chapter Learning Officers & Assistant Learning Officers directly
+under the roadmap, and to Strategic Learning Partnerships — world-class organizations chapters, regions or
+networks can work with to elevate their programming.
 
 YPO ACRONYMS (Appendix):
 Administrative — CBMS: chapter below minimum standards; CHM: chapter health metrics; CRM: customer relationship
