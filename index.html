@@ -46,13 +46,13 @@
   .sec-h{font-size:clamp(1.4rem,3vw,1.9rem);margin:0 0 1rem;}
 
   /* front cover */
-  .cover{position:relative;overflow:hidden;min-height:100vh;display:flex;flex-direction:column;justify-content:space-between;background:var(--blue);color:#fff;padding:clamp(28px,5vw,64px) var(--pad);}
+  .cover{position:relative;overflow:hidden;min-height:88vh;display:flex;flex-direction:column;justify-content:space-between;background:var(--blue);color:#fff;padding:clamp(28px,5vw,64px) var(--pad);}
   .cover .lockup{color:#fff;position:relative;z-index:2;}
   .cover .tri-field{position:absolute;inset:0;z-index:0;opacity:.10;}
   .cover .tri-field svg{width:100%;height:100%;}
-  .cover .center{position:relative;z-index:2;margin:0 0 auto;}
+  .cover .center{position:relative;z-index:2;margin:auto 0;padding:2.5rem 0;}
   .cover .kicker{font-size:.8rem;letter-spacing:.32em;text-transform:uppercase;color:var(--gold);font-weight:600;margin-bottom:1.4rem;}
-  .cover h1{font-size:clamp(3rem,11vw,7.5rem);font-weight:700;letter-spacing:-.03em;line-height:.92;}
+  .cover h1{font-size:clamp(2.6rem,9vw,6.4rem);font-weight:700;letter-spacing:-.03em;line-height:.95;}
   .cover h1 .li{color:var(--gold);}
   .cover .sub{margin-top:1.6rem;max-width:46ch;font-size:clamp(1rem,2.2vw,1.25rem);color:rgba(255,255,255,.82);}
   .cover .foot{position:relative;z-index:2;display:flex;justify-content:space-between;align-items:flex-end;gap:1rem;flex-wrap:wrap;font-size:.78rem;color:rgba(255,255,255,.7);}
@@ -231,8 +231,8 @@
   /* Small labels stay bold/condensed-feel in caps */
   .eyebrow, .acr-cat{letter-spacing:.14em;}
   .acr-cat{text-transform:uppercase;font-size:.9rem;font-weight:700;letter-spacing:.1em;}
-  /* Instrument Serif for lead-ins and callouts (warmth & contrast) */
-  .cover .sub, .divider .lead, .lede, .welcome-greeting, .rex-sub{
+  /* Instrument Serif reserved for section-divider lead-ins only, kept consistent everywhere else */
+  .cover .sub, .divider .lead, .lede, .welcome-greeting{
     font-family:var(--serif); font-weight:400; letter-spacing:.005em;
   }
   .cover .sub, .divider .lead, .lede{font-size:clamp(1.25rem,2.8vw,1.7rem);line-height:1.35;}
@@ -245,7 +245,7 @@
   .toc li a:hover .ttl{color:var(--azure);}
 
   /* chapter chair roadmap */
-  .roadmap-intro{color:var(--muted);max-width:62ch;}
+  .roadmap-intro{color:var(--muted);}
   .dl-btn{display:inline-flex;align-items:center;gap:.55rem;background:var(--blue);color:#fff;border-radius:999px;padding:.7rem 1.25rem;font-size:.85rem;font-weight:700;letter-spacing:.02em;margin:.4rem 0 1.6rem;transition:background .18s ease,transform .1s ease;}
   .dl-btn:hover{background:var(--azure);text-decoration:none;transform:translateY(-1px);}
   .dl-btn .arw{font-size:1rem;line-height:1;}
@@ -463,7 +463,7 @@
       <li><a href="#sec-2"><span class="ttl">Regional Calendar<span class="meta">Global, regional &amp; GLC dates</span></span></a></li>
       <li><a href="#sec-3"><span class="ttl">Chapter Chair Resources<span class="meta">Chair role, documents, operations, strategic planning, succession, finance, conduct, chapter manager</span></span></a></li>
       <li><a href="#sec-4"><span class="ttl">Chapter Commitments<span class="meta">The 14 commitments defined</span></span></a></li>
-      <li><a href="#sec-5"><span class="ttl">Membership Resources<span class="meta">Requirements, SMP, accepting new members</span></span></a></li>
+      <li><a href="#sec-5"><span class="ttl">Membership Resources<span class="meta">Requirements &amp; role-based verification</span></span></a></li>
       <li><a href="#sec-6"><span class="ttl">Member Engagement Resources<span class="meta">Onboarding, toolkit, pledges &amp; points</span></span></a></li>
       <li><a href="#sec-7"><span class="ttl">Forum Resources<span class="meta">CFF, training, funding, by-laws</span></span></a></li>
       <li><a href="#sec-8"><span class="ttl">Learning Resources<span class="meta">E-CODE, initiatives, day chair training, events</span></span></a></li>
@@ -1641,8 +1641,6 @@
         <p style="font-size:.85rem;color:var(--muted);margin-top:.2rem">Preboarding Presentation for Prospective Members — link to be added.</p>
         <p class="src-note">Source: YPO Preboarding Toolkit, May 2025.</p>
       </div>
-      <div class="ph"><h4>SMP — Strategic Membership Pathways</h4><p class="ph-note">Content to be added.</p></div>
-      <div class="ph"><h4>Accepting New Members</h4><p class="ph-note">Content to be added.</p></div>
     </div>
   </div>
 </section>
@@ -3036,7 +3034,7 @@
 <script>
   // ===== collapsible sub-sections (accordion within each section) =====
   (function(){
-    const SUBS='.ph, .rex-block, .mgmt-block, .overview-block, .roadmap-block, .rb-block, .docs-block, .succession-block, .conduct-block, .offboard-block, .training-block, .cm-block, .strategy-block, .role-block, .budget-block, .partners-block, .networks-block, .m2mx-block';
+    const SUBS='.ph, .rex-block, .mgmt-block, .overview-block, .roadmap-block, .rb-block, .docs-block, .succession-block, .conduct-block, .offboard-block, .training-block, .cm-block, .strategy-block, .role-block, .budget-block, .partners-block, .networks-block, .m2mx-block, .ops-block';
     const subs=[...document.querySelectorAll(SUBS)].filter(el=>el.querySelector('h4'));
 
     // count sub-blocks per section: if a section has only one, it shouldn't
