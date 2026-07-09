@@ -8,7 +8,7 @@
 
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet" />
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Poppins:wght@500;600&display=swap" rel="stylesheet" />
 
 <style>
   /* Type: Helvetica Neue (system) for titles/body; Instrument Serif for callouts. */
@@ -31,7 +31,7 @@
   .mark{width:1em;height:.9em;display:inline-block;object-fit:contain;}
   .lockup{display:flex;align-items:center;gap:.55rem;}
   .lockup .mark{width:38px;height:33px;flex:none;}
-  .lockup .word{font-weight:700;font-size:1.5rem;letter-spacing:.02em;line-height:1;}
+  .lockup .word{font-family:'Poppins',var(--font);font-weight:500;font-size:1.5rem;letter-spacing:.02em;line-height:1;}
   .lockup .region{border-left:1.5px solid currentColor;padding-left:.55rem;margin-left:.15rem;font-size:.62rem;font-weight:500;line-height:1.15;letter-spacing:.04em;text-transform:uppercase;opacity:.92;}
 
   nav.top{position:sticky;top:0;z-index:50;display:flex;align-items:center;justify-content:space-between;gap:1rem;padding:.7rem var(--pad);background:rgba(4,30,66,.96);backdrop-filter:blur(8px);color:#fff;border-bottom:1px solid rgba(255,255,255,.12);}
@@ -50,8 +50,7 @@
   .cover .lockup{color:#fff;position:relative;z-index:2;}
   .cover .tri-field{position:absolute;inset:0;z-index:0;opacity:.10;}
   .cover .tri-field svg{width:100%;height:100%;}
-  .cover .center{position:relative;z-index:2;margin:auto 0;}
-  .cover-logo{height:clamp(64px,9vw,104px);width:auto;display:block;object-fit:contain;}
+  .cover .center{position:relative;z-index:2;margin:0 0 auto;}
   .cover .kicker{font-size:.8rem;letter-spacing:.32em;text-transform:uppercase;color:var(--gold);font-weight:600;margin-bottom:1.4rem;}
   .cover h1{font-size:clamp(3rem,11vw,7.5rem);font-weight:700;letter-spacing:-.03em;line-height:.92;}
   .cover h1 .li{color:var(--gold);}
@@ -105,9 +104,9 @@
 
   /* placeholder blocks */
   .ph-group{display:grid;gap:.8rem;}
-  .ph{border:1px solid var(--line);border-left:3px solid var(--gold);border-radius:8px;padding:1rem 1.2rem;background:var(--paper-2);}
+  .ph{border:1px solid var(--line);border-left:3px solid var(--gold);border-radius:8px;padding:1rem 1.2rem;background:#fff;}
   .ph h4{font-size:1.2rem;margin:0 0 .2rem;}
-  .ph .ph-note{margin:0;font-size:.82rem;color:var(--muted);font-style:italic;}
+  .ph-note{margin:0;font-size:.82rem;color:var(--muted);font-style:italic;}
   .ph ul{margin:.55rem 0 0;padding-left:1.15rem;color:#41495a;font-size:.9rem;}
   .ph ul li{margin:.22rem 0;}
   .ph ul ul{margin:.15rem 0 .25rem;color:var(--muted);}
@@ -306,7 +305,7 @@
   /* ---- collapsible sub-sections ---- */
   .rex-block,.mgmt-block,.overview-block,.roadmap-block,.rb-block,.docs-block,.succession-block,
   .conduct-block,.offboard-block,.training-block,.cm-block,.strategy-block,.role-block,
-  .budget-block,.partners-block,.networks-block,.m2mx-block{
+  .budget-block,.partners-block,.networks-block,.m2mx-block,.ops-block{
     border:1px solid var(--line);border-left:3px solid var(--gold);border-radius:8px;
     padding:1rem 1.2rem;background:#fff;
   }
@@ -444,7 +443,6 @@
 <!-- FRONT COVER -->
 <header class="cover">
   <div class="tri-field" aria-hidden="true"><svg viewBox="0 0 600 600" preserveAspectRatio="xMaxYMax slice" style="color:#fff"><use href="#tri-field" x="180" y="60" width="520" height="520"/></svg></div>
-  <img class="cover-logo" style="position:relative;z-index:2" src="./images/ypo-mena-logo-white.png" alt="YPO Middle East / North Africa Region" />
   <div class="center">
     <div class="kicker">United MENA</div>
     <h1>The <span class="li">United&nbsp;MENA</span><br>Playbook</h1>
@@ -917,7 +915,7 @@
           <a class="dl-btn alt" href="https://image.ypo-mail.org/lib/fe2f1171716404787c1478/m/1/77a37f32-cef7-450b-83ed-f53b6d449ad9.pdf" target="_blank" rel="noopener">Download sample chapter by-laws <span class="arw">↓</span></a>
         </div>
       </div>
-      <div class="ph" id="chapter-operations">
+      <div class="ops-block" id="chapter-operations">
         <h4 class="rex-h">Chapter Operations</h4>
         <p class="rex-sub">Running efficient, well-governed chapter board meetings and annual gatherings.</p>
 
@@ -2189,8 +2187,46 @@
       </div>
       <div class="ph"><h4>Regional Training</h4><p class="ph-note">Content to be added.</p></div>
       <div class="ph"><h4>Regional Funding</h4><p class="ph-note">Content to be added.</p></div>
-      <div class="ph"><h4>Chapter, Global, Regional, Network</h4><p class="ph-note">Content to be added.</p></div>
-      <div class="ph"><h4>Forum By-Laws</h4><p class="ph-note">Content to be added.</p></div>
+      <div class="ph"><h4 class="rex-h">Types of YPO Forums</h4><p class="rex-sub">The different forum formats available across YPO — chapter, spouse/partner, couples, network, regional, YNG and virtual.</p>
+
+        <span class="rb-tag">About Chapter-Based Member Forums</span>
+        <p class="roadmap-intro">Most YPO and YPO Gold forums are small groups consisting of 8–12 members from the same chapter. These chapter-based forums are also available to spouses and partners, as well as young adult children of members ages 18–32. The YPO chapter forum officer is a new member's primary resource for forum orientation, education, and placement. The officer works with chapter forum moderators to assign new members to forums, typically through a first-come, first-served process.</p>
+
+        <span class="rb-tag">About Spouse/Partner Forums</span>
+        <p class="roadmap-intro">If a chief executive's life can sometimes be described as "lonely at the top," the role of the YPO spouse or partner can be just as isolating. Spouse forums offer an antidote to this feeling of isolation, encouraging spouses and partners to leverage the YPO community for their own personal and professional growth and support. Spouse forums are open to the spouses or partners of current YPO members. Working spouses and partners may want to take advantage of forum opportunities that meet the needs of spouses and partners who work outside of the home.</p>
+
+        <span class="rb-tag">About Couples Forums</span>
+        <p class="roadmap-intro">Couples' forums encourage members and their spouse or partner to harness the power of forum to build closer relationships. Couples' forums are chapter-based. They are especially popular in YPO Gold, where couples often participate in multi-day forum meetings held two to three times each year.</p>
+
+        <span class="rb-tag">About Network Forums</span>
+        <p class="roadmap-intro">Network forums are similar in structure to regional forums, but participants share a common professional or personal interest through membership in a network.</p>
+
+        <span class="rb-tag">About Regional Forums</span>
+        <p class="roadmap-intro">These forums offer an alternative to members, spouses, and partners seeking a forum experience that is culturally diverse, expands their network, and exists outside of their local chapter. There are also occasions when members are unable to join chapter-based forums due to conflicts of interest. Regional forums follow the same protocol as chapter-based forums, but the time commitment often is greater due to travel and multi-day meetings.</p>
+
+        <span class="rb-tag">About YPO NextGen Forums</span>
+        <p class="roadmap-intro">YPO NextGen forums connect members' adult children (ages 18–32) and provide the benefits of a trusted peer group. Approximately 700 participants are involved in more than 80 YNG forums. Prospective forum members must be willing to participate in one, 4-hour meeting monthly and must complete Forum Fundamentals training prior to joining. Contact <a href="mailto:yng@ypo.org">yng@ypo.org</a> for more details.</p>
+
+        <span class="rb-tag">About Virtual Forums</span>
+        <p class="roadmap-intro">When a network or regional forum is composed of members who may live thousands of miles apart, virtual forums may be the most feasible option for connecting. The virtual forum meeting can offer a deep experience that is well-suited to members' busy personal and professional lives.</p>
+        <ul class="gp-list">
+          <li>Confidentiality*</li>
+          <li>Commitment*</li>
+          <li>Forum protocol*</li>
+          <li>Meeting structure*</li>
+          <li>Membership</li>
+          <li>Leadership</li>
+          <li>Renewal</li>
+          <li>Shared vision/purpose/values</li>
+        </ul>
+        <p class="src-note">*Four Core Forum Success Principles.</p>
+        <p class="roadmap-intro">Virtual forum meetings utilize conference calls, web conferencing, and/or video conferencing to connect members. Forums identify the technology platform that works best for all members, and a peer-elected moderator leads each virtual forum meeting. Whether your forum members live in the same town or across several continents, the virtual forum meeting can be an excellent choice for creating powerful connections among members.</p>
+      </div>
+      <div class="ph"><h4 class="rex-h">Forum By-Laws</h4><p class="rex-sub">A sample Forum By-Laws document that forums can amend to suit their own needs.</p>
+        <div class="dl-row">
+          <a class="dl-btn" href="https://image.ypo-mail.org/lib/fe2f1171716404787c1478/m/1/e02a0d5d-6482-47d8-936e-40d1c0efa755.docx" target="_blank" rel="noopener">Sample Forum By-Laws <span class="arw">↓</span></a>
+        </div>
+      </div>
     </div>
   </div>
 </section>
@@ -2228,6 +2264,161 @@
           <a class="dl-btn" href="https://image.ypo-mail.org/lib/fe2f1171716404787c1478/m/2/030bb085-12ea-4209-a701-8d2b8dabdcd2.pdf" target="_blank" rel="noopener">E-CODE <span class="arw">↓</span></a>
         </div>
       </div>
+      <div class="role-block" id="learning-officer-role">
+        <h4 class="rex-h">Chapter Learning Officer Role and Responsibilities</h4>
+        <p class="rex-sub">One-year term.</p>
+        <p class="mission"><strong>Mission.</strong> Deliver a program that encourages lifelong learning and helps members, their spouse/partners, and families grow and transform — giving them a tangible advantage as leaders and people.</p>
+
+        <span class="rb-tag">Responsibilities</span>
+        <ul class="gp-list">
+          <li>Execute a value-driven learning program, overseeing logistics, marketing, budgets, and day chair selection and training.</li>
+          <li>Utilize E-CODE and tools and best practices provided by YPO global to deliver strong programming that serves the member.</li>
+          <li>Collaborate with your region and networks to create Only-in-YPO experiences in your chapter and potentially your region.</li>
+          <li>Share your lessons learned and support your successor.</li>
+          <li>Evaluate events with your team and chapter to improve current and future learning programs.</li>
+        </ul>
+
+        <span class="rb-tag">Key goals</span>
+        <ul class="gp-list">
+          <li>Finalize your program and refine your event. Ask for feedback from management associates, regional learning officers and other learning officers. Use E-CODE for every event.</li>
+          <li>Market your program. Implement program, launch your theme and promote programming.</li>
+          <li>Manage day chairs. Ensure training, review your vision, theme and E-CODE for programs, execute and evaluate events, and track expenditures.</li>
+          <li>Conclude your program. Support your successor and host a thank-you program.</li>
+        </ul>
+
+        <div class="rb-split">
+          <div>
+            <span class="rb-tag">Qualifying criteria</span>
+            <ul class="gp-list">
+              <li>Passion and time.</li>
+              <li>Interest in creating a memorable impact for members that is focused on lifelong learning and connection.</li>
+              <li>Preferably served as a day chair, family officer or assistant learning officer.</li>
+            </ul>
+          </div>
+          <div>
+            <span class="rb-tag">Time commitment</span>
+            <p class="roadmap-intro" style="margin-bottom:.4rem">The chapter learning officer role is the most time consuming of all chapter roles:</p>
+            <ul class="gp-list">
+              <li>Plan and execute the full chapter learning calendar (10 months).</li>
+              <li>Develop and work with a learning sub-committee to develop and promote events (regularly throughout the year).</li>
+              <li>Attend the annual chapter strategic planning session (one day).</li>
+              <li>Attend all chapter events and all chapter executive committee meetings (ExCo meetings monthly/quarterly; events as per your calendar — could be up to 30).</li>
+              <li>Hold regular calls with the regional learning manager (as needed, recommend quarterly).</li>
+              <li>Hold regular calls with the regional learning officer (quarterly/biannually).</li>
+              <li>Complete the forum officer essentials training.</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="rb-split">
+          <div>
+            <span class="rb-tag">Experience you will gain</span>
+            <ul class="gp-list">
+              <li>Turn your own passion and values into something of lasting value for your peers.</li>
+              <li>Program development and management experience.</li>
+              <li>Program execution.</li>
+              <li>Exposure to remarkable resources and thought leaders.</li>
+              <li>Crisis management.</li>
+              <li>Presentation skills.</li>
+              <li>Influencing and communication skills.</li>
+            </ul>
+          </div>
+          <div>
+            <span class="rb-tag">Resources</span>
+            <ul class="gp-list">
+              <li>Your Role Infographic, Officer Community and Officer Roadmaps Infosite.</li>
+              <li>Regional learning manager, chapter manager, assistant learning officer and day chairs, sponsors, peers, and your regional learning officer.</li>
+              <li>Speaker Resource Directory.</li>
+              <li>E-CODE.</li>
+              <li>Learning Boundaries and Trust Protocols.</li>
+              <li>Guide for Speakers.</li>
+              <li>Learning gateway on Connect.</li>
+              <li>Learning in a Box Toolkit.</li>
+            </ul>
+          </div>
+        </div>
+        <p class="src-note">Source: YPO Champion Catalog, 2024.</p>
+      </div>
+      <div class="roadmap-block" id="learning-officer-roadmap">
+        <h4 class="rex-h">Chapter Learning Officer Roadmap</h4>
+        <p class="rex-sub">All you need to know about your chapter learning officer journey.</p>
+
+        <div class="timeline">
+          <div class="phase">
+            <div class="when">July – September</div>
+            <h5>Your chapter learning officer year begins</h5>
+            <ul>
+              <li>Attend chapter Executive Committee ExCo/board meeting(s).</li>
+              <li>Attend the <strong>Q1 quarterly collaboration call</strong> hosted by your regional learning officer for an opportunity to exchange ideas and collaborate with peers.</li>
+              <li>Schedule 1:1 onboarding with your regional learning officer to ensure you're set up for success.</li>
+              <li>Connect with the chapter assistant learning officer and offer support.</li>
+              <li>Open one of your events to other chapters in your region (COR).</li>
+              <li>Engage in the <strong>learning officer community</strong>.</li>
+              <li>Promote learning events to your membership. Send out evaluations afterward.</li>
+              <li>Explore possible <strong>future leadership roles</strong> in YPO.</li>
+            </ul>
+          </div>
+          <div class="phase">
+            <div class="when">October – December</div>
+            <h5>Build momentum</h5>
+            <ul>
+              <li>Attend chapter ExCo/board meeting(s).</li>
+              <li><strong>Reflect</strong> on your learning plan and <strong>connect</strong> with your chapter chair to discuss challenges.</li>
+              <li>Reach out to disengaged members to discuss their reticence.</li>
+              <li>Review your goals and identify actions necessary towards their achievement.</li>
+              <li>Collaborate with your chapter ExCo/board to secure a <strong>successor</strong> by 1 November.</li>
+              <li>Closely collaborate with your chapter ExCo/board members.</li>
+              <li>Attend the <strong>Q2 quarterly collaboration call</strong> hosted by your regional learning officer.</li>
+              <li>Promote Officer Essentials and Global Leadership Conference attendance to incoming chapter learning officers.</li>
+            </ul>
+          </div>
+          <div class="phase">
+            <div class="when">January – March</div>
+            <h5>Transition your knowledge</h5>
+            <ul>
+              <li>Attend chapter ExCo/board meeting(s).</li>
+              <li>Continue to promote learning events to your membership.</li>
+              <li><strong>Assist</strong> your chapter assistant learning officer as they develop their learning calendars based on criteria like <strong>E-CODE</strong>, marketing and lifelong learning categories.</li>
+              <li>Continue executing goals.</li>
+              <li>Start transitioning knowledge to your successor.</li>
+              <li>Plan how you will recognize your day chairs' contributions.</li>
+              <li>Attend the <strong>Q3 quarterly collaboration call</strong> hosted by your regional learning officer.</li>
+              <li>Flag engaged members for your successor to approach as potential day chairs.</li>
+            </ul>
+          </div>
+          <div class="phase">
+            <div class="when">April – June</div>
+            <h5>Hand over well</h5>
+            <ul>
+              <li>Attend chapter ExCo/board meeting(s).</li>
+              <li>Update goals.</li>
+              <li>Organize a final check-in with your assistant learning officer to assess the status of their learning calendar.</li>
+              <li><strong>Ensure a proper handover</strong> to the incoming chapter learning officer.</li>
+              <li>Attend the <strong>Q4 quarterly collaboration call</strong> hosted by your regional learning officer.</li>
+              <li>Prepare for the <strong>YPO Global Awards Program</strong>.</li>
+              <li>Celebrate achievements and recognize your day chairs who have supported you throughout the year.</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="roadmap-foot">
+          <div class="k">Your chapter learning officer roadmap includes</div>
+          <ul>
+            <li>Monthly emails of support.</li>
+            <li>Timely, actionable information.</li>
+            <li>A step-by-step planning guide.</li>
+            <li>Access to tools, global best practices.</li>
+            <li>Opportunities for cross-chapter collaboration.</li>
+            <li>Benefits from regional and global initiatives.</li>
+          </ul>
+          <p class="rex-sub" style="margin-top:1rem">YPO management support: Regional Forum and Learning Manager. For more information, email <a href="mailto:champion@ypo.org">champion@ypo.org</a>.</p>
+        </div>
+      </div>
+      <div class="ph"><h4 class="rex-h">YPO MENA Chapter Learning Officers &amp; Assistant Learning Officers</h4><p class="rex-sub">The full list of Chapter Learning Officers &amp; Assistant Learning Officers across YPO MENA for the current fiscal year, FY26–27.</p>
+        <div class="dl-row">
+          <a class="dl-btn" href="https://www.ypoconnect.org/#/download/7495914f-268c-421a-84ba-22a33be78837" target="_blank" rel="noopener">Chapter Learning Officers &amp; Assistant Learning Officers <span class="arw">↗</span></a>
+        </div>
+      </div>
       <div class="ph"><h4>Regional Initiatives</h4><p class="ph-note">Content to be added.</p></div>
       <div class="ph"><h4>Day Chair Toolkit</h4><p class="rex-sub">Materials for chapters to run their own Day Chair Workshop at a chapter (run by Learning Officers) or regional level (run by Regional Learning Officers).</p>
         <div class="dl-row">
@@ -2258,9 +2449,10 @@
           <a class="dl-btn" href="https://explore.ypoconnect.org/" target="_blank" rel="noopener">Learning Hub <span class="arw">↗</span></a>
         </div>
       </div>
-      <div class="ph"><h4>YPO MENA Chapter Learning Officers &amp; Assistant Learning Officers</h4><p class="rex-sub">The full list of Chapter Learning Officers &amp; Assistant Learning Officers across YPO MENA for the current fiscal year, FY26–27.</p>
+      <div class="ph"><h4 class="rex-h">Strategic Learning Partnerships</h4><p class="rex-sub">Strategic Learning Partners</p>
+        <p class="roadmap-intro">Work with world-class organizations to elevate your chapter, region or network programming.</p>
         <div class="dl-row">
-          <a class="dl-btn" href="https://www.ypoconnect.org/#/download/7495914f-268c-421a-84ba-22a33be78837" target="_blank" rel="noopener">Chapter Learning Officers &amp; Assistant Learning Officers <span class="arw">↗</span></a>
+          <a class="dl-btn" href="https://explore.ypoconnect.org/strategic-partners/strategic-learning-partners" target="_blank" rel="noopener">Strategic Learning Partners <span class="arw">↗</span></a>
         </div>
       </div>
       <div class="ph"><h4>2025 Global Learning Survey: Topline Results</h4><p class="rex-sub">A multi-regional overview of members' and spouses/partners' top learning needs, topics of interest, and satisfaction with chapter learning programs, drawn from over 5,400 responses.</p>
@@ -2359,6 +2551,11 @@
         </div>
         <p class="src-note">Source: YPO Champion Catalog, 2023.</p>
       </div>
+      <div class="ph"><h4 class="rex-h">YPO MENA Spouse/Partner Officers</h4><p class="rex-sub">The full list of Chapter Spouse/Partner Officers across YPO MENA for the current fiscal year, FY26–27.</p>
+        <div class="dl-row">
+          <a class="dl-btn" href="https://www.ypoconnect.org/#/download/29d975df-2748-4261-a8f5-8e559f338dc2" target="_blank" rel="noopener">YPO MENA Spouse/Partner Officers <span class="arw">↗</span></a>
+        </div>
+      </div>
       <div class="ph"><h4 class="rex-h">Spouse/Partner Benefits Brochure — Access a World of Opportunities</h4><p class="rex-sub">We invite YPO spouses/partners to harness the knowledge, influence and trust of YPO, the premier global platform for leaders to engage, learn and grow.</p>
         <p class="roadmap-intro">As a spouse/partner, you can benefit from a wide array of valuable YPO experiences, including networks, forums, events and learning opportunities — one of the aspects that sets YPO apart from any other organization in the world. Fuel your personal and professional passions, create new connections and enhance your unique leadership journey by taking advantage of all YPO offers you.</p>
 
@@ -2431,11 +2628,6 @@
         <div class="dl-row">
           <a class="dl-btn alt" href="https://publicate.it/p/csD2d7Hpn4wr395963" target="_blank" rel="noopener">YSP Social Media <span class="arw">↗</span></a>
           <a class="dl-btn alt" href="https://chat.whatsapp.com/Ifz69V3Jf8zJSTDmOG9ptu" target="_blank" rel="noopener">YSP WhatsApp Community <span class="arw">↗</span></a>
-        </div>
-      </div>
-      <div class="ph"><h4 class="rex-h">YPO MENA Spouse/Partner Officers</h4><p class="rex-sub">The full list of Chapter Spouse/Partner Officers across YPO MENA for the current fiscal year, FY26–27.</p>
-        <div class="dl-row">
-          <a class="dl-btn" href="https://www.ypoconnect.org/#/download/29d975df-2748-4261-a8f5-8e559f338dc2" target="_blank" rel="noopener">YPO MENA Spouse/Partner Officers <span class="arw">↗</span></a>
         </div>
       </div>
     </div>
