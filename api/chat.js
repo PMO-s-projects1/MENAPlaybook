@@ -14,38 +14,59 @@ continues to evolve. Welcome note from the Regional Chairs: Moodi Bukhari (Regio
 Chabtini (Regional Chair, Gold).
 
 HOW THE PLAYBOOK IS STRUCTURED (some sections are still being populated):
-- Introduction: welcome note, REX directory, management directory, plus the acronym glossary (now in the Appendix).
-- Regional Overview: a map of all the chapters in the region, plus a link to the Chapter Guides.
-- Regional Data: chapter commitments dashboard and regional KPIs.
-- Regional Calendar: upcoming global events in MENA, regional events (YPO MENA Mastery, RBM),
+- Section 0 — Introduction: welcome note, regional overview (map of chapters), REX directory,
+  management directory, plus the acronym glossary (now in the Appendix).
+- Section 1 — Regional Data: chapter commitments dashboard and regional KPIs.
+- Section 2 — Regional Calendar: upcoming global events in MENA, regional events (YPO MENA Mastery, RBM),
   and GLC dates.
-- Chapter Chair Resources: Chapter Chair role and roadmap; governance documents (YPO P&P, Operations
-  Manual, chapter by-laws templates); chapter operations (effective board meetings, AGM, strategic planning /
-  Game Plan); succession planning (champion catalog, succession worksheet); budget and finance; conduct
-  committee toolkit and offboarding; officer training; and working with your Chapter Manager (CM recruitment,
-  contracts, performance reviews, support program).
-- Chapter Commitments: the 14 commitments defined.
-- Membership Resources: YPO membership requirements, SMP (Strategic Membership Pathways), accepting new members.
-- Member Engagement Resources: onboarding checklist, Taste of YPO, Apeiron, engagement toolkit, sample pledge,
-  sample points system.
-- Forum Resources: find a CFF, regional training, regional funding, types of YPO forums, forum by-laws.
-- Learning Resources: E-CODE, Chapter Learning Officer role & roadmap, regional initiatives, day chair training,
-  global events calendar, strategic learning partnerships.
-- Spouse / Partner & Family Resources.
-- YNG Resources (YPO Next Generation).
-- Network Resources: YPO Networks overview, featured offerings and the full networks directory.
-- YPO Emergency Support: M2Mx (Member-to-Member Exchange) support for business, health and personal challenges.
-- Global Awards Resources: the YPO Awards Overview for peer-to-peer recognition and spotlight opportunities.
+- Section 3 — Chapter Chair Resources: Chapter Chair role and roadmap; Chapter Chair on the Regional Board;
+  governance documents (YPO P&P, Operations Manual, chapter by-laws templates); chapter operations (effective
+  board meetings, AGM); strategic planning / Game Plan; succession planning (champion catalog, succession
+  worksheet); budget and finance; strategic partnerships for chapters; conduct committee toolkit and
+  off-boarding; officer training (GLC); and working with your Chapter Manager (CM recruitment, contracts,
+  performance reviews, the Chapter Support Program).
+- Section 4 — Chapter Commitments: the 14 commitments defined.
+- Section 5 — Membership Resources: Membership Officer role and roadmap; the Chapter Membership Officers
+  directory; YPO Membership Requirements (age, role, employee count, revenue); the Role-Based Verification
+  Framework (effective 1 July 2026); Third Party Certification; MENA Regional Membership Guidelines; New
+  Chapter / Integrated Chapter Development; and the Member Preboarding Toolkit.
+- Section 6 — Member Engagement Resources: Member Engagement Officer role and roadmap; New Member Onboarding
+  Checklist; Apeiron; Member Engagement Toolkit; a sample membership pledge; the YPO Engagement Score
+  Dashboard; and Executive Education.
+- Section 7 — Forum Resources: Forum Officer role and roadmap; the Chapter Forum and Spouse Forum Officers
+  directory; Find a CFF; the Forum Hub; Virtual Forum Training; the Forum Officer/Spouse Forum Officer/Forum
+  Moderator Toolkit; the Forum Toolkit; and the Forum Health Survey. (Regional training, regional funding, and
+  forum by-laws are still being populated.)
+- Section 8 — Learning Resources: E-CODE; the Day Chair Toolkit; the Global Events Calendar; the Learning Hub
+  (Speaker Directory, Event in a Box, The Source, Champion Resources); the Chapter Learning Officers directory;
+  the 2025 Global Learning Survey topline results; and the Speaker Directory. (Regional initiatives are still
+  being populated.)
+- Section 9 — Spouse / Partner & Family Resources: Chapter Spouse/Partner Officer role and responsibilities;
+  the Spouse/Partner Benefits Brochure; the Spouse/Partner Community; and the Chapter Spouse/Partner Officers
+  directory.
+- Section 10 — YNG Resources (YPO Next Generation): the YNG MENA Board, and eligibility, fees and how to get
+  involved.
+- Section 11 — Network Resources: YPO Networks overview, featured offerings and the full networks directory.
+- Section 12 — YPO Emergency Support: M2Mx (Member-to-Member Exchange) support for business, health and personal challenges.
+- Section 13 — Global Awards Resources: the Global Awards Asset Hub, for recognizing chapter, member and
+  family excellence across YPO.
 - Appendix — YPO Acronyms glossary.
+
 
 REGIONAL DATA: 27 chapters in the region; 23 fully trained on core officer roles (data as of 05/06/2026),
 from the live MENA Chapter Commitments dashboard.
 
-REGIONAL OVERVIEW — CHAPTERS (its own playbook section): 27 chapters make up the YPO Middle East / North Africa
-region. The playbook shows these visually on a regional map graphic rather than as a text list — if asked for the
-full list of chapter names, say the map in the Regional Overview section has the complete, current picture. The
-Regional Overview section also links to the Chapter Guides (MENA Regional Chapter Guide), a resource that provides
-an overview of each YPO MENA chapter.
+REGIONAL OVERVIEW — CHAPTERS AND DEMOGRAPHICS:
+Demographics: 27 total chapters in the region (21 Integrated + 3 YPO + 3 YPO Gold); 1,600+ MENA members;
+15 MENA countries. Globally: 490+ chapters, 37,000+ members, 150+ countries.
+YPO Integrated Chapters (21): YPO Bahrain Integrated; YPO Capital Pakistan Integrated; YPO Cairo Integrated;
+YPO Dubai Downtown Integrated; YPO Dubai Integrated; YPO Emirates Integrated; YPO Indus Integrated; YPO Iraq
+Integrated; YPO Jordan Integrated; YPO Khaleej Integrated; YPO Kuwait Integrated; YPO Levant Integrated;
+YPO MENA Gulf Regional Integrated; YPO MENA One Regional Integrated; YPO Morocco Integrated; YPO Oman Integrated;
+YPO Olive MENA Regional Integrated; YPO Palestine Integrated; YPO Qatar Integrated; YPO Tunisia Integrated;
+YPO UAE Integrated.
+YPO Chapters (3): YPO Lebanon; YPO Pakistan; YPO Saudi.
+YPO Gold Chapters (3): YPO Gold Lebanon; YPO Gold Pakistan; YPO Gold Saudi.
 
 REGIONAL EXECUTIVE COMMITTEE (REX), FY26-27 — names and roles:
 - Moodi Bukhari — Regional Chair
@@ -62,12 +83,12 @@ REGIONAL EXECUTIVE COMMITTEE (REX), FY26-27 — names and roles:
 - Jana Yamani — Regional Family Officer
 - Sabina Hadi — Regional Spouse Forum Officer
 
-REGIONAL MANAGEMENT TEAM (who to ask about what, and which officers/roles each person supports):
-- Paige Morgan — YPO MENA Regional Director. Ask about: strategic planning (Game Plan); bylaws, policy & procedures, code of conduct; board leadership and succession planning; wider regional & international opportunities; chapter metrics (Chapter Commitments, Satisfaction Index); general chapter board enquiries. Paige supports: Regional Chairs and Chapter Chairs.
-- Tamara Crowhurst — YPO MENA Regional Manager. Ask about: chapter manager support; YPO systems training (e.g. YPO Connect); funding reimbursements; governance meeting logistics; chapter data and insights; regional communication channels; member engagement. Tamara supports: Chapter Managers, Regional Member Engagement Officers and Chapter Member Engagement Officers.
-- Maria Luz Domingo — YPO MENA Regional Forum and Learning Manager. Ask about: forum health and trainings across MENA; regional and chapter forum officer support tools; forum education and development; forum best practices, help and resources; speaker resources; day chair workshops; regional and chapter learning and assistant learning officer collaboration and support tools. Maria supports: Regional Learning Officers, Regional Forum Officers, Regional Spouse Forum Officers, Chapter Learning Officer, Chapter Forum Officers and Chapter Spouse Forum Officers.
-- Neeta Gandhi — YPO MENA Regional Membership Development Manager. Ask about: best practices for membership development in your chapter; MENA's membership program; global membership development strategy; creating new chapters; chapter membership portals. Neeta supports: Regional Membership Officers and Chapter Membership Officers.
-- Lauren Aird — YPO Global Family Manager, EMEA. Ask about: family and spouse/partner requests and data; YNG queries; parenting and YSP collaboration and connection. Lauren supports: Regional Spouse/Partner Officers, Regional Family Officers, Chapter Spouse/Partner Officers and Chapter Family Officers.
+REGIONAL MANAGEMENT TEAM (who to ask about what):
+- Paige Morgan — YPO MENA Regional Director. Ask about: strategic planning (Game Plan); bylaws, policy & procedures, code of conduct; board leadership and succession planning; wider regional & international opportunities; chapter metrics (Chapter Commitments, Satisfaction Index); general chapter board enquiries.
+- Tamara Crowhurst — YPO MENA Regional Manager. Ask about: chapter manager support; YPO systems training (e.g. YPO Connect); funding reimbursements; governance meeting logistics; chapter data and insights; regional communication channels; member engagement.
+- Maria Luz Domingo — YPO MENA Regional Forum and Learning Manager. Ask about: forum health and trainings across MENA; regional and chapter forum officer support tools; forum education and development; forum best practices, help and resources; speaker resources; day chair workshops; regional and chapter learning and assistant learning officer collaboration and support tools.
+- Neeta Gandhi — YPO MENA Regional Membership Development Manager. Ask about: best practices for membership development in your chapter; MENA's membership program; global membership development strategy; creating new chapters; chapter membership portals.
+- Lauren Aird — YPO Global Family Manager, EMEA. Ask about: family and spouse/partner requests and data; YNG queries; parenting and YSP collaboration and connection.
 
 CHAPTER COMMITMENTS (14, across governance, forum, learning and peerdom):
 1. Chapter Charter — chair signed/acknowledged the YPO chapter charter (formerly TLA) this fiscal year.
@@ -85,7 +106,7 @@ CHAPTER COMMITMENTS (14, across governance, forum, learning and peerdom):
 13. Chapter Membership — roster verified accurate and all members paid chapter and YPO global dues.
 14. Minimum Membership Requirements — approved before 1 July 2024 = 16 primary members; after = 21.
 
-M2MX / YPO EMERGENCY SUPPORT (YPO Emergency Support). M2Mx — "Connections You Can Count On". Got a challenge? Business, health,
+M2MX / YPO EMERGENCY SUPPORT (Section 12). M2Mx — "Connections You Can Count On". Got a challenge? Business, health,
 or personal — M2Mx gets you answers fast, tapping thousands of trusted YPO peers who have been there and know what works.
 How we help:
 - Business: growth or development advice; company connections and referrals; legal or sourcing support.
@@ -96,37 +117,7 @@ Confidential. Global.
 To get help, members can submit a request through the YPO Concierge "request assistance" page linked in the playbook,
 email m2mx@ypo.org, or call +1 469 770 3395.
 
-GLOBAL AWARDS RESOURCES (Global Awards Resources): recognizing chapter, member and family excellence across YPO. Recognition is
-about celebrating others in the moment — acknowledging their strengths and showing genuine appreciation; spotlighting
-great leaders inspires the next generation to rise and lead with purpose. Acknowledging peers' achievements, in
-business and in YPO, is essential for nurturing engagement, motivation and inspiration, and helps cultivate a culture
-of gratitude. The playbook links to the YPO Awards Overview, a toolkit of ideas and resources for peer-to-peer
-spotlight opportunities.
-
-NEW MEMBER ONBOARDING (Member Engagement Resources): the Member Engagement Officer (MEO) ensures new members
-understand chapter opportunities and expectations, such as event attendance and joining a forum. The MEO directs new
-members to the New Member Onboarding Hub to complete YPO Global onboarding and informs new members about champion
-opportunities at the chapter, regional and global levels.
-Pre-onboarding checklist (owner in brackets): Membership Pledge / Requirement Signed (CMO) — Attend Pre-boarding call
-run by a Champion (Prospective Member) — Chapter Prospect Approval (CMO & CC) — Global and Chapter Dues Paid
-(Prospective Member). All pre-membership.
-Onboarding checklist: Send Chapter-wide Welcome Email and WhatsApp, upon receiving the YPO Global invoice (MEO) —
-Hand deliver welcome gift/kit to Member, within 1 week of joining (MEO) — Send new member welcome package, within 1
-week of joining (CM) — Connect Spouse/Partner with SPO, within 1 week of joining (SPO/MEO) — Participate in a
-Welcome Call with YPO Global, within 30 days (New Member) — Chapter Buddy assigned, within 30 days (MEO) — Complete
-Forum Basics Training (4-hour virtual session), within 30 days (New Member) — Complete Connect profile (15-minute),
-within 30 days (New Member) — Complete M2Mx profile (45 minutes), within 30 days (New Member) — Promote key new
-member events (dine-around, dinners, happy hours, annual chapter retreat), within 60 days (MEO) — Attend 1st Chapter
-Event, within 60 days (New Member) — Attend Apeiron, within 90 days (New Member) — Member placed in a forum
-(chapter, regional, global or network level), within 90 days (FO) — Encourage member to attend a YPO Global Event
-and use NVM (new member voucher), within 90 days (MEO).
-The playbook links to a downloadable New Member Onboarding Checklist, plus four resources: a New Member
-Questionnaire (a sample questionnaire the chapter can send new members to better understand them, and to use as
-part of new member announcements); a sample New Member Welcome Email; a sample Membership Pledge (to ensure new
-members are aligned with chapter expectations); and an Onboarding Process — Officers outline (for chapter board
-members to follow when onboarding a new member).
-
-YPO NETWORKS (Network Resources). Networks unlock the full power of YPO by building deeper relationships
+YPO NETWORKS (Section 11, Network Resources). Networks unlock the full power of YPO by building deeper relationships
 with members and spouses/partners who share your business interests and personal passions. More than 30 YPO Networks
 strengthen these global connections through virtual and in-person opportunities, with customized learning programs, idea
 exchange and events tailored to what matters most to you.
@@ -139,7 +130,7 @@ and spouses/partners.
 The playbook links to the full Networks Directory on YPO Connect, a "see all networks" PDF, and the YPO Networks
 community page, plus "learn more" PDFs for Business Networks and Personal Networks.
 
-CHAPTER CHAIR ROLE AND RESPONSIBILITIES (Chapter Chair Resources, above the roadmap). One-year term.
+CHAPTER CHAIR ROLE AND RESPONSIBILITIES (Section 3, above the roadmap). One-year term.
 Mission: lead the executive committee in creating a high-value chapter experience for members, using best practices and
 YPO resources and tools to drive member engagement and create a healthy chapter.
 Key goals: lead the executive committee's strategic planning, budget development and succession planning processes;
@@ -160,11 +151,10 @@ Experience gained: chapter strategic planning tools and experience; leader engag
 skills; peer leadership; understanding of YPO's strategy, policies and procedures; building relationships with YPO
 management associates; influence without authority; conflict resolution; presentation and communication skills.
 Resources: chapter manager; peers and predecessor; regional director; regional chair; chapter executive committee/board;
-Chapter Chairs group on Connect; Chapter Chair Toolkit; Strategic Planning Toolkit; YPO Policies and Procedures Manual;
-FY26-27 YPO MENA Chapter Chair Contact List (downloadable from the playbook).
+Chapter Chairs group on Connect; Chapter Chair Toolkit; Strategic Planning Toolkit; YPO Policies and Procedures Manual.
 Source: YPO Champion Catalog.
 
-CHAPTER CHAIR ROADMAP (Chapter Chair Resources — the chapter chair journey). Chairs are appointed in November for a
+CHAPTER CHAIR ROADMAP (Section 3, Chapter Chair Resources — the chapter chair journey). Chairs are appointed in November for a
 one-year term beginning in July. A downloadable PDF of the roadmap is available in the playbook.
 - Pre-term (November): chapters appoint chapter chairs for the one-year journey beginning in July.
 - January–March: review your role description and watch the chapter chair essentials video; review dedicated
@@ -192,7 +182,7 @@ The roadmap includes: monthly emails of support; timely, actionable information;
 access to tools and global best practices; opportunities for cross-chapter collaboration; benefits from regional
 and global initiatives. YPO management support comes from the Regional Director; for more information email champion@ypo.org.
 
-CHAPTER CHAIR ON THE REGIONAL BOARD (Chapter Chair Resources — regional board overview for chapter chairs):
+CHAPTER CHAIR ON THE REGIONAL BOARD (Section 3, Chapter Chair Resources — regional board overview for chapter chairs):
 - Regional board function: Chapter Link — communicate chapter needs to the YPO Global Board of Directors and inform
   chapters of global updates and initiatives; Support — apply regional and global support to chapters; Activities —
   organize activities and initiatives to engage members and chapters; Best Practices — give space for chapters to
@@ -206,46 +196,19 @@ CHAPTER CHAIR ON THE REGIONAL BOARD (Chapter Chair Resources — regional board 
 Roadmaps for all chapter officer roles are available to download from YPO Connect, and the Chapter Chair Roadmap
 PDF can be downloaded from the playbook.
 
-GOVERNANCE DOCUMENTS (Chapter Chair Resources): The YPO Policies and Procedures Manual (P&P) and the YPO Operations Manual set
+GOVERNANCE DOCUMENTS (Section 3): The YPO Policies and Procedures Manual (P&P) and the YPO Operations Manual set
 the standards that apply to every chapter; chapter by-laws sit alongside them, tailored to the country of legal
 incorporation and reviewed with a locally licensed attorney. The playbook links to the P&P and governance documents
 on YPO Connect, and to a downloadable sample chapter by-laws PDF.
 
-CHAPTER OPERATIONS — HOLDING AN EFFECTIVE BOARD MEETING (Chapter Chair Resources):
-1. Set a board meeting schedule in advance — there's likely not enough going on to justify meeting monthly; consider
-   meeting quarterly, with chapter board conference calls in between if needed. Meetings should not last more than
-   two hours.
-2. Meeting prep (critical) — the key to an effective meeting is the work that happens beforehand. Work with your
-   Chapter Manager (CM) to show where the chapter stands against YPO chapter health metrics. Set the expectation
-   that officers submit written updates to the CM at least a week ahead of each meeting (assuming quarterly) —
-   the forum update can be a template for director reports — and include those updates, plus chapter financials, in
-   advance materials. Advance materials should be reviewed before the meeting so discussion can begin where the
-   materials end.
-3. Meeting agenda: (a) Roll call — take roll, confirm quorum; if quorum isn't met, end the meeting (officers may stay
-   on but no official business can take place, and nothing after this point is captured in the minutes); (b)
-   Approval of minutes; (c) Committee reports — chair asks officers if there's anything beyond their written update
-   to raise, without turning it into a serial download session; (d) Treasurer's report — Chapter Financial Officer
-   gives an executive summary of finances; (e) Old business; (f) New business — new opportunities (e.g. sponsorship),
-   plus global/regional YPO content from the regional representative if applicable; (g) Open mic — comments and
-   recognition; (h) Adjourn.
-4. Tips: run forum connection activities at the start of meetings; stay on topic (it's every officer's job, not just
-   the chair's, to call a point of order); invite a REX member or regional director to at least one meeting a year;
-   hold meetings somewhere interesting; invite a member to share a story as a learning opportunity; consider evening
-   meetings that roll into a social activity; use a messaging/collaboration tool (WhatsApp, Slack) to keep the board
-   connected between meetings.
-The playbook links to a sample Board Meeting Guiding Principles and Statement of Commitment document (for board
-members to sign, to help meetings keep the YPO culture of professionalism, respect and effective governance) and to
-a Chapter Board Officer Handover Document (signed by incoming and outgoing officers to ensure a clean handover).
-Hosting an AGM is a sub-topic still being populated.
-
-SUCCESSION PLANNING (Chapter Chair Resources): Succession planning identifies the next chair, and the chair after that, early —
+SUCCESSION PLANNING (Section 3): Succession planning identifies the next chair, and the chair after that, early —
 so leaders arrive prepared, officers have time to train, relationships carry across transitions and chapter strategy
 survives a change at the top. It also widens the leadership pool by surfacing quieter champions and giving members a
 visible path into service. Chapters are expected to have a succession plan in place by 1 November. The playbook links
 to a downloadable Succession Planning Worksheet (maps the leadership ladder three years ahead) and to the Champion
 Catalog, an overview of champion positions available across YPO at chapter, regional, global and network level.
 
-STRATEGIC PLANNING / GAME PLAN (Chapter Chair Resources, its own sub-section). Game Plan is simple, memorable, strategic,
+STRATEGIC PLANNING / GAME PLAN (Section 3, its own sub-section). Game Plan is simple, memorable, strategic,
 engaging and measurable. The methodology was developed in and by the EMEA super-region so every incoming board could
 prepare for their year in leadership and governance. Since inception, 140+ sessions have run for chapters, networks and
 REX; 38 chapters have repeated sessions and their Chapter Health score rose 13.5% between first and last session; the
@@ -267,7 +230,7 @@ one module. 8 hours — two 4-hour sessions on different, ideally consecutive da
 outcome: Chapter Playbook, SMART goals, a deep dive into one module, and completion of the chapter's vision and values.
 The playbook links to a "Request your Game Plan" form and a Game Plan video.
 
-CHAPTER SUPPORT PROGRAM (CSP) (Chapter Chair Resources, within Working with your Chapter Manager). The CSP connects chapters with
+CHAPTER SUPPORT PROGRAM (CSP) (Section 3, within Working with your Chapter Manager). The CSP connects chapters with
 trained virtual chapter managers (VCMs) who provide short- or long-term operational support to select chapters facing
 time-sensitive needs. It ensures continuity, stability and a consistent member experience for chapters in transition
 (until a permanent chapter manager is recruited and trained) or assists new chapters during development.
@@ -283,7 +246,7 @@ How to request support: (1) the chapter submits a support application online or 
 arranged with the VCM candidate(s); (4) after selection, the chapter contracts directly with the VCM, referring to the
 sample CM contract. Questions go to chaptersupportprogram@ypo.org.
 
-BUDGET AND FINANCE (Chapter Chair Resources). Setting a chapter budget for a new fiscal year is difficult because it is hard to know
+BUDGET AND FINANCE (Section 3). Setting a chapter budget for a new fiscal year is difficult because it is hard to know
 how much to spend in each category. The purpose of a budget is to guide spending for the fiscal year and ensure focus
 across all portfolio buckets to maintain a healthy chapter. Available funds depend on renewals and prior-year revenue;
 expenses vary by chapter, costs depend on membership size, and costs also depend on the location of events and resources.
@@ -301,7 +264,7 @@ Recommended percentage ranges (guidance, not a fixed split — they overlap and 
   its own legal entity, budget for tax preparation.
 A downloadable Chapter Budget Template is available in the playbook.
 
-STRATEGIC PARTNERSHIPS FOR CHAPTERS (Chapter Chair Resources). Chapter strategic alliance partners add value by enhancing the chapter
+STRATEGIC PARTNERSHIPS FOR CHAPTERS (Section 3). Chapter strategic alliance partners add value by enhancing the chapter
 budget and providing learning content and other resources. Best practices:
 - Value: think beyond cash — how can the partner provide member value through learning content, resources, venues and
   experiences?
@@ -313,7 +276,7 @@ budget and providing learning content and other resources. Best practices:
 - Code of Conduct: ensure the partner adheres to YPO's Code of Conduct for non-solicitation and confidentiality.
 A Sample Chapter Strategic Partnerships Agreement is downloadable from the playbook.
 
-CHAPTER CONDUCT COMMITTEE / OFF-BOARDING (Chapter Chair Resources): YPO policies provide clear guidelines for addressing inappropriate
+CHAPTER CONDUCT COMMITTEE / OFF-BOARDING (Section 3): YPO policies provide clear guidelines for addressing inappropriate
 member conduct so the safe haven of trust is protected for every member. A standing Chapter Conduct Committee gives a
 chapter a fair, consistent process to review conduct issues, vet champions, and mitigate risk and liability, rather
 than improvising under pressure. Having the committee in place before an issue arises protects the members involved,
@@ -328,11 +291,11 @@ reviewed against YPO standards, chapter expectations and relevant facts; documen
 — escalated to the Global Conduct Committee (GCC) for further review and guidance. (5) Closure and documentation —
 outcome documented, appropriate records maintained for transparency and consistency.
 
-OFFICER TRAINING (Chapter Chair Resources): Global Leadership Conference (GLC) dates for FY26-27 are GLC Bangkok, Thailand,
+OFFICER TRAINING (Section 3): Global Leadership Conference (GLC) dates for FY26-27 are GLC Bangkok, Thailand,
 15-17 March 2027, and GLC San Diego, USA, 3-5 May 2027. Registration opens in Q2. Virtual sessions will be announced
 closer to the time.
 
-WORKING WITH YOUR CHAPTER MANAGER (Chapter Chair Resources): The Chapter Manager (CM) partnership with the chapter executive
+WORKING WITH YOUR CHAPTER MANAGER (Section 3): The Chapter Manager (CM) partnership with the chapter executive
 committee is crucial to the chapter's success. CMs serve as the chapter operations manager, wearing many hats,
 executing daily operations and providing direct support for chapter officers, members and spouse/partners.
 Best practices: Give direction — before the chair year begins, discuss chapter priorities and the strategic plan with
@@ -344,76 +307,122 @@ knowledge and help identify strategic priorities. Safe haven — in line with th
 respect and confidentiality for your CM. Provide feedback — critical to their development; conduct an annual review
 in May or June as the chair year closes. Encourage training — workshops, webinars and ad hoc training keep the CM
 current. Contract review — review the CM contract or employment agreement annually in June.
-Additional CM resources available in the playbook: Insights on the CM role, CM timeline, CM contract template, two
-CM assessment options, and CM Guiding Principles — a sample document for Chapter Managers to sign, to ensure CMs are
-aligned with the expectations of the chapter.
+Additional CM resources available in the playbook: Insights on the CM role, CM timeline, CM contract template, and two
+CM assessment options.
 
-CONDUCT COMMITTEE (Chapter Chair Resources): guiding principle "if it can be solved at the chapter level, solve it."Establish a Chapter Conduct Committee (CCC) annually (recommended five members: current chair, past chair,
+CONDUCT COMMITTEE (Section 3, Chapter Chair Resources): guiding principle "if it can be solved at the chapter level, solve it."Establish a Chapter Conduct Committee (CCC) annually (recommended five members: current chair, past chair,
 membership/engagement officer, two senior board roles). Follow fair process, communicate with the Global
 Conduct Committee (GCC), and mitigate risk via bylaws, waivers and D&O insurance. Two-step review: Step 1
 initial (Chapter/Network/Global), Step 2 appeal (Global Conduct Committee / GCC Review Panel).
 
-TYPES OF YPO FORUMS (Forum Resources): the different forum formats available across YPO.
-- Chapter-Based Member Forums: most YPO and YPO Gold forums are small groups of 8-12 members from the same
-  chapter, also available to spouses/partners and young adult children of members ages 18-32. The chapter forum
-  officer is a new member's primary resource for forum orientation, education and placement, working with chapter
-  forum moderators to assign new members, typically first-come, first-served.
-- Spouse/Partner Forums: an antidote to the isolation that can come with being a spouse/partner of a chief
-  executive, open to the spouses/partners of current YPO members, including those who work outside the home.
-- Couples Forums: chapter-based forums that help members and their spouse/partner build closer relationships
-  together; especially popular in YPO Gold, where couples often meet multi-day, two to three times a year.
-- Network Forums: structured like regional forums, but participants share a common professional or personal
-  interest through membership in a network.
-- Regional Forums: for members, spouses and partners wanting a forum experience that's culturally diverse and
-  outside their local chapter, or when conflicts of interest prevent joining a chapter-based forum. Same protocol
-  as chapter forums, but usually a bigger time commitment due to travel and multi-day meetings.
-- YPO NextGen Forums: connect members' adult children (18-32); about 700 participants across 80+ YNG forums.
-  Requires one 4-hour meeting monthly and completion of Forum Fundamentals training before joining. Contact
-  yng@ypo.org for details.
-- Virtual Forums: the most feasible option when a network or regional forum's members live far apart — conference
-  calls, web conferencing or video conferencing, with a peer-elected moderator leading each meeting. Eight forum
-  success principles apply: Confidentiality, Commitment, Forum protocol and Meeting structure (the "Four Core
-  Forum Success Principles"), plus Membership, Leadership, Renewal, and Shared vision/purpose/values.
-The playbook also links to a downloadable Sample Forum By-Laws document (under the Forum By-Laws sub-section) that
-forums can amend to suit their own needs.
+MEMBERSHIP OFFICER ROLE AND ROADMAP (Section 5, Membership Resources). One-year term.
+Mission: strategically recruit and build a diversified and engaged membership, creating a stronger YPO global
+community for all. Key goals: develop a membership strategic plan and process to grow the chapter successfully
+and stay compliant with YPO policies and procedures; identify, recruit and help integrate quality new members;
+deliver a fulfilling membership experience, including transitions to YPO Gold. Roadmap runs November (appointed)
+through a July–June term, mirroring the chapter chair roadmap: prepare and connect (Jan–Apr, incl. the Chapter
+Membership Officer Workshop at GLC); set the plan (May–Jun); the officer year begins with quarterly collaboration
+calls hosted by the regional membership officer (Jul–Sep); build momentum and secure a successor by 1 November
+(Oct–Dec); transition knowledge (Jan–Mar); hand over well, including a graduation ceremony (Apr–Jun). YPO
+management support: Regional Membership Recruitment Manager, champion@ypo.org. The playbook links to the full
+YPO MENA Chapter Membership Officers directory for FY26–27.
 
-CHAPTER LEARNING OFFICER — ROLE, RESPONSIBILITIES AND ROADMAP (Learning Resources): one-year term.
-Mission: deliver a program that encourages lifelong learning and helps members, their spouse/partners and families
-grow and transform, giving them a tangible advantage as leaders and people.
-Responsibilities: execute a value-driven learning program (logistics, marketing, budgets, day chair selection and
-training); utilize E-CODE and YPO global tools/best practices; collaborate with your region and networks on
-Only-in-YPO experiences; share lessons learned and support your successor; evaluate events to improve future
-programs.
-Key goals: finalize and refine your program/events with feedback from management associates and other learning
-officers, using E-CODE for every event; market your program; manage day chairs (training, execution, evaluation,
-tracking expenditures); conclude your program by supporting your successor and hosting a thank-you program.
-Qualifying criteria: passion and time; interest in creating a memorable impact for members focused on lifelong
-learning and connection; preferably served as a day chair, family officer or assistant learning officer.
-Time commitment (the most time-consuming chapter role): plan/execute the full learning calendar (10 months); work
-with a learning sub-committee; attend the annual strategic planning session; attend all chapter events and ExCo
-meetings (could be up to 30 events); regular calls with the regional learning manager (quarterly) and regional
-learning officer (quarterly/biannually); complete forum officer essentials training.
-Experience gained: program development, management and execution; exposure to remarkable resources and thought
-leaders; crisis management; presentation, influencing and communication skills.
-Resources: Role Infographic, Officer Community, Officer Roadmaps Infosite; regional learning manager, chapter
-manager, assistant learning officer and day chairs, sponsors, peers and regional learning officer; Speaker
-Resource Directory; E-CODE; Learning Boundaries and Trust Protocols; Guide for Speakers; Learning gateway on
-Connect; Learning in a Box Toolkit.
-Roadmap by quarter: July-September — year begins; attend ExCo meetings; attend the Q1 collaboration call; 1:1
-onboarding with your regional learning officer; connect with the assistant learning officer; open one event to
-other chapters in the region (COR); engage in the learning officer community; promote events and send evaluations;
-explore future leadership roles. October-December — attend ExCo meetings; reflect on your learning plan with your
-chapter chair; re-engage disengaged members; review goals; secure a successor by 1 November; attend the Q2
-collaboration call; promote Officer Essentials and GLC to incoming officers. January-March — attend ExCo meetings;
-keep promoting events; assist the assistant learning officer with their calendar (E-CODE, marketing, lifelong
-learning categories); continue executing goals; start transitioning knowledge to your successor; plan day chair
-recognition; attend the Q3 collaboration call; flag engaged members as potential day chairs. April-June — attend
-ExCo meetings; update goals; final check-in with the assistant learning officer; ensure a proper handover; attend
-the Q4 collaboration call; prepare for the YPO Global Awards Program; celebrate achievements and recognize day
-chairs.
-The playbook links to the full list of YPO MENA Chapter Learning Officers & Assistant Learning Officers directly
-under the roadmap, and to Strategic Learning Partnerships — world-class organizations chapters, regions or
-networks can work with to elevate their programming.
+YPO MEMBERSHIP REQUIREMENTS (Section 5). Prospective members are evaluated on the strength and impact of their
+achievements and leadership success. Criteria 1 — Age: under 45 years old. Criteria 2 — Who qualifies: top
+operational leader of the company or division, with final decision-making authority, full P&L accountability,
+authority to hire and fire across the company or division, and leadership across core business functions.
+Criteria 3 — Number of employees: 50 full-time employees, or 15+ full-time employees and minimum $2,750,000 USD
+annual employee compensation. Criteria 4 — Revenue by company type: Sales/Service/Manufacturing $16,000,000+ USD;
+Financial Institution $330,000,000+ USD AUM; Agency $13,000,000+ USD revenue or $27,000,000+ USD enterprise value.
+Full requirements are on ypo.org.
+
+ROLE-BASED VERIFICATION FRAMEWORK (Section 5, effective 1 July 2026). YPO is moving away from a predetermined
+list of qualifying titles to a role-based verification framework — titles alone no longer determine eligibility.
+Eligibility requires demonstrated top operational authority, final decision-making power and full P&L
+accountability over a company or qualifying division. Some non-qualified titles (e.g. NGO Executive Director,
+General Partner/Manager/Director General) may still meet the role on review; some qualified-sounding titles
+(e.g. a Managing Director reporting to a CEO, a non-operational Chairman of the Board) may not. Validation
+flow: chapters and management partner on initial vetting → the Regional Membership Officer (RMO) reviews complex
+cases → the PRP Chair confirms final eligibility. Escalate to the RMO only for shared leadership (e.g. Co-CEOs),
+transitional/family-business leadership structures, or centralized/matrixed multinational divisions that
+otherwise clearly meet the authority standard — if true operational authority is missing, do not escalate; title
+waivers are discontinued. Questions: waivers@ypo.org.
+
+NEW CHAPTER / INTEGRATED CHAPTER DEVELOPMENT (Section 5). Minimum founding members: 21 primary members and/or
+qualified applicants for YPO and Integrated Chapters; 21 primary members for Gold Chapters. Effective 1 July
+2025, all new chapters follow a fixed annual season, with the YBOD reviewing requests between May and June:
+build the case (Jun–Feb: needs analysis, recruitment, Chapter Development Plan, hire a Chapter Manager); train
+and submit (Feb–Apr: Chapter Champions Workshop, GLC, CMW, REX-endorsed CDP submitted to the CRC); approve and
+launch (May–Jun: Board decision, Connect setup, announcement, legal/bank setup, Game Plan). Approval process: (1)
+CDP presented to the REX — Integrated Chapters need 60%+ affirmative votes from each REX to proceed; (2) if
+recommended, the Chapters and Regions Committee (CRC) gives its own recommendation; (3) if recommended by the
+CRC, the CDP goes to the YPO Global Board for final approval. Integrated Chapters need both Y and Gold REX
+support (60%+ each) plus both Regional Chairs; the Chapter Chair and Membership Officer of an Integrated Chapter
+must be YPO members.
+
+MEMBER PREBOARDING TOOLKIT (Section 5). Preboarding is a mandatory step in the YPO application process (launched
+1 July 2025, approved by the Global Board of Directors) that prepares prospective members before they officially
+join, so they feel welcomed and ready to engage. Goals: protect peerdom (ensure every new member is a peer) and
+set the stage for success (align prospects with YPO's community standards, culture and expectations before they
+join). Resources in the playbook: FAQs, Talking Points, an Overview Presentation and a video.
+
+MEMBER ENGAGEMENT OFFICER ROLE (Section 6, Member Engagement Resources). One-year term. Mission: be an active
+resource to members, helping them identify and engage in YPO in ways that enhance their experience, and partner
+with fellow chapter officers to educate, connect and engage members. Key goals: serve as the connector between
+members and YPO's products and services; integrate new members and keep them informed on core YPO products; for
+YPO Gold, engage tenured members with products and services relevant to their stage of the journey. Other Section
+6 resources: New Member Onboarding Checklist; Apeiron (YPO's immersive onboarding experience for new members,
+spouses/partners and re-engaging tenured members); Member Engagement Toolkit; a sample membership pledge
+(adapted from YPO Emirates Integrated, covering forum training, event attendance, dues and chapter courtesy); the
+YPO Engagement Score Dashboard (Tableau-backed engagement scores by chapter); and Executive Education
+(Only-in-YPO programs with world-class universities and academics).
+
+FORUM OFFICER ROLE (Section 7, Forum Resources). One- or two-year term. Mission: ensure chapter forum programming
+is beneficial, participation is high, sharing is meaningful and forum protocol is followed. Key goals include
+ensuring the chapter executive committee supports the central role of forum, and that a YPO certified forum
+facilitator (CFF) properly trains all forum participants. Other Section 7 resources: the YPO MENA Chapter Forum
+and Spouse Forum Officers directory; Find a CFF (Certified Forum Facilitator Directory); the Forum Hub; Virtual
+Forum Training (forum principles and protocol, led by CFFs or a Senior Forum Trainer); the Forum Officer/Spouse
+Forum Officer/Forum Moderator Toolkit; the Forum Toolkit (exercises, icebreakers, update forms); and the Forum
+Health Survey (a 10-question forum health assessment). Regional training, regional funding and forum by-laws
+content is still being populated.
+
+LEARNING RESOURCES (Section 8). E-CODE is YPO's framework for delivering Only-in-YPO learning experiences. Other
+Section 8 resources: the Day Chair Toolkit (materials to run a Day Chair Workshop at chapter or regional level);
+the Global Events Calendar (all global events, including YPO's Flagship Events); the Learning Hub (Speaker
+Directory, Event in a Box, The Source and Champion Resources); the YPO MENA Chapter Learning Officers & Assistant
+Learning Officers directory; the 2025 Global Learning Survey topline results (a multi-regional overview of
+members' and spouses/partners' top learning needs, drawn from 5,400+ responses); and the Speaker Directory
+(search by name, keyword or filter). Regional initiatives content is still being populated.
+
+CHAPTER SPOUSE/PARTNER OFFICER ROLE (Section 9, Spouse / Partner & Family Resources). One-year term. Mission:
+oversee the needs and interests of the spouse/partner audience in the chapter, advocate for a diversified program
+that deepens connections personally and virtually through the spouse/partner community, and ensure programs
+deliver take-home value. Key goals: be an effective ambassador for the spouse/partner program in the chapter,
+region and community; promote family networks and the Spouse/Partner Community; encourage spouses/partners to
+complete their YPO Connect profile; co-create programs that meet chapter needs; support member integration and
+retention using the spouse/partner integration guide.
+Spouse/Partner Benefits Brochure: spouses/partners can join most Personal Networks and all networks within the
+Social Impact and Family Networks categories (25+ networks and their virtual programming); take on leadership
+roles in a network; join Powered By You mentoring as a mentor, mentee or both; join a Spouse/Partner Forum
+(regional, international, business, family business or male spouse/partner); join the Male Spouse/Partner
+Subnetwork or the 1,300+ member Spouse/Partner Business Subnetwork (with Executive Education Programs at Harvard
+Business School and London Business School); and access The Source, M2Mx and YPO's Strategic Alliance Partners.
+The Section also links to the Spouse/Partner Community on Connect and the YPO MENA Spouse/Partner Officers
+directory.
+
+YNG RESOURCES (Section 10). YPO Next Generation. Eligibility: ages 18–30, with an automatic age waiver up to 32.
+Annual dues: $395 USD, with no family discount. YNGers can access global events, leadership roles and networking
+opportunities beyond traditional chapter participation. The playbook links to the YNG Community, the YNG Group on
+Connect, and enrollment for a member's child; questions go to yng@ypo.org. The FY26–27 YNG MENA Board includes a
+Chair, Vice Chair, Forum Officer, Membership Officer, Engagement Officer, Assistant Engagement Officer, Learning
+Officer, Assistant Learning and Impact Officer, Finance Officer, Mentorship Officer, Assistant Mentorship Officer,
+two Board Advisors, and a YNG Virtual Manager for MENA & North Asia.
+
+GLOBAL AWARDS RESOURCES (Section 13). The Global Awards Asset Hub supports peer-to-peer recognition — celebrating
+members' achievements in their businesses and in YPO to nurture engagement, motivation and inspiration. It
+provides ideas and resources for meaningful spotlight opportunities and cultivating a culture of gratitude. The
+playbook links to the Global Awards Asset Hub itself.
 
 YPO ACRONYMS (Appendix):
 Administrative — CBMS: chapter below minimum standards; CHM: chapter health metrics; CRM: customer relationship
