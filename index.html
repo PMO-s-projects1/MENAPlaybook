@@ -342,6 +342,13 @@
   .chips span{border:1px solid var(--line);border-radius:999px;padding:.35rem .85rem;font-size:.83rem;color:var(--blue);background:var(--paper-2);}
   .gp-list{margin:.4rem 0 1.4rem;padding-left:1.15rem;color:#41495a;font-size:.92rem;}
   .gp-list li{margin:.32rem 0;}
+  .chk-wrap{overflow-x:auto;margin:1rem 0 1.2rem;border:1px solid var(--line);border-radius:8px;}
+  .chk-table{width:100%;border-collapse:collapse;font-size:.86rem;min-width:560px;}
+  .chk-table th{text-align:left;background:var(--blue);color:#fff;font-size:.72rem;font-weight:700;letter-spacing:.08em;text-transform:uppercase;padding:.6rem .9rem;}
+  .chk-table td{padding:.6rem .9rem;border-top:1px solid var(--line);vertical-align:top;color:#41495a;}
+  .chk-table td:nth-child(2),.chk-table td:nth-child(3){white-space:nowrap;color:var(--muted);}
+  .chk-table tr.grp td{background:var(--paper);font-weight:700;color:var(--blue);text-transform:uppercase;font-size:.74rem;letter-spacing:.06em;padding:.5rem .9rem;}
+  .chk-table .item-sub{display:block;font-style:italic;color:var(--muted);font-size:.8rem;margin-top:.15rem;white-space:normal;}
   .gp-table{border:1px solid var(--line);border-radius:8px;overflow:hidden;margin:1rem 0 1.4rem;}
   .gp-row{display:grid;grid-template-columns:120px 1.4fr 1.2fr;gap:1px;background:var(--line);}
   .gp-row > div{background:#fff;padding:.95rem 1.1rem;font-size:.89rem;color:#41495a;}
@@ -910,10 +917,58 @@
           <a class="dl-btn alt" href="https://image.ypo-mail.org/lib/fe2f1171716404787c1478/m/1/77a37f32-cef7-450b-83ed-f53b6d449ad9.pdf" target="_blank" rel="noopener">Download sample chapter by-laws <span class="arw">↓</span></a>
         </div>
       </div>
-      <div class="ph"><h4>Chapter Operations</h4><p class="ph-note">Content to be added.</p><ul>
-        <li>Holding an effective board meeting<ul><li>NDA pledge (Elias)</li><li>Elias' template</li></ul></li>
-        <li>Hosting an AGM</li>
-      </ul></div>
+      <div class="ph" id="chapter-operations">
+        <h4 class="rex-h">Chapter Operations</h4>
+        <p class="rex-sub">Running efficient, well-governed chapter board meetings and annual gatherings.</p>
+
+        <h5 class="rex-h" style="margin-top:1.1rem">Holding an Effective Board Meeting</h5>
+
+        <span class="rb-tag">1. Set a board meeting schedule in advance</span>
+        <ul class="gp-list">
+          <li>There is likely not enough going on to justify holding monthly meetings — you don't need to meet every month.</li>
+          <li>Consider meeting quarterly. If necessary, hold chapter board conference calls in between.</li>
+          <li>Meetings should not last more than two hours.</li>
+        </ul>
+
+        <span class="rb-tag">2. Meeting prep (critical)</span>
+        <ul class="gp-list">
+          <li>The key to holding an effective meeting is the work that happens ahead of the meeting. Work with your Chapter Manager (CM) to indicate where the chapter is relative to YPO chapter health metrics.</li>
+          <li>Chapter leadership team should be working in the time between meetings — set the expectation at the beginning of the year that chapter officers submit their updates in writing to the CM at least a week ahead of each meeting (assuming quarterly). Consider using the forum update as a template for director reports, and include these updates in advance materials.</li>
+          <li>Chapter financials should be included in meeting materials too.</li>
+          <li>Set the expectation that advance materials are reviewed before the meeting, and that discussion begins where the materials end.</li>
+        </ul>
+
+        <span class="rb-tag">3. Meeting agenda</span>
+        <ol class="gp-list">
+          <li><strong>Roll call.</strong> Call the meeting to order and take roll call — this need not be formal; the CM reads the names of those present and announces who is absent, to determine whether quorum has been achieved. If quorum is not achieved, call an end to the meeting; officers present may stay on, but no official chapter business can take place, and anything after this point isn't captured in the meeting minutes.</li>
+          <li><strong>Approval of minutes.</strong> Important things happened in your previous meeting — before anything else, make sure everyone agrees with the record of that meeting.</li>
+          <li><strong>Committee reports.</strong> The chapter chair goes around the room and asks officers if there's anything, beyond what's in their written update, that they wish to raise for discussion with the board. It's important this doesn't turn into a serial download session.</li>
+          <li><strong>Treasurer's report.</strong> The Chapter Financial Officer provides an executive summary of chapter finances.</li>
+          <li><strong>Old business.</strong> Could be an event that's coming up.</li>
+          <li><strong>New business.</strong> Space to raise any opportunities available to the chapter (e.g. a new sponsorship opportunity). If applicable, the regional representative presents global and regional YPO content.</li>
+          <li><strong>Open mic.</strong> An opportunity for board members to make any comments, and for recognition.</li>
+          <li><strong>Adjourn.</strong> Call for a motion to adjourn, then adjourn the meeting.</li>
+        </ol>
+
+        <span class="rb-tag">4. Tips for effective meetings</span>
+        <ul class="gp-list">
+          <li>Conduct forum connection activities at the beginning of your meetings.</li>
+          <li>Stay on topic. Set the expectation that when discussions stray, it's the responsibility of not only the chair but all officers to make a point of order to bring the discussion back on track.</li>
+          <li>Invite a member of the regional executive committee or your regional director to at least one meeting per year.</li>
+          <li>Hold meetings at interesting locations.</li>
+          <li>Consider inviting a chapter member to share a story with the board as a learning opportunity.</li>
+          <li>Consider scheduling meetings in the evenings so you can roll into a fun activity after chapter business (e.g. a golf driving range).</li>
+          <li>Consider using a messaging or team collaboration tool (e.g. WhatsApp or Slack) to keep board members connected and informed between meetings/calls.</li>
+        </ul>
+
+        <div class="dl-row">
+          <a class="dl-btn" href="https://youngpresidentsorg-my.sharepoint.com/:b:/g/personal/paige_morgan_ypo_org/IQDAl7FXn2MXRqOcEmsiYjqoAZmHgYg1bQvyLmNkaz0pC1M?e=3MYxJN" target="_blank" rel="noopener">Board Meeting Guiding Principles <span class="arw">↗</span></a>
+          <a class="dl-btn alt" href="https://youngpresidentsorg-my.sharepoint.com/:w:/g/personal/paige_morgan_ypo_org/IQAozsDnoqY0RqE2KM7FIx1bAQjRWjcZN0kwSSNryhuBTJ4?e=mtwI2o" target="_blank" rel="noopener">Chapter Board Officer Handover Document <span class="arw">↗</span></a>
+        </div>
+        <p class="rex-sub" style="margin-top:.5rem">A sample Guiding Principles and Statement of Commitment for chapter board members to sign, so board meetings maintain the YPO culture of professionalism, respect and effective governance — plus a handover document signed by the incoming and outgoing officer to ensure handover is carried out correctly.</p>
+
+        <p class="ph-note" style="margin-top:1.2rem">Hosting an AGM — content to be added.</p>
+      </div>
       <div class="strategy-block" id="strategic-planning">
         <h4 class="rex-h">Strategic Planning / Game Plan</h4>
         <p class="rex-sub">Simple · Memorable · Strategic · Engaging · Measurable</p>
@@ -1090,7 +1145,9 @@
           <a class="dl-btn alt" href="https://image.ypo-mail.org/lib/fe2f1171716404787c1478/m/1/68558c92-c941-40fa-a522-0dc9bcc52d8e.pdf" target="_blank" rel="noopener">CM contract template <span class="arw">↓</span></a>
           <a class="dl-btn alt" href="https://image.ypo-mail.org/lib/fe2f1171716404787c1478/m/1/97a8768a-9a68-410c-baaf-586bd8862218.pdf" target="_blank" rel="noopener">CM assessment — option 1 <span class="arw">↓</span></a>
           <a class="dl-btn alt" href="https://image.ypo-mail.org/lib/fe2f1171716404787c1478/m/1/e1657e3d-3d07-417d-96a5-348eb9371971.pdf" target="_blank" rel="noopener">CM assessment — option 2 <span class="arw">↓</span></a>
+          <a class="dl-btn alt" href="https://youngpresidentsorg-my.sharepoint.com/:b:/g/personal/paige_morgan_ypo_org/IQBqWFQFM0WISqldgtJetEIzAXbiPOiKKHRVpv58ggrWC4A?e=5AjE2g" target="_blank" rel="noopener">CM Guiding Principles <span class="arw">↗</span></a>
         </div>
+        <p class="rex-sub" style="margin-top:.4rem">CM Guiding Principles: a sample document for Chapter Managers to sign, to ensure CMs are aligned with the expectations of the chapter.</p>
 
         <span class="rb-tag">Chapter Support Program (CSP)</span>
         <p class="roadmap-intro">The Chapter Support Program (CSP) connects chapters with trained <strong>virtual chapter managers (VCMs)</strong> who provide short- or long-term operational support to select chapters facing time-sensitive needs. The program ensures continuity, stability and a consistent member experience for chapters in transition — until a permanent chapter manager is recruited and trained — or to assist new chapters during their development phase.</p>
@@ -1777,7 +1834,51 @@
           <p class="rex-sub" style="margin-top:1rem">YPO management support: your region. For more information, email <a href="mailto:champion@ypo.org">champion@ypo.org</a>.</p>
         </div>
       </div>
-      <div class="ph"><h4>New Member Onboarding Checklist</h4><p class="rex-sub">Step-by-step new member onboarding guide for Chapter Member Engagement Officers.</p><div class="dl-row"><a class="dl-btn" href="https://www.canva.com/design/DAG4YMZWqwA/y5SoIsTgoVx7FchErvidbg/view?utm_content=DAG4YMZWqwA&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=he6502653e9" target="_blank" rel="noopener">New Member Onboarding Checklist <span class="arw">↗</span></a></div></div>
+      <div class="ph" id="new-member-onboarding">
+        <h4 class="rex-h">New Member Onboarding</h4>
+        <p class="rex-sub">Step-by-step new member onboarding guide for Chapter Member Engagement Officers.</p>
+        <p class="roadmap-intro"><strong>The Member Engagement Officer (MEO)</strong> ensures new members understand chapter opportunities and expectations, such as event attendance and joining a forum. The MEO directs new members to the New Member Onboarding Hub to complete YPO Global onboarding and informs new members about champion opportunities at the chapter, regional and global levels.</p>
+
+        <div class="chk-wrap">
+          <table class="chk-table">
+            <thead><tr><th>Checklist item</th><th>Timeline</th><th>Owner</th></tr></thead>
+            <tbody>
+              <tr class="grp"><td colspan="3">Pre-onboarding</td></tr>
+              <tr><td>Membership Pledge / Requirement Signed</td><td>Pre-membership</td><td>CMO</td></tr>
+              <tr><td>Attend Pre-boarding call run by a Champion</td><td>Pre-membership</td><td>Prospective Member</td></tr>
+              <tr><td>Chapter Prospect Approval</td><td>Pre-membership</td><td>CMO &amp; CC</td></tr>
+              <tr><td>Global and Chapter Dues Paid</td><td>Pre-membership</td><td>Prospective Member</td></tr>
+              <tr class="grp"><td colspan="3">Onboarding</td></tr>
+              <tr><td>Send Chapter-wide Welcome Email and WhatsApp<span class="item-sub">Add member and spouse/partner to chapter communication channels. Include biography and photo, include in regional newsletter (if any).</span></td><td>Upon receiving YPO Global invoice</td><td>MEO</td></tr>
+              <tr><td>Hand deliver welcome gift/kit to Member<span class="item-sub">Go through Chapter ExCo with new member.</span></td><td>1 week of joining Chapter</td><td>MEO</td></tr>
+              <tr><td>Send new member welcome package<span class="item-sub">Welcome letter (inclusive of engagement commitments), learning calendar, chapter upcoming events, forum info.</span></td><td>1 week of joining Chapter</td><td>CM</td></tr>
+              <tr><td>Connect Spouse/Partner with SPO<span class="item-sub">Send a personalized welcome note to Spouse/Partner, encourage to complete Connect account.</span></td><td>1 week of joining Chapter</td><td>SPO / MEO</td></tr>
+              <tr><td>Participate in a Welcome Call with YPO Global</td><td>30 days of joining Chapter</td><td>New Member</td></tr>
+              <tr><td>Chapter Buddy assigned</td><td>30 days of joining Chapter</td><td>MEO</td></tr>
+              <tr><td>Complete Forum Basics Training (4-hour virtual session)</td><td>30 days of joining Chapter</td><td>New Member</td></tr>
+              <tr><td>Complete Connect profile (15-minute)</td><td>30 days of joining Chapter</td><td>New Member</td></tr>
+              <tr><td>Complete M2Mx profile (45 minutes)</td><td>30 days of joining Chapter</td><td>New Member</td></tr>
+              <tr><td>Promote key new member events<span class="item-sub">Dine-around, dinners, happy hours, annual chapter retreat.</span></td><td>60 days of joining Chapter</td><td>MEO</td></tr>
+              <tr><td>Attend 1st Chapter Event<span class="item-sub">Assign greeters to welcome new member at the event.</span></td><td>60 days of joining Chapter</td><td>New Member</td></tr>
+              <tr><td>Attend Apeiron</td><td>90 days of joining Chapter</td><td>New Member</td></tr>
+              <tr><td>Member placed in a forum<span class="item-sub">Chapter, regional, global or network level.</span></td><td>90 days of joining Chapter</td><td>FO</td></tr>
+              <tr><td>Encourage member to attend YPO Global Event and use NVM (new member voucher)</td><td>90 days of joining Chapter</td><td>MEO</td></tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="dl-row">
+          <a class="dl-btn" href="https://www.canva.com/design/DAG4YMZWqwA/y5SoIsTgoVx7FchErvidbg/view?utm_content=DAG4YMZWqwA&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=he6502653e9" target="_blank" rel="noopener">Download the New Member Onboarding Checklist <span class="arw">↗</span></a>
+        </div>
+
+        <span class="rb-tag" style="margin-top:1rem;display:block">Onboarding resources</span>
+        <div class="rb-grid">
+          <div class="rb-card"><div class="t"><a href="https://youngpresidentsorg-my.sharepoint.com/:w:/g/personal/paige_morgan_ypo_org/IQDRf-pQVP-wRaOPhsGmw6D4AbJ7Lf36Sd8aRynRLf81KTc?e=97u5uF" target="_blank" rel="noopener">New Member Questionnaire ↗</a></div><p>A sample questionnaire the chapter can send new members to better understand them, and to use as part of new member announcements.</p></div>
+          <div class="rb-card"><div class="t"><a href="https://youngpresidentsorg-my.sharepoint.com/:w:/g/personal/paige_morgan_ypo_org/IQA5wNu6ovy8T7myZWcQ-wQ1AQNMemCzWLw0hRknqehiZ3g?e=0wKuLM" target="_blank" rel="noopener">New Member Welcome Email (sample) ↗</a></div><p>A sample email to welcome new members into the chapter.</p></div>
+          <div class="rb-card"><div class="t"><a href="https://youngpresidentsorg-my.sharepoint.com/:b:/g/personal/paige_morgan_ypo_org/IQALDIgCykUrSJWPAUOrHMXHAWGI1-4opyneqoquogDoaI4?e=kJEe22" target="_blank" rel="noopener">Membership Pledge (sample) ↗</a></div><p>Ensures new members are aligned with the expectations of the chapter.</p></div>
+          <div class="rb-card"><div class="t"><a href="https://youngpresidentsorg-my.sharepoint.com/:b:/g/personal/paige_morgan_ypo_org/IQDEwvJkvAFmSaLFLNL0NR2BAXgE4Zsi7MWU62m-BnavEhs?e=VBIucH" target="_blank" rel="noopener">Onboarding Process — Officers ↗</a></div><p>An outline for chapter board members to follow when the chapter onboards a new member.</p></div>
+        </div>
+      </div>
       <div class="ph"><h4 class="rex-h">Apeiron</h4><p class="rex-sub">YPO's immersive onboarding experience for new members, spouses/partners and tenured members who want to re-engage.</p>
         <p class="roadmap-intro">YPO Apeiron (uh-PEER-on) is the essential jumping-off point for a YPO journey — equipping members with resources and relationships, information and inspiration, and a solid understanding of YPO's core values and principles. It also provides a forum experience, peer connections and exposure to new ideas beyond the chapter, so members and spouses/partners can more confidently embark on their unique YPO journey.</p>
 
