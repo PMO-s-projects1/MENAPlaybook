@@ -289,7 +289,8 @@ across the region and world (e.g. Nairobi, Vancouver, Jakarta, Pittsburgh, Istan
 San Diego) and as recurring virtual sessions for the Americas and EMEA/APAC time zones. Register via the Apeiron
 event link; assets include Fast Facts, the Apeiron Hub for new members, an information toolkit, FAQ and branding.
 
-OTHER MEMBER ENGAGEMENT RESOURCES (Section 6): Member Engagement Toolkit (resources and best practices for MEOs);
+OTHER MEMBER ENGAGEMENT RESOURCES (Section 6): the full list of YPO MENA Chapter Member Engagement Officers (FY26–27)
+is downloadable from the playbook; Member Engagement Toolkit (resources and best practices for MEOs);
 Sample Pledge (adapted from YPO Emirates Integrated, covering forum training, event attendance, dues and chapter
 courtesy); YPO Engagement Score Dashboard — a Tableau-backed score (0–100) across six categories (Champion, Event,
 Peer-to-Peer, Content, Chapter and Network Engagement) placing members into Highly Engaged, Engaged, Somewhat Engaged
@@ -363,6 +364,12 @@ integration and retention using the spouse/partner integration guide. Preferred 
 spouses/partners, passionate about and engaged in YPO. Responsibilities: assess your chapter; design your program;
 market your program; plan events; enhance the experience with E-CODE and forum code; promote community events.
 Source: YPO Champion Catalog, 2023.
+
+SPOUSE/PARTNER INTEGRATION GUIDE (Section 9, Spouse/Partner & Family Resources): as Spouse/Partner Officer, you play an
+important role in a new member's integration and retention by engaging their partners as soon as they join a chapter.
+Integration goes beyond the initial welcome — it's about making new partners feel included, guiding them to programs
+that suit their needs and interests, and helping them launch their own YPO journey. The Spouse/Partner Integration
+Guide is downloadable from the playbook.
 
 SPOUSE/PARTNER BENEFITS AND COMMUNITY (Section 9): spouses/partners can access networks, forums, events and learning
 — joining most Personal Networks and all Social Impact and Family Networks (25+ networks). Family Networks include
