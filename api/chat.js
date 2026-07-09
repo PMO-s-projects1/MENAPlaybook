@@ -25,8 +25,7 @@ HOW THE PLAYBOOK IS STRUCTURED (some sections are still being populated):
   committee toolkit and offboarding; officer training; and working with your Chapter Manager (CM recruitment,
   contracts, performance reviews, support program).
 - Section 4 — Chapter Commitments: the 14 commitments defined.
-- Section 5 — Membership Resources: YPO membership requirements (age, qualifying criteria, employee count and
-  revenue thresholds — detailed below), SMP (Strategic Membership Pathways), accepting new members.
+- Section 5 — Membership Resources: YPO membership requirements, SMP (Strategic Membership Pathways), accepting new members.
 - Section 6 — Member Engagement Resources: onboarding checklist, Taste of YPO, Apeiron, engagement toolkit, sample pledge,
   sample points system.
 - Section 7 — Forum Resources: find a CFF, regional training, regional funding, forum structures, forum by-laws.
@@ -35,22 +34,15 @@ HOW THE PLAYBOOK IS STRUCTURED (some sections are still being populated):
 - Section 10 — YNG Resources (YPO Next Generation).
 - Section 11 — Network Resources: YPO Networks overview, featured offerings and the full networks directory.
 - Section 12 — YPO Emergency Support: M2Mx (Member-to-Member Exchange) support for business, health and personal challenges.
+- Section 13 — Global Awards Resources: the Global Awards Asset Hub for peer-to-peer recognition and spotlight opportunities.
 - Appendix — YPO Acronyms glossary.
 
 REGIONAL DATA: 27 chapters in the region; 23 fully trained on core officer roles (data as of 05/06/2026),
 from the live MENA Chapter Commitments dashboard.
 
-REGIONAL OVERVIEW — CHAPTERS AND DEMOGRAPHICS:
-Demographics: 27 total chapters in the region (21 Integrated + 3 YPO + 3 YPO Gold); 1,600+ MENA members;
-15 MENA countries. Globally: 490+ chapters, 37,000+ members, 150+ countries.
-YPO Integrated Chapters (21): YPO Bahrain Integrated; YPO Capital Pakistan Integrated; YPO Cairo Integrated;
-YPO Dubai Downtown Integrated; YPO Dubai Integrated; YPO Emirates Integrated; YPO Indus Integrated; YPO Iraq
-Integrated; YPO Jordan Integrated; YPO Khaleej Integrated; YPO Kuwait Integrated; YPO Levant Integrated;
-YPO MENA Gulf Regional Integrated; YPO MENA One Regional Integrated; YPO Morocco Integrated; YPO Oman Integrated;
-YPO Olive MENA Regional Integrated; YPO Palestine Integrated; YPO Qatar Integrated; YPO Tunisia Integrated;
-YPO UAE Integrated.
-YPO Chapters (3): YPO Lebanon; YPO Pakistan; YPO Saudi.
-YPO Gold Chapters (3): YPO Gold Lebanon; YPO Gold Pakistan; YPO Gold Saudi.
+REGIONAL OVERVIEW — CHAPTERS: 27 chapters make up the YPO Middle East / North Africa region. The playbook shows
+these visually on a regional map graphic rather than as a text list — if asked for the full list of chapter names,
+say the map in Section 0 (Introduction) has the complete, current picture.
 
 REGIONAL EXECUTIVE COMMITTEE (REX), FY26-27 — names and roles:
 - Moodi Bukhari — Regional Chair
@@ -67,12 +59,12 @@ REGIONAL EXECUTIVE COMMITTEE (REX), FY26-27 — names and roles:
 - Jana Yamani — Regional Family Officer
 - Sabina Hadi — Regional Spouse Forum Officer
 
-REGIONAL MANAGEMENT TEAM (who to ask about what):
-- Paige Morgan — YPO MENA Regional Director. Ask about: strategic planning (Game Plan); bylaws, policy & procedures, code of conduct; board leadership and succession planning; wider regional & international opportunities; chapter metrics (Chapter Commitments, Satisfaction Index); general chapter board enquiries.
-- Tamara Crowhurst — YPO MENA Regional Manager. Ask about: chapter manager support; YPO systems training (e.g. YPO Connect); funding reimbursements; governance meeting logistics; chapter data and insights; regional communication channels; member engagement.
-- Maria Luz Domingo — YPO MENA Regional Forum and Learning Manager. Ask about: forum health and trainings across MENA; regional and chapter forum officer support tools; forum education and development; forum best practices, help and resources; speaker resources; day chair workshops; regional and chapter learning and assistant learning officer collaboration and support tools.
-- Neeta Gandhi — YPO MENA Regional Membership Development Manager. Ask about: best practices for membership development in your chapter; MENA's membership program; global membership development strategy; creating new chapters; chapter membership portals.
-- Lauren Aird — YPO Global Family Manager, EMEA. Ask about: family and spouse/partner requests and data; YNG queries; parenting and YSP collaboration and connection.
+REGIONAL MANAGEMENT TEAM (who to ask about what, and which officers/roles each person supports):
+- Paige Morgan — YPO MENA Regional Director. Ask about: strategic planning (Game Plan); bylaws, policy & procedures, code of conduct; board leadership and succession planning; wider regional & international opportunities; chapter metrics (Chapter Commitments, Satisfaction Index); general chapter board enquiries. Paige supports: Regional Chairs and Chapter Chairs.
+- Tamara Crowhurst — YPO MENA Regional Manager. Ask about: chapter manager support; YPO systems training (e.g. YPO Connect); funding reimbursements; governance meeting logistics; chapter data and insights; regional communication channels; member engagement. Tamara supports: Chapter Managers, Regional Member Engagement Officers and Chapter Member Engagement Officers.
+- Maria Luz Domingo — YPO MENA Regional Forum and Learning Manager. Ask about: forum health and trainings across MENA; regional and chapter forum officer support tools; forum education and development; forum best practices, help and resources; speaker resources; day chair workshops; regional and chapter learning and assistant learning officer collaboration and support tools. Maria supports: Regional Learning Officers, Regional Forum Officers, Regional Spouse Forum Officers, Chapter Learning Officer, Chapter Forum Officers and Chapter Spouse Forum Officers.
+- Neeta Gandhi — YPO MENA Regional Membership Development Manager. Ask about: best practices for membership development in your chapter; MENA's membership program; global membership development strategy; creating new chapters; chapter membership portals. Neeta supports: Regional Membership Officers and Chapter Membership Officers.
+- Lauren Aird — YPO Global Family Manager, EMEA. Ask about: family and spouse/partner requests and data; YNG queries; parenting and YSP collaboration and connection. Lauren supports: Regional Spouse/Partner Officers, Regional Family Officers, Chapter Spouse/Partner Officers and Chapter Family Officers.
 
 CHAPTER COMMITMENTS (14, across governance, forum, learning and peerdom):
 1. Chapter Charter — chair signed/acknowledged the YPO chapter charter (formerly TLA) this fiscal year.
@@ -90,18 +82,6 @@ CHAPTER COMMITMENTS (14, across governance, forum, learning and peerdom):
 13. Chapter Membership — roster verified accurate and all members paid chapter and YPO global dues.
 14. Minimum Membership Requirements — approved before 1 July 2024 = 16 primary members; after = 21.
 
-YPO MEMBERSHIP REQUIREMENTS (Section 5, Membership Resources). Potential membership is evaluated on the strength
-and impact of a candidate's achievements and leadership success, across four criteria:
-- Criteria 1, Age: under 45 years old.
-- Criteria 2, Who qualifies: top operational leader of the company or division; final decision-making authority;
-  full P&L accountability; authority to hire and fire across the company or division; leadership across core
-  business functions.
-- Criteria 3, Number of employees: 50 full-time employees, or 15+ full-time employees and minimum $2,750,000 USD
-  annual employee compensation.
-- Criteria 4, Revenue by company type: Sales, Service or Manufacturing companies — $16,000,000+ USD; Financial
-  Institutions — $330,000,000+ USD AUM; Agencies — $13,000,000+ USD, or Enterprise Value $27,000,000+ USD.
-Full detail is available on the YPO membership requirements page linked from the playbook.
-
 M2MX / YPO EMERGENCY SUPPORT (Section 12). M2Mx — "Connections You Can Count On". Got a challenge? Business, health,
 or personal — M2Mx gets you answers fast, tapping thousands of trusted YPO peers who have been there and know what works.
 How we help:
@@ -112,6 +92,13 @@ Fast and confidential: every request is matched quickly and discreetly with memb
 Confidential. Global.
 To get help, members can submit a request through the YPO Concierge "request assistance" page linked in the playbook,
 email m2mx@ypo.org, or call +1 469 770 3395.
+
+GLOBAL AWARDS RESOURCES (Section 13): recognizing chapter, member and family excellence across YPO. Recognition is
+about celebrating others in the moment — acknowledging their strengths and showing genuine appreciation; spotlighting
+great leaders inspires the next generation to rise and lead with purpose. Acknowledging peers' achievements, in
+business and in YPO, is essential for nurturing engagement, motivation and inspiration, and helps cultivate a culture
+of gratitude. The playbook links to the Global Awards Asset Hub, a toolkit of ideas and resources for peer-to-peer
+spotlight opportunities.
 
 YPO NETWORKS (Section 11, Network Resources). Networks unlock the full power of YPO by building deeper relationships
 with members and spouses/partners who share your business interests and personal passions. More than 30 YPO Networks
