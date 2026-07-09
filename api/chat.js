@@ -102,6 +102,29 @@ business and in YPO, is essential for nurturing engagement, motivation and inspi
 of gratitude. The playbook links to the YPO Awards Overview, a toolkit of ideas and resources for peer-to-peer
 spotlight opportunities.
 
+NEW MEMBER ONBOARDING (Member Engagement Resources): the Member Engagement Officer (MEO) ensures new members
+understand chapter opportunities and expectations, such as event attendance and joining a forum. The MEO directs new
+members to the New Member Onboarding Hub to complete YPO Global onboarding and informs new members about champion
+opportunities at the chapter, regional and global levels.
+Pre-onboarding checklist (owner in brackets): Membership Pledge / Requirement Signed (CMO) — Attend Pre-boarding call
+run by a Champion (Prospective Member) — Chapter Prospect Approval (CMO & CC) — Global and Chapter Dues Paid
+(Prospective Member). All pre-membership.
+Onboarding checklist: Send Chapter-wide Welcome Email and WhatsApp, upon receiving the YPO Global invoice (MEO) —
+Hand deliver welcome gift/kit to Member, within 1 week of joining (MEO) — Send new member welcome package, within 1
+week of joining (CM) — Connect Spouse/Partner with SPO, within 1 week of joining (SPO/MEO) — Participate in a
+Welcome Call with YPO Global, within 30 days (New Member) — Chapter Buddy assigned, within 30 days (MEO) — Complete
+Forum Basics Training (4-hour virtual session), within 30 days (New Member) — Complete Connect profile (15-minute),
+within 30 days (New Member) — Complete M2Mx profile (45 minutes), within 30 days (New Member) — Promote key new
+member events (dine-around, dinners, happy hours, annual chapter retreat), within 60 days (MEO) — Attend 1st Chapter
+Event, within 60 days (New Member) — Attend Apeiron, within 90 days (New Member) — Member placed in a forum
+(chapter, regional, global or network level), within 90 days (FO) — Encourage member to attend a YPO Global Event
+and use NVM (new member voucher), within 90 days (MEO).
+The playbook links to a downloadable New Member Onboarding Checklist, plus four resources: a New Member
+Questionnaire (a sample questionnaire the chapter can send new members to better understand them, and to use as
+part of new member announcements); a sample New Member Welcome Email; a sample Membership Pledge (to ensure new
+members are aligned with chapter expectations); and an Onboarding Process — Officers outline (for chapter board
+members to follow when onboarding a new member).
+
 YPO NETWORKS (Network Resources). Networks unlock the full power of YPO by building deeper relationships
 with members and spouses/partners who share your business interests and personal passions. More than 30 YPO Networks
 strengthen these global connections through virtual and in-person opportunities, with customized learning programs, idea
@@ -186,6 +209,33 @@ GOVERNANCE DOCUMENTS (Chapter Chair Resources): The YPO Policies and Procedures 
 the standards that apply to every chapter; chapter by-laws sit alongside them, tailored to the country of legal
 incorporation and reviewed with a locally licensed attorney. The playbook links to the P&P and governance documents
 on YPO Connect, and to a downloadable sample chapter by-laws PDF.
+
+CHAPTER OPERATIONS — HOLDING AN EFFECTIVE BOARD MEETING (Chapter Chair Resources):
+1. Set a board meeting schedule in advance — there's likely not enough going on to justify meeting monthly; consider
+   meeting quarterly, with chapter board conference calls in between if needed. Meetings should not last more than
+   two hours.
+2. Meeting prep (critical) — the key to an effective meeting is the work that happens beforehand. Work with your
+   Chapter Manager (CM) to show where the chapter stands against YPO chapter health metrics. Set the expectation
+   that officers submit written updates to the CM at least a week ahead of each meeting (assuming quarterly) —
+   the forum update can be a template for director reports — and include those updates, plus chapter financials, in
+   advance materials. Advance materials should be reviewed before the meeting so discussion can begin where the
+   materials end.
+3. Meeting agenda: (a) Roll call — take roll, confirm quorum; if quorum isn't met, end the meeting (officers may stay
+   on but no official business can take place, and nothing after this point is captured in the minutes); (b)
+   Approval of minutes; (c) Committee reports — chair asks officers if there's anything beyond their written update
+   to raise, without turning it into a serial download session; (d) Treasurer's report — Chapter Financial Officer
+   gives an executive summary of finances; (e) Old business; (f) New business — new opportunities (e.g. sponsorship),
+   plus global/regional YPO content from the regional representative if applicable; (g) Open mic — comments and
+   recognition; (h) Adjourn.
+4. Tips: run forum connection activities at the start of meetings; stay on topic (it's every officer's job, not just
+   the chair's, to call a point of order); invite a REX member or regional director to at least one meeting a year;
+   hold meetings somewhere interesting; invite a member to share a story as a learning opportunity; consider evening
+   meetings that roll into a social activity; use a messaging/collaboration tool (WhatsApp, Slack) to keep the board
+   connected between meetings.
+The playbook links to a sample Board Meeting Guiding Principles and Statement of Commitment document (for board
+members to sign, to help meetings keep the YPO culture of professionalism, respect and effective governance) and to
+a Chapter Board Officer Handover Document (signed by incoming and outgoing officers to ensure a clean handover).
+Hosting an AGM is a sub-topic still being populated.
 
 SUCCESSION PLANNING (Chapter Chair Resources): Succession planning identifies the next chair, and the chair after that, early —
 so leaders arrive prepared, officers have time to train, relationships carry across transitions and chapter strategy
@@ -293,8 +343,9 @@ knowledge and help identify strategic priorities. Safe haven — in line with th
 respect and confidentiality for your CM. Provide feedback — critical to their development; conduct an annual review
 in May or June as the chair year closes. Encourage training — workshops, webinars and ad hoc training keep the CM
 current. Contract review — review the CM contract or employment agreement annually in June.
-Additional CM resources available in the playbook: Insights on the CM role, CM timeline, CM contract template, and two
-CM assessment options.
+Additional CM resources available in the playbook: Insights on the CM role, CM timeline, CM contract template, two
+CM assessment options, and CM Guiding Principles — a sample document for Chapter Managers to sign, to ensure CMs are
+aligned with the expectations of the chapter.
 
 CONDUCT COMMITTEE (Chapter Chair Resources): guiding principle "if it can be solved at the chapter level, solve it."Establish a Chapter Conduct Committee (CCC) annually (recommended five members: current chair, past chair,
 membership/engagement officer, two senior board roles). Follow fair process, communicate with the Global
