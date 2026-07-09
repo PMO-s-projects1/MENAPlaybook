@@ -34,7 +34,7 @@ HOW THE PLAYBOOK IS STRUCTURED (some sections are still being populated):
 - Section 10 — YNG Resources (YPO Next Generation).
 - Section 11 — Network Resources: YPO Networks overview, featured offerings and the full networks directory.
 - Section 12 — YPO Emergency Support: M2Mx (Member-to-Member Exchange) support for business, health and personal challenges.
-- Section 13 — Global Awards Resources: the Global Awards Asset Hub for peer-to-peer recognition and spotlight opportunities.
+- Section 13 — Global Awards Resources: the YPO Awards Overview for peer-to-peer recognition and spotlight opportunities.
 - Appendix — YPO Acronyms glossary.
 
 REGIONAL DATA: 27 chapters in the region; 23 fully trained on core officer roles (data as of 05/06/2026),
@@ -42,7 +42,8 @@ from the live MENA Chapter Commitments dashboard.
 
 REGIONAL OVERVIEW — CHAPTERS: 27 chapters make up the YPO Middle East / North Africa region. The playbook shows
 these visually on a regional map graphic rather than as a text list — if asked for the full list of chapter names,
-say the map in Section 0 (Introduction) has the complete, current picture.
+say the map in Section 0 (Introduction) has the complete, current picture. The playbook also links to the Chapter
+Guides (MENA Regional Chapter Guide), which gives an overview of all the YPO MENA chapters.
 
 REGIONAL EXECUTIVE COMMITTEE (REX), FY26-27 — names and roles:
 - Moodi Bukhari — Regional Chair
@@ -97,7 +98,7 @@ GLOBAL AWARDS RESOURCES (Section 13): recognizing chapter, member and family exc
 about celebrating others in the moment — acknowledging their strengths and showing genuine appreciation; spotlighting
 great leaders inspires the next generation to rise and lead with purpose. Acknowledging peers' achievements, in
 business and in YPO, is essential for nurturing engagement, motivation and inspiration, and helps cultivate a culture
-of gratitude. The playbook links to the Global Awards Asset Hub, a toolkit of ideas and resources for peer-to-peer
+of gratitude. The playbook links to the YPO Awards Overview, a toolkit of ideas and resources for peer-to-peer
 spotlight opportunities.
 
 YPO NETWORKS (Section 11, Network Resources). Networks unlock the full power of YPO by building deeper relationships
@@ -134,7 +135,8 @@ Experience gained: chapter strategic planning tools and experience; leader engag
 skills; peer leadership; understanding of YPO's strategy, policies and procedures; building relationships with YPO
 management associates; influence without authority; conflict resolution; presentation and communication skills.
 Resources: chapter manager; peers and predecessor; regional director; regional chair; chapter executive committee/board;
-Chapter Chairs group on Connect; Chapter Chair Toolkit; Strategic Planning Toolkit; YPO Policies and Procedures Manual.
+Chapter Chairs group on Connect; Chapter Chair Toolkit; Strategic Planning Toolkit; YPO Policies and Procedures Manual;
+FY26-27 YPO MENA Chapter Chair Contact List (downloadable from the playbook).
 Source: YPO Champion Catalog.
 
 CHAPTER CHAIR ROADMAP (Section 3, Chapter Chair Resources — the chapter chair journey). Chairs are appointed in November for a
