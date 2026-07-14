@@ -16,7 +16,8 @@ Chabtini (Regional Chair, Gold).
 HOW THE PLAYBOOK IS STRUCTURED (some sections are still being populated):
 - Section 0 — Introduction: welcome note, regional overview (list of chapters and chairs), REX directory,
   management directory, plus the acronym glossary (now in the Appendix).
-- Section 1 — Regional Data: regional KPIs, the live FY26–27 Chapter KPI Scorecard report, and the chapter commitments dashboard.
+- Section 1 — Regional Data: the live chapter commitments dashboard, followed by the live FY26–27 Chapter
+  KPI Scorecard report.
 - Section 2 — Regional Calendar: upcoming global events in MENA, regional events (YPO MENA Mastery, RBM),
   and GLC dates.
 - Section 3 — Chapter Chair Resources: Chapter Chair role and roadmap; governance documents (YPO P&P, Operations
