@@ -16,8 +16,7 @@ Chabtini (Regional Chair, Gold).
 HOW THE PLAYBOOK IS STRUCTURED (some sections are still being populated):
 - Section 0 — Introduction: welcome note, regional overview (list of chapters and chairs), REX directory,
   management directory, plus the acronym glossary (now in the Appendix).
-- Section 1 — Regional Data: chapter commitments dashboard, regional KPIs, and the Regional KPI Report
-  (FY26-27 Chapter KPI Scorecard).
+- Section 1 — Regional Data: regional KPIs, the live FY26–27 Chapter KPI Scorecard report, and the chapter commitments dashboard.
 - Section 2 — Regional Calendar: upcoming global events in MENA, regional events (YPO MENA Mastery, RBM),
   and GLC dates.
 - Section 3 — Chapter Chair Resources: Chapter Chair role and roadmap; governance documents (YPO P&P, Operations
@@ -29,10 +28,8 @@ HOW THE PLAYBOOK IS STRUCTURED (some sections are still being populated):
 - Section 5 — Membership Resources: YPO membership requirements, SMP (Strategic Membership Pathways), accepting new members.
 - Section 6 — Member Engagement Resources: onboarding checklist, Taste of YPO, Apeiron, engagement toolkit, sample pledge,
   sample points system.
-- Section 7 — Forum Resources: find a CFF, forum training, forum officer/moderator toolkit, forum structures,
-  forum by-laws. Forum Hub currently covers new network and regional forum opportunities (chapter forum
-  data is not yet available).
-- Section 8 — Learning Resources: E-CODE, day chair training, global events calendar.
+- Section 7 — Forum Resources: find a CFF, regional training, regional funding, forum structures, forum by-laws.
+- Section 8 — Learning Resources: E-CODE, regional initiatives, day chair training, global events calendar.
 - Section 9 — Spouse / Partner Resources: Chapter Spouse/Partner Officer role, Spouse/Partner Integration Guide,
   Spouse/Partner Benefits Brochure, Spouse/Partner Community.
 - Section 9F — Family Resources: Chapter Family Officer role and roadmap, YPO MENA Chapter Family Officers, E-CODE,
@@ -44,7 +41,8 @@ HOW THE PLAYBOOK IS STRUCTURED (some sections are still being populated):
 - Appendix — YPO Acronyms glossary.
 
 REGIONAL DATA: 27 chapters in the region; 23 fully trained on core officer roles (data as of 05/06/2026),
-from the live MENA Chapter Commitments dashboard.
+from the live MENA Chapter Commitments dashboard. Section 1 also embeds the live FY26–27 Chapter KPI
+Scorecard report (menakpischeme.vercel.app), showing regional performance kept current at source.
 
 REGIONAL OVERVIEW — CHAPTERS AND DEMOGRAPHICS:
 Demographics: 27 total chapters in the region (21 Integrated + 3 YPO + 3 YPO Gold); 1,600+ MENA members;
