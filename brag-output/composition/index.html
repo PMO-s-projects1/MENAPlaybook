@@ -1,0 +1,341 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=1920, height=1080" />
+<title>United MENA Playbook — brag</title>
+<script src="assets/vendor/gsap.min.js"></script>
+<script src="assets/audio-data.js"></script>
+<style>
+@font-face{font-family:'Instrument Serif';font-style:italic;font-weight:400;src:url('assets/fonts/InstrumentSerif-400-italic.woff2') format('woff2');}
+@font-face{font-family:'Instrument Serif';font-style:normal;font-weight:400;src:url('assets/fonts/InstrumentSerif-400-normal.woff2') format('woff2');}
+@font-face{font-family:'Arimo';font-style:normal;font-weight:400;src:url('assets/fonts/Arimo-400-normal.woff2') format('woff2');}
+@font-face{font-family:'Arimo';font-style:normal;font-weight:700;src:url('assets/fonts/Arimo-700-normal.woff2') format('woff2');}
+:root{--blue:#041e42;--gold:#d69d23;--azure:#1f43ea;--ink:#1a1c1f;--paper:#f2f3f6;--paper2:#f9f9f9;--line:#e4e6ea;--muted:#5b6675;}
+html,body{margin:0;background:var(--blue);}
+body{font-family:'Arimo',sans-serif;color:#fff;-webkit-font-smoothing:antialiased;}
+#root{position:relative;width:100%;height:100%;overflow:hidden;background:var(--blue);}
+.clip{position:absolute;inset:0;}
+.stage{position:absolute;inset:0;overflow:hidden;}
+.navy{background:var(--blue);color:#fff;}
+.paper{background:var(--paper2);color:var(--ink);}
+.white{background:#fff;color:var(--ink);}
+.facets{position:absolute;right:-120px;top:40px;width:1300px;height:900px;}
+.facets polygon{fill:#fff;}
+.eyebrow{display:flex;align-items:center;gap:18px;font-weight:700;font-size:24px;letter-spacing:.28em;text-transform:uppercase;color:var(--azure);}
+.eyebrow::before{content:"";display:block;width:48px;height:3px;background:var(--gold);}
+.eyebrow.gold{color:var(--gold);}
+.eyebrow.gold::before{display:none;}
+.brand{position:absolute;left:140px;top:70px;display:flex;align-items:center;gap:22px;}
+.brand img{height:62px;width:auto;display:block;}
+.brand .sep{width:2px;height:48px;background:rgba(255,255,255,.7);}
+.brand .rg{font-size:20px;letter-spacing:.06em;line-height:1.25;text-transform:uppercase;color:#fff;}
+
+/* S1 hook */
+#s1 .lines{position:absolute;left:140px;top:270px;display:flex;flex-direction:column;gap:6px;}
+#s1 .ln{font-weight:700;font-size:150px;line-height:1.08;letter-spacing:-.02em;}
+#s1 .ln.g{color:var(--gold);}
+
+/* S2 hero */
+.nav{position:absolute;left:0;right:0;top:0;height:112px;display:flex;align-items:center;gap:44px;padding:0 140px;border-bottom:1px solid rgba(255,255,255,.14);background:#0a2449;}
+.nav img{height:52px;}
+.nav .it{font-weight:700;font-size:19px;letter-spacing:.12em;color:#dfe5ee;}
+.nav .it.on{color:var(--blue);background:var(--gold);padding:10px 18px;border-radius:999px;}
+#s2 .hero{position:absolute;left:140px;top:300px;width:1500px;}
+#s2 h1{margin:28px 0 0;font-weight:400;font-size:176px;line-height:.98;letter-spacing:-.02em;}
+#s2 h1 .g{color:var(--gold);}
+#s2 .lede{margin-top:44px;font-family:'Instrument Serif',serif;font-size:62px;line-height:1.2;color:#e6ebf3;width:1300px;}
+#s2 .meta{position:absolute;left:140px;bottom:70px;font-size:24px;color:#c9d2df;}
+.pill{position:absolute;right:70px;bottom:56px;display:flex;align-items:center;gap:14px;background:#0a2449;color:#fff;font-weight:700;font-size:28px;padding:22px 34px;border-radius:999px;box-shadow:0 20px 50px -18px rgba(0,0,0,.6);border:1px solid rgba(255,255,255,.18);}
+.pill .dot{width:12px;height:12px;border-radius:50%;background:var(--gold);}
+
+/* S3 contents */
+#s3 .left{position:absolute;left:140px;top:150px;width:560px;}
+#s3 h2{margin:26px 0 0;font-weight:400;font-size:112px;line-height:1;letter-spacing:-.02em;}
+#s3 .count{margin-top:70px;font-family:'Instrument Serif',serif;font-size:60px;line-height:1.12;color:var(--ink);}
+#s3 .count b{font-family:'Arimo',sans-serif;font-weight:700;color:var(--azure);}
+#s3 .grid{position:absolute;left:780px;top:130px;width:1020px;display:grid;grid-template-columns:1fr 1fr;column-gap:56px;}
+#s3 .row{border-top:1px solid #d9dce2;padding:17px 0 18px;font-weight:700;font-size:28px;line-height:1.2;color:var(--ink);}
+
+/* S4 region */
+#s4 .eyebrow{position:absolute;left:140px;top:84px;}
+#s4 .map{position:absolute;left:210px;top:150px;width:1500px;height:auto;}
+#s4 .stats{position:absolute;left:140px;right:140px;top:720px;display:grid;grid-template-columns:repeat(3,1fr);gap:40px;}
+#s4 .stat{background:var(--blue);color:#fff;border-radius:22px;padding:34px 44px;box-shadow:0 30px 60px -30px rgba(4,30,66,.6);}
+#s4 .stat .n{font-weight:700;font-size:104px;line-height:1;color:var(--gold);letter-spacing:-.02em;}
+#s4 .stat .l{margin-top:14px;font-size:32px;color:#e6ebf3;}
+
+/* S5 live data */
+#s5 .head{position:absolute;left:140px;top:120px;width:1640px;}
+#s5 h2{margin:26px 0 0;font-weight:400;font-size:84px;line-height:1.05;letter-spacing:-.02em;}
+#s5 .panel{position:absolute;left:140px;right:140px;top:420px;height:480px;background:#fff;border:1px solid var(--line);border-left:6px solid var(--gold);border-radius:22px;box-shadow:0 40px 80px -40px rgba(4,30,66,.35);}
+#s5 .ph{display:flex;align-items:center;justify-content:space-between;padding:34px 48px;border-bottom:1px solid var(--line);}
+#s5 .live{display:flex;align-items:center;gap:16px;font-weight:700;font-size:34px;color:var(--ink);}
+#s5 .live .d{width:16px;height:16px;border-radius:50%;background:#1a9e55;box-shadow:0 0 0 6px rgba(26,158,85,.18);}
+#s5 .open{font-weight:700;font-size:26px;color:var(--azure);}
+#s5 .body{padding:44px 48px;}
+#s5 .big{display:flex;align-items:baseline;gap:22px;}
+#s5 .big .n{font-weight:700;font-size:140px;line-height:1;color:var(--blue);letter-spacing:-.03em;}
+#s5 .big .t{font-size:36px;color:var(--ink);max-width:900px;line-height:1.25;}
+#s5 .bar{margin-top:36px;height:22px;border-radius:999px;background:var(--paper);overflow:hidden;}
+#s5 .bar i{display:block;height:100%;width:100%;background:linear-gradient(90deg,var(--blue),var(--azure));border-radius:999px;transform-origin:left center;}
+#s5 .src{position:absolute;right:48px;bottom:34px;font-family:'Instrument Serif',serif;font-style:italic;font-size:36px;color:var(--muted);}
+
+/* S6 chat */
+#s6 .left{position:absolute;left:140px;top:250px;width:780px;}
+#s6 .left h2{margin:30px 0 0;font-weight:400;font-size:104px;line-height:1;letter-spacing:-.02em;color:var(--ink);}
+#s6 .left p{margin:40px 0 0;font-family:'Instrument Serif',serif;font-size:54px;line-height:1.15;color:var(--ink);}
+#s6 .panel{position:absolute;left:1000px;top:70px;width:780px;height:940px;display:flex;flex-direction:column;background:#fff;border:1px solid var(--line);border-radius:30px;overflow:hidden;box-shadow:0 60px 120px -50px rgba(4,30,66,.55);}
+#s6 .chd{display:flex;align-items:center;gap:16px;background:var(--blue);color:#fff;padding:26px 34px;font-weight:700;font-size:32px;}
+#s6 .chd img{width:44px;height:auto;}
+#s6 .log{flex:1;padding:32px;display:flex;flex-direction:column;gap:22px;background:var(--paper2);}
+#s6 .msg{max-width:84%;padding:20px 24px;border-radius:22px;font-size:28px;line-height:1.4;}
+#s6 .bot{background:#fff;border:1px solid var(--line);color:var(--ink);align-self:flex-start;border-bottom-left-radius:8px;}
+#s6 .user{background:var(--blue);color:#fff;align-self:flex-end;border-bottom-right-radius:8px;}
+#s6 .slot{position:relative;align-self:stretch;display:flex;flex-direction:column;}
+#s6 .slot .typing{position:absolute;left:0;top:0;}
+#s6 .typing{color:var(--muted);font-style:italic;}
+#s6 .ans ul{margin:12px 0 10px;padding-left:30px;}
+#s6 .ans li{margin:5px 0;}
+#s6 .form{display:flex;gap:16px;padding:22px;border-top:1px solid var(--line);background:#fff;}
+#s6 .inp{flex:1;height:72px;display:flex;align-items:center;padding:0 22px;border:2px solid var(--azure);border-radius:18px;font-size:26px;color:var(--ink);white-space:nowrap;overflow:hidden;}
+#s6 .inp .ph{color:#6b7482;}
+#s6 .send{display:flex;align-items:center;padding:0 32px;background:var(--gold);color:#1c1c1c;font-weight:700;font-size:28px;border-radius:18px;}
+#s6 .fine{text-align:center;padding:14px;font-size:20px;color:var(--muted);border-top:1px solid var(--line);background:#fff;}
+.cursor{position:absolute;width:44px;height:auto;}
+
+/* S7 outro */
+#s7 .center{position:absolute;left:0;right:0;top:170px;display:flex;flex-direction:column;align-items:center;}
+#s7 .logo{height:230px;width:auto;}
+#s7 h1{margin:46px 0 0;font-weight:400;font-size:112px;letter-spacing:-.02em;text-align:center;}
+#s7 h1 .g{color:var(--gold);}
+#s7 .cta{margin-top:56px;padding:30px 64px;background:#fff;color:var(--blue);font-weight:700;font-size:40px;border-radius:16px;box-shadow:0 30px 60px -24px rgba(0,0,0,.6);}
+</style>
+</head>
+<body>
+<div id="root" data-composition-id="main" data-start="0" data-width="1920" data-height="1080" data-duration="24">
+
+  <!-- S1 hook -->
+  <section id="s1" class="clip" data-start="0" data-duration="3.6" data-track-index="1">
+    <div class="stage navy" id="s1-stage">
+      <svg class="facets" data-layout-allow-overflow id="s1-facets" viewBox="0 0 1300 900"><polygon points="300,0 650,0 475,300" opacity=".10"/><polygon points="250,300 650,900 -150,900" opacity=".09"/><polygon points="650,300 1050,900 250,900" opacity=".05"/><polygon points="1050,300 1450,900 650,900" opacity=".09"/></svg>
+      <div class="brand"><img src="assets/img/ypo-mena-mark.png" alt="YPO mark"><div class="sep"></div><div class="rg"><div>Middle East /</div><div>North Africa Region</div></div></div>
+      <div class="lines">
+        <div class="ln" id="h1a">27 chapters.</div>
+        <div class="ln" id="h1b">15 countries.</div>
+        <div class="ln g" id="h1c">One playbook.</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- S2 hero -->
+  <section id="s2" class="clip" data-start="3.2" data-duration="3.8" data-track-index="2">
+    <div class="stage navy" id="s2-stage">
+      <svg class="facets" data-layout-allow-overflow id="s2-facets" viewBox="0 0 1300 900"><polygon points="300,0 650,0 475,300" opacity=".10"/><polygon points="250,300 650,900 -150,900" opacity=".09"/><polygon points="650,300 1050,900 250,900" opacity=".05"/><polygon points="1050,300 1450,900 650,900" opacity=".09"/></svg>
+      <div class="nav"><img src="assets/img/ypo-mena-mark.png" alt="YPO mark"><span class="it">CONTENTS</span><span class="it">INTRODUCTION</span><span class="it">REGIONAL OVERVIEW</span><span class="it">REGIONAL DATA</span><span class="it">CALENDAR</span><span class="it">CHAIR RESOURCES</span><span class="it">COMMITMENTS</span></div>
+      <div class="hero">
+        <div class="eyebrow gold" id="s2-eb">United MENA</div>
+        <h1 id="s2-title">The <span class="g">United MENA</span> Playbook</h1>
+        <div class="lede" id="s2-lede">One regional source of truth — for every chapter across the Middle East and North Africa.</div>
+      </div>
+      <div class="meta">Regional Governance Resource · FY25–26</div>
+      <div class="pill" id="s2-pill"><span class="dot"></span>Ask the Playbook</div>
+    </div>
+  </section>
+
+  <!-- S3 contents -->
+  <section id="s3" class="clip" data-start="6.6" data-duration="4.0" data-track-index="3">
+    <div class="stage paper" id="s3-stage">
+      <div class="left">
+        <div class="eyebrow">Contents</div>
+        <h2>What's inside</h2>
+        <div class="count" id="s3-count"><b>17 sections.</b> A home for every officer role.</div>
+      </div>
+      <div class="grid" id="s3-grid">
+        <div class="row">Introduction</div><div class="row">Regional Overview</div>
+        <div class="row">Regional Data</div><div class="row">Regional Calendar</div>
+        <div class="row">Chapter Chair Resources</div><div class="row">Chapter Commitments</div>
+        <div class="row">Membership Resources</div><div class="row">Member Engagement</div>
+        <div class="row">Forum Resources</div><div class="row">Learning Resources</div>
+        <div class="row">Spouse / Partner Resources</div><div class="row">Family Resources</div>
+        <div class="row">YNG Resources</div><div class="row">Network Resources</div>
+        <div class="row">YPO Emergency Support</div><div class="row">Global Awards Resources</div>
+        <div class="row">Appendix — YPO Acronyms</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- S4 region -->
+  <section id="s4" class="clip" data-start="10.2" data-duration="4.0" data-track-index="4">
+    <div class="stage white" id="s4-stage">
+      <div class="eyebrow">Regional Overview</div>
+      <img class="map" id="s4-map" src="assets/img/map.png" alt="YPO MENA chapter map">
+      <div class="stats">
+        <div class="stat" id="st1"><div class="n"><span id="n1">0</span></div><div class="l">chapters in the region</div></div>
+        <div class="stat" id="st2"><div class="n"><span id="n2">0</span>+</div><div class="l">MENA members</div></div>
+        <div class="stat" id="st3"><div class="n"><span id="n3">0</span></div><div class="l">MENA countries</div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- S5 live data -->
+  <section id="s5" class="clip" data-start="13.8" data-duration="3.4" data-track-index="5">
+    <div class="stage paper" id="s5-stage">
+      <div class="head">
+        <div class="eyebrow">Regional Data</div>
+        <h2>The live picture of chapter health.</h2>
+      </div>
+      <div class="panel" id="s5-panel">
+        <div class="ph"><div class="live"><span class="d"></span>Live — FY26–27 Chapter KPI Scorecard</div><div class="open">Open full report ↗</div></div>
+        <div class="body">
+          <div class="big"><span class="n"><span id="n5">0</span>/27</span><span class="t">chapters fully trained on core officer roles</span></div>
+          <div class="bar"><i id="s5-bar"></i></div>
+        </div>
+        <div class="src" id="s5-src">Kept current at source.</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- S6 chat -->
+  <section id="s6" class="clip" data-start="16.8" data-duration="5.4" data-track-index="6">
+    <div class="stage paper" id="s6-stage">
+      <div class="left" id="s6-left">
+        <div class="eyebrow">Built-in assistant</div>
+        <h2>Ask the Playbook.</h2>
+        <p>Answers are drawn only from the playbook content.</p>
+      </div>
+      <div class="panel" id="s6-panel">
+        <div class="chd"><img src="assets/img/ypo-mena-mark.png" alt="YPO mark">Ask the Playbook</div>
+        <div class="log">
+          <div class="msg bot">Hi — I can answer questions about the United MENA Playbook. What would you like to know?</div>
+          <div class="msg user" id="c-user">What are the 14 Chapter Commitments?</div>
+          <div class="slot"><div class="msg bot typing" id="c-typing">Thinking…</div>
+          <div class="msg bot ans" id="c-ans">There are 14, across governance, forum, learning and membership:<ul><li>Chapter Charter &amp; Bylaws</li><li>Chapter Strategic Plan</li><li>Current Core Officers Trained</li><li>Trained Forum Moderators</li></ul>…plus 9 more in Section 4.</div></div>
+        </div>
+        <div class="form"><div class="inp" id="c-inp"><span class="ph" id="c-ph">Ask a question…</span><span id="c-txt"></span></div><div class="send" id="c-send">Send</div></div>
+        <div class="fine">Answers are drawn only from the playbook content.</div>
+      </div>
+      <svg class="cursor" id="s6-cursor" viewBox="0 0 24 24"><path d="M3 2l7 19 2.6-7.6L20 11z" fill="#1a1c1f" stroke="#fff" stroke-width="1.4" stroke-linejoin="round"/></svg>
+    </div>
+  </section>
+
+  <!-- S7 outro -->
+  <section id="s7" class="clip" data-start="21.8" data-duration="2.2" data-track-index="7">
+    <div class="stage navy" id="s7-stage">
+      <svg class="facets" data-layout-allow-overflow id="s7-facets" viewBox="0 0 1300 900"><polygon points="300,0 650,0 475,300" opacity=".10"/><polygon points="250,300 650,900 -150,900" opacity=".09"/><polygon points="650,300 1050,900 250,900" opacity=".05"/><polygon points="1050,300 1450,900 650,900" opacity=".09"/></svg>
+      <div class="center">
+        <img class="logo" id="s7-logo" src="assets/img/ypo-mena-logo-white.png" alt="YPO MENA logo">
+        <h1 id="s7-title">The <span class="g">United MENA</span> Playbook</h1>
+        <div class="cta" id="s7-cta">Open the playbook</div>
+      </div>
+      <svg class="cursor" id="s7-cursor" viewBox="0 0 24 24"><path d="M3 2l7 19 2.6-7.6L20 11z" fill="#1a1c1f" stroke="#fff" stroke-width="1.4" stroke-linejoin="round"/></svg>
+    </div>
+  </section>
+
+  <!-- audio -->
+  <audio id="music" src="assets/music/happy-beats-business-moves-vol-12-by-ende-dot-app.mp3" data-start="0" data-duration="24" data-track-index="10" data-volume="0.8"
+    data-automation='{"version":1,"lanes":[{"target":"volume","points":[{"t":0,"v":1},{"t":22.4,"v":1},{"t":24,"v":0}]}]}'></audio>
+  <audio id="sfx-hook" src="assets/sfx/impactSoft_medium_001.ogg" data-start="2.19" data-track-index="11" data-volume="0.9"></audio>
+  <audio id="sfx-hero" src="assets/sfx/impactSoft_medium_004.ogg" data-start="3.27" data-track-index="12" data-volume="0.7"></audio>
+  <audio id="sfx-contents" src="assets/sfx/card-slide-1.ogg" data-start="6.7" data-track-index="13" data-volume="0.55"></audio>
+  <audio id="sfx-map" src="assets/sfx/impactSoft_medium_004.ogg" data-start="10.2" data-track-index="14" data-volume="0.7"></audio>
+  <audio id="sfx-st1" src="assets/sfx/card-slide-1.ogg" data-start="10.37" data-track-index="15" data-volume="0.45"></audio>
+  <audio id="sfx-st2" src="assets/sfx/card-slide-1.ogg" data-start="11.46" data-track-index="16" data-volume="0.45"></audio>
+  <audio id="sfx-st3" src="assets/sfx/card-slide-1.ogg" data-start="12.55" data-track-index="17" data-volume="0.45"></audio>
+  <audio id="sfx-panel" src="assets/sfx/impactSoft_medium_001.ogg" data-start="13.9" data-track-index="18" data-volume="0.7"></audio>
+  <audio id="key01" src="assets/sfx/keypress-001.wav" data-start="17.05" data-track-index="19" data-volume="0.45"></audio>
+  <audio id="key02" src="assets/sfx/keypress-004.wav" data-start="17.16" data-track-index="20" data-volume="0.45"></audio>
+  <audio id="key03" src="assets/sfx/keypress-007.wav" data-start="17.26" data-track-index="21" data-volume="0.45"></audio>
+  <audio id="key04" src="assets/sfx/keypress-001.wav" data-start="17.37" data-track-index="19" data-volume="0.45"></audio>
+  <audio id="key05" src="assets/sfx/keypress-004.wav" data-start="17.47" data-track-index="20" data-volume="0.45"></audio>
+  <audio id="key06" src="assets/sfx/keypress-007.wav" data-start="17.58" data-track-index="21" data-volume="0.45"></audio>
+  <audio id="key07" src="assets/sfx/keypress-001.wav" data-start="17.69" data-track-index="19" data-volume="0.45"></audio>
+  <audio id="key08" src="assets/sfx/keypress-004.wav" data-start="17.80" data-track-index="20" data-volume="0.45"></audio>
+  <audio id="key09" src="assets/sfx/keypress-007.wav" data-start="17.91" data-track-index="21" data-volume="0.45"></audio>
+  <audio id="key10" src="assets/sfx/keypress-001.wav" data-start="18.02" data-track-index="19" data-volume="0.45"></audio>
+  <audio id="key11" src="assets/sfx/keypress-004.wav" data-start="18.12" data-track-index="20" data-volume="0.45"></audio>
+  <audio id="sfx-send" src="assets/sfx/click_003.ogg" data-start="18.56" data-track-index="22" data-volume="0.9"></audio>
+  <audio id="sfx-answer" src="assets/sfx/rollover2.ogg" data-start="19.10" data-track-index="23" data-volume="0.8"></audio>
+  <audio id="sfx-logo" src="assets/sfx/impactBell_heavy_000.ogg" data-start="22.37" data-track-index="24" data-volume="0.55"></audio>
+  <audio id="sfx-cta" src="assets/sfx/click_003.ogg" data-start="22.93" data-track-index="25" data-volume="0.9"></audio>
+</div>
+
+<script>
+  const tl = gsap.timeline({ paused: true });
+  const E = "power3.out";
+
+  // wipe-in for every scene after the first (scenes overlap the previous one by 0.4s)
+  [["#s2-stage",3.2],["#s3-stage",6.6],["#s4-stage",10.2],["#s5-stage",13.8],["#s6-stage",16.8],["#s7-stage",21.8]].forEach(function(s){
+    tl.fromTo(s[0], { clipPath: "inset(0 0 0 100%)" }, { clipPath: "inset(0 0 0 0%)", duration: 0.45, ease: "power2.inOut" }, s[1]);
+  });
+
+  // S1 hook — beat-grid: 0.56, 1.64, 2.19 (lines held ≥0.8s)
+  tl.fromTo("#h1a", { y: 60, opacity: 0 }, { y: 0, opacity: 1, duration: 0.45, ease: E }, 0.2);
+  tl.fromTo("#h1b", { y: 60, opacity: 0 }, { y: 0, opacity: 1, duration: 0.45, ease: E }, 1.09);
+  tl.fromTo("#h1c", { y: 60, opacity: 0, scale: 0.96 }, { y: 0, opacity: 1, scale: 1, duration: 0.45, ease: E }, 2.19); // beat-locked: 2.19s
+  tl.fromTo("#s1-facets", { x: 80 }, { x: 0, duration: 3.2, ease: "power1.out" }, 0);
+
+  // S2 hero
+  tl.fromTo("#s2-eb", { y: 24, opacity: 0 }, { y: 0, opacity: 1, duration: 0.4, ease: E }, 3.45);
+  tl.fromTo("#s2-title", { y: 50, opacity: 0 }, { y: 0, opacity: 1, duration: 0.55, ease: E }, 3.55);
+  tl.fromTo("#s2-lede", { y: 30, opacity: 0 }, { y: 0, opacity: 1, duration: 0.5, ease: E }, 4.2);
+  tl.fromTo("#s2-pill", { y: 40, opacity: 0 }, { y: 0, opacity: 1, duration: 0.45, ease: "back.out(1.6)" }, 4.9);
+  tl.fromTo("#s2-facets", { x: 60 }, { x: 0, duration: 3.6, ease: "power1.out" }, 3.2);
+
+  // S3 contents — rows cascade fast (texture), then the full set holds
+  tl.fromTo("#s3-grid .row", { y: 22, opacity: 0 }, { y: 0, opacity: 1, duration: 0.35, ease: E, stagger: 0.045 }, 6.85);
+  tl.fromTo("#s3-count", { y: 30, opacity: 0 }, { y: 0, opacity: 1, duration: 0.45, ease: E }, 7.64);
+
+  // S4 region — map, then stats on every other beat: 10.37, 11.46, 12.55
+  tl.fromTo("#s4-map", { scale: 1.06, opacity: 0 }, { scale: 1, opacity: 1, duration: 0.8, ease: E }, 10.25);
+  var stats = [["#st1","#n1",27,10.37],["#st2","#n2",1600,11.46],["#st3","#n3",15,12.55]]; // beat-grid
+  stats.forEach(function(s){
+    tl.fromTo(s[0], { y: 70, opacity: 0 }, { y: 0, opacity: 1, duration: 0.45, ease: E }, s[3]);
+    var o = { v: 0 }, el = document.querySelector(s[1]), target = s[2];
+    tl.to(o, { v: target, duration: 0.6, ease: "power2.out", onUpdate: function(){ el.textContent = Math.round(o.v).toLocaleString("en-US"); } }, s[3]);
+  });
+
+  // S5 live data
+  tl.fromTo("#s5-panel", { y: 80, opacity: 0 }, { y: 0, opacity: 1, duration: 0.5, ease: E }, 13.95);
+  var o5 = { v: 0 }, n5 = document.querySelector("#n5");
+  tl.to(o5, { v: 23, duration: 1.1, ease: "power2.out", onUpdate: function(){ n5.textContent = Math.round(o5.v); } }, 14.3);
+  tl.fromTo("#s5-bar", { scaleX: 0 }, { scaleX: 23/27, duration: 1.1, ease: "power2.out" }, 14.3);
+  tl.fromTo("#s5-src", { opacity: 0 }, { opacity: 1, duration: 0.4 }, 15.3);
+
+  // S6 chat — type, click send (beat-locked 18.56), answer on 19.10
+  tl.fromTo("#s6-left", { x: -40, opacity: 0 }, { x: 0, opacity: 1, duration: 0.5, ease: E }, 17.0);
+  tl.fromTo("#s6-panel", { y: 60, opacity: 0 }, { y: 0, opacity: 1, duration: 0.5, ease: E }, 16.95);
+  var q = "What are the 14 Chapter Commitments?", qo = { n: 0 }, txt = document.querySelector("#c-txt"), ph = document.querySelector("#c-ph");
+  tl.to(qo, { n: q.length, duration: 1.2, ease: "none", onUpdate: function(){ var k = Math.round(qo.n); txt.textContent = q.slice(0, k); ph.style.display = k ? "none" : ""; } }, 17.05);
+  tl.fromTo("#s6-cursor", { x: 1560, y: 1080 }, { x: 1690, y: 915, duration: 0.8, ease: "power2.inOut" }, 17.6);
+  tl.to("#c-send", { scale: 0.92, duration: 0.08, yoyo: true, repeat: 1 }, 18.52);
+  tl.call(function(){ txt.textContent = ""; ph.style.display = ""; }, [], 18.6);
+  tl.fromTo("#c-user", { y: 20, opacity: 0 }, { y: 0, opacity: 1, duration: 0.3, ease: E }, 18.58);
+  tl.fromTo("#c-typing", { opacity: 0 }, { opacity: 1, duration: 0.12 }, 18.75);
+  tl.to("#c-typing", { opacity: 0, duration: 0.1, immediateRender: false }, 19.0);
+  tl.fromTo("#c-ans", { y: 24, opacity: 0 }, { y: 0, opacity: 1, duration: 0.4, ease: E }, 19.1);
+  tl.to("#s6-cursor", { opacity: 0, duration: 0.3 }, 19.2);
+
+  // S7 outro — logo bell 22.37, CTA click 22.93
+  tl.fromTo("#s7-logo", { y: 30, opacity: 0, scale: 0.94 }, { y: 0, opacity: 1, scale: 1, duration: 0.5, ease: E }, 22.0);
+  tl.fromTo("#s7-title", { y: 30, opacity: 0 }, { y: 0, opacity: 1, duration: 0.45, ease: E }, 22.2);
+  tl.fromTo("#s7-cta", { y: 30, opacity: 0 }, { y: 0, opacity: 1, duration: 0.4, ease: "back.out(1.6)" }, 22.37); // beat-locked: 22.37s
+  tl.fromTo("#s7-cursor", { x: 1300, y: 1080 }, { x: 1010, y: 700, duration: 0.5, ease: "power2.inOut" }, 22.4);
+  tl.to("#s7-cta", { scale: 0.95, duration: 0.08, yoyo: true, repeat: 1 }, 22.9); // beat-locked: 22.93s
+
+  // subtle audio-reactive: bass/RMS breathes the triangle facets and the gold glow
+  var AD = window.AUDIO_DATA, facets = ["#s1-facets","#s2-facets","#s7-facets"].map(function(s){ return document.querySelector(s); });
+  var golds = document.querySelectorAll("#h1c, #s2-title .g, #s7-title .g");
+  for (var f = 0; f < AD.bass.length; f++) {
+    tl.call((function(b, r){ return function(){
+      var op = 0.75 + 0.35 * b;
+      for (var i = 0; i < facets.length; i++) facets[i].style.opacity = op.toFixed(3);
+      var g = "0 0 " + (10 + 30 * r).toFixed(1) + "px rgba(214,157,35," + (0.18 + 0.3 * r).toFixed(3) + ")";
+      for (var j = 0; j < golds.length; j++) golds[j].style.textShadow = g;
+    }; })(AD.bass[f], AD.rms[f]), [], f / AD.fps);
+  }
+
+  window.__timelines["main"] = tl;
+</script>
+</body>
+</html>
