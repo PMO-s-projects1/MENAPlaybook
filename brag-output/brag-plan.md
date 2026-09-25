@@ -1,95 +1,43 @@
-# Brag Plan: The United MENA Playbook
+# Brag Plan: The United MENA Playbook (extended cut)
 
 ## What is this app?
-A gated web playbook for YPO Middle East / North Africa chapter leaders: one place for governance, membership, learning, forum and family resources across 27 chapters, with live dashboards and an AI "Ask the Playbook" assistant that answers only from the playbook.
+A gated web playbook for YPO Middle East / North Africa chapter leaders. It is one source of truth for governance, membership, learning, forum and family resources across 27 chapters. It includes live regional dashboards, a toolkit and roadmap for each role, and an AI "Ask the Playbook" assistant that answers only from the playbook.
 
 ## The angle
-A whole region's know-how in one place. 27 chapters in 15 countries used to depend on scattered PDFs and inboxes. Now there is one playbook with live data and an assistant built in. It is earnest governance work, so it gets a premium, confident product film, not a joke.
-
-## Hook (first 2-3 seconds)
-On the site's navy with its gold triangle motif: "27 chapters." / "15 countries." land in turn, then "One playbook." hits in gold.
-
-## Key moments (the middle)
-- The real hero: "The United MENA Playbook" with the serif lede "One regional source of truth."
-- "What's inside": the real contents list cascades in (17 sections), holding on the highlight chips.
-- The real regional map with count-up stats: 27 chapters · 1,600+ members · 15 countries.
-- Live data: the "Live — FY26–27 Chapter KPI Scorecard" panel, with a readiness bar filling to 23 of 27 chapters fully trained.
-- Ask the Playbook: a question is typed in, and the assistant answers with the 14 Chapter Commitments.
-
-## Outro / punchline
-The YPO MENA mark, "The United MENA Playbook", and the real CTA button "Open the playbook" getting a click.
-
-## User flow worth showing
-Enter chapter at the gate → browse "What's inside" → ask the assistant a question and get an answer from the playbook. The gate CTA is used as the outro; the chat is the centerpiece.
+A premium explainer that walks an officer through the Playbook: what it is, who it's for, how to get in and move around, what serves the whole region, what serves their specific role, the assistant, and why it makes their year easier.
 
 ## Tone
-- Preset: app-store
-- Creative direction: premium regional launch film, polished restraint
-- Interpretation: clean feature cards, smooth slides and wipes, confident holds, no gags; the brand's navy, gold and serif set the calm.
+- Preset: app-store, with polished restraint
+- Creative direction: premium regional launch film
+- Format: landscape, 1920x1080. Duration: 58.5s
 
-## Format: landscape — 1920x1080
-## Duration: 23s
+## Visual identity
+Navy #041e42, gold #d69d23, azure eyebrows #1f43ea, paper #f9f9f9. Arimo (Helvetica stand-in) for headings, Instrument Serif for ledes. Hero triangle facets.
 
-## Visual identity (from the project)
-- Background: #041e42 (--blue), paper #f9f9f9 / #f2f3f6
-- Accent: #d69d23 (--gold); eyebrow text #1f43ea (--azure)
-- Text: #ffffff on navy, #1a1c1f (--ink) on paper, muted #5b6675
-- Display font: Helvetica Neue stack (rendered with Arimo, a metric-compatible substitute)
-- Body/lede font: Instrument Serif
-- Strongest visual element: navy hero with translucent triangle facets and gold "United MENA"
+## Storyboard (scene joins sit on beats of the 110 BPM track)
 
-## Share copy (draft)
-The United MENA Playbook: governance, membership, learning, forum and family resources for all 27 YPO MENA chapters, with live data and an assistant that answers from the playbook.
+| # | Scene | Time | What it shows |
+|---|---|---|---|
+| 1 | Hook | 0.00–4.39 | "27 chapters. 15 countries. One playbook." |
+| 2 | What it is | 4.39–9.83 | Hero title, "One regional source of truth…", five topic chips |
+| 3 | Who it's for | 9.83–15.29 | Chapter Chairs, Chapter Managers, Chapter Officers, Regional Executives |
+| 4 | Getting in | 15.29–19.10 | Chapter entry gate → Chapter Board Checklist, ticked |
+| 5 | Navigate | 19.10–24.02 | Contents list and sticky menu. The cursor picks Chapter Chair Resources, then clicks Expand all |
+| 6 | Region at a glance | 24.02–28.37 | Chapter map with 27 chapters / 1,600+ members / 15 countries |
+| 7 | For the whole region | 28.37–33.83 | Live Commitments dashboard, KPI Scorecard, Regional Calendar; 14 Commitments; M2Mx; Networks & Acronyms |
+| 8 | Built for your role | 33.83–38.20 | Role tabs → Chapter Chair: responsibilities, roadmap, contact list, toolkits |
+| 9 | Chair roadmap | 38.20–43.65 | Eight stages, from November "Explore your new role" to June "Hand over well" |
+| 10 | Ask the Playbook | 43.65–50.74 | The assistant is asked what a chair does in July–September and answers from the roadmap |
+| 11 | Why officers use it | 50.74–55.65 | Everything in one place · Lead with confidence · Learn from every chapter · Always up to date |
+| 12 | Outro | 55.65–58.50 | Logo, title, and a click on "Open the playbook" |
 
-## Audio direction
-- Role: warm bed with sparse professional accents
-- Music: happy-beats-business-moves-vol-12 (≈110 BPM)
-- Music treatment: starts at 0, full bed, fades out over the last ~1.5s under the logo
-- Music cue guidance: preset read. Strong cues: 8.74s, 13.11s, 17.47s, 22.93s. Beat grid ~0.545s; sequential text reveals snap to every other beat.
-- Audio-reactive treatment: subtle; the bass/RMS makes the navy triangle facets and the gold glow breathe. No visualizer graphics.
-- SFX posture: sparse, motion-matched: soft impacts on scene reveals, card slide on stat cards, key ticks on typing, a click on the send button and the CTA, and a bell on the final logo.
-- Restraint rule: no SFX on every list row, and nothing louder than the music at scene joins.
+## Audio
+- Music: happy-beats-business-moves-vol-12, faded out from 56.9s to 58.5s
+- Beat locks: gate click 17.47, checklist tick 18.56, send 45.84, answer 46.37. Sequential reveals use the beat grid (marked in code).
+- SFX: soft impacts on key reveals, card slides for card sets, keypresses while typing, clicks for UI actions, and a bell on the logo
+- Audio-reactive: bass/RMS breathes the triangle facets and the gold glow
 
-## Storyboard
-
-### Scene 1 — Hook — 3.0s (0.0–3.0)
-Navy + triangle facets. "27 chapters." then "15 countries." (each held ≥0.8s), then "One playbook." in gold.
-Sequential/interaction: yes, three lines on alternating beats.
-Audio intent: confident open. Audio-coupled idea: soft impact on "One playbook."
-Transition mood: clean wipe → Scene 2
-
-### Scene 2 — Hero — 3.5s (3.0–6.5)
-Recreated hero: "UNITED MENA" eyebrow, "The United MENA Playbook" (gold "United MENA"), serif lede "One regional source of truth — for every chapter across the Middle East and North Africa." The "Ask the Playbook" pill waits in the corner.
-Sequential/interaction: none. Audio: rising warmth.
-Transition mood: slide → Scene 3
-
-### Scene 3 — What's inside — 3.6s (6.5–10.1)
-Paper background: "CONTENTS / What's inside" and the 16 real section titles cascade in two columns (fast texture), and the full set holds; the label "17 sections. Every officer role." is readable.
-Sequential/interaction: yes, rows cascade quickly, then hold.
-Audio: one card-slide on the cascade.
-Transition mood: slide → Scene 4
-
-### Scene 4 — The region — 3.6s (10.1–13.7)
-The real MENA chapter map, with three stat cards arriving on every other beat: 27 chapters, 1,600+ members, 15 countries (count-up).
-Audio: card-slide per stat.
-Transition mood: wipe → Scene 5
-
-### Scene 5 — Live data — 3.0s (13.7–16.7)
-"Live — FY26–27 Chapter KPI Scorecard" panel with a green-dot Live badge; the bar fills to "23 of 27 chapters fully trained on core officer roles"; the caption reads "Kept current at source."
-Audio: soft impact on the panel reveal (≈13.11 cue sits just before; lock the panel's arrival).
-Transition mood: slide → Scene 6
-
-### Scene 6 — Ask the Playbook — 4.3s (16.7–21.0)
-The recreated chat panel: "What are the 14 Chapter Commitments?" is typed, and send is clicked. The answer bubble shows Charter · Bylaws · Strategic Plan · Officers trained · Forum moderators … plus 9 more; the footer reads "Answers are drawn only from the playbook content."
-Sequential/interaction: typing plus a simulated click. Audio: key ticks, click, soft drop on the answer (≈17.47 cue).
-Transition mood: dissolve → Scene 7
-
-### Scene 7 — Outro — 2.0s (21.0–23.0)
-Navy. YPO MENA logo, "The United MENA Playbook", and the "Open the playbook" button with a click press.
-Audio: bell on logo (≈22.93 → locked at the button press); music fades.
-
-**Music mood for this video:** upbeat, corporate-warm
-**Audio summary:** A warm bed from the first frame, soft thuds on each reveal, typing and a click in the chat, and a bell on the logo as the music fades.
-
-## Privacy note
-No member names, photos, emails or internal URLs appear. The directories (REX/management) are deliberately excluded. The chat Q&A uses the real commitment titles from the playbook.
+## Content notes
+- All copy comes from the Playbook (`index.html`, `api/chat.js`). The benefit lines in scene 11 condense the Regional Chairs' welcome letter.
+- The assistant exchange is scripted from the Chapter Chair Roadmap; it is not a live model call.
+- No member names, photos or contact details appear. The sample chapter entry reads "YPO MENA", which is the site's own placeholder.

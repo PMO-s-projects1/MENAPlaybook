@@ -7,7 +7,7 @@ Create a short launch-style brag video for the United MENA Playbook that highlig
 - Composition directory: `brag-output/composition/`
 - Rendered video: `brag-output/brag.mp4`
 - Format: landscape, 1920x1080
-- Duration: 24 seconds
+- Duration: 58.5 seconds (extended cut — see brag-plan.md for the 12-scene storyboard)
 
 ## Source Material
 - Project root: repository root (`index.html`, `api/chat.js`, `images/`)
